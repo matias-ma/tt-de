@@ -1,0 +1,21 @@
+{
+  "minimum_nll": "h2_0",
+  "selected": "legacy",
+  "rule": "paired cluster one-SE, then minimum integrated roughness",
+  "candidates": {
+    "legacy": {
+      "validation_nll": 15.627643969005984,
+      "excess_nll": 1.3717231828989929e-06,
+      "paired_cluster_se": 4.674819413773111e-05,
+      "roughness": 266.4957208742131,
+      "eligible": true
+    },
+    "h2_0": {
+      "validation_nll": 15.6276425972828,
+      "excess_nll": 0.0,
+      "paired_cluster_se": 0.0,
+      "roughness": 311.2005577928225,
+      "eligible": true
+    }
+  }
+}

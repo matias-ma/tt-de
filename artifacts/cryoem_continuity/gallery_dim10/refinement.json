@@ -1,0 +1,160 @@
+{
+  "base": "/home/ma4473/ft-de/artifacts/cryoem_refinement/gallery_dim10",
+  "configuration": {
+    "correct_projection": false
+  },
+  "kernel_description": "4-component stationary Gaussian noise mixture; diagonal within components; supplied noise metadata only",
+  "baseline_nll": 9.97832018095152,
+  "selected_nll": 9.866187806928895,
+  "continuity": {
+    "ranks": [
+      20,
+      32,
+      40,
+      48
+    ],
+    "modes": [
+      49,
+      65,
+      81
+    ],
+    "selected_order": 2,
+    "candidates": [
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_h1_0.01",
+        "rank": 20,
+        "modes": 49,
+        "order": 1,
+        "strength": 0.01,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank20_modes49",
+        "rank": 20,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank20_modes81",
+        "rank": 20,
+        "modes": 81,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank32_h1_0.003",
+        "rank": 32,
+        "modes": 49,
+        "order": 1,
+        "strength": 0.003,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "l2",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank32_modes49",
+        "rank": 32,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank32_modes65_sobolev",
+        "rank": 32,
+        "modes": 65,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "sobolev",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank40_modes65",
+        "rank": 40,
+        "modes": 65,
+        "order": 2,
+        "strength": 0.0003,
+        "steps": 4000,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank48_modes49_sobolev",
+        "rank": 48,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 3200,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "sobolev",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank48_modes49_sobolev_seed19",
+        "rank": 48,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 3200,
+        "lr": 0.0002,
+        "seed": 19,
+        "preconditioning": "sobolev",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      },
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_repeat_seed19",
+        "rank": 32,
+        "modes": 65,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 19,
+        "preconditioning": "l2",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    ]
+  }
+}

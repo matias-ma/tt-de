@@ -1,0 +1,5 @@
+{
+  "recipe": "precondition",
+  "rule": "minimum observed validation NLL among new seed0 recipes",
+  "uses_truth": false
+}

@@ -1,0 +1,31 @@
+{
+  "relative_l2": 0.5065442475703659,
+  "relative_squared_l2": 0.25658707474662806,
+  "integral_q_squared": 0.9509790684583759,
+  "integral_pq": 1.2211283761190268,
+  "integral_p_squared": 2.0059883721707106,
+  "path_quadrature_relative_change": 6.256286905787946e-10,
+  "integration": "importance-QMC quartic integral; native product-measure cross integral",
+  "qmc": {
+    "value": 0.9509790684583759,
+    "standard_error": 0.009540091838062517,
+    "replicate_estimates": [
+      0.9618209451412585,
+      1.002619807812457,
+      0.9320236215007787,
+      0.9280443162565684,
+      0.9257837754268848,
+      0.9625579049349424,
+      0.9296877263626301,
+      0.9652944502314873
+    ],
+    "half_sample_value": 0.9444017429498941,
+    "samples": 1048576,
+    "method": "scrambled Sobol importance sampling; 95% observed KDE + 5% uniform",
+    "bandwidth": 0.25,
+    "centers": 512
+  },
+  "relative_l2_standard_error": 0.0046943639901569955,
+  "selection_sha256": "935d325bb6645b1be26eace5df260ea8d4b60044e7a7fea2b2d155b5512c3086",
+  "metric": "unsquared full-dimensional latent relative Lebesgue L2"
+}

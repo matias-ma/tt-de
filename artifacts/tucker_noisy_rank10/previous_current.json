@@ -1,0 +1,6 @@
+{
+  "swirl4_free": "artifacts/tucker_capacity/r24/swirl4_free",
+  "swirl6_free": "artifacts/tucker_capacity/r10/swirl6_free",
+  "swirl4_mixture": "artifacts/tucker_capacity/r16_noisy/swirl4_mixture",
+  "swirl6_mixture": "artifacts/tucker_capacity/r6_noisy/swirl6_mixture"
+}

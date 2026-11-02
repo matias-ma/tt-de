@@ -1,0 +1,15 @@
+{
+  "relative_l2": 0.39970049999795376,
+  "relative_l2_mc_se": 0.0034863027262713804,
+  "test_nll": -1.5060383047464918,
+  "test_zero_predictions": 0,
+  "max_sample_mean_z": 2.3400399525368294,
+  "p2_importance_ratio": 0.9925035179167243,
+  "quadrature_log_discrepancy": 0.0,
+  "p2_ratio_mc_se": 0.010670863723873155,
+  "fit_path": "artifacts/direct_optimization/swirl_free10/squared_n49_r64_l0.0001_b256_s0/fit.npz",
+  "fit_sha256": "c92f06d61d08df004a49bdd1b2174df36475d39b6ad336d9cbf45c8d5dd78248",
+  "raw_tt_sign_changes_on_true_curve": 4,
+  "minimum_density_ratio_on_true_curve": 3.61346543385794e-05,
+  "fraction_true_curve_below_half_density": 0.4912543728135932
+}

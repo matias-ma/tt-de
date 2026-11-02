@@ -1,0 +1,22 @@
+{
+  "selection": {
+    "new_selected": "squared_n49_r32_l0.0001_b256_s0_lbfgs"
+  },
+  "files": {
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0/fit.npz": "87397e5e17000d406954fbf257eb8c1ecd0c2319127c24ffd76d3b1b7747f9ec",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0/init.npz": "e9fdf0ea54c059aeb64d628118dae97757ab97a736a8ba193ed95ac2f0010ff1",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0/result.json": "c8a21ede7a6e6fdd6e91b411a69b0c88e79e871e0bdb78937d17a592e83ff24a",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0_lbfgs/config.json": "c7d074b902357dc81ceb365434d4d9897bd02a7baf16ddafd1cc97046b3ad645",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0_lbfgs/fit.npz": "e8135fef1ac1eca2d8dc2a72f2b7f17f08fcb06c1eab99fc5292883572a5cc3f",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0_lbfgs/init.npz": "87397e5e17000d406954fbf257eb8c1ecd0c2319127c24ffd76d3b1b7747f9ec",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0_lbfgs/last.npz": "e8135fef1ac1eca2d8dc2a72f2b7f17f08fcb06c1eab99fc5292883572a5cc3f",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r32_l0.0001_b256_s0_lbfgs/result.json": "8fc5e48a6e2b4422b31819ce4b21c59723d193c9fd4d665f7d8123157454f8cb",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r64_l0.0001_b256_s0/fit.npz": "c92f06d61d08df004a49bdd1b2174df36475d39b6ad336d9cbf45c8d5dd78248",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r64_l0.0001_b256_s0/init.npz": "2faf52a946bfd15f4c37868430578e22fa30f62f6a1caa5e70e29a3f73c606c4",
+    "artifacts/direct_optimization/swirl_free10/squared_n49_r64_l0.0001_b256_s0/result.json": "c5fedc34ebaaf8ff3ea98915550d1cec43f8116e40437c70bf9d777b3834be96",
+    "artifacts/swirl/swirl_free_dim10/init.npz": "929833e4fa536840c321d6958b90593f3097c4d8ffbab7dcbabad4f3b7cfa5da",
+    "artifacts/swirl/swirl_free_dim10/selected.npz": "5ed8cd005abb8b369a3ee88b304481f4315a2ed1dc0d8e4c3dba8169426ea8dc"
+  },
+  "truth_used_for_selection": false,
+  "independent_test_seed": 87329
+}

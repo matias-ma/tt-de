@@ -1,0 +1,25 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 9.395935843882334,
+      "roughness_h1": 0.0005750629753689772,
+      "roughness_axis_h2": 0.002937771055888998,
+      "roughness_hessian": 0.005887492550214017,
+      "batch_objective": null,
+      "seconds": 45.83101043407805,
+      "active_modes": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ],
+      "selection_eligible": false,
+      "inactive_coefficient_max": 0.0
+    }
+  ],
+  "best_step": null,
+  "best_nll": null
+}

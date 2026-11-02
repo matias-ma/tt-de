@@ -1,0 +1,52 @@
+{
+  "selected": "fisher_1",
+  "names": [
+    "warmup",
+    "fisher_0.1",
+    "fisher_0.3",
+    "fisher_1"
+  ],
+  "roughness": [
+    0.07564747048003465,
+    0.014676415725863288,
+    0.006510168906574385,
+    0.004319486118858357
+  ],
+  "selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 3,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 15.445051942376683,
+        "excess_nll": 0.004003808929338514,
+        "paired_cluster_se": 0.0011063455120546943,
+        "roughness": 0.07564747048003465,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.441951459407235,
+        "excess_nll": 0.0009033259598901326,
+        "paired_cluster_se": 0.00035252302793547814,
+        "roughness": 0.014676415725863288,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.441048133447346,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 0.006510168906574385,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.441148402564139,
+        "excess_nll": 0.00010026911679203616,
+        "paired_cluster_se": 0.0020868010643532407,
+        "roughness": 0.004319486118858357,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired noisy one-SE, then minimum common Fisher penalty"
+}

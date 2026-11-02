@@ -1,0 +1,134 @@
+{
+  "selected": "heat_0",
+  "models": {
+    "heat_0": {
+      "fraction": 0.0,
+      "fit_sha256": "ef94298164ed5271f763500f8b734da6083b52c9d3db2bf023c17821573a8c10",
+      "positive_mass": 1.1460448918796187,
+      "negative_mass": 0.14604489187966274,
+      "norm_q_squared": 0.3930539917294084,
+      "validation_risk": -0.5093923335490211,
+      "nll": null,
+      "nonpositive_predictions": 36,
+      "order": 145,
+      "relative_l2": 0.18229671442890472,
+      "test": {
+        "nll": null,
+        "nonpositive_predictions": 89
+      }
+    },
+    "heat_0.0025": {
+      "fraction": 0.0025,
+      "fit_sha256": "40814dee937cc0a270c4bec4a78f59c12ad3927014df63095b5124599114c519",
+      "positive_mass": 1.1406582100487754,
+      "negative_mass": 0.1406582100488199,
+      "norm_q_squared": 0.3922448992755202,
+      "validation_risk": -0.5093880136834408,
+      "nll": null,
+      "nonpositive_predictions": 36,
+      "order": 145,
+      "relative_l2": 0.18223802051139312,
+      "test": {
+        "nll": null,
+        "nonpositive_predictions": 83
+      }
+    },
+    "heat_0.005": {
+      "fraction": 0.005,
+      "fit_sha256": "08068c89f4f584590e8d56681f8136038772fa2d02a8f8aeef2c8c78eaed9096",
+      "positive_mass": 1.1277676273745643,
+      "negative_mass": 0.12776762737460845,
+      "norm_q_squared": 0.38791069234633807,
+      "validation_risk": -0.5089174950599964,
+      "nll": null,
+      "nonpositive_predictions": 31,
+      "order": 145,
+      "relative_l2": 0.18441520880333587,
+      "test": {
+        "nll": null,
+        "nonpositive_predictions": 73
+      }
+    },
+    "heat_0.01": {
+      "fraction": 0.01,
+      "fit_sha256": "cb514fa8af9db563074c0cb99b92e855b2de541cc096ddc32edbc9c0a3fb5559",
+      "positive_mass": 1.0940448161328378,
+      "negative_mass": 0.09404481613288188,
+      "norm_q_squared": 0.36289558934764765,
+      "validation_risk": -0.5034110422374942,
+      "nll": null,
+      "nonpositive_predictions": 16,
+      "order": 145,
+      "relative_l2": 0.21006555509692107,
+      "test": {
+        "nll": null,
+        "nonpositive_predictions": 36
+      }
+    },
+    "heat_0.02": {
+      "fraction": 0.02,
+      "fit_sha256": "9a007d6a41f509b724fe5ab7b0cb1228ba0970cb12a5de4e579e1a18e9ae095d",
+      "positive_mass": 1.0439639777387983,
+      "negative_mass": 0.04396397773884287,
+      "norm_q_squared": 0.2618475899950564,
+      "validation_risk": -0.4556310261324345,
+      "nll": null,
+      "nonpositive_predictions": 2,
+      "order": 145,
+      "relative_l2": 0.3658268991149163,
+      "test": {
+        "nll": null,
+        "nonpositive_predictions": 5
+      }
+    },
+    "heat_0.04": {
+      "fraction": 0.04,
+      "fit_sha256": "8e8f2b7327e66f0e906241c7a7347766171ad8a06990300f47b1b621c4d456f2",
+      "positive_mass": 1.006717589190261,
+      "negative_mass": 0.006717589190306225,
+      "norm_q_squared": 0.10140184697049326,
+      "validation_risk": -0.27171659785869795,
+      "nll": 1.8644860875250493,
+      "nonpositive_predictions": 0,
+      "order": 145,
+      "relative_l2": 0.6943777961030654,
+      "test": {
+        "nll": 1.873840130047685,
+        "nonpositive_predictions": 0
+      }
+    },
+    "heat_0.08": {
+      "fraction": 0.08,
+      "fit_sha256": "6248e2ad5422f4eeb69a251189e12d38a78c4d33723d9f4abfb700f4e43fb756",
+      "positive_mass": 1.0000744573663534,
+      "negative_mass": 7.445736639525061e-05,
+      "norm_q_squared": 0.021492786580525176,
+      "validation_risk": -0.07609804154800981,
+      "nll": 3.1410736629610594,
+      "nonpositive_predictions": 0,
+      "order": 145,
+      "relative_l2": 0.9245076304562505,
+      "test": {
+        "nll": 3.1400131325513563,
+        "nonpositive_predictions": 0
+      }
+    },
+    "heat_0.16": {
+      "fraction": 0.16,
+      "fit_sha256": "0cda68456e0588a249ea0dcab310d565dcbc68ef61105227f01ce7e7826ab368",
+      "positive_mass": 0.9999999999999741,
+      "negative_mass": -0.0,
+      "norm_q_squared": 0.004796213404622451,
+      "validation_risk": -0.014662791098860583,
+      "nll": 4.723559058598692,
+      "nonpositive_predictions": 0,
+      "order": 145,
+      "relative_l2": 0.9858703336376826,
+      "test": {
+        "nll": 4.718148054791918,
+        "nonpositive_predictions": 0
+      }
+    }
+  },
+  "test_seed": 61492
+}

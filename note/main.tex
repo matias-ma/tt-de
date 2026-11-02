@@ -1,0 +1,442 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[proposition]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\dd}{\,\mathrm{d}}
+\newcommand{\T}{\mathsf{T}}
+\newcommand{\ip}[2]{\langle #1,#2\rangle}
+\newcommand{\norm}[1]{\lVert #1\rVert}
+\newcommand{\relLtwo}{\operatorname{rel}L^2}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\title{\textbf{ft-de}: functional tensor-train density estimation\\ and deconvolution with Chebyshev cores}
+\author{Notes on the \texttt{ft-de} repository}
+\date{September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+These notes describe the estimator implemented in \texttt{ft-de}. It estimates a
+probability density on $\R^d$ from samples, optionally when every sample is corrupted by
+additive noise with a known distribution. The density is the normalized square of a
+\emph{functional} tensor train whose cores are matrix-valued Chebyshev expansions (the
+\texttt{ChebTT} objects of chebdGE). The Chebyshev coefficients are fitted by
+stochastic maximum likelihood. In the noisy case the likelihood is that of the
+\emph{convolved} model $U*p$, where the noise density $U$ is itself a Chebyshev tensor
+train. We show that this convolved likelihood, its normalization, all marginals, and the
+smoothness functionals used for regularization are evaluated exactly (to rounding) by
+small tensor-network contractions, without Monte Carlo averaging over the noise. The note
+then covers the regularizers and the data-only model-selection rules the method needs
+because deconvolution is ill-posed, and reports qualitative and quantitative experiments:
+the Ginzburg--Landau benchmark, a continuous ``swirl--pretzel'' benchmark introduced to
+probe ridge fragmentation, sample-size convergence, and a simulated cryo-EM latent space.
+\end{abstract}
+
+\tableofcontents
+
+%======================================================================
+\section{Setting and overview}
+\label{sec:intro}
+
+Let $X_1,\dots,X_N$ be i.i.d.\ with an unknown density $p$ on $\R^d$. In the \emph{noisy}
+problem we observe instead
+\begin{equation}\label{eq:noisy-model}
+  Y_i = X_i + \varepsilon_i,\qquad \varepsilon_i \sim U \text{ i.i.d., independent of } X_i,
+\end{equation}
+with the noise density $U$ known, so that $Y_i$ has density $q=U*p$. The target is always the latent density $p$, not $q$. Both problems are
+motivated by cryo-EM heterogeneity analysis: a latent embedding of every particle image is estimated with a known
+(posterior) uncertainty~\cite{gilles2025recovar}, and one wants the density of conformations rather than of the
+noisy embeddings.
+
+\paragraph{The estimator in one paragraph.}
+Fix a box $\Omega=\prod_k[a_k,b_k]$, TT ranks $r_1,\dots,r_{d-1}$ and $n$ Chebyshev modes per axis. Every
+coefficient tensor $\mathcal A=(A_1,\dots,A_d)$ defines an amplitude $g_{\mathcal A}(x)=G_1(x_1)\cdots G_d(x_d)$,
+where each $G_k$ is a matrix-valued polynomial, and a density $p_{\mathcal A}=g_{\mathcal A}^2/Z(\mathcal A)$ on $\Omega$. We minimize
+the empirical negative log-likelihood of $p_{\mathcal A}$ (noise-free) or of $U*p_{\mathcal A}$ (noisy). Optional
+gauge-invariant smoothness penalties are added. The optimizer is Adam, run in $L^2$-orthonormalized coefficient
+coordinates, from a chebdGE cross approximation of $\sqrt{\mathrm{KDE}}$. Hyperparameters (rank, degree,
+regularization strength) are chosen only from held-out observations, noisy ones in the noisy case, by a paired
+one-standard-error rule.
+
+\paragraph{Relation to TTDE.}
+The closest antecedent is TTDE~\cite{novikov2021ttde}. Its table-data model (\texttt{PAsTTSqrOpt}, used in the
+earlier cryo-EM notebooks of this project) is
+\begin{equation}\label{eq:ttde}
+  p(x)\propto \sum_{c=1}^{C}\ip{\mathcal A_c}{\,b(x_{\pi_c(1)})\otimes\cdots\otimes b(x_{\pi_c(d)})}^2,
+\end{equation}
+a mixture over coordinate permutations $\pi_c$ of squared TT contractions against a B-spline feature vector $b$,
+trained by Riemannian Adam. (Other TT density estimators build the TT by sketching rather than likelihood optimization~\cite{hur2023generative,peng2024vrs}.) The present estimator keeps the key structural idea, a \emph{squared} TT whose
+normalization and marginals are exact contractions. It differs in five respects, which organize these notes.
+\begin{enumerate}[leftmargin=2em,itemsep=1pt]
+  \item \textbf{Basis and representation.} The cores are Chebyshev coefficient tensors, i.e.\ exactly chebdGE's
+  \texttt{ChebTT} with coefficient cores. Every integral we need reduces to closed-form Chebyshev Gram
+  matrices and moments (\S\ref{sec:model}). There is a single TT, not a permutation mixture.
+  \item \textbf{Initialization} by chebdGE's cross approximation (TT-qTensGE) of $\sqrt{\text{KDE}}$ (\S\ref{sec:fit}).
+  \item \textbf{Exact deconvolution likelihood.} If $U$ is a Chebyshev TT, $\log(U*p_{\mathcal A})(y)$ is evaluated exactly
+  by a transfer-matrix contraction with precomputed polynomial ``moment cores'' (\S\ref{sec:deconv}). The earlier
+  TTDE cryo-EM pipeline replaced $q(y)$ by a Monte Carlo average $M^{-1}\sum_m p(y-\varepsilon_m)$ over noise draws,
+  which biases $\log q$ (Jensen) and adds gradient noise.
+  \item \textbf{Regularization} by gauge- and scale-invariant functionals of the \emph{represented amplitude}:
+  integrated derivatives and a marginal Fisher-information filter (\S\ref{sec:reg}).
+  \item \textbf{Selection from noisy data only} (\S\ref{sec:select}). Clean data and the true density enter only in
+  post-hoc diagnostics.
+\end{enumerate}
+
+\paragraph{Notation.} $T_i$ is the Chebyshev polynomial of the first kind; $\tau_k(x)=(2x-a_k-b_k)/(b_k-a_k)$ maps
+$[a_k,b_k]$ to $[-1,1]$. Cores have shape $A_k\in\R^{r_{k-1}\times r_k\times n_k}$ with $r_0=r_d=1$, and
+$A_k^{(i)}\in\R^{r_{k-1}\times r_k}$ is the $i$-th slice. We write $r=\max_k r_k$ and $n=\max_k n_k$. The relative error
+of an estimate $\hat p$ is always the unsquared full-dimensional Lebesgue quantity
+$\relLtwo(\hat p)=\norm{\hat p-p}_{L^2(\R^d)}/\norm{p}_{L^2(\R^d)}$.
+
+%======================================================================
+\section{The model: squared Chebyshev tensor trains}
+\label{sec:model}
+
+\begin{definition}[Chebyshev functional TT]
+A \emph{Chebyshev TT} on $\Omega$ is a function
+\begin{equation}\label{eq:chebtt}
+  g(x)=G_1(x_1)G_2(x_2)\cdots G_d(x_d),\qquad G_k(x_k)=\sum_{i=0}^{n_k-1}A_k^{(i)}\,T_i(\tau_k(x_k))\in\R^{r_{k-1}\times r_k}.
+\end{equation}
+This is the continuous (functional) version~\cite{gorodetsky2019continuous,bigoni2016spectral} of the TT format~\cite{oseledets2011tt} in a Chebyshev
+basis~\cite{trefethen2019atap}. It is chebdGE's \texttt{ChebTT} with \texttt{core\_representation="coeff\_tensor"}.
+The density model is
+\begin{equation}\label{eq:density}
+  p_{\mathcal A}(x)=\frac{g_{\mathcal A}(x)^2}{Z(\mathcal A)}\,\mathbf 1_\Omega(x),\qquad Z(\mathcal A)=\int_\Omega g_{\mathcal A}^2.
+\end{equation}
+\end{definition}
+
+Squaring enforces $p_{\mathcal A}\ge 0$ for every real $\mathcal A$, as in TTDE and in the squared-TT samplers
+of~\cite{dolgov2020approximation,cui2022deep}. The map $\mathcal A\mapsto p_{\mathcal A}$ is invariant under
+(i)~the TT gauge $G_k\mapsto G_kS$, $G_{k+1}\mapsto S^{-1}G_{k+1}$, (ii)~scaling of any core, and (iii)~$g\mapsto -g$.
+All functionals below are chosen to respect these invariances. This is why penalties are expressed through the
+represented amplitude, never through entrywise core norms.
+
+\subsection{Exact integrals}
+All integrals reduce to the one-dimensional Chebyshev moments and Gram matrices
+\begin{equation}\label{eq:gram}
+  \mu_s=\int_{-1}^{1}T_s=\begin{cases}\frac{2}{1-s^2}& s\text{ even}\\ 0 & s \text{ odd}\end{cases},\qquad
+  M_k[i,j]=\int_{a_k}^{b_k}T_iT_j\circ\tau_k=\frac{b_k-a_k}{4}\bigl(\mu_{i+j}+\mu_{|i-j|}\bigr),
+\end{equation}
+using $T_iT_j=\tfrac12(T_{i+j}+T_{|i-j|})$. Define the \emph{Gram transfer map} of core $k$ acting on
+$S\in\R^{r_{k-1}\times r_{k-1}}$,
+\begin{equation}\label{eq:transfer}
+  \mathcal E_k(S)=\sum_{i,j}M_k[i,j]\,(A_k^{(i)})^{\T}S\,A_k^{(j)}\in\R^{r_k\times r_k}.
+\end{equation}
+Then $Z(\mathcal A)=\mathcal E_d\circ\cdots\circ\mathcal E_1(1)$, at cost $O(d(r^3n+r^2n^2))$. Each $\mathcal E_k$ is
+evaluated as two matrix products, and the $r^2\times r^2$ matrix is never formed. States are rescaled after every
+core and the logarithms of the scale factors are accumulated. Every pair marginal is exact in the same way:
+\begin{equation}\label{eq:pair}
+  p_{\mathcal A}^{(ij)}(x_i,x_j)=\frac1Z\,\bigl\langle \mathcal E_{>j}(\cdot),\;
+  G_j(x_j)^{\T}\bigl[\mathcal E_{i+1:j-1}\bigl(G_i(x_i)^{\T}\mathcal E_{<i}(1)G_i(x_i)\bigr)\bigr]G_j(x_j)\bigr\rangle ,
+\end{equation}
+where $\mathcal E_{<i}$ is the left product of transfers and $\mathcal E_{>j}$ the right one. Every panel
+labelled ``ft-de'' in the figures is~\eqref{eq:pair} evaluated on a grid, with no sampling or smoothing
+(\texttt{squared\_pair\_grid} in \texttt{ftde.marginals}). Pointwise evaluation of $g$ costs $O(d r^2 n)$.
+
+\begin{remark}[Why Chebyshev]
+The Gram matrices and moments~\eqref{eq:gram} are exact and cheap. Chebyshev coefficients decay geometrically
+for analytic amplitudes, and chebdGE already builds cross approximations directly in this format. B-splines, as in
+TTDE, would give banded Gram matrices but piecewise-polynomial derivatives, and the smoothness functionals of
+\S\ref{sec:reg} are more natural in a global polynomial basis. The price is the global support of $T_i$: a
+localized error in coefficients spreads over the whole axis. This is one mechanism for the ringing discussed in
+\S\ref{sec:swirl}.
+\end{remark}
+
+%======================================================================
+\section{Fitting without noise}
+\label{sec:fit}
+
+\subsection{Objective and optimizer coordinates}
+With training data $\{X_i\}$ in $\Omega$ the objective is
+\begin{equation}\label{eq:nll}
+  \mathcal L(\mathcal A)=-\frac1N\sum_{i=1}^N\log g_{\mathcal A}(X_i)^2+\log Z(\mathcal A),
+\end{equation}
+minimized over the fixed-rank, fixed-degree coefficient set. The problem is nonconvex. Minibatch gradients come
+from JAX automatic differentiation of~\eqref{eq:nll}, whose ingredients are all polynomial evaluations and
+transfer contractions.
+
+\paragraph{Physical ($L^2$) coordinates.}
+Adam~\cite{kingma2015adam} rescales each coordinate separately, so its behaviour depends on the parametrization.
+Chebyshev coefficients are not $L^2$-orthonormal ($M_k\neq I$), and a unit step in a high-degree coefficient
+changes $g$ much more in some directions than in others. We therefore optimize $B_k=A_kL_k$ (acting on the mode index),
+where $M_k=L_kL_k^\T$ is a Cholesky factor. In these coordinates the Euclidean inner product of mode vectors equals
+the $L^2([a_k,b_k])$ inner product of the univariate functions. The objective is unchanged. A \emph{Sobolev}
+variant uses the metric $M_k+\lambda w_kD_k^{(s)}$, with $D_k^{(s)}$ the derivative Gram matrix of
+\S\ref{sec:sobolev}. This also changes only the optimizer coordinates, and it helps high-rank noisy fits whose
+high-order directions are stiff.
+
+\paragraph{Schedule.}
+Adam, with global-norm gradient clipping at~1, a cosine learning-rate decay to 10\% of its initial value, and
+minibatches drawn with replacement. Held-out NLL (or held-out NLL plus penalty) is evaluated every 400 steps, and
+the best checkpoint is returned. Typical settings: 8{,}000 steps, learning rate $10^{-3}$, batch 2048 (noise-free);
+$5\cdot 10^{-4}$, batch 256 (noisy).
+
+\subsection{Initialization by chebdGE cross approximation}
+Let $\hat f$ be a Gaussian KDE of (a 5{,}000-point subsample of) the training data, with a diagonal bandwidth chosen by
+least-squares cross-validation (LSCV)~\cite{rudemo1982empirical,bowman1984alternative} as a scalar multiple of Scott's rule~\cite{scott2015multivariate}. We run
+chebdGE's TT-qTensGE on $\sqrt{\hat f}$ (up to a scale) with the target rank and $25$ modes. It builds each TT core
+by Gaussian elimination on the stage function $F_k(\alpha,x_k;x_{>k})$ with pivots found by a multi-start search,
+and represents left indices by prefix points. This is a continuous analogue of TT-cross~\cite{oseledets2010ttcross} and of the Gaussian-elimination constructors of Chebfun2/3~\cite{townsend2013chebfun2,hashemi2017chebfun3}. This gives an initial amplitude in the right functional class that is
+already a sensible density, unlike random or rank-one starts.
+\begin{remark}
+When the target is a thin tube in many dimensions (\S\ref{sec:swirl}), the LSCV KDE is so concentrated that the pivot
+search can miss it entirely and return a rank-one, essentially empty TT. The implementation then broadens only the
+initializer bandwidth ($\times2,\times4$, then a quarter of the box). A candidate is accepted once all ranks exceed one
+and every observation has finite initial log density.
+\end{remark}
+
+\subsection{Capacity continuation}
+Rank and degree are increased by continuation. The modes are zero-padded, the TT is left-orthonormalized in
+physical coordinates (QR of each unfolded $B_k$, pushing $R$ into the next core), and the cores are embedded in
+larger ranks with a small random perturbation of relative size $10^{-3}$ in the new blocks. The represented density
+changes only by that perturbation. The perturbation is necessary: if the new rank blocks are exactly zero, the
+gradient with respect to them vanishes identically, because every term involving a new direction contains another
+zero block, and the optimizer never uses them.
+
+%======================================================================
+\section{Deconvolution: the exact convolved likelihood}
+\label{sec:deconv}
+
+\subsection{Model and ill-posedness}
+Under~\eqref{eq:noisy-model} the observation density of the model is
+\begin{equation}\label{eq:q}
+  q_{\mathcal A}(y)=\bigl(U*p_{\mathcal A}\bigr)(y)=\frac1{Z(\mathcal A)}\int_\Omega U(y-x)\,g_{\mathcal A}(x)^2\dd x,
+\end{equation}
+and we minimize $-\frac1N\sum_i\log q_{\mathcal A}(Y_i)$ (plus a penalty) over $\mathcal A$. Every noisy observation
+is retained, including those outside $\Omega$. The latent box $\Omega$ is the $0.5$--$99.5\%$ quantile box of the
+noisy data padded by 5\%. Since $\hat q=\hat U\hat p$, directions of $p$ at frequencies where $\hat U$ is small are
+barely visible in $q$. For Gaussian (supersmooth) noise the minimax rates for $p$ are only logarithmic in
+$N$~\cite{fan1991optimal,carroll1988optimal,stefanski1990deconvolving}. Two consequences drive the design:
+held-out \emph{noisy} likelihood is nearly flat across candidates whose latent densities differ visibly, and
+regularization is indispensable.
+
+\subsection{Tensor-train noise kernels}
+We assume $U$ is (represented by) a Chebyshev TT on a \emph{difference box} $W=\prod_k[u_k,v_k]$:
+$U(z)=H_1(z_1)\cdots H_d(z_d)$, $H_k(z)=\sum_{l<m_k}C_k^{(l)}T_l(\sigma_k(z))\in\R^{s_{k-1}\times s_k}$, with
+$\sigma_k$ the affine map of $[u_k,v_k]$ to $[-1,1]$. For observations in $\Omega^{\rm obs}=\prod[c_k,e_k]$ the
+window condition is
+\begin{equation}\label{eq:window}
+  u_k\le c_k-b_k,\qquad v_k\ge e_k-a_k\qquad(k=1,\dots,d),
+\end{equation}
+so that every difference $y_k-x_k$ that occurs lies in $[u_k,v_k]$. Examples used here:
+\begin{itemize}[leftmargin=2em,itemsep=1pt]
+  \item diagonal Gaussians: $s_k=1$, each $H_k$ a Chebyshev interpolant accurate to $10^{-11}$ relative;
+  \item Gaussian mixtures $\sum_c w_c\,\mathcal N(0,\Sigma_c)$ with block-diagonal $\Sigma_c$: the block-diagonal TT sum of
+  the components, with ranks adding. The cryo-EM kernel is a 4-component diagonal mixture obtained by clustering
+  the supplied per-image variances;
+  \item correlated $2\times2$ blocks: interpolate the bivariate Gaussian on a $513\times513$ tensor Chebyshev grid,
+  take a 2D DCT, and truncate the SVD of the coefficient matrix (relative tolerance $10^{-13}$). This yields two cores
+  with an inner rank of about 28 for $\rho=0.6$.
+\end{itemize}
+
+\subsection{Exact evaluation}
+\begin{proposition}[Exact convolved density]\label{prop:exact}
+Let $g$ be a Chebyshev TT on $\Omega$ with $n_k$ modes and $U$ a Chebyshev TT on $W$ with $m_k$ modes satisfying
+\eqref{eq:window}. For $y\in\Omega^{\rm obs}$ and $s\le 2n_k-2$, define the \emph{moment functions}
+\[
+  \phi_k^{\beta\delta}(y_k;s)=\int_{a_k}^{b_k}H_k^{\beta\delta}(y_k-x)\,T_s(\tau_k(x))\dd x .
+\]
+Then
+\begin{equation}\label{eq:qcontract}
+\begin{aligned}
+  Z\,q(y)&=\Phi_d(y_d)\circ\cdots\circ\Phi_1(y_1)(1),\\
+  \Phi_k(y_k)(S)[\gamma,\gamma',\delta]&=\sum_{\alpha,\alpha',\beta}\sum_{i,j}S[\alpha,\alpha',\beta]\,
+  A_k^{(i)}[\alpha,\gamma]A_k^{(j)}[\alpha',\gamma']\;
+  \tfrac12\bigl(\phi_k^{\beta\delta}(y_k;i{+}j)+\phi_k^{\beta\delta}(y_k;|i{-}j|)\bigr),
+\end{aligned}
+\end{equation}
+where the states $S$ are $r_{k-1}\times r_{k-1}\times s_{k-1}$ arrays. Moreover:
+\begin{enumerate}[label=(\alph*),itemsep=1pt]
+\item for fixed $y_k$, $\phi_k(y_k;s)$ is computed exactly by Gauss--Legendre quadrature on $[a_k,b_k]$ with
+$Q_k=n_k+\lfloor (m_k-1)/2\rfloor$ nodes;
+\item $y_k\mapsto\phi_k^{\beta\delta}(y_k;s)$ is a polynomial of degree at most $m_k-1$, so it equals its
+$m_k$-point Chebyshev interpolant on $[c_k,e_k]$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+Formula~\eqref{eq:qcontract} is Fubini applied to $U(y-x)g(x)^2=\prod_k H_k(y_k-x_k)\otimes G_k(x_k)\otimes G_k(x_k)$,
+followed by the linearization $T_iT_j=\frac12(T_{i+j}+T_{|i-j|})$. For (a), the window condition puts
+$y_k-x\in[u_k,v_k]$ for all $x\in[a_k,b_k]$, so the integrand is a polynomial in $x$ of degree
+$\le (m_k-1)+(2n_k-2)\le 2Q_k-1$ (check both parities of $m_k$). For (b), $H_k^{\beta\delta}(y-x)=\sum_{l<m_k}c_l\,T_l(\sigma_k(y-x))$ is a polynomial of
+degree $\le m_k-1$ in $y$ for every $x$, and integration in $x$ preserves this.
+\end{proof}
+
+The implementation (\texttt{TTConvolution.prepare}) evaluates (a) at the $m_k$ Chebyshev points of
+$[c_k,e_k]$ once, before optimization, and stores the resulting \emph{moment cores}, the Chebyshev coefficients of
+$\phi_k(\cdot;s)$ for $s\le 2n_k-2$. During training, each observation needs only a Chebyshev evaluation of these
+cores and the contraction~\eqref{eq:qcontract}. The latter is three products per core, costing
+$O(r^3 s\,n+r^2s^2n^2)$ per observation and core. Block-diagonal (mixture) kernels are contracted block by
+block. The normalizer $Z$ is shared with the noise-free model, and $\int q=\int_W U$. Every fit ends with an
+independent check at eight validation points against a direct (unprepared) evaluation at twice the quadrature
+order, and the fit is rejected if any log density differs by more than $10^{-7}$. The largest difference observed
+across all gallery fits is $2.1\cdot10^{-12}$.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[core/.style={draw,rounded corners,minimum width=9mm,minimum height=6mm,fill=blue!8},
+  ker/.style={draw,rounded corners,minimum width=9mm,minimum height=6mm,fill=orange!15},
+  mom/.style={draw,circle,inner sep=1.5pt,fill=gray!15}]
+\foreach \k/\lab in {0/1,1/2,2/3,3/d}{
+  \node[core] (g\k) at (2.4*\k,1.2) {$A_{\lab}$};
+  \node[core] (h\k) at (2.4*\k,-1.2) {$A_{\lab}$};
+  \node[ker] (u\k) at (2.4*\k+0.9,0) {$C_{\lab}$};
+  \node[mom] (m\k) at (2.4*\k,0) {$\phi_{\lab}$};
+  \draw (g\k) -- node[left,font=\scriptsize]{$i$} (m\k);
+  \draw (h\k) -- node[left,font=\scriptsize]{$j$} (m\k);
+  \draw (u\k) -- (m\k);
+}
+\node[font=\small] at (4.5,-1.95) {observation coordinate $y_k$ enters only through the moment tensor $\phi_k(y_k)$};
+\foreach \k/\l in {0/1,1/2,2/3}{
+  \draw[thick] (g\k) -- (g\l); \draw[thick] (h\k) -- (h\l); \draw[thick,orange!70!black] (u\k) -- (u\l);}
+\node at (6.0,1.2) {$\cdots$};
+\end{tikzpicture}
+\caption{Tensor network for $Z\,q(y)$ in~\eqref{eq:qcontract}. Two copies of the amplitude TT (blue) and the noise TT
+(orange) meet at the per-axis moment tensors $\phi_k(y_k)$. These are exact polynomials in $y_k$, precomputed once.
+The contraction proceeds left to right with an $r\times r\times s$ state.}
+\label{fig:network}
+\end{figure}
+
+\begin{remark}[What is and is not exact]
+The only approximation in the likelihood is the representation of the prescribed noise by the Chebyshev TT
+$U$ on the window $W$. That representation is checked against the analytic kernel (to $10^{-9}$ of its peak for
+the kernels used here) and can be made as accurate as desired by adding modes. In particular there is no sampling of
+the noise and no approximation of $g^2$ by a lower-rank TT. Chebyshev approximations of Gaussians can have
+tiny negative tails. Plots clip these, and the clipped mass is recorded and required to be below $10^{-5}$.
+\end{remark}
+
+%======================================================================
+\section{Regularization}
+\label{sec:reg}
+
+\subsection{Amplitude Sobolev seminorms}
+\label{sec:sobolev}
+For $s\in\{1,2\}$ and length scales $\ell_k>0$ define
+\begin{equation}\label{eq:sobolev}
+  R_s(\mathcal A)=\sum_{k=1}^d \ell_k^{2s}\,\frac{\norm{\partial_k^s g_{\mathcal A}}_{L^2(\Omega)}^2}{\norm{g_{\mathcal A}}_{L^2(\Omega)}^2}.
+\end{equation}
+It is invariant under gauge, scale and sign, since it depends only on $p_{\mathcal A}$. For $s=1$,
+\begin{equation}
+  \frac{\norm{\partial_k g}^2}{\norm g^2}=\int\bigl(\partial_k\sqrt{p}\bigr)^2=\frac14\int\frac{(\partial_kp)^2}{p},
+\end{equation}
+one quarter of the location Fisher information of $p$ along axis $k$. So $R_1$ penalizes exactly the quantity that a
+noisy likelihood cannot see well. The numerator is computed exactly by replacing $M_k$ with the derivative Gram
+matrix $D^{(s)}_k=\Delta_k^sM_k(\Delta_k^s)^\T$ in one factor of the transfer recursion, where $\Delta_k$ is the Chebyshev
+differentiation matrix scaled by $2/(b_k-a_k)$. With $(N_k,E_k)$ the running (numerator, norm) states,
+$N_k=\mathcal E_k(N_{k-1})+\ell_k^{2s}\mathcal D_k(E_{k-1})$ and $E_k=\mathcal E_k(E_{k-1})$. In deconvolution we take
+$\ell_k$ to be the standard deviation of the $k$-th univariate marginal of $U$, computed from the noise TT itself,
+and use $s=2$ (``amplitude $H^2$''). Mixed derivatives are omitted.
+
+\subsection{Marginal Fisher-visibility filter}
+\label{sec:fisher}
+The Sobolev penalty damps every high-frequency direction equally. The \emph{visibility filter} instead damps
+the directions the noise actually hides. Fix an axis $k$, a reference marginal density $\rho$ on $[a_k,b_k]$
+(the \emph{pilot}, \S\ref{sec:pilot}), and the univariate noise marginal $u$ of $U$. Consider amplitude
+perturbations $\sqrt\rho\mapsto\sqrt\rho+th$ with $h\perp\sqrt\rho$ in $L^2$ and $\norm h=1$. The complete-data
+Fisher information of $t$, divided by four, equals $\norm h^2=1$. The \emph{observed} (noisy) one is
+\begin{equation}\label{eq:fisher}
+  \mathcal F(h,h)=\int\frac{\bigl(u*(\sqrt\rho\,h)\bigr)^2}{u*\rho}\dd y\in[0,1],
+\end{equation}
+after projecting out the normalization direction. It lies in $[0,1]$ because the noisy score is a conditional
+expectation of the clean score. Discretize $h$ in the $L^2$-orthonormal Chebyshev basis restricted to
+$\sqrt\rho^{\perp}$, and diagonalize $\mathcal F=\sum_m\lambda_mv_mv_m^\T$. With a visibility floor $\alpha>0$ the
+per-axis penalty operator is
+\begin{equation}\label{eq:filter}
+  P_k=\sum_m\frac{\alpha}{\alpha+\lambda_m}\,v_mv_m^\T\qquad\text{(and }P_k\sqrt\rho=0\text{)},
+\end{equation}
+mapped back to Chebyshev coefficients. The functional $R_F(\mathcal A)=\sum_k\ip{g}{(P_k)_{\text{axis }k}\,g}/\norm g^2$
+is computed by the same two-state recursion as $R_s$, with $P_k$ in place of $D_k^{(s)}$. Nearly invisible directions
+($\lambda\ll\alpha$) receive weight $\approx 1$, well-observed ones ($\lambda\gg\alpha$) weight $\approx\alpha/\lambda$, and
+the reference itself is free. The full correlated $U$ still enters the likelihood. Only the regularizer uses
+marginal geometry, and it needs no Gaussian assumption on $U$.
+
+\subsection{Pilot marginals}
+\label{sec:pilot}
+Pilots are exponential-family marginals $\log\rho_k=\sum_{j=1}^{m}\theta_{kj}T_j\circ\tau_k$ with $m\in\{2,4,6,8\}$,
+either shared across axes (in standardized coordinates) or separate. They are fitted by the binned noisy
+marginal likelihood through the univariate noise marginal (L-BFGS, 1{,}600 bins, at most 1{,}200 iterations),
+from a moment-corrected Gaussian start. Degree and sharing are chosen by the rule of \S\ref{sec:select}, with the
+parameter count as the complexity.
+
+%======================================================================
+\section{Model selection from noisy observations}
+\label{sec:select}
+
+Let $\ell_c(y_v)$ be the held-out log density of candidate $c$ at validation point $y_v$ ($v=1,\dots,V$), and
+$c^\star=\argmin_c\bigl(-\frac1V\sum_v\ell_c(y_v)\bigr)$. For each $c$ form the paired excesses
+$e_{cv}=\ell_{c^\star}(y_v)-\ell_c(y_v)$, their mean $\bar e_c$, and a cluster-robust standard error $\mathrm{SE}_c$
+(clusters are MCMC chains for Ginzburg--Landau, single observations otherwise). The eligible set is
+$\{c:\bar e_c\le \mathrm{SE}_c\}$, and among eligible candidates we pick the one with the smallest value of a
+\emph{common} roughness functional (the Fisher penalty with a common filter, or $R_2$ with common length scales).
+This is the one-standard-error rule~\cite{hastie2009elements} applied to paired differences. It is a heuristic,
+not a post-selection confidence statement, and the same validation split is reused across stages. As the
+experiments show (\S\ref{sec:swirl}), it is also the weakest link. Candidates that differ visibly in the latent
+density can be indistinguishable in noisy NLL.
+
+%======================================================================
+\section{The two recipes}
+\label{sec:recipes}
+
+\begin{algorithm}[H]
+\caption{Gallery recipe for Ginzburg--Landau (\texttt{scripts/refresh\_density\_fits.py})}
+\label{alg:gl}
+\begin{algorithmic}[1]
+\STATE Latent box: training min/max $+10\%$ (noise-free) or noisy $0.5$--$99.5\%$ quantiles $+5\%$ (noisy).
+\STATE LSCV bandwidth; TT-qTensGE of $\sqrt{\mathrm{KDE}}$ at rank $r$ ($8$ for $d\le 8$, $10$ for noisy or $d\le14$, else $14$), 21 (noise-free) or 25 (noisy) modes, 64 starts.
+\IF{noise-free}
+  \STATE Adam on~\eqref{eq:nll}, 8{,}000 steps, lr $10^{-3}$, batch 2048; checkpoint by validation NLL.
+\ELSE
+  \STATE Warm-up: Adam on noisy NLL $+\;3\cdot10^{-5}R_2$, 8{,}000 steps, lr $5\cdot10^{-4}$, batch 256.
+  \STATE Pilots $\rho_k$ (degrees 2--8, shared/separate) selected by the paired one-SE rule.
+  \STATE Pad to 33 modes (more if the pilot amplitude is under-resolved); build $R_F$ with $\alpha=0.01$.
+  \STATE For $\lambda\in\{0.1,0.3,1\}$: continue from the warm-up on noisy NLL $+\lambda R_F$, 8{,}000 steps.
+  \STATE Select among warm-up and the three Fisher fits: paired one-SE, then minimum common $R_F$.
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\caption{High-capacity recipe for cryo-EM and swirl--pretzel (\texttt{refine\_cryoem\_continuity.py}, \texttt{swirl\_fits.py})}
+\label{alg:hi}
+\begin{algorithmic}[1]
+\STATE Base fit as in Algorithm~\ref{alg:gl} (init rank 16 for swirl), without the Fisher stage.
+\STATE For $r\in\{32,64\}$: continue at 49 modes (\S3.3). Noisy: $\lambda\in\{10^{-4},3\cdot10^{-4}\}$ times $R_2$, Sobolev preconditioning, 3{,}200 steps, lr $2\cdot10^{-4}$, batch 256, checkpoints by validation NLL $+\lambda R_2$.
+\STATE Noise-free: minimum validation NLL. Noisy: paired one-SE, then minimum common $R_2$.
+\end{algorithmic}
+\end{algorithm}
+
+For rank~64 the backward pass of~\eqref{eq:qcontract} is memory-bound: one intermediate has
+$B\cdot r^2 s\,n$ entries. The same 256-row minibatch gradient is therefore accumulated over four chunks, which gives an
+identical gradient.
+
+\input{experiments}
+
+\bibliographystyle{abbrvnat}
+\bibliography{citations}
+
+\end{document}

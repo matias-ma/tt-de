@@ -1,0 +1,61 @@
+{
+  "selected": "lbfgs",
+  "selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 2,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.550095889861857,
+        "excess_nll": 0.009170684703993695,
+        "paired_cluster_se": 0.0011300764698932745,
+        "roughness": 2.4774844224294577,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.5413875727746076,
+        "excess_nll": 0.0004623676167441049,
+        "paired_cluster_se": 0.0005512949323211087,
+        "roughness": 4.252999426538613,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.5409252051578637,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 4.222913893505001,
+        "eligible": true
+      }
+    ]
+  },
+  "previous_direct_name": "lbfgs",
+  "previous_direct_nll": 3.534806632680035,
+  "paired_new_minus_previous": [
+    {
+      "delta_nll": 0.015289257181821843,
+      "paired_se": 0.002307447627384132
+    },
+    {
+      "delta_nll": 0.0065809400945722515,
+      "paired_se": 0.00153783559567787
+    },
+    {
+      "delta_nll": 0.006118572477828148,
+      "paired_se": 0.0014381493351368186
+    }
+  ],
+  "new_nll": [
+    3.550095889861857,
+    3.5413875727746076,
+    3.5409252051578637
+  ],
+  "uses_signal_pilot": false,
+  "uses_clean_truth": false,
+  "files": {
+    "artifacts/direct_optimization/cryoem_dim4/lbfgs/fit.npz": "1c2da4101153de5e9bae8a217cbebe806814cf627c9f1b84a89ee8079d616ef3",
+    "artifacts/noise_free_v2/cryoem_dim4/hessian_0.01_logpen/fit.npz": "90b94d162851a4fd1440d24f0fbdf1ea9acbe2e0fb9e644afce5c25d0fd14f21",
+    "artifacts/noise_free_v2/cryoem_dim4/hessian_0.003_logpen/fit.npz": "cdcfceb3339cc7b9407d2c1ee0d24ede6fa10d99efc05eadd001c23959d377a9",
+    "artifacts/noise_free_v2/cryoem_dim4/lbfgs/fit.npz": "570755c15004d0a55de395ee204c78f1e01486e4d4139161dbd2726fc51c2b7d"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "selected": "historical",
+  "new_selected": "lbfgs",
+  "names": [
+    "historical",
+    "constant_h2_0.0001",
+    "constant_h2_0.001",
+    "lbfgs"
+  ],
+  "validation_nll": [
+    3.531476721714644,
+    3.5359746345406324,
+    3.5375750714553487,
+    3.534806632680035
+  ],
+  "roughness": [
+    17.398239734180585,
+    36.895970378719475,
+    7.086035680564714,
+    36.37610105951467
+  ],
+  "selection": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.531476721714644,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 17.398239734180585,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.5359746345406324,
+        "excess_nll": 0.0044979128259879635,
+        "paired_cluster_se": 0.0011831243111442005,
+        "roughness": 36.895970378719475,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.5375750714553487,
+        "excess_nll": 0.006098349740704077,
+        "paired_cluster_se": 0.0012896902701908827,
+        "roughness": 7.086035680564714,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.534806632680035,
+        "excess_nll": 0.0033299109653909223,
+        "paired_cluster_se": 0.001004874527443454,
+        "roughness": 36.37610105951467,
+        "eligible": false
+      }
+    ]
+  },
+  "new_selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 2,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.5359746345406324,
+        "excess_nll": 0.0011680018605970417,
+        "paired_cluster_se": 0.0006917105112057999,
+        "roughness": 36.895970378719475,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.5375750714553487,
+        "excess_nll": 0.002768438775313156,
+        "paired_cluster_se": 0.0011757423591053934,
+        "roughness": 7.086035680564714,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.534806632680035,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 36.37610105951467,
+        "eligible": true
+      }
+    ]
+  },
+  "source": "constant_h2_0.0001",
+  "uses_clean_truth": false,
+  "historical_budget_differs": true
+}

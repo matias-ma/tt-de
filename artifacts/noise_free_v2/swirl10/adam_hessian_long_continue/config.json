@@ -1,0 +1,11 @@
+{
+  "name": "adam_hessian_long_continue",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "parent": "artifacts/noise_free_v2/swirl10/hessian_0.001/fit.npz",
+  "uses_signal_pilot": false,
+  "uses_clean_truth": false,
+  "sweeps": 20,
+  "adam_steps": 12000,
+  "learning_rate": 0.0003
+}

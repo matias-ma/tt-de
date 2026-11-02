@@ -1,0 +1,32 @@
+{
+  "method": "gaussian_guided",
+  "seed": 1,
+  "rank": 32,
+  "modes": 49,
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 129,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 17,
+        "interpolation_condition": 1.6845627460023613,
+        "sample_matrix_relative_tail": 1.1233295048895792e-11
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 5.077275831710607,
+        "sample_matrix_relative_tail": 1.513774150876758e-10
+      },
+      {
+        "axis": 2,
+        "rank": 15,
+        "interpolation_condition": 1.9449064903780648,
+        "sample_matrix_relative_tail": 6.160379973053963e-11
+      }
+    ]
+  },
+  "seconds": 3.7423328310251236,
+  "pilot_is_final_model": false
+}

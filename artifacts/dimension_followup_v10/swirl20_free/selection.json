@@ -1,0 +1,67 @@
+{
+  "selected": "hessian_0.001",
+  "minimum_nll": "hessian_0.001",
+  "names": [
+    "hessian",
+    "hessian_0.001",
+    "hessian_0.0003",
+    "hessian_0.0001"
+  ],
+  "details": {
+    "minimum_nll_index": 1,
+    "selected_index": 1,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": -6.926029815120095,
+        "excess_nll": 0.0006075262950175387,
+        "paired_cluster_se": 0.003098681227103112,
+        "roughness": 0.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -6.926637341415113,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 0.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -6.906026540646801,
+        "excess_nll": 0.020610800768310938,
+        "paired_cluster_se": 0.002957166774325567,
+        "roughness": 0.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -6.897709173114023,
+        "excess_nll": 0.028928168301088915,
+        "paired_cluster_se": 0.0033015281578291883,
+        "roughness": 0.0,
+        "eligible": false
+      }
+    ]
+  },
+  "files": {
+    "artifacts/dimension_followup_v10/swirl20_free/hessian/fit.npz": "292bdd63093ec16163e3bd8dd7dcd15fe804d0ee8fc8a366f742dbc2303f1a52",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian/config.json": "43ec310b4bc2f8e458764a5aa6ca9726c0c2e353d1e49ce0dce62b368ff1081f",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian/result.json": "d7829a699279a8218ebc920bf723991e2bf4b83958ed7d5e72fcdba03100b6be",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian/validation.npy": "8fb60e3c91c69fa1fff9a4429166ed8b86bfa8a34d9738aa54ab6a839cd351c2",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.001/fit.npz": "68fa4d422218069936d02c0013dc22a834edfa142f49d3275c82d8d4794d6b9d",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.001/config.json": "c4bff68b4ada8f7650064659dcf09f7e4e972989193e419dc5f76f7ee5397aa1",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.001/result.json": "e807501f4e0eaca11634893eb35d97a30d144863dee602bde14c11cd893d3760",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.001/validation.npy": "fb07969d907dc501cd2e2bd71e1d8004a8b23dc0f24e3f5b2dde11c5fd42bca9",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0003/fit.npz": "48cc183fc7518d5fb89b2a3691b1004f46678ae1b4425a09686ae25cbfbf448b",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0003/config.json": "c570d87928716a7d2369f4826b89364d6b17065549e056ff22a6598577dc89cb",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0003/result.json": "5a5137aaef84038bfc4677773c2e04c89ee52427942f87e9d007468573092f83",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0003/validation.npy": "00007f8437deb4ffdbb0a6592cf51564ca63917acb206954a57228728ec827a4",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0001/fit.npz": "af5dcbfe822b7d08bd27c22dda4812a0aabada985f6daec8d54c03e048711009",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0001/config.json": "7980db720a3b8b46096a00093dc8ee3e9733d994c35e884de99e025597b0602a",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0001/result.json": "d5362c07a902d7aedf69d82326ac3ad27b82f34cb111d2f685e91e91c83ca790",
+    "artifacts/dimension_followup_v10/swirl20_free/hessian_0.0001/validation.npy": "602222fe078a813d7a4727839176e62dc0b35666d1bc1592f8c6c80ffe12d7cb",
+    "artifacts/swirl/swirl_free_dim20/data.npz": "4f66646f923abce9cfa95fd88c180929e18f00825cd0af4faae0a3211f0c19df",
+    "artifacts/dimension_followup_v10/swirl20_free/protocol.json": "42f822c62fd13a211114f9e0fe43e3a22f3b02051c53669055e3dee8adc25cfa"
+  },
+  "truth_evaluated": false
+}

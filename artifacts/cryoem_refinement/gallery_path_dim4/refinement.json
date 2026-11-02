@@ -1,0 +1,24 @@
+{
+  "base": "/home/ma4473/ft-de/artifacts/figure_refresh/cryoem_path_dim4",
+  "experiment": "/home/ma4473/ft-de/artifacts/cryoem_refinement/path_dim4_rank20",
+  "configuration": {
+    "base": "artifacts/figure_refresh/cryoem_path_dim4",
+    "noise_metadata": "artifacts/cryoem_refinement/noise_path_dim4.npz",
+    "output": "artifacts/cryoem_refinement/path_dim4_rank20",
+    "steps": 4000,
+    "modes": 49,
+    "rank": 20,
+    "strengths": [
+      3e-05,
+      0.0003
+    ],
+    "correct_projection": true
+  },
+  "continuation": null,
+  "kernel_description": "4-component stationary Gaussian noise mixture; diagonal within components; supplied noise metadata only",
+  "baseline_nll": 3.623018829485604,
+  "selected_nll": 3.543929394420467,
+  "baseline_excess_nll": 0.07908943506513694,
+  "baseline_paired_se": 0.004885077325245876,
+  "selection_note": "Held-out noisy likelihood with paired one-SE rule and common amplitude curvature; no clean data or labels"
+}

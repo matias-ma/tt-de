@@ -1,0 +1,246 @@
+{
+  "published_at_utc": "2026-09-25T04:24:10.543099+00:00",
+  "figure_count": 48,
+  "figures": [
+    {
+      "path": "figs/cryoem/cryoem_dim10_marg_01.png",
+      "sha256": "6f80d96a7c454a5ebaeaea8bdcd67a9093eb122bcee6f8db423e5150330a8ef4",
+      "bytes": 448528
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim10_marg_23.png",
+      "sha256": "72849a47006b49a6476e92fa64557851246d01900ff10e86847d42343eb89107",
+      "bytes": 486775
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim10_marg_89.png",
+      "sha256": "a1315cc19b8fd655c2222e31d1c2e0eac7f78ab5055c996848a2c4deb5203364",
+      "bytes": 451927
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim20_marg_01.png",
+      "sha256": "61b242ddc49ce4b9a748215dc856183935b457fb06a3286fb0fac6960a816e48",
+      "bytes": 473257
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim20_marg_019.png",
+      "sha256": "a17fabafd9d974a637775e878dafc16f9e004e47cb7a571cab68999c02651787",
+      "bytes": 460736
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim20_marg_23.png",
+      "sha256": "f7513ccd97f671b20b65eddc09f355a1f33fc71f6b10481b80737796f3c8c233",
+      "bytes": 488698
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim20_marg_89.png",
+      "sha256": "4a184600bc891fcd5c8018b8374fcb4f9acc07e09f952edbc78627301dcb9d74",
+      "bytes": 470995
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim4_marg_01.png",
+      "sha256": "0143d20f0859e8f3efabd5e51394b0db295472fdfc1e2462dec5a00a38936dcc",
+      "bytes": 450829
+    },
+    {
+      "path": "figs/cryoem/cryoem_dim4_marg_23.png",
+      "sha256": "795e9045b0878a7db42be83b3673badb12c7ff0314234021dd7148fbf3983855",
+      "bytes": 486091
+    },
+    {
+      "path": "figs/cryoem/cryoem_path_dim10.png",
+      "sha256": "1de05fe0748713a01a1929e95a81c1b91b11619ba4fcb02f4c80f8bd0a719a82",
+      "bytes": 339720
+    },
+    {
+      "path": "figs/cryoem/cryoem_path_dim4.png",
+      "sha256": "4b87cc082727dbd010e23375688552b92bad2fef4d0943b95cdf81f59f01a03c",
+      "bytes": 437562
+    },
+    {
+      "path": "figs/cryoem/cryoem_path_training_dim4.png",
+      "sha256": "cbb66b7a04c39524372f74d6c122ea6bf3ee504b94abc6115ceff220e6668211",
+      "bytes": 359815
+    },
+    {
+      "path": "figs/cryoem/cryoem_training_dim10.png",
+      "sha256": "46e1528a770004ea34dbccb47a4f0477ec13c0e4aee997d795e8cddc68ef7ea0",
+      "bytes": 352574
+    },
+    {
+      "path": "figs/cryoem/cryoem_training_dim20.png",
+      "sha256": "4889493ee5b8aeea919536e633bdb7a0fa3e9c561dd4b81c89fa10f6b335a8a2",
+      "bytes": 382527
+    },
+    {
+      "path": "figs/cryoem/cryoem_training_dim4.png",
+      "sha256": "0f23ab5acd5b1c63902999f5c7ffe01013d65ca045402c8c3aadf0d34cb08756",
+      "bytes": 333303
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim10_marg_01.png",
+      "sha256": "e8aab804f256b6014a2831775a54b7a9990dda2b6e072a1c607dce744b92ed60",
+      "bytes": 291922
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim10_marg_09.png",
+      "sha256": "280300da1f57b6457dad2dc315c92275801beac0d27e8c89aa55646d39a90ed9",
+      "bytes": 295932
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim10_marg_23.png",
+      "sha256": "c8919876ba831be541bed39951568d64137e3d46df0da38cca00da126367b4c5",
+      "bytes": 294713
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim14_marg_01.png",
+      "sha256": "b0f9908a68309f2955b767adca65f1007af8ce8b1898b253c3f59ec396b7fe52",
+      "bytes": 291086
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim14_marg_013.png",
+      "sha256": "9d0cd5544a4cf715ada644a83ecc89ed86250e34722e23de73c250e6938fcb8f",
+      "bytes": 314726
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim14_marg_23.png",
+      "sha256": "f92de4efa99129de52f9529ded8ac17c46726a609103037b641fa6b9a07d38c1",
+      "bytes": 289690
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim20_marg_01.png",
+      "sha256": "1b856990f301714a3a8ee2115546cd23b731d3de9cc14a5b8624c9e6ddfe8919",
+      "bytes": 288378
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim20_marg_019.png",
+      "sha256": "75e8674554f59f339d4da23c1534eba28ddc4db0e03757d56bcaa01a6c0bbd41",
+      "bytes": 307429
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim20_marg_23.png",
+      "sha256": "68937131b72d98639c0d30d98ced69a966416b137ffda2b5c4570760ca909e65",
+      "bytes": 291146
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim6_marg_01.png",
+      "sha256": "aa4791017bb0259a0874203718e82f6f0c69c2626780014f76e09be6049ea5d4",
+      "bytes": 298456
+    },
+    {
+      "path": "figs/ginzburg_landau/noise_free_dim6_marg_23.png",
+      "sha256": "90e27a3c6186b36d94905bae992fe197dba9d59fc6bfad05d7a3394b9813d9d5",
+      "bytes": 299587
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim10_marg_01.png",
+      "sha256": "6f57520e0aa78ee42b4a0ccd0cf012ab7e8e70cccd14d5b14b1fc7cdaab80fbe",
+      "bytes": 476459
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim10_marg_09.png",
+      "sha256": "db2556a942ece9ed2eeb420d48956802a2ee21242d26c4dec82478faa5807094",
+      "bytes": 490021
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim10_marg_23.png",
+      "sha256": "bb3a51d1638e3fcd5d91ebcd5d55f3f7916d9c25d50f56c527027ef5fb229569",
+      "bytes": 475816
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim14_marg_01.png",
+      "sha256": "2a6833c40ef998159795a29511ad1fef7e7fef08d9366de795a7078c5d1f1ae0",
+      "bytes": 473167
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim14_marg_013.png",
+      "sha256": "434cd93e475bfb04913820bf5ac734a8d9a8b2579c6d4df6fcc8dc31dc6930e5",
+      "bytes": 490608
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim14_marg_23.png",
+      "sha256": "ef1cb0ca0f4b425b145c7f7515379966ca1647bea4c5c5ddb78fb19629c58a7e",
+      "bytes": 475436
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim20_marg_01.png",
+      "sha256": "ceec2f56ba9656e1832631d011cde6a704ff0812f9c092eaf76f288630efb8d4",
+      "bytes": 476163
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim20_marg_019.png",
+      "sha256": "1c5f19a56b5cdf37f579efbfeb5e40b811ae3955601e2736e2d289ec18af8a75",
+      "bytes": 481109
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim20_marg_23.png",
+      "sha256": "8d76a7440b5cb3d6daec5ed5a2532e124ef08ec3736816be6392040426323be1",
+      "bytes": 473690
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim6_marg_01.png",
+      "sha256": "0d1b3e69001c3d3d20c47b2fea1d1be7f5f988505e86ee1547e3b7971dfc15a8",
+      "bytes": 486521
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_mixture_scale1p5_dim6_marg_23.png",
+      "sha256": "709c5b95edf689b4c13e55d724be3550ebfb01ec5f9d704de8334701909f710a",
+      "bytes": 488442
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim10_marg_01.png",
+      "sha256": "3cffa73c886f9faa1ae55958da0c6746ca500282a03c073a0a517eaf4f66f213",
+      "bytes": 490211
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim10_marg_09.png",
+      "sha256": "f6b7a5028540159c4a8b20e66ae7591be71e41243fb0c77f2dec9d1c5ee6ad92",
+      "bytes": 504514
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim10_marg_23.png",
+      "sha256": "823497f7311772226686c61705a5fb6bd8a6cd19ba5a60bc40c595a5da123f6e",
+      "bytes": 487620
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim14_marg_01.png",
+      "sha256": "0440ab17e713a0f63ec98a37fc63cae12ad02a90bcaafeb9ba6958894e4bdb6c",
+      "bytes": 488434
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim14_marg_013.png",
+      "sha256": "fb997a77b9828632dfd7fd10fefe6ac7f54a59fe506202b4a5001db178c1e613",
+      "bytes": 501261
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim14_marg_23.png",
+      "sha256": "a74451f5c649b8bcf1209e328347c4cd274d9cf4c9ccf8aabad1f9354813c73b",
+      "bytes": 488141
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim20_marg_01.png",
+      "sha256": "d5cbc806a103f76ed8d671680f3105025442492d04c3ecca877c9268d752a3da",
+      "bytes": 490496
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim20_marg_019.png",
+      "sha256": "76d79ac417de77392425714aeb0437b29fcf95f7935bb3289c0d67b94f4e2d1d",
+      "bytes": 505286
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim20_marg_23.png",
+      "sha256": "1fa90ea17ea86f8b4ec79a78a0386e9699593f8e52beca9d027792a4e962e79d",
+      "bytes": 490899
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim6_marg_01.png",
+      "sha256": "c3670b613e6a031aab1726cc407778c28052dee4d00782b5ef9ef3dc104f8e81",
+      "bytes": 504144
+    },
+    {
+      "path": "figs/ginzburg_landau/noisy_paired_scale1p5_dim6_marg_23.png",
+      "sha256": "fc05aa14ffbcd465e13091d05a5ac3ce90b57ea27ece788774756e40652d96bd",
+      "bytes": 505947
+    }
+  ]
+}

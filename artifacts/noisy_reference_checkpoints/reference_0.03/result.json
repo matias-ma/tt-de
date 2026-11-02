@@ -1,0 +1,295 @@
+{
+  "name": "reference_0.03",
+  "strength": 0.03,
+  "best_nll": 15.628724350905207,
+  "best_step": 6800,
+  "minimum_nll": 15.628066324376679,
+  "checkpoint_selection": {
+    "minimum_nll_index": 0,
+    "selected_index": 17,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 15.628066324376679,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 21.137555282324893,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.632131957860034,
+        "excess_nll": 0.0040656334833535385,
+        "paired_cluster_se": 0.002370619484363392,
+        "roughness": 0.2562745244528308,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.629602992194135,
+        "excess_nll": 0.0015366678174546138,
+        "paired_cluster_se": 0.0019720217981481123,
+        "roughness": 0.16118139918948468,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.630092724229621,
+        "excess_nll": 0.0020263998529417076,
+        "paired_cluster_se": 0.001790998384433978,
+        "roughness": 0.14988154734733505,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.628522715839374,
+        "excess_nll": 0.0004563914626937787,
+        "paired_cluster_se": 0.001818328496801189,
+        "roughness": 0.14441702239283588,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.630014300639242,
+        "excess_nll": 0.0019479762625639234,
+        "paired_cluster_se": 0.0018602530753730672,
+        "roughness": 0.14379690214272497,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.63139143193279,
+        "excess_nll": 0.003325107556110831,
+        "paired_cluster_se": 0.0020182116735845265,
+        "roughness": 0.1357272605458773,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.629200400961025,
+        "excess_nll": 0.0011340765843442556,
+        "paired_cluster_se": 0.001959492582587851,
+        "roughness": 0.13485292080035438,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.62931052496862,
+        "excess_nll": 0.0012442005919409806,
+        "paired_cluster_se": 0.001851856751111676,
+        "roughness": 0.13381954760626077,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.63048551804096,
+        "excess_nll": 0.002419193664280633,
+        "paired_cluster_se": 0.0020025449776314317,
+        "roughness": 0.13728416951933817,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.63116562199665,
+        "excess_nll": 0.003099297619968953,
+        "paired_cluster_se": 0.002256156121037247,
+        "roughness": 0.13693555264559454,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.631516680856976,
+        "excess_nll": 0.003450356480296805,
+        "paired_cluster_se": 0.00199794701665764,
+        "roughness": 0.12573060370229094,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.628741562323196,
+        "excess_nll": 0.0006752379465169512,
+        "paired_cluster_se": 0.001559388895212227,
+        "roughness": 0.12827158297952104,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.629113154669431,
+        "excess_nll": 0.0010468302927508786,
+        "paired_cluster_se": 0.00154572048427825,
+        "roughness": 0.12994263732014935,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.630511302464932,
+        "excess_nll": 0.0024449780882517405,
+        "paired_cluster_se": 0.0018839519709108084,
+        "roughness": 0.1293313451935237,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.630089344934639,
+        "excess_nll": 0.0020230205579581688,
+        "paired_cluster_se": 0.0016393650168830536,
+        "roughness": 0.12627818745310765,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.62953716729455,
+        "excess_nll": 0.0014708429178725722,
+        "paired_cluster_se": 0.001549735276096592,
+        "roughness": 0.12641882564134632,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.628724350905207,
+        "excess_nll": 0.0006580265285273798,
+        "paired_cluster_se": 0.0015120660402884163,
+        "roughness": 0.12498282506882163,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.629913514028836,
+        "excess_nll": 0.0018471896521549498,
+        "paired_cluster_se": 0.0015036692961126125,
+        "roughness": 0.12603872791745768,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.629482139421809,
+        "excess_nll": 0.0014158150451289665,
+        "paired_cluster_se": 0.0014922786617511449,
+        "roughness": 0.12586170084063714,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.628130410560638,
+        "excess_nll": 6.408618395795009e-05,
+        "paired_cluster_se": 0.0011774795594490205,
+        "roughness": 0.1271401040361573,
+        "eligible": true
+      }
+    ]
+  },
+  "roughness": 0.12498282506882163,
+  "history": [
+    {
+      "step": 0,
+      "nll": 15.628066324376679,
+      "roughness": 21.137555282324893
+    },
+    {
+      "step": 400,
+      "nll": 15.632131957860034,
+      "roughness": 0.2562745244528308
+    },
+    {
+      "step": 800,
+      "nll": 15.629602992194135,
+      "roughness": 0.16118139918948468
+    },
+    {
+      "step": 1200,
+      "nll": 15.630092724229621,
+      "roughness": 0.14988154734733505
+    },
+    {
+      "step": 1600,
+      "nll": 15.628522715839374,
+      "roughness": 0.14441702239283588
+    },
+    {
+      "step": 2000,
+      "nll": 15.630014300639242,
+      "roughness": 0.14379690214272497
+    },
+    {
+      "step": 2400,
+      "nll": 15.63139143193279,
+      "roughness": 0.1357272605458773
+    },
+    {
+      "step": 2800,
+      "nll": 15.629200400961025,
+      "roughness": 0.13485292080035438
+    },
+    {
+      "step": 3200,
+      "nll": 15.62931052496862,
+      "roughness": 0.13381954760626077
+    },
+    {
+      "step": 3600,
+      "nll": 15.63048551804096,
+      "roughness": 0.13728416951933817
+    },
+    {
+      "step": 4000,
+      "nll": 15.63116562199665,
+      "roughness": 0.13693555264559454
+    },
+    {
+      "step": 4400,
+      "nll": 15.631516680856976,
+      "roughness": 0.12573060370229094
+    },
+    {
+      "step": 4800,
+      "nll": 15.628741562323196,
+      "roughness": 0.12827158297952104
+    },
+    {
+      "step": 5200,
+      "nll": 15.629113154669431,
+      "roughness": 0.12994263732014935
+    },
+    {
+      "step": 5600,
+      "nll": 15.630511302464932,
+      "roughness": 0.1293313451935237
+    },
+    {
+      "step": 6000,
+      "nll": 15.630089344934639,
+      "roughness": 0.12627818745310765
+    },
+    {
+      "step": 6400,
+      "nll": 15.62953716729455,
+      "roughness": 0.12641882564134632
+    },
+    {
+      "step": 6800,
+      "nll": 15.628724350905207,
+      "roughness": 0.12498282506882163
+    },
+    {
+      "step": 7200,
+      "nll": 15.629913514028836,
+      "roughness": 0.12603872791745768
+    },
+    {
+      "step": 7600,
+      "nll": 15.629482139421809,
+      "roughness": 0.12586170084063714
+    },
+    {
+      "step": 8000,
+      "nll": 15.628130410560638,
+      "roughness": 0.1271401040361573
+    }
+  ],
+  "seconds": 145.02862307010219,
+  "quadrature_log_error": 7.815970093361102e-14,
+  "settings": {
+    "setup": "artifacts/gl_rsi_trial/paired_setup.npz",
+    "output": "artifacts/noisy_reference_checkpoints",
+    "strengths": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "order": 2,
+    "n_coeffs": 33,
+    "legacy": false,
+    "steps": 8000,
+    "batch_size": 256,
+    "lr": 0.0005,
+    "n_train": 100000,
+    "noise_scale": 1.5,
+    "train_seed": 0,
+    "valid_seed": 2,
+    "warm_start": "artifacts/noisy_recovery_n25_mid/h2_3e-05/fit.npz",
+    "reference": "artifacts/noisy_reference/selected.npz",
+    "fisher_floor": null,
+    "checkpoint_rule": "paired-one-se"
+  }
+}

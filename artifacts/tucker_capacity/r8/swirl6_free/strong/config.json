@@ -1,0 +1,108 @@
+{
+  "family": "swirl",
+  "dim": 6,
+  "noise": "free",
+  "rank": 8,
+  "steps": 20000,
+  "decomposition": "tucker",
+  "domain": [
+    [
+      -2.6153829041449494,
+      2.1353599420012097
+    ],
+    [
+      -2.5865925090056257,
+      2.334055925387023
+    ],
+    [
+      -2.5956505838337525,
+      2.6386992573837866
+    ],
+    [
+      -2.5266692259693553,
+      2.444781632856721
+    ],
+    [
+      -2.404834335617087,
+      2.552188247985725
+    ],
+    [
+      -2.6844021376385765,
+      2.5190818485893076
+    ]
+  ],
+  "data": "artifacts/tucker_capacity/r8/swirl6_free/data.npz",
+  "data_sha256": "1fe62daa9c0a1ecadb82b691d29e85fe017b7e0fed3e6ef9f35e8c15c13462a2",
+  "kernel": null,
+  "noise_weights": [
+    1.0
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "modes": 49,
+  "seed": 0,
+  "perturbation": 0.01,
+  "initialization": "near-uniform native Tucker; no fitted pilot",
+  "optimizer": "Adam (TT canonical core sweeps are decomposition-specific)",
+  "selection": "minimum held-out NLL checkpoint and recipe",
+  "truth_used_for_selection": false,
+  "recipes": [
+    "strong"
+  ],
+  "strength": 0.003,
+  "objective": "logpen",
+  "recipe": "strong",
+  "microbatches": 1,
+  "core_entries": 262144,
+  "parameter_count": 264496
+}

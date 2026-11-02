@@ -1,0 +1,485 @@
+{
+  "selected_nll": "hybrid_r32_n49_l0.001_w100/nll",
+  "selected_kernel": "hybrid_r20_n25_l0.001_w10/kernel",
+  "names": [
+    "hybrid_r20_n25_l0.001_w10/nll",
+    "hybrid_r20_n25_l0.001_w10/kernel",
+    "hybrid_r20_n25_l0.001_w100/nll",
+    "hybrid_r20_n25_l0.001_w100/kernel",
+    "hybrid_r32_n49_l0.001_w10/nll",
+    "hybrid_r32_n49_l0.001_w10/kernel",
+    "hybrid_r32_n49_l0.001_w100/nll",
+    "hybrid_r32_n49_l0.001_w100/kernel",
+    "mmd_r20_n25_l0.001_w100/nll",
+    "mmd_r20_n25_l0.001_w100/kernel",
+    "mmd_r32_n49_l0.001_w100/nll",
+    "mmd_r32_n49_l0.001_w100/kernel",
+    "nll_r10_n25_l0.001_w100/nll",
+    "nll_r10_n25_l0.001_w100/kernel",
+    "nll_r10_n49_l0.001_w100/nll",
+    "nll_r10_n49_l0.001_w100/kernel",
+    "nll_r20_n25_l0.0001_w100/nll",
+    "nll_r20_n25_l0.0001_w100/kernel",
+    "nll_r20_n25_l0.001_w100/nll",
+    "nll_r20_n25_l0.001_w100/kernel",
+    "nll_r20_n25_l0.01_w100/nll",
+    "nll_r20_n25_l0.01_w100/kernel",
+    "nll_r32_n49_l0.001_w100/nll",
+    "nll_r32_n49_l0.001_w100/kernel"
+  ],
+  "nll_selection": {
+    "minimum_nll_index": 6,
+    "selected_index": 6,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.8740904378048047,
+        "excess_nll": 0.01004395321147635,
+        "paired_cluster_se": 0.001278400164254993,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8753688123589503,
+        "excess_nll": 0.011322327765622028,
+        "paired_cluster_se": 0.001480077075658946,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.870529390134986,
+        "excess_nll": 0.006482905541657606,
+        "paired_cluster_se": 0.0009994782360835729,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.870529390134986,
+        "excess_nll": 0.006482905541657606,
+        "paired_cluster_se": 0.0009994782360835729,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8652816966764063,
+        "excess_nll": 0.0012352120830777572,
+        "paired_cluster_se": 0.0005883141510573885,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8664773600495135,
+        "excess_nll": 0.0024308754561851945,
+        "paired_cluster_se": 0.0010585389179756566,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8640464845933282,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 103488.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.8640464845933282,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 103488.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.9104411528961798,
+        "excess_nll": 0.046394668302851716,
+        "paired_cluster_se": 0.004342955127123315,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.911872939823019,
+        "excess_nll": 0.04782645522969044,
+        "paired_cluster_se": 0.004431116972989069,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8852929101585634,
+        "excess_nll": 0.021246425565234543,
+        "paired_cluster_se": 0.0028209220861956045,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8863110919438855,
+        "excess_nll": 0.022264607350557464,
+        "paired_cluster_se": 0.0028995422967851713,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.9233392508256015,
+        "excess_nll": 0.059292766232273336,
+        "paired_cluster_se": 0.003870035676990857,
+        "roughness": 5500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.9241487992288975,
+        "excess_nll": 0.06010231463556938,
+        "paired_cluster_se": 0.003933350038623906,
+        "roughness": 5500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.924153727088468,
+        "excess_nll": 0.060107242495139906,
+        "paired_cluster_se": 0.004066517886430247,
+        "roughness": 10780.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.9246767743161133,
+        "excess_nll": 0.06063028972278513,
+        "paired_cluster_se": 0.004111247292421327,
+        "roughness": 10780.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8719423359921032,
+        "excess_nll": 0.007895851398775213,
+        "paired_cluster_se": 0.0012507487759710536,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.873481038498732,
+        "excess_nll": 0.009434553905404122,
+        "paired_cluster_se": 0.0015662276958859655,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.87422326670946,
+        "excess_nll": 0.010176782116132072,
+        "paired_cluster_se": 0.0012875304991503743,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.875832077276338,
+        "excess_nll": 0.011785592683010073,
+        "paired_cluster_se": 0.0015661010375728987,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8863246742193214,
+        "excess_nll": 0.022278189625992945,
+        "paired_cluster_se": 0.002321398527305147,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8878083968778756,
+        "excess_nll": 0.023761912284547666,
+        "paired_cluster_se": 0.0024636809762086003,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8658235899523783,
+        "excess_nll": 0.0017771053590501195,
+        "paired_cluster_se": 0.0006346279607506976,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8673295538629073,
+        "excess_nll": 0.003283069269579124,
+        "paired_cluster_se": 0.0011694892975625964,
+        "roughness": 103488.0,
+        "eligible": false
+      }
+    ]
+  },
+  "kernel_selection": {
+    "minimum_nll_index": 6,
+    "selected_index": 1,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": -0.20280984907048766,
+        "excess_nll": 6.848425018095529e-05,
+        "paired_cluster_se": 2.832997470578304e-05,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20284464967512594,
+        "excess_nll": 3.3683645542650926e-05,
+        "paired_cluster_se": 4.404938946167171e-05,
+        "roughness": 21000.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.20285610457735087,
+        "excess_nll": 2.2228743317747636e-05,
+        "paired_cluster_se": 5.366319950091665e-06,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20285610457735087,
+        "excess_nll": 2.2228743317747636e-05,
+        "paired_cluster_se": 5.366319950091665e-06,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20282016141275175,
+        "excess_nll": 5.817190791686329e-05,
+        "paired_cluster_se": 3.387141553277521e-05,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20286108999777347,
+        "excess_nll": 1.724332289513249e-05,
+        "paired_cluster_se": 4.831672649922338e-05,
+        "roughness": 103488.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.20287833332066862,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 103488.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.20287833332066862,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 103488.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.20279742165520487,
+        "excess_nll": 8.091166546373469e-05,
+        "paired_cluster_se": 1.4474652119853869e-05,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.2027990016137048,
+        "excess_nll": 7.933170696382983e-05,
+        "paired_cluster_se": 1.4469733148430477e-05,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20282289559592034,
+        "excess_nll": 5.543772474827107e-05,
+        "paired_cluster_se": 1.392413374238766e-05,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.2028372295113032,
+        "excess_nll": 4.110380936540262e-05,
+        "paired_cluster_se": 1.1159708835871234e-05,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20261269862253273,
+        "excess_nll": 0.0002656346981359211,
+        "paired_cluster_se": 6.340686551630809e-05,
+        "roughness": 5500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.2026155324222967,
+        "excess_nll": 0.0002628008983719055,
+        "paired_cluster_se": 8.326249271971428e-05,
+        "roughness": 5500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20259748938335315,
+        "excess_nll": 0.00028084393731546404,
+        "paired_cluster_se": 3.9798402652815015e-05,
+        "roughness": 10780.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20262135411881177,
+        "excess_nll": 0.00025697920185682385,
+        "paired_cluster_se": 7.520734306436685e-05,
+        "roughness": 10780.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20281886322480158,
+        "excess_nll": 5.947009586700898e-05,
+        "paired_cluster_se": 2.743293967072955e-05,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.2028262850912002,
+        "excess_nll": 5.204822946838555e-05,
+        "paired_cluster_se": 8.062340689376746e-05,
+        "roughness": 21000.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.20280474945404742,
+        "excess_nll": 7.358386662119771e-05,
+        "paired_cluster_se": 3.005212278610834e-05,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.2028245140249779,
+        "excess_nll": 5.381929569073842e-05,
+        "paired_cluster_se": 7.622177501430128e-05,
+        "roughness": 21000.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.20275460392544564,
+        "excess_nll": 0.00012372939522296026,
+        "paired_cluster_se": 3.383859838431573e-05,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20275848648417044,
+        "excess_nll": 0.00011984683649815944,
+        "paired_cluster_se": 8.084358151422e-05,
+        "roughness": 21000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20281876357770534,
+        "excess_nll": 5.956974296329584e-05,
+        "paired_cluster_se": 3.4075905942077956e-05,
+        "roughness": 103488.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.20283963855879467,
+        "excess_nll": 3.8694761873955884e-05,
+        "paired_cluster_se": 7.606822625090868e-05,
+        "roughness": 103488.0,
+        "eligible": true
+      }
+    ]
+  },
+  "kernel_selection_field_units": "kernel score (helper uses generic NLL field names)",
+  "parameter_counts": [
+    21000,
+    21000,
+    21000,
+    21000,
+    103488,
+    103488,
+    103488,
+    103488,
+    21000,
+    21000,
+    103488,
+    103488,
+    5500,
+    5500,
+    10780,
+    10780,
+    21000,
+    21000,
+    21000,
+    21000,
+    21000,
+    21000,
+    103488,
+    103488
+  ],
+  "uses_truth": false,
+  "rule": "paired one-SE then fewest actual coefficients; GL SE clusters by MCMC chain",
+  "files": {
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w10/fit.npz": "2d0020913d65bf35d3154834cd8d82897f41cc713c387919c22ad42486d717bb",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w10/validation.npz": "642f1a05e1799968fc18affb90fd240e6e494d8138852290c203f85fb38be063",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w10/result.json": "d08d5f1359bf7f39efe9d6d463ee0bd39ea8ff4b3517a8b86e73fa258e862fe1",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w10/config.json": "7b142a13719707c3bc4bd50401a1188a772357c670dae829b5c2e12b5f8907bb",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w10/kernel_fit.npz": "95cc63f05924127ba3c0ca218a6c939357b73eaa4c7a07bd99c5b5ea35f04704",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w10/kernel_validation.npz": "251cae45b60d0a7ef017110636a73624d56278ba119e2582968d65a200389007",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w100/fit.npz": "4c513f2a8fba980d515719c88355c47873c09966920e630e4bfb01e17e2afac0",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w100/validation.npz": "265769a0ec8b9655c53f886683a228e3c380403763594c8467a379223b3f5d04",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w100/result.json": "f1f9a651462c9449b03ff7cd630745fbf3d86865c0b1fafdc282eed4e373bd31",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w100/config.json": "7e3a933264da4061b9193a39f75ebf1f894d2f769d0153afd37dabfbdc9a8666",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w100/kernel_fit.npz": "4c513f2a8fba980d515719c88355c47873c09966920e630e4bfb01e17e2afac0",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r20_n25_l0.001_w100/kernel_validation.npz": "265769a0ec8b9655c53f886683a228e3c380403763594c8467a379223b3f5d04",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w10/fit.npz": "f035821888e7cb3891866f879aa809df390d70b7df1281401220d1f081ce5d3b",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w10/validation.npz": "34375c7d1b5b4b2515fba71d36acb55af1edb029a2eeea204426058a664140e0",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w10/result.json": "8b4d7b50f51299d50f3f0cc60c97669b324476ddbf4da7209311442d6cacebf3",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w10/config.json": "d5fe2ee0444d7dc31f84cb4e1d9746640b55e9376e3ac94bb161e57b92b8d0d0",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w10/kernel_fit.npz": "31777ceb9bf04b013d267464d45305eb3dbb6553ff3402bdae19ee7ddc41e14e",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w10/kernel_validation.npz": "1f95a3ad8cf67c85774178445e81c09c7a6d46119a1c01fefe77cbcbc5d08b69",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w100/fit.npz": "4c5b80dd0e8e73a8b2bb3c9498a2f546b4837defe9709436090a6cbe62633d82",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w100/validation.npz": "b6fe2c034a28d95e631210301f780a6f6d6fc3091999d071315b10e47c7dc68d",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w100/result.json": "22c19d0dd6322b85f22e4fc939290317efe6aeba6d7090d3a95c1a36b4778393",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w100/config.json": "41c12b079bc2266a27b7c6fe1876a2e43051e2b43d7054a458a2096b71c2e1fb",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w100/kernel_fit.npz": "4c5b80dd0e8e73a8b2bb3c9498a2f546b4837defe9709436090a6cbe62633d82",
+    "artifacts/objective_v3/swirl4_mixture/hybrid_r32_n49_l0.001_w100/kernel_validation.npz": "b6fe2c034a28d95e631210301f780a6f6d6fc3091999d071315b10e47c7dc68d",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r20_n25_l0.001_w100/fit.npz": "d71920a60836fde1b7a01f77e2e079927e909145dce98805f782ca1fd5cb6709",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r20_n25_l0.001_w100/validation.npz": "7da9530cd508f8053ffea3267d52882e4b6c1f4cb97fa48a3fef5544c330f853",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r20_n25_l0.001_w100/result.json": "300aa5f042403dbe9c6facff99380ccac3e8a050b8004849fc87462a54e4783c",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r20_n25_l0.001_w100/config.json": "e35f605e9bf06a36bb94cbff1dd809e11c612be882a6d93a4bb1b83929866833",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r20_n25_l0.001_w100/kernel_fit.npz": "52a8aba1958f858a3e6d415ea14b84996b8856f8f08271f93a3c2469b975b43d",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r20_n25_l0.001_w100/kernel_validation.npz": "25268be2886f01a8866c623206cd7bf992bf2657c674ab2db411f63e3695eb9f",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r32_n49_l0.001_w100/fit.npz": "4bda4d4303923c8ee3a7d4f94eaff6bb321ab218dc062efd42d6f240397af4b8",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r32_n49_l0.001_w100/validation.npz": "39f4cbf6c7645bb5e72383ac858a6b3f4c6cde56bc1850f9841eba13fb08a2fc",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r32_n49_l0.001_w100/result.json": "046c10940c3863db3bb87691ab0b726d3a24a09668b5cb9cf96d7f76d570718d",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r32_n49_l0.001_w100/config.json": "3e63dd2a06ffdeb682286133c078842118cb939a3fca761f6c9ded9b4099afd2",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r32_n49_l0.001_w100/kernel_fit.npz": "d0448af3e8040cf89e7b65e1e2186ed9ac71ceb9fba9c2532887217b141f6822",
+    "artifacts/objective_v3/swirl4_mixture/mmd_r32_n49_l0.001_w100/kernel_validation.npz": "dcafa3dc29479da3639fb7c5037a480609a3984ece4ffb8e38e604b26c691ae3",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n25_l0.001_w100/fit.npz": "b09c4d085ab0b300e23b308015760f4337bda45a8f0e15557b72b16f964877fc",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n25_l0.001_w100/validation.npz": "9a8ce5401b3be3dc173e619cc3550491b3dbfac7b31a1341e4b5a199d92c5864",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n25_l0.001_w100/result.json": "4258cb9221738b508285473da63ad21e6b7e384769ff1b7301cc1bec887d1d13",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n25_l0.001_w100/config.json": "cee02e39d5df230f4775a3c229b56eb05b140f8b01f9e705b1ca9efc3612cfca",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n25_l0.001_w100/kernel_fit.npz": "962808f3d76492a68f62dfa9fdb1b88b5f377bbf9c19fd6155c1739025e3be00",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n25_l0.001_w100/kernel_validation.npz": "6b15070d9858505275d4d47f8fd6ddefba5f92ee18fb5e60d599e8d2c84badf4",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n49_l0.001_w100/fit.npz": "f10e939197d7a412afc80dbc79c1e76f9a4376eb1b536f0b6a2bccb96fa2c771",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n49_l0.001_w100/validation.npz": "89553fc8e68808f91bf17e9241f80e2a7e503937d07c1e99cd2011fa6411665e",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n49_l0.001_w100/result.json": "39a1825b4224d0019487fb55fc819423f567bc610b6f1f8b3490ed47a2bc7331",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n49_l0.001_w100/config.json": "9b5772a94efdf30bbed52ce9213238016e0597a4414dfe602b4d47825fa87ce1",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n49_l0.001_w100/kernel_fit.npz": "1644907b7d112bd32711e6b358ec7e0c30f490e8f2d8cc1c8f37ade997096f13",
+    "artifacts/objective_v3/swirl4_mixture/nll_r10_n49_l0.001_w100/kernel_validation.npz": "0ec23f5bca8aafe40ce6de9f5c6f870139997db2824012330af65764fa554f37",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.0001_w100/fit.npz": "e8f1eac551ccdcb3c4c3d5882a0b1a3a0bdb7ad6667c3b1cc2aec9a6c183da7c",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.0001_w100/validation.npz": "dba790a70fa29825fad8d288615520851e12f57615d1e8d8b9c692af253fbe64",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.0001_w100/result.json": "89a5d60a8a6562ef154a5e839f11262d94a54b574c5fb3bfafb6a8070130d051",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.0001_w100/config.json": "69adb97dc2de78a3f8c88c2f520b903ce19d47473d0dcc473477197279edac37",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.0001_w100/kernel_fit.npz": "3d2d0ef8d2fc99af9ad2952d29c214c61a1a8499b981864f089717ab69ad4f28",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.0001_w100/kernel_validation.npz": "ac933cacf4239c022e7b195b66005f7dc948ef4c3a1cf4e0dff4b437d42f0320",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.001_w100/fit.npz": "2d575b3fe17edce20e0925c3c9090fd81adef4a744ede961748ee6fb2361feb5",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.001_w100/validation.npz": "eeedd2fda673f6f9a869e448bdc56aaf6a60fd8ea786f7b7dc096a417d35b276",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.001_w100/result.json": "2170a9c2ddca4f6e8d708b5d71696b2bd88f3100ac9756cd73abbc40d2befee2",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.001_w100/config.json": "6a3ce3e5d85eb23f4fc592b9212dcfa3e29c0c6cd37d0659d2921723348deb33",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.001_w100/kernel_fit.npz": "47c5966dad0877afa6f35935658e2323521121224d38f67a8480b7a058ebc17b",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.001_w100/kernel_validation.npz": "223a853c441646de81dce5d354f258a9d3f0d9175f0befaf3149bae692f2b9ea",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.01_w100/fit.npz": "d99cfa2d751053f3814de02ca8a652fa66f8bffccee6b3d5499c0b1d034ce527",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.01_w100/validation.npz": "7799d16b1a53a413d0b70cc24033a12aaea0c9930efea1b0e9caa23372c715f0",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.01_w100/result.json": "6a6a95aaa71044d229b527556e74f091c1e4fc7f998e22a6b2eb0d46fe00c2cd",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.01_w100/config.json": "63b079085f02f0adcd0d16aa4d7ea7b223d9ff9c86b1b2126250150c1129414c",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.01_w100/kernel_fit.npz": "a48cb99b49114131340ab41812dbd957162eb49e93b42b5032b904913762ec79",
+    "artifacts/objective_v3/swirl4_mixture/nll_r20_n25_l0.01_w100/kernel_validation.npz": "1defaa77b22337e77e9970ed484314e4197a7eff1d3f707b48822a5c9095cc6d",
+    "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/fit.npz": "7fd48df27e7fe716b6736b5685c5534618f548a885e024629c9b2620efcd9610",
+    "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/validation.npz": "fba849bcc5cd072fc6c974311900c12cadf1e3ee07193ae7cbc9a56120c9c3a9",
+    "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/result.json": "fddebc6403709bb1d6af5c76ffcad850f301e92c7fb4aca3c9713800afd06f4e",
+    "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/config.json": "8a0a39cadb9867b823f3b0c56ba30e061ec5faaa86291718aeb141228c4643b0",
+    "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/kernel_fit.npz": "c46b941e5f4164659164670e60f8d8d87efbbd64c982ba6766f43a6af2c2ca83",
+    "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/kernel_validation.npz": "a16974b479f7f09e8c728a373b20b9f8d9c7e489413c526ff10344738d88f630"
+  }
+}

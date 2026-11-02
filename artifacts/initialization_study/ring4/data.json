@@ -1,0 +1,8 @@
+{
+  "family": "ring",
+  "dim": 4,
+  "train_count": 30000,
+  "valid_count": 4096,
+  "source": "independent synthetic observations, seeds 1701 and 2701",
+  "data_sha256": "b18d5787c28a8ec77cac13a66bc95b704b8ff4fbf7ca7bea5b7d479a46d29394"
+}

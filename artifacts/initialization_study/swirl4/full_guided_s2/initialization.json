@@ -1,0 +1,102 @@
+{
+  "method": "full_guided",
+  "seed": 2,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 60,
+    "validation_nll": 3.6104245219617663,
+    "history": [
+      {
+        "step": 10,
+        "nll": 3.620850700818191
+      },
+      {
+        "step": 20,
+        "nll": 3.6133824180142273
+      },
+      {
+        "step": 30,
+        "nll": 3.6113523777288092
+      },
+      {
+        "step": 40,
+        "nll": 3.6106892404304567
+      },
+      {
+        "step": 50,
+        "nll": 3.61046957459168
+      },
+      {
+        "step": 60,
+        "nll": 3.6104245219617663
+      },
+      {
+        "step": 70,
+        "nll": 3.610460088484526
+      },
+      {
+        "step": 80,
+        "nll": 3.6105372818906405
+      },
+      {
+        "step": 90,
+        "nll": 3.6106368658321246
+      },
+      {
+        "step": 100,
+        "nll": 3.6107475467467496
+      },
+      {
+        "step": 110,
+        "nll": 3.6108618875474905
+      },
+      {
+        "step": 120,
+        "nll": 3.610975115638901
+      },
+      {
+        "step": 130,
+        "nll": 3.611084742623158
+      },
+      {
+        "step": 140,
+        "nll": 3.611190060097648
+      },
+      {
+        "step": 150,
+        "nll": 3.6112914077264966
+      }
+    ],
+    "seconds": 0.14856689982116222
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 1.1529988398206674,
+        "sample_matrix_relative_tail": 1.8504024515954344e-09
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 2.758482846977876,
+        "sample_matrix_relative_tail": 0.06812704825011984
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 4.74164917668149,
+        "sample_matrix_relative_tail": 0.00021747292738632533
+      }
+    ]
+  },
+  "seconds": 3.569628319935873,
+  "pilot_is_final_model": false
+}

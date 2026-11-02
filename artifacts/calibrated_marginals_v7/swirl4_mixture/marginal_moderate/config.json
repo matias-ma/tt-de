@@ -1,0 +1,13 @@
+{
+  "source_name": "weaker",
+  "source_model": "artifacts/marginal_regularization_v5/swirl4_mixture/weaker/fit.npz",
+  "source_marginal_curvature": 9.670111686308571,
+  "strength": 1e-05,
+  "marginal_strength": 0.00031023426588211493,
+  "initial_marginal_penalty_budget": 0.003,
+  "steps": 2000,
+  "learning_rate": 0.0001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "uses_truth": false
+}

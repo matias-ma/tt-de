@@ -1,0 +1,15 @@
+{
+  "selected": "fit",
+  "scores": {
+    "fit": 1.2275349087367622
+  },
+  "files": {
+    "artifacts/tucker_4d_tuning/clean_refine/swirl4_free/fit/fit.npz": "7fa29b13fae455bacb8662dc8c3ccba468e764c63f65f0c2c922c681a2d4249b",
+    "artifacts/tucker_4d_tuning/clean_refine/swirl4_free/fit/result.json": "5bc39ec82cacbf1064e64631ff3eb98bce07cb4418eaa2797f73fe6d48905ee2",
+    "artifacts/tucker_4d_tuning/clean_refine/swirl4_free/fit/config.json": "e97c332bbade1d009aee22ee7824996bb966ff95309c6b022edb748fd87927c9",
+    "artifacts/tucker_4d_tuning/clean_refine/swirl4_free/fit/validation.npy": "7a89ddf2b3a8a926003ff5197212ba1b232f79c0b2e6f38377b99c5da2c14846",
+    "artifacts/swirl/swirl_free_dim4/data.npz": "36c11aca0bc9669f685248c9a24e2c0849680c1b26256fa08daecca2801205fc",
+    "artifacts/tucker_4d_tuning/clean_refine/swirl4_free/protocol.json": "78b4adf1f5f4529d749dd3200a87f70c19b681c97d110647685215a1c0de78ee"
+  },
+  "truth_evaluated": false
+}

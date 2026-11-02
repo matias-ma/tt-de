@@ -1,0 +1,11 @@
+{
+  "name": "adam_h1_long_continue",
+  "regularizer": "h1",
+  "strength": 0.1,
+  "parent": "artifacts/noise_free_v2/swirl10/h1_0.1/fit.npz",
+  "uses_signal_pilot": false,
+  "uses_clean_truth": false,
+  "sweeps": 20,
+  "adam_steps": 12000,
+  "learning_rate": 0.0003
+}

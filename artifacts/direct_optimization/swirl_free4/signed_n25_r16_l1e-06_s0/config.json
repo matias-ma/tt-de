@@ -1,0 +1,11 @@
+{
+  "method": "signed_als",
+  "modes": 25,
+  "rank": 16,
+  "seed": 0,
+  "strength": 1e-06,
+  "sweeps": 30,
+  "order": 65,
+  "ridge": 1e-10,
+  "selection": "minimum unpenalized noise-free validation least-squares risk"
+}

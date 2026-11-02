@@ -1,0 +1,485 @@
+{
+  "selected_nll": "nll_r5_n25_l0.01_w100/nll",
+  "selected_kernel": "nll_r32_n25_l0.001_w100/nll",
+  "names": [
+    "hybrid_r5_n25_l0.001_w10/nll",
+    "hybrid_r5_n25_l0.001_w10/kernel",
+    "hybrid_r5_n25_l0.001_w100/nll",
+    "hybrid_r5_n25_l0.001_w100/kernel",
+    "mmd_r5_n25_l0.001_w100/nll",
+    "mmd_r5_n25_l0.001_w100/kernel",
+    "nll_r10_n17_l0.001_w100/nll",
+    "nll_r10_n17_l0.001_w100/kernel",
+    "nll_r10_n25_l0.001_w100/nll",
+    "nll_r10_n25_l0.001_w100/kernel",
+    "nll_r10_n49_l0.001_w100/nll",
+    "nll_r10_n49_l0.001_w100/kernel",
+    "nll_r20_n25_l0.001_w100/nll",
+    "nll_r20_n25_l0.001_w100/kernel",
+    "nll_r32_n25_l0.001_w100/nll",
+    "nll_r32_n25_l0.001_w100/kernel",
+    "nll_r32_n49_l0.001_w100/nll",
+    "nll_r32_n49_l0.001_w100/kernel",
+    "nll_r5_n25_l0.0001_w100/nll",
+    "nll_r5_n25_l0.0001_w100/kernel",
+    "nll_r5_n25_l0.001_w100/nll",
+    "nll_r5_n25_l0.001_w100/kernel",
+    "nll_r5_n25_l0.01_w100/nll",
+    "nll_r5_n25_l0.01_w100/kernel"
+  ],
+  "nll_selection": {
+    "minimum_nll_index": 22,
+    "selected_index": 22,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 5.859364166421691,
+        "excess_nll": 0.0006095952074629534,
+        "paired_cluster_se": 0.0006301276651069351,
+        "roughness": 2750.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 5.860714384336266,
+        "excess_nll": 0.0019598131220381386,
+        "paired_cluster_se": 0.0016761952835968744,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.8601307339022,
+        "excess_nll": 0.0013761626879720723,
+        "paired_cluster_se": 0.0007926140532447328,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.861592493406886,
+        "excess_nll": 0.0028379221926583187,
+        "paired_cluster_se": 0.0016245618280062107,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.902561338030921,
+        "excess_nll": 0.043806766816693224,
+        "paired_cluster_se": 0.005067064148284945,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.991319490467131,
+        "excess_nll": 0.13256491925290273,
+        "paired_cluster_se": 0.011105354598247014,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.861151341551397,
+        "excess_nll": 0.0023967703371700027,
+        "paired_cluster_se": 0.0025918493139654914,
+        "roughness": 7140.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 5.861151341551397,
+        "excess_nll": 0.0023967703371700027,
+        "paired_cluster_se": 0.0025918493139654914,
+        "roughness": 7140.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 5.864366908624492,
+        "excess_nll": 0.005612337410262917,
+        "paired_cluster_se": 0.0022012697764793644,
+        "roughness": 10500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.86462972585479,
+        "excess_nll": 0.005875154640562631,
+        "paired_cluster_se": 0.0024294427391693962,
+        "roughness": 10500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.8713629511686065,
+        "excess_nll": 0.01260837995437924,
+        "paired_cluster_se": 0.003913688206040328,
+        "roughness": 20580.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.874447961039428,
+        "excess_nll": 0.015693389825199605,
+        "paired_cluster_se": 0.003800454406056598,
+        "roughness": 20580.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.869235978473751,
+        "excess_nll": 0.010481407259523333,
+        "paired_cluster_se": 0.0036206989971994943,
+        "roughness": 41000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.869235978473751,
+        "excess_nll": 0.010481407259523333,
+        "paired_cluster_se": 0.0036206989971994943,
+        "roughness": 41000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.874929604376891,
+        "excess_nll": 0.016175033162662705,
+        "paired_cluster_se": 0.0045016561910072245,
+        "roughness": 98225.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.874929604376891,
+        "excess_nll": 0.016175033162662705,
+        "paired_cluster_se": 0.0045016561910072245,
+        "roughness": 98225.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.885648619655778,
+        "excess_nll": 0.02689404844155005,
+        "paired_cluster_se": 0.006260539834843782,
+        "roughness": 203840.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.901753187405623,
+        "excess_nll": 0.042998616191395445,
+        "paired_cluster_se": 0.007200345843329786,
+        "roughness": 203840.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.8590239146261975,
+        "excess_nll": 0.0002693434119693237,
+        "paired_cluster_se": 0.0006403314643512759,
+        "roughness": 2750.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 5.861589886606481,
+        "excess_nll": 0.0028353153922526493,
+        "paired_cluster_se": 0.0017746686513800442,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.859143667620202,
+        "excess_nll": 0.00038909640597487895,
+        "paired_cluster_se": 0.0005596385357403781,
+        "roughness": 2750.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 5.860719674074124,
+        "excess_nll": 0.0019651028598957967,
+        "paired_cluster_se": 0.0017314149805266017,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.858754571214227,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 2750.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 5.860649079951279,
+        "excess_nll": 0.001894508737051143,
+        "paired_cluster_se": 0.0015936422771109053,
+        "roughness": 2750.0,
+        "eligible": false
+      }
+    ]
+  },
+  "kernel_selection": {
+    "minimum_nll_index": 14,
+    "selected_index": 14,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": -0.1599634607798308,
+        "excess_nll": 0.00017075335259351894,
+        "paired_cluster_se": 9.063824797933919e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.1600184154301879,
+        "excess_nll": 0.00011579870223642246,
+        "paired_cluster_se": 5.466888647508309e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.1599239304377791,
+        "excess_nll": 0.00021028369464523523,
+        "paired_cluster_se": 0.00010502791030864866,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.15994298445273447,
+        "excess_nll": 0.00019122967968987245,
+        "paired_cluster_se": 9.628364578539966e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.15990366695913447,
+        "excess_nll": 0.00023054717328986808,
+        "paired_cluster_se": 0.00010898524176384866,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.15991518866241372,
+        "excess_nll": 0.0002190254700106264,
+        "paired_cluster_se": 0.00010574518770831464,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16004700315200138,
+        "excess_nll": 8.721098042295582e-05,
+        "paired_cluster_se": 4.674502055689373e-05,
+        "roughness": 7140.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16004700315200138,
+        "excess_nll": 8.721098042295582e-05,
+        "paired_cluster_se": 4.674502055689373e-05,
+        "roughness": 7140.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.15999045550731847,
+        "excess_nll": 0.00014375862510588623,
+        "paired_cluster_se": 7.874315749393639e-05,
+        "roughness": 10500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.1600506567396534,
+        "excess_nll": 8.355739277091976e-05,
+        "paired_cluster_se": 4.8542066946335354e-05,
+        "roughness": 10500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.15993249644097512,
+        "excess_nll": 0.00020171769144920642,
+        "paired_cluster_se": 9.190749274597759e-05,
+        "roughness": 20580.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.1600073647257063,
+        "excess_nll": 0.0001268494067180482,
+        "paired_cluster_se": 7.26439241860244e-05,
+        "roughness": 20580.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16009882461527408,
+        "excess_nll": 3.5389517150282825e-05,
+        "paired_cluster_se": 2.0077268217513593e-05,
+        "roughness": 41000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16009882461527408,
+        "excess_nll": 3.5389517150282825e-05,
+        "paired_cluster_se": 2.0077268217513593e-05,
+        "roughness": 41000.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16013421413242435,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 98225.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.16013421413242435,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 98225.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.15995412018470845,
+        "excess_nll": 0.00018009394771590669,
+        "paired_cluster_se": 7.194326395809504e-05,
+        "roughness": 203840.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16009654630717737,
+        "excess_nll": 3.766782524696663e-05,
+        "paired_cluster_se": 4.102335657553373e-05,
+        "roughness": 203840.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": -0.1599799008723758,
+        "excess_nll": 0.00015431326004857054,
+        "paired_cluster_se": 8.362666370168454e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16000006821495394,
+        "excess_nll": 0.00013414591747041852,
+        "paired_cluster_se": 7.67202894144806e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.15998009839642918,
+        "excess_nll": 0.0001541157359951695,
+        "paired_cluster_se": 8.386676901356657e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.16000022466385966,
+        "excess_nll": 0.00013398946856469312,
+        "paired_cluster_se": 7.784258272210877e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.1599772318726036,
+        "excess_nll": 0.00015698225982074614,
+        "paired_cluster_se": 8.430366136804938e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -0.15999772749712032,
+        "excess_nll": 0.00013648663530406322,
+        "paired_cluster_se": 7.893131543147957e-05,
+        "roughness": 2750.0,
+        "eligible": false
+      }
+    ]
+  },
+  "kernel_selection_field_units": "kernel score (helper uses generic NLL field names)",
+  "parameter_counts": [
+    2750,
+    2750,
+    2750,
+    2750,
+    2750,
+    2750,
+    7140,
+    7140,
+    10500,
+    10500,
+    20580,
+    20580,
+    41000,
+    41000,
+    98225,
+    98225,
+    203840,
+    203840,
+    2750,
+    2750,
+    2750,
+    2750,
+    2750,
+    2750
+  ],
+  "uses_truth": false,
+  "rule": "paired one-SE then fewest actual coefficients; GL SE clusters by MCMC chain",
+  "files": {
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w10/fit.npz": "e187e1e91b5216937eec54800fbe6592ca1b8fce9986054df425cce6abec8195",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w10/validation.npz": "6a23851d23086027ed0b7042ff7907c16af3d05a0388c24e4583a6abd881e2bb",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w10/result.json": "fa61deb814a15eb76ba476a8ef83452c93490d3152315faee0273648ef8c9271",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w10/config.json": "615c040ff3b7e5a0ac6b4b40aa52960f83e4c7730245c7dfb1742469883ac726",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w10/kernel_fit.npz": "a8be6e22434bec266f341e12412728a503167197556986043e3fab84d9ab042b",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w10/kernel_validation.npz": "f4723c8f8ef77e0d8cc3648788d6a7b2f298ec301b401e3f7c5c21b8263e105d",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w100/fit.npz": "fd032050c5c7b4c4c7142f0c9728049c587d10ef38f1c3db83776fc7c747c9e6",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w100/validation.npz": "59e54e847d1deb611bcabbe29fefdc688c1526f9bbd099ce7bdacf41a227e003",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w100/result.json": "bc861f6c9b1b0fcf880d5dcbc9f45c218b6944f62d4e6a1330aa785eca7c0bd1",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w100/config.json": "f2b4d7af37ef0cb37840d75a9ba48e4a7c8ab6405cd6d3d85840937417aa73c7",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w100/kernel_fit.npz": "d681861b7394e11afe67d12a45f33bd338c73baf1a784429732c6c138a4221a0",
+    "artifacts/objective_v3/gl6_free/hybrid_r5_n25_l0.001_w100/kernel_validation.npz": "fe2ef8dabbac58220696de2de7b81bdb28635554062ff7558026dba7ca08493c",
+    "artifacts/objective_v3/gl6_free/mmd_r5_n25_l0.001_w100/fit.npz": "ba64f38239fc91416411225eacf23c492ca9475f1fcb8c4e53c2a8ac786fd485",
+    "artifacts/objective_v3/gl6_free/mmd_r5_n25_l0.001_w100/validation.npz": "83a409e84c70fc2c0a3851ed9cba165fe4e8fe8e7055c815789ada92fdc774f4",
+    "artifacts/objective_v3/gl6_free/mmd_r5_n25_l0.001_w100/result.json": "d4752e6b7033f488ae1e4669b3a0340546e5e2b9f76e89c36f4e2d52eee2e4e9",
+    "artifacts/objective_v3/gl6_free/mmd_r5_n25_l0.001_w100/config.json": "3cbe3b1bf9609ef89af8c14da14b0cd6d8ad63c0d43d96f2ea1259658a98cf4c",
+    "artifacts/objective_v3/gl6_free/mmd_r5_n25_l0.001_w100/kernel_fit.npz": "08887c832b37add880189ecf4e4e616ae9c53741e4695dd8b70365becd5fd979",
+    "artifacts/objective_v3/gl6_free/mmd_r5_n25_l0.001_w100/kernel_validation.npz": "606bd659651ad06721b367e4ab5a3ccb7f6d82b8380d760c8aabbc25a769b952",
+    "artifacts/objective_v3/gl6_free/nll_r10_n17_l0.001_w100/fit.npz": "75946f013bb7201c6c56bae7d4f5597dd0294add9fe2431b96d67d3f1a29e81f",
+    "artifacts/objective_v3/gl6_free/nll_r10_n17_l0.001_w100/validation.npz": "a8630cebb2fadfaafcccf6ff0307ef92952af92c738f9e1750f4ebf1db0191c0",
+    "artifacts/objective_v3/gl6_free/nll_r10_n17_l0.001_w100/result.json": "d7f6471d1ae7cf1bc30c4a92495a1c76e7be3c938c0154386b2c75477fa6f404",
+    "artifacts/objective_v3/gl6_free/nll_r10_n17_l0.001_w100/config.json": "5dbb14969f460141701a008f40584268ca33ded306df9143b584e35a75184c05",
+    "artifacts/objective_v3/gl6_free/nll_r10_n17_l0.001_w100/kernel_fit.npz": "75946f013bb7201c6c56bae7d4f5597dd0294add9fe2431b96d67d3f1a29e81f",
+    "artifacts/objective_v3/gl6_free/nll_r10_n17_l0.001_w100/kernel_validation.npz": "a8630cebb2fadfaafcccf6ff0307ef92952af92c738f9e1750f4ebf1db0191c0",
+    "artifacts/objective_v3/gl6_free/nll_r10_n25_l0.001_w100/fit.npz": "0220e635fda22a474a01ac893860727f358b9b50bda57ccccd15d6f884d0a23a",
+    "artifacts/objective_v3/gl6_free/nll_r10_n25_l0.001_w100/validation.npz": "d22a08ec3ad185ff8d243c06f8e3d9b94c55d5f1d6886b9334bfac011cd39161",
+    "artifacts/objective_v3/gl6_free/nll_r10_n25_l0.001_w100/result.json": "5542ca681c84d0224c26d0bcf54b472be3e69e4208968a8efa9ef62935ae977a",
+    "artifacts/objective_v3/gl6_free/nll_r10_n25_l0.001_w100/config.json": "1564b9860c874d643dcbc23319471d84bb6a076b5868a49fdcdeb78041306a2e",
+    "artifacts/objective_v3/gl6_free/nll_r10_n25_l0.001_w100/kernel_fit.npz": "da1a80d945b3b40e834e6867cd3fb06e188dee3a1375509b4e1fff75b34bc3e1",
+    "artifacts/objective_v3/gl6_free/nll_r10_n25_l0.001_w100/kernel_validation.npz": "994e8553eaff220aba515c354dd7a18ec62f36f501df26075ce2961063308564",
+    "artifacts/objective_v3/gl6_free/nll_r10_n49_l0.001_w100/fit.npz": "d36303b131bffa7edb94871c80485f19b513fab7b6c33f22cbe995dc386bea5e",
+    "artifacts/objective_v3/gl6_free/nll_r10_n49_l0.001_w100/validation.npz": "5ebe0e0e903ad9631ad54927a10de167dcb1eb16f24789dbaedf11ec61f4e83d",
+    "artifacts/objective_v3/gl6_free/nll_r10_n49_l0.001_w100/result.json": "aadf7a8a358fad4e34df532daf816a055e061d893945bb179d4e2e9c0e108eb0",
+    "artifacts/objective_v3/gl6_free/nll_r10_n49_l0.001_w100/config.json": "aa5a09bc90f3d5de01d6177ece55a2da89977bc5757bc7b61f000b91cce65e76",
+    "artifacts/objective_v3/gl6_free/nll_r10_n49_l0.001_w100/kernel_fit.npz": "1c2f7962a0aa63a73f26157d19e9467504dfcde685d7f1e2ace1ea2c3d62e094",
+    "artifacts/objective_v3/gl6_free/nll_r10_n49_l0.001_w100/kernel_validation.npz": "81a54223c04a9b6e2116bce4f8056d33f938e41d3228d83f99e965d44239fbae",
+    "artifacts/objective_v3/gl6_free/nll_r20_n25_l0.001_w100/fit.npz": "22e6e3b7032f46f3b3423a2cdb31ac9c4fc6886154183d84586602a0154aa26b",
+    "artifacts/objective_v3/gl6_free/nll_r20_n25_l0.001_w100/validation.npz": "b0344d7d7dc1c168e057000a4c47001cbfeff2278d224528a8603fc31dffca49",
+    "artifacts/objective_v3/gl6_free/nll_r20_n25_l0.001_w100/result.json": "48be6cbab1d2cf6afa3269d8403a7f0598cc4d719949bbf80fcfaae7f997a481",
+    "artifacts/objective_v3/gl6_free/nll_r20_n25_l0.001_w100/config.json": "05fb14b2465875699bb123f14b1bdc08d65cfef1359e59ef8d1b5fa541ef1c15",
+    "artifacts/objective_v3/gl6_free/nll_r20_n25_l0.001_w100/kernel_fit.npz": "22e6e3b7032f46f3b3423a2cdb31ac9c4fc6886154183d84586602a0154aa26b",
+    "artifacts/objective_v3/gl6_free/nll_r20_n25_l0.001_w100/kernel_validation.npz": "b0344d7d7dc1c168e057000a4c47001cbfeff2278d224528a8603fc31dffca49",
+    "artifacts/objective_v3/gl6_free/nll_r32_n25_l0.001_w100/fit.npz": "4bd94b90bfa3d8f3b0ced1c496715cadd6b2254a5380553f9c6b3af655aedf21",
+    "artifacts/objective_v3/gl6_free/nll_r32_n25_l0.001_w100/validation.npz": "f51e0ab836d3f46b37a43cdaf6b1d792f1c32864e30d0c2b4709f6d5e76129f2",
+    "artifacts/objective_v3/gl6_free/nll_r32_n25_l0.001_w100/result.json": "383327c1d9027af1f408f8df713dad6ddf71a90c6a75ae8171a74a8346d36e5d",
+    "artifacts/objective_v3/gl6_free/nll_r32_n25_l0.001_w100/config.json": "f81806260836971cf5db3b3ab695cc29330c6dd44050c829bae8568ad94575e7",
+    "artifacts/objective_v3/gl6_free/nll_r32_n25_l0.001_w100/kernel_fit.npz": "4bd94b90bfa3d8f3b0ced1c496715cadd6b2254a5380553f9c6b3af655aedf21",
+    "artifacts/objective_v3/gl6_free/nll_r32_n25_l0.001_w100/kernel_validation.npz": "f51e0ab836d3f46b37a43cdaf6b1d792f1c32864e30d0c2b4709f6d5e76129f2",
+    "artifacts/objective_v3/gl6_free/nll_r32_n49_l0.001_w100/fit.npz": "17b224410c2f616ce0bb98e833a98b715623a68d8905b664f6e8851351bdf4c7",
+    "artifacts/objective_v3/gl6_free/nll_r32_n49_l0.001_w100/validation.npz": "fa6c06488b0e5c31e3c8131649912c8cd8040e77ca0a394ac64adfa7581cd362",
+    "artifacts/objective_v3/gl6_free/nll_r32_n49_l0.001_w100/result.json": "ec62af67f34e95346e791a06b0d20a3712e61acd97ac24b6b85405f1f4739e88",
+    "artifacts/objective_v3/gl6_free/nll_r32_n49_l0.001_w100/config.json": "3a878bea0e3d8520306b4543e5f7c8fc961a2ce721097ee34e4dfbbd9c730cc8",
+    "artifacts/objective_v3/gl6_free/nll_r32_n49_l0.001_w100/kernel_fit.npz": "a688fc5078e1ed2dcc2496cb07b17a66e9f480983cd9e9132d085efd840ff7d3",
+    "artifacts/objective_v3/gl6_free/nll_r32_n49_l0.001_w100/kernel_validation.npz": "34fd6da6baa05e0123576ccf4ab2f904a808976232fe72b048293d58931d739a",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.0001_w100/fit.npz": "681a701cd9f1c833e7dbf6b0626c0215e7aa86d6fd7dc77ee8bf08c04afc7f4a",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.0001_w100/validation.npz": "7e2c18545ca8c5bbcbed4e425d8d63a1b71185476dc19314ba2e887a78417e51",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.0001_w100/result.json": "2c1a3e301fc82dff68764b712256207b7a44d45e4a87ac5aef8a4f1d5362dc43",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.0001_w100/config.json": "87cc2a0b7e7272152f076441cc7d0779396536dffd87229ac936b66186f6dd37",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.0001_w100/kernel_fit.npz": "42864f1bbb3faee486e9875c3185d351c982cb138fc8d6ff3691dab776b659c0",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.0001_w100/kernel_validation.npz": "b40c674523dbbd2ac387584f3beb637e5f9f96101c0e567be86defaae2c26c6d",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.001_w100/fit.npz": "85b5130260b9e205c906c373c60df52823986d5f2f3a73dbdb4e346ba4a652d7",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.001_w100/validation.npz": "7f980a685784a9c46959968e07b6b8637d2c95b7c58b46e2fcb1ee547d3b9a70",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.001_w100/result.json": "4e1050fc1d8ada59dbff2da918bde3d367ee8775d75e3464dbf5c98fcc2e3fdf",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.001_w100/config.json": "a5f12b1c05480fd2d8eba3e74fa51324c5b0cee63a2522a97d9c941cb8f3c408",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.001_w100/kernel_fit.npz": "f504ddf4d181c9ff1b39c882a3fb7faa46adddcd8980a2751d98747d1e4d72ef",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.001_w100/kernel_validation.npz": "30b03b076118fe37131472b93c84c9edac2aeb5c3c580b5f524e439edc97295e",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.01_w100/fit.npz": "46ed8336736ed8ca903d026830489c7a1220f60ce570e28137a918fb8f13f517",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.01_w100/validation.npz": "0025e13178be9a480cda09fd0944d5e8a9561f6045628ec4c59d072890941904",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.01_w100/result.json": "5b1457a223dc884acc598dc3e05a1bc664fdb1cee771eed1fe30b5bc5b29f5e8",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.01_w100/config.json": "28e07010b0455fe841575a8c912ed43c3e9c9bc680d6d58b452515ca19c2c1f8",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.01_w100/kernel_fit.npz": "bd5d4cf85d4c99c492e600d29f6ddacc2cd915e7340c0f686954ab664fe24b80",
+    "artifacts/objective_v3/gl6_free/nll_r5_n25_l0.01_w100/kernel_validation.npz": "c30519c56d9f5aa6c791f421e89257845a831b73631687c7fb909846d754b530"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "family": "swirl",
+  "dim": 4,
+  "noise": "mixture",
+  "rank": 24,
+  "steps": 12000,
+  "decomposition": "tucker",
+  "domain": [
+    [
+      -2.3977334329072773,
+      2.1960368639246535
+    ],
+    [
+      -2.132891069145988,
+      2.1717388479744097
+    ],
+    [
+      -2.3334871568543107,
+      2.6147759590767214
+    ],
+    [
+      -2.2980397369166243,
+      2.38189702851914
+    ]
+  ],
+  "data": "artifacts/swirl/swirl_mixture_dim4/data.npz",
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "kernel": "artifacts/swirl/swirl_mixture_dim4/kernel.npz",
+  "noise_weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0484,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0484,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0484,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0484
+      ]
+    ],
+    [
+      [
+        0.2025,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0625,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2025,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0625
+      ]
+    ],
+    [
+      [
+        0.25,
+        0.15,
+        0.0,
+        0.0
+      ],
+      [
+        0.15,
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25,
+        -0.15
+      ],
+      [
+        0.0,
+        0.0,
+        -0.15,
+        0.25
+      ]
+    ]
+  ],
+  "modes": 49,
+  "seed": 0,
+  "perturbation": 0.01,
+  "initialization": "near-uniform native Tucker",
+  "optimizer": "Adam with cosine decay",
+  "selection": "minimum held-out NLL checkpoint and recipe",
+  "truth_used_for_selection": false,
+  "recipes": [
+    "fit"
+  ],
+  "tuning_protocol": "artifacts/tucker_4d_tuning/protocol.json",
+  "tuning_protocol_sha256": "570d2c94eae277b3661985a15dd6e7adc4e35aa52a156fce0a07d6a2c388879f"
+}

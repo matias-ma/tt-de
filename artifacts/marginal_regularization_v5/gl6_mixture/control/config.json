@@ -1,0 +1,15 @@
+{
+  "case": "gl6_mixture",
+  "recipe": "control",
+  "strength": 0.001,
+  "marginal_strength": 0.0,
+  "steps": 2000,
+  "learning_rate": 0.0003,
+  "batch_size": 256,
+  "source": "artifacts/figure_refresh/gl_mixture_dim6",
+  "data_sha256": "3662b0177d644a0369229ba9f2491e40d98b3ac036fdc15cabc9f308186e898a",
+  "initialization": "artifacts/objective_v3/gl6_mixture/nll_r10_n25_l0.001_w100/fit.npz",
+  "uses_truth": false,
+  "uses_signal_pilot": false,
+  "batch_seed": 0
+}

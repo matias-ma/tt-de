@@ -1,0 +1,8 @@
+{
+  "family": "swirl",
+  "dim": 4,
+  "train_count": 30000,
+  "valid_count": 4096,
+  "source": "independent synthetic observations, seeds 1701 and 2701",
+  "data_sha256": "93b913f731bfbebaf1e59aa2166eb7d2c2d62ad7c13ce27c20f18ebfecce6222"
+}

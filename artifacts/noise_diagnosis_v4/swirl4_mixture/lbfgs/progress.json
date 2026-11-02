@@ -1,0 +1,69 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 3.8658235899523783,
+      "roughness_h1": 1.7184822892642984,
+      "roughness_axis_h2": 2.382383335062573,
+      "roughness_hessian": 4.780086948660475,
+      "training_objective": 3.8905579878161127,
+      "seconds": 79.0333626079373
+    },
+    {
+      "step": 5,
+      "validation_nll": 3.8652882402112243,
+      "roughness_h1": 1.718637302896883,
+      "roughness_axis_h2": 2.3782385617516244,
+      "roughness_hessian": 4.775293127649186,
+      "training_objective": 3.890288402972132,
+      "seconds": 303.94538508495316
+    },
+    {
+      "step": 10,
+      "validation_nll": 3.8653571746860305,
+      "roughness_h1": 1.7203963031818321,
+      "roughness_axis_h2": 2.384006486130996,
+      "roughness_hessian": 4.784564930143344,
+      "training_objective": 3.8901227962480363,
+      "seconds": 464.8098175789928
+    },
+    {
+      "step": 15,
+      "validation_nll": 3.865265538638658,
+      "roughness_h1": 1.7218670182888631,
+      "roughness_axis_h2": 2.3975456484138844,
+      "roughness_hessian": 4.801528605740316,
+      "training_objective": 3.890021358865157,
+      "seconds": 625.540986094973
+    },
+    {
+      "step": 20,
+      "validation_nll": 3.8652046270415097,
+      "roughness_h1": 1.7230711837712334,
+      "roughness_axis_h2": 2.3793317779673044,
+      "roughness_hessian": 4.785966444344462,
+      "training_objective": 3.889954348451943,
+      "seconds": 786.5654318999732
+    },
+    {
+      "step": 25,
+      "validation_nll": 3.8652273306067704,
+      "roughness_h1": 1.723854809271751,
+      "roughness_axis_h2": 2.3835628251721968,
+      "roughness_hessian": 4.7921128838239895,
+      "training_objective": 3.88988383477012,
+      "seconds": 947.3437505329493
+    },
+    {
+      "step": 30,
+      "validation_nll": 3.8652907815768724,
+      "roughness_h1": 1.724119348882282,
+      "roughness_axis_h2": 2.3804210551853844,
+      "roughness_hessian": 4.790017199923377,
+      "training_objective": 3.889825860062827,
+      "seconds": 1108.2587694108952
+    }
+  ],
+  "best_step": 20,
+  "best_nll": 3.8652046270415097
+}

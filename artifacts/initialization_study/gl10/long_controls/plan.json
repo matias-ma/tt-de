@@ -1,0 +1,12 @@
+{
+  "extra_steps": 2400,
+  "lr": 0.0002,
+  "strength": 0.0001,
+  "batch_size": 128,
+  "source_runs": [
+    "kde_s1",
+    "full_s0"
+  ],
+  "starts_from": "validation-selected primary checkpoint",
+  "choice_rule": "best mean validation score among non-KDE recipes; seed by validation"
+}

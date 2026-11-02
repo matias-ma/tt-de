@@ -1,0 +1,15 @@
+{
+  "case": "swirl4_mixture",
+  "recipe": "weaker",
+  "strength": 1e-05,
+  "marginal_strength": 0.0,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "source": "artifacts/swirl/swirl_mixture_dim4",
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "initialization": "constant plus small random coefficients",
+  "uses_truth": false,
+  "uses_signal_pilot": false,
+  "batch_seed": 0
+}

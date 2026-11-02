@@ -1,0 +1,11 @@
+{
+  "relative_l2": 0.8581069125630657,
+  "relative_squared_l2": 0.7363474733885168,
+  "integral_q_squared": 2591.629264553422,
+  "integral_pq": 4573.690377025113,
+  "integral_p_squared": 24865.119154186297,
+  "path_quadrature_relative_change": 5.0358953990925426e-11,
+  "model": "weak_continuation",
+  "metric": "Lebesgue L2 of the latent full-dimensional density",
+  "model_sha256": "14c16251ef2ce0ceb6eced5698dd8d828430d4f8af6b05cc8619e83a7f4c951d"
+}

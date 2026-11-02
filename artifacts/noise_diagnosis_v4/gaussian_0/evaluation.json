@@ -1,0 +1,34 @@
+{
+  "models": {
+    "seed0": {
+      "relative_l2": 0.10689476542175576,
+      "relative_squared_l2": 0.011426490874572192,
+      "integral_q_squared": 0.47439127118650903,
+      "integral_pq": 0.4957248896813649,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 4.562647935572097e-13,
+      "model": "seed0",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "test_nll": 1.215687102389262,
+      "training_subset_nll": 1.2405108251972687,
+      "training_subset_count": 20000,
+      "roughness_hessian": 20.753495534751213,
+      "estimated_observed_kl": 0.020874116771110514,
+      "observed_kl_se": 0.002860486219750637,
+      "true_observed_test_nll": 1.1948129856181513,
+      "pair01_relative_l2": 0.04431670394082623,
+      "pair23_relative_l2": 0.04646704591358642
+    }
+  },
+  "selected": "seed0",
+  "test_comparisons_reference": "seed0",
+  "test_comparisons": {
+    "seed0": {
+      "test_nll_minus_reference": 0.0,
+      "paired_se": 0.0
+    }
+  },
+  "test_count": 4096,
+  "truth_used_only_after_freeze": true,
+  "standard_errors": "IID paired observations"
+}

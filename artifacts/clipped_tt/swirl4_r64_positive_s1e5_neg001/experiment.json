@@ -1,0 +1,15 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim4",
+  "output": "artifacts/clipped_tt/swirl4_r64_positive_s1e5_neg001",
+  "initial": null,
+  "initial_is_density": false,
+  "rank": 64,
+  "order": 81,
+  "steps": 4000,
+  "batch_size": 1024,
+  "lr": 0.0005,
+  "strength": 1e-05,
+  "penalty_normalization": "positive",
+  "negative_penalty": 0.001,
+  "seed": 0
+}

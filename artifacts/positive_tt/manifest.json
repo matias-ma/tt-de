@@ -1,0 +1,120 @@
+{
+  "model": "positive-core Chebyshev density TT",
+  "outcome": "positivity and normalization verified; worse swirl recovery; optional only",
+  "old_pngs_preserved": 93,
+  "new_figures": {
+    "figs/swirl/noisy_mixture_positive_capacity_dim4.png": "dcee86c1f0131855c2a39a3ad1ece5fc909c2a091198c732f1d2e754e26fbae1",
+    "figs/swirl/noisy_mixture_positive_capacity_dim10.png": "253c8c67538c6ad2fdcdfd81fb4003f5b2a2524e8e91e65cd5288a9cd7139cbd",
+    "figs/swirl/noisy_mixture_positive_dim10.png": "e6b5e16b64b7de55ce608951effca170a0bdc052d81c07c1df4403c8a9c7bae1",
+    "figs/swirl/noisy_mixture_positive_dim4_ridges.png": "64a1c9d6d29b7cc0be5a61c89330a3cd86f830656672603f1bd218ce26cc3c96",
+    "figs/swirl/noisy_mixture_positive_dim4.png": "49b31f4a627bd940da89e66091c06f41496bfecd73ed5a02988afd2a35201e59",
+    "figs/swirl/noisy_mixture_positive_dim10_ridges.png": "996e8248b26f157eb1a91f7586a7929ce770e0f156be8d3dad338077832da93d",
+    "figs/swirl/noisy_mixture_positive_dim10_training.png": "0e12ea915f0a0efbe50ba324e067ec6de70c75bafa43195a20273f42b1ade030",
+    "figs/swirl/noisy_mixture_positive_dim4_training.png": "3ef8d703c9ee0f2f460c8b398d9eb78cb2e703a5625cf7e435ac512fd88c9dd1"
+  },
+  "source_sha256": {
+    "src/ftde/positive_chebyshev.py": "a54fb56e722b2b0083bfb623e1452590436e2efe47f721ff0e7907622d5a43e0",
+    "src/ftde/positive_tt_fit.py": "c3c7f83745b8e3eac06bb83fdce4e4c88a77dd077553dc2544987c4f39f6102a",
+    "scripts/fit_positive_tt.py": "7e8f6eeb89219e1c96fe6421fafeb55e27adb44b26861580d1e22936b30733c0",
+    "scripts/evaluate_positive_tt.py": "4bef82d6f15167cd951debd6be9c32cb94f8fa558df1222b5d54a16e4ffde701",
+    "scripts/plot_positive_capacity.py": "e40eb5123326a8111cc2469d27c49d8c08104a0105e6eeeefe937bd1df0ce99d",
+    "tests/test_positive_chebyshev.py": "80ef11a9f64f6d6fac706f45298c7beb995930f9581ffc35776432409f5c8020"
+  },
+  "tests": {
+    "result": "14 passed",
+    "log": "artifacts/positive_tt/logs/tests_final_api.log"
+  },
+  "cryoem_rerun": false,
+  "cryoem_reason": "No swirl latent recovery improvement in either tested dimension",
+  "cases": {
+    "4": {
+      "minimum_core_certificates": [
+        4.850385352798692e-09,
+        9.06155436015204e-11,
+        8.826943232543404e-11,
+        1.741383407004653e-08
+      ],
+      "maximum_row_mass_errors": [
+        2.220446049250313e-16,
+        1.5543122344752192e-15,
+        2.4424906541753444e-15,
+        3.1086244689504383e-15
+      ],
+      "integral": 0.9999999999999992,
+      "validation": {
+        "nll": 3.8706082532377133,
+        "old_nll": 3.861537817202544,
+        "gain": -0.009070436035169478,
+        "paired_se": 0.001968721255442861
+      },
+      "test": {
+        "nll": 3.9178860108103937,
+        "old_nll": 3.909331955633316,
+        "gain": -0.008554055177077882,
+        "paired_se": 0.0014013243409031469
+      },
+      "doubled_convolution_quadrature_max_log_change": 2.2115642650533118e-13,
+      "relative_l2": 0.4846507592554242,
+      "integral_q_squared": 0.372881951877354,
+      "integral_p_squared": 0.5230349624009067,
+      "integral_pq": 0.38653156830976093,
+      "refined_cross_integral_change_relative_to_p2": 3.831393125709207e-14,
+      "old_relative_l2": 0.21618795459551438
+    },
+    "10": {
+      "minimum_core_certificates": [
+        1.9027815506125293e-09,
+        1.0818147750572835e-10,
+        6.990164928838087e-11,
+        1.2239060587992766e-10,
+        9.517329435694884e-11,
+        1.0133163890132357e-10,
+        1.1242014053515148e-10,
+        1.4282684709780675e-10,
+        1.2099776595175119e-10,
+        6.513017603787601e-08
+      ],
+      "maximum_row_mass_errors": [
+        4.440892098500626e-16,
+        1.6653345369377348e-15,
+        2.220446049250313e-15,
+        2.1094237467877974e-15,
+        2.220446049250313e-15,
+        1.7763568394002505e-15,
+        2.220446049250313e-15,
+        1.5543122344752192e-15,
+        2.6645352591003757e-15,
+        3.552713678800501e-15
+      ],
+      "integral": 1.0000000000000009,
+      "validation": {
+        "nll": 6.32080164630674,
+        "old_nll": 6.284201534178,
+        "gain": -0.03660011212873987,
+        "paired_se": 0.004492487928305928
+      },
+      "test": {
+        "nll": 6.313320689146653,
+        "old_nll": 6.275877657095197,
+        "gain": -0.0374430320514551,
+        "paired_se": 0.003255307763487142
+      },
+      "doubled_convolution_quadrature_max_log_change": 5.559996907322784e-13,
+      "relative_l2": 0.8067606697116598,
+      "integral_q_squared": 3.7816678724474166,
+      "integral_p_squared": 28.83414100376923,
+      "integral_pq": 6.924369877838618,
+      "refined_cross_integral_change_relative_to_p2": 3.4068132359480654e-14,
+      "old_relative_l2": 0.4877718980500103
+    }
+  },
+  "allocation": {
+    "job_id": 14487993,
+    "gpus": 1,
+    "cpus": 4,
+    "memory_gb": 32,
+    "partition": "cryoem",
+    "environment": "chebdGE",
+    "status": "cancelled after all fitting, evaluation, and tests completed"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "cases": [
+    {
+      "case": "gl4_free",
+      "family": "gl",
+      "dimension": 4,
+      "noise": "free",
+      "rank": 5,
+      "core_entries": 625,
+      "relative_l2": 0.03917420314419666,
+      "selected": "strong",
+      "validation_nll": 3.9632158820552275,
+      "selected_fit_seconds": 16.028869536239654,
+      "model": "artifacts/tucker_gallery/gl4_free/strong/fit.npz"
+    },
+    {
+      "case": "gl4_mixture",
+      "family": "gl",
+      "dimension": 4,
+      "noise": "mixture",
+      "rank": 5,
+      "core_entries": 625,
+      "relative_l2": 0.256120477658315,
+      "selected": "strong",
+      "validation_nll": 6.304750943097501,
+      "selected_fit_seconds": 176.26603587670252,
+      "model": "artifacts/tucker_gallery/gl4_mixture/strong/fit.npz"
+    },
+    {
+      "case": "gl8_free",
+      "family": "gl",
+      "dimension": 8,
+      "noise": "free",
+      "rank": 3,
+      "core_entries": 6561,
+      "relative_l2": 0.09754245764190285,
+      "selected": "strong",
+      "validation_nll": 7.806135298652353,
+      "selected_fit_seconds": 40.858326697256416,
+      "model": "artifacts/tucker_gallery/gl8_free/strong/fit.npz"
+    },
+    {
+      "case": "gl8_mixture",
+      "family": "gl",
+      "dimension": 8,
+      "noise": "mixture",
+      "rank": 3,
+      "core_entries": 6561,
+      "relative_l2": 0.20027061438291394,
+      "selected": "curriculum",
+      "validation_nll": 12.463955970296466,
+      "selected_fit_seconds": 655.1955429990776,
+      "model": "artifacts/tucker_gallery/gl8_mixture/curriculum/fit.npz"
+    },
+    {
+      "case": "swirl4_free",
+      "family": "swirl",
+      "dimension": 4,
+      "noise": "free",
+      "rank": 8,
+      "core_entries": 4096,
+      "relative_l2": 0.4330349817536523,
+      "selected": "strong",
+      "validation_nll": 1.468023822320275,
+      "selected_fit_seconds": 38.91788172023371,
+      "model": "artifacts/tucker_gallery/swirl4_free/strong/fit.npz"
+    },
+    {
+      "case": "swirl4_mixture",
+      "family": "swirl",
+      "dimension": 4,
+      "noise": "mixture",
+      "rank": 8,
+      "core_entries": 4096,
+      "relative_l2": 0.5132514641242399,
+      "selected": "curriculum",
+      "validation_nll": 3.8802013606686234,
+      "selected_fit_seconds": 359.8844219571911,
+      "model": "artifacts/tucker_gallery/swirl4_mixture/curriculum/fit.npz"
+    },
+    {
+      "case": "swirl6_free",
+      "family": "swirl",
+      "dimension": 6,
+      "noise": "free",
+      "rank": 4,
+      "core_entries": 4096,
+      "relative_l2": 0.8915373331284854,
+      "selected": "strong",
+      "validation_nll": 2.095473695814931,
+      "selected_fit_seconds": 69.45675261877477,
+      "model": "artifacts/tucker_gallery/swirl6_free/strong/fit.npz"
+    },
+    {
+      "case": "swirl6_mixture",
+      "family": "swirl",
+      "dimension": 6,
+      "noise": "mixture",
+      "rank": 4,
+      "core_entries": 4096,
+      "relative_l2": 0.9274049175184083,
+      "selected": "strong",
+      "validation_nll": 5.140604599578254,
+      "selected_fit_seconds": 584.0877253683284,
+      "model": "artifacts/tucker_gallery/swirl6_mixture/strong/fit.npz"
+    }
+  ]
+}

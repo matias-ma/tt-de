@@ -1,0 +1,80 @@
+{
+  "dim": 3,
+  "noise": "mixture",
+  "n_train": 300,
+  "n_test": 100,
+  "rank": 2,
+  "n_coeffs": 5,
+  "steps": 10000,
+  "naive_steps": 0,
+  "deconv_steps": 2,
+  "batch_size": 32,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 3,
+  "kernel_n_coeffs": 65,
+  "compare_spectral": false,
+  "convolution_backend": "direct",
+  "rsi_max_rank": 8,
+  "output": "results/gl_rsi_trial/smoke_direct.json",
+  "save_figures": false,
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.6751962802334357,
+      "relative_sample_l2": 0.8217032799213082
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.7454385453190524,
+      "relative_sample_l2": 0.8633878301893375
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.7451798762057081,
+      "relative_sample_l2": 0.863238018281
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 2.1316282072803006e-14,
+    "analytic_mixture_max_abs_log_error": 0.017564220729136437
+  },
+  "histories": {
+    "naive": {
+      "best_step": 0,
+      "best_nll": 4.296911411392385,
+      "nonfinite_step": null,
+      "training_seconds": 0.05935070407576859,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 4.296911411392385
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 2,
+      "best_nll": 4.454504445172946,
+      "nonfinite_step": null,
+      "training_seconds": 0.9766686751972884,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 4.456150458254877
+        },
+        {
+          "step": 2,
+          "validation_nll": 4.454504445172946
+        }
+      ]
+    }
+  },
+  "rsi_setup": null,
+  "orders": [
+    37,
+    37,
+    37
+  ],
+  "fit_seconds": 3.215221280930564,
+  "seconds": 6.331226020120084
+}

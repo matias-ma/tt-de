@@ -1,0 +1,6 @@
+integral: 1.0
+minimum_density_on_512_probes: 0.005156963756333571
+convolution_single_core_linearity_error: 3.469446951953614e-18
+minimum_core_hessian_eigenvalue: 0.15921422705031776
+maximum_jensen_gap: -0.002674192120487362
+scope: algebra validation only; no fitted density or benchmark improvement

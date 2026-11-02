@@ -1,0 +1,30 @@
+{
+  "models": {
+    "hessian": {
+      "relative_l2": 0.43689544161245075,
+      "relative_squared_l2": 0.19087762690173837,
+      "integral_q_squared": 11260.772914440586,
+      "integral_pq": 15689.848565923421,
+      "integral_p_squared": 24865.119154186297,
+      "path_quadrature_relative_change": 3.676733131874932e-13,
+      "model": "hessian",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "68fa4d422218069936d02c0013dc22a834edfa142f49d3275c82d8d4794d6b9d"
+    },
+    "rank64": {
+      "relative_l2": 0.2561043551814929,
+      "relative_squared_l2": 0.06558944074292827,
+      "integral_q_squared": 19585.654539445655,
+      "integral_pq": 21409.9422171513,
+      "integral_p_squared": 24865.119154186297,
+      "path_quadrature_relative_change": 4.0381151786608884e-13,
+      "model": "rank64",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "6330ce333da685889de180cf088da36b2f54e3135e965ed9af010a269200caea"
+    }
+  },
+  "selected": "rank64",
+  "minimum_nll": "rank64",
+  "selection_sha256": "8b46099b49736035fb30cd6c27b5b1f5f5f4953cd86aa0e0ac8fac70ffa9e805",
+  "metric": "unsquared full-dimensional relative Lebesgue L2"
+}

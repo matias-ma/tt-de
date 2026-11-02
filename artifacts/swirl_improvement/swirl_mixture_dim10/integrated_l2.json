@@ -1,0 +1,9 @@
+{
+  "tied_isotropic_rank1_32": {
+    "relative_l2": 0.28180578247113497,
+    "integral_q_squared": 31.86635961821934,
+    "integral_pq": 29.205325879553172,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.8654304662650654e-13
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "squared_n49_r32_l0.0001_b256_s0",
+  "kind": "squared",
+  "order": 65,
+  "positive_mass": 66.79412586599568,
+  "negative_mass": 0.0,
+  "validation_nll": 3.8650012961055373,
+  "fit_path": "artifacts/direct_optimization/swirl4/squared_n49_r32_l0.0001_b256_s0/fit.npz",
+  "fit_sha256": "0304ec47574191e792c5082fda8e46039b3de57d9cae6256ca6d883a8ae1b408",
+  "coefficient_count": 103488,
+  "seconds": 2.0908900949871168
+}

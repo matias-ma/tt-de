@@ -1,0 +1,20 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim4",
+  "output": "artifacts/positive_tt/swirl4_r32_m49_v3",
+  "initial": null,
+  "rank": 32,
+  "modes": 49,
+  "subdivisions": 16,
+  "width": 0.4,
+  "sweeps": 100,
+  "inner_steps": 6,
+  "batch_size": 8192,
+  "barrier": 0.001,
+  "barrier_final": 0.0001,
+  "strength": 1e-08,
+  "seed": 0,
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "model": "direct Chebyshev density TT, positive polynomial cores, stochastic core integrals",
+  "solver_version": "qr_whitened_newton_v3",
+  "selection": "minimum noisy validation NLL; no truth in fitting or selection"
+}

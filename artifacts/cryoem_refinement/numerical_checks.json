@@ -1,0 +1,11 @@
+{
+  "maximum_quadrature_log_error": 2.0676793610618915e-12,
+  "completed_candidate_records": 25,
+  "tests_passed": 12,
+  "test_files": [
+    "test_cryoem_refinement.py",
+    "test_gallery_marginals.py",
+    "test_noisy_selection.py"
+  ],
+  "invalid_pilot_excluded": "dim4_resolution/INVALID_MIXTURE.json"
+}

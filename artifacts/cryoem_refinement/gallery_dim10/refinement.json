@@ -1,0 +1,33 @@
+{
+  "base": "/home/ma4473/ft-de/artifacts/figure_refresh/cryoem_dim10",
+  "experiment": "/home/ma4473/ft-de/artifacts/cryoem_refinement/dim10_rank20",
+  "configuration": {
+    "base": "artifacts/figure_refresh/cryoem_dim10",
+    "noise_metadata": "artifacts/cryoem_refinement/noise_dim10.npz",
+    "output": "artifacts/cryoem_refinement/dim10_rank20",
+    "steps": 4000,
+    "modes": 49,
+    "rank": 20,
+    "strengths": [
+      3e-05,
+      0.0003
+    ],
+    "correct_projection": false
+  },
+  "continuation": {
+    "source": "mixture49_rank20_h2_3e-05",
+    "steps": 3000,
+    "strengths": [
+      0.0001,
+      0.0003
+    ],
+    "lr": 0.0001,
+    "batch_size": 256
+  },
+  "kernel_description": "4-component stationary Gaussian noise mixture; diagonal within components; supplied noise metadata only",
+  "baseline_nll": 10.500751937633225,
+  "selected_nll": 9.97832018095152,
+  "baseline_excess_nll": 0.5224317566817064,
+  "baseline_paired_se": 0.011781806321859012,
+  "selection_note": "Held-out noisy likelihood with paired one-SE rule and common amplitude curvature; no clean data or labels"
+}

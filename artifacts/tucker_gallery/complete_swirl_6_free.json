@@ -1,0 +1,11 @@
+{
+  "cases": [
+    [
+      "swirl",
+      6,
+      4
+    ]
+  ],
+  "steps": 4000,
+  "noise": "free"
+}

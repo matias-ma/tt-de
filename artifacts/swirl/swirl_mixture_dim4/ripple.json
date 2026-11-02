@@ -1,0 +1,66 @@
+{
+  "filter_width_t": 0.012,
+  "selected": "rank64_h2_0.0001",
+  "candidates": {
+    "base": {
+      "01": {
+        "profile_relative_error": 0.07606273805550044,
+        "smooth_relative_error": 0.06652427303780586,
+        "ripple_relative_error": 0.024306312903392968
+      },
+      "23": {
+        "profile_relative_error": 0.12384138188368704,
+        "smooth_relative_error": 0.09756411344981636,
+        "ripple_relative_error": 0.05434486158682077
+      }
+    },
+    "rank32_h2_0.0001": {
+      "01": {
+        "profile_relative_error": 0.08235005347406403,
+        "smooth_relative_error": 0.07109703724398052,
+        "ripple_relative_error": 0.023412340004453178
+      },
+      "23": {
+        "profile_relative_error": 0.11289737319638933,
+        "smooth_relative_error": 0.06943174956961197,
+        "ripple_relative_error": 0.07032731228490233
+      }
+    },
+    "rank32_h2_0.0003": {
+      "01": {
+        "profile_relative_error": 0.10323440345520585,
+        "smooth_relative_error": 0.09813753557079558,
+        "ripple_relative_error": 0.016660752308717823
+      },
+      "23": {
+        "profile_relative_error": 0.11243545498582352,
+        "smooth_relative_error": 0.09381738811050924,
+        "ripple_relative_error": 0.04574598418371347
+      }
+    },
+    "rank64_h2_0.0001": {
+      "01": {
+        "profile_relative_error": 0.08445057829332021,
+        "smooth_relative_error": 0.07369727789922614,
+        "ripple_relative_error": 0.022769420470066498
+      },
+      "23": {
+        "profile_relative_error": 0.10731249441183603,
+        "smooth_relative_error": 0.06930094598685548,
+        "ripple_relative_error": 0.0621159576083779
+      }
+    },
+    "rank64_h2_0.0003": {
+      "01": {
+        "profile_relative_error": 0.10611264024380321,
+        "smooth_relative_error": 0.10103321681574863,
+        "ripple_relative_error": 0.016410176736566855
+      },
+      "23": {
+        "profile_relative_error": 0.11117621662525766,
+        "smooth_relative_error": 0.09426826374192304,
+        "ripple_relative_error": 0.04236097685982032
+      }
+    }
+  }
+}

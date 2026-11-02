@@ -1,0 +1,35 @@
+{
+  "case": "swirl4_mixture",
+  "model": "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/fit.npz",
+  "probe_indices": [
+    681,
+    886,
+    1114,
+    2005,
+    2033,
+    2279,
+    2422,
+    2659,
+    3459,
+    3659,
+    3740,
+    4077
+  ],
+  "errors": {
+    "no_moment_truncation": 3.552713678800501e-15,
+    "unprepared": 5.329070518200751e-15,
+    "double_polynomial_quadrature": 4.2010839251815923e-13,
+    "analytic_gaussian_q128": 2.4868995751603507e-14,
+    "analytic_gaussian_q256": 2.042810365310288e-14,
+    "analytic_quadrature_refinement": 1.0658141036401503e-14,
+    "relative_gradient_error": 1.1790006327763646e-13,
+    "finite_difference_absolute_error": 3.898696643300781e-11,
+    "finite_difference_derivative": -0.015349672821685088
+  },
+  "production_log_density_range": [
+    -11.320093871768634,
+    -2.120622521817837
+  ],
+  "uses_truth": false,
+  "reference": "analytic Gaussian block quadrature, SVD tolerance 1e-14"
+}

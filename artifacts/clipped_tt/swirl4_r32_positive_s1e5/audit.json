@@ -1,0 +1,24 @@
+[
+  {
+    "order": 97,
+    "nll": 3.860234810883726,
+    "positive_mass": 0.5255955952680436,
+    "negative_to_positive_mass": 11.432676700125729,
+    "relative_l2": 0.33714874701674113,
+    "norm_q_squared": 0.4182446977519647,
+    "cross_integral": 0.4409133269047807,
+    "norm_p_squared": 0.5230349624010963,
+    "test_nll": 3.909442929804153
+  },
+  {
+    "order": 129,
+    "nll": 3.860237796382281,
+    "positive_mass": 0.5256066731231535,
+    "negative_to_positive_mass": 11.43245681767987,
+    "relative_l2": 0.3371466810561741,
+    "norm_q_squared": 0.41822674601745813,
+    "cross_integral": 0.4409047153491004,
+    "norm_p_squared": 0.5230349624010963,
+    "test_nll": 3.909441330839121
+  }
+]

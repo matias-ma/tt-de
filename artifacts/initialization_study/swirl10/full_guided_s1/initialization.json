@@ -1,0 +1,138 @@
+{
+  "method": "full_guided",
+  "seed": 1,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 60,
+    "validation_nll": 6.283902278793802,
+    "history": [
+      {
+        "step": 10,
+        "nll": 6.3080286756892
+      },
+      {
+        "step": 20,
+        "nll": 6.290696129135529
+      },
+      {
+        "step": 30,
+        "nll": 6.285913104341327
+      },
+      {
+        "step": 40,
+        "nll": 6.284358224933126
+      },
+      {
+        "step": 50,
+        "nll": 6.283910704405123
+      },
+      {
+        "step": 60,
+        "nll": 6.283902278793802
+      },
+      {
+        "step": 70,
+        "nll": 6.284077371696823
+      },
+      {
+        "step": 80,
+        "nll": 6.2843268580130545
+      },
+      {
+        "step": 90,
+        "nll": 6.284601607908961
+      },
+      {
+        "step": 100,
+        "nll": 6.284879288184831
+      },
+      {
+        "step": 110,
+        "nll": 6.285150050801807
+      },
+      {
+        "step": 120,
+        "nll": 6.28540994715319
+      },
+      {
+        "step": 130,
+        "nll": 6.2856578328157795
+      },
+      {
+        "step": 140,
+        "nll": 6.285893901844039
+      },
+      {
+        "step": 150,
+        "nll": 6.286118969201975
+      }
+    ],
+    "seconds": 0.2899121539667249
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.22075354543985,
+        "sample_matrix_relative_tail": 2.802787572302364e-06
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 2.083690837587685,
+        "sample_matrix_relative_tail": 0.07630266307893951
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 1.780543711222099,
+        "sample_matrix_relative_tail": 0.09760724187362733
+      },
+      {
+        "axis": 3,
+        "rank": 32,
+        "interpolation_condition": 1.7357681880071905,
+        "sample_matrix_relative_tail": 0.0901040860640733
+      },
+      {
+        "axis": 4,
+        "rank": 32,
+        "interpolation_condition": 1.744275890089927,
+        "sample_matrix_relative_tail": 0.07520563765173771
+      },
+      {
+        "axis": 5,
+        "rank": 32,
+        "interpolation_condition": 1.8205636866739499,
+        "sample_matrix_relative_tail": 0.07626146744248985
+      },
+      {
+        "axis": 6,
+        "rank": 32,
+        "interpolation_condition": 2.7672623117043775,
+        "sample_matrix_relative_tail": 0.04466369801417915
+      },
+      {
+        "axis": 7,
+        "rank": 32,
+        "interpolation_condition": 2.759527525198244,
+        "sample_matrix_relative_tail": 0.01589200073785575
+      },
+      {
+        "axis": 8,
+        "rank": 32,
+        "interpolation_condition": 5.2847823944025025,
+        "sample_matrix_relative_tail": 7.824197671281675e-07
+      }
+    ]
+  },
+  "seconds": 2.587092159083113,
+  "pilot_is_final_model": false
+}

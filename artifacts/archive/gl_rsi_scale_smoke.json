@@ -1,0 +1,92 @@
+{
+  "dim": 3,
+  "noise": "mixture",
+  "noise_scale": 1.5,
+  "n_train": 300,
+  "n_test": 100,
+  "rank": 2,
+  "n_coeffs": 5,
+  "steps": 10000,
+  "naive_steps": 0,
+  "deconv_steps": 2,
+  "batch_size": 32,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 3,
+  "kernel_n_coeffs": 65,
+  "compare_spectral": false,
+  "convolution_backend": "rsi",
+  "rsi_max_rank": 8,
+  "output": "build/gl_rsi_scale_smoke.json",
+  "save_figures": false,
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.7585220990031853,
+      "relative_sample_l2": 0.8709317418737161
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.7832090123068947,
+      "relative_sample_l2": 0.88499096735893
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.7828517121609968,
+      "relative_sample_l2": 0.884789077781251
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 2.1316282072803006e-14,
+    "rsi_max_abs_log_error": 2.4868995751603507e-14,
+    "rsi_relative_log_error": 4.138242791577653e-15,
+    "exact_validation_nll_at_rsi_checkpoint": 4.906668584543971,
+    "analytic_mixture_max_abs_log_error": 0.015179456579852868
+  },
+  "histories": {
+    "naive": {
+      "best_step": 0,
+      "best_nll": 4.714097130167067,
+      "nonfinite_step": null,
+      "training_seconds": 0.15085605205968022,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 4.714097130167067
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 2,
+      "best_nll": 4.906668584543992,
+      "nonfinite_step": null,
+      "training_seconds": 1.5187587020918727,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 4.907877220581888
+        },
+        {
+          "step": 2,
+          "validation_nll": 4.906668584543992
+        }
+      ]
+    }
+  },
+  "rsi_setup": {
+    "seconds": 1.1447265630122274,
+    "ranks": [
+      6,
+      6
+    ],
+    "validation_relative_rms_error": 1.217220439549118e-15,
+    "validation_max_error": 6.106226635438361e-16
+  },
+  "orders": [
+    37,
+    37,
+    37
+  ],
+  "fit_seconds": 6.185797760030255,
+  "seconds": 13.620113637996837
+}

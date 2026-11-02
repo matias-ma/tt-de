@@ -1,0 +1,295 @@
+{
+  "name": "reference_0.01",
+  "strength": 0.01,
+  "best_nll": 15.628037110691707,
+  "best_step": 6800,
+  "minimum_nll": 15.627428053788854,
+  "checkpoint_selection": {
+    "minimum_nll_index": 20,
+    "selected_index": 17,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 15.628066324376679,
+        "excess_nll": 0.0006382705878257384,
+        "paired_cluster_se": 0.0010126503872940468,
+        "roughness": 21.137555282324893,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.63012575552455,
+        "excess_nll": 0.002697701735694881,
+        "paired_cluster_se": 0.0017093701109460874,
+        "roughness": 0.508177643129535,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.62876713406251,
+        "excess_nll": 0.0013390802736566688,
+        "paired_cluster_se": 0.0017781147595504157,
+        "roughness": 0.2719306661803589,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.629543484480743,
+        "excess_nll": 0.0021154306918889964,
+        "paired_cluster_se": 0.0013973723612882316,
+        "roughness": 0.22692889872973943,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.628034757081103,
+        "excess_nll": 0.0006067032922495805,
+        "paired_cluster_se": 0.001350533035052726,
+        "roughness": 0.2161421731617065,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.629712789099331,
+        "excess_nll": 0.0022847353104768608,
+        "paired_cluster_se": 0.0017204616128852091,
+        "roughness": 0.2049477086579263,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.630767613104311,
+        "excess_nll": 0.003339559315455983,
+        "paired_cluster_se": 0.0016249750579846946,
+        "roughness": 0.1855757791500881,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.628574620260817,
+        "excess_nll": 0.0011465664719634144,
+        "paired_cluster_se": 0.0014849384674059543,
+        "roughness": 0.18105788452866925,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.628902615829837,
+        "excess_nll": 0.001474562040984317,
+        "paired_cluster_se": 0.001467228083517156,
+        "roughness": 0.17535535597833346,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.630060973148197,
+        "excess_nll": 0.0026329193593418333,
+        "paired_cluster_se": 0.0017019276015568098,
+        "roughness": 0.18476617545150342,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.630691876330067,
+        "excess_nll": 0.003263822541212172,
+        "paired_cluster_se": 0.0020850534218766733,
+        "roughness": 0.17811948664235314,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.630958772122789,
+        "excess_nll": 0.0035307183339330413,
+        "paired_cluster_se": 0.001492795059085726,
+        "roughness": 0.16321513184725475,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.62805802450562,
+        "excess_nll": 0.0006299707167665407,
+        "paired_cluster_se": 0.0010182887670020172,
+        "roughness": 0.16495319325848465,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.62840191947461,
+        "excess_nll": 0.0009738656857550283,
+        "paired_cluster_se": 0.0009265256397569701,
+        "roughness": 0.1651925921196515,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.629901426337762,
+        "excess_nll": 0.0024733725489065623,
+        "paired_cluster_se": 0.001429125496481537,
+        "roughness": 0.1625777035307097,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.629456341666181,
+        "excess_nll": 0.002028287877327445,
+        "paired_cluster_se": 0.001028267216930647,
+        "roughness": 0.15846793205392332,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.628879020132803,
+        "excess_nll": 0.0014509663439492542,
+        "paired_cluster_se": 0.0009639259614698896,
+        "roughness": 0.15705668323201705,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.628037110691707,
+        "excess_nll": 0.000609056902853889,
+        "paired_cluster_se": 0.0007267991575754002,
+        "roughness": 0.15409489964940076,
+        "eligible": true
+      },
+      {
+        "validation_nll": 15.629271371260359,
+        "excess_nll": 0.001843317471502839,
+        "paired_cluster_se": 0.00090091170217042,
+        "roughness": 0.15415876912861662,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.628817387284553,
+        "excess_nll": 0.0013893334956985304,
+        "paired_cluster_se": 0.0008451145549221215,
+        "roughness": 0.1538658304445954,
+        "eligible": false
+      },
+      {
+        "validation_nll": 15.627428053788854,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 0.15482715294005756,
+        "eligible": true
+      }
+    ]
+  },
+  "roughness": 0.15409489964940076,
+  "history": [
+    {
+      "step": 0,
+      "nll": 15.628066324376679,
+      "roughness": 21.137555282324893
+    },
+    {
+      "step": 400,
+      "nll": 15.63012575552455,
+      "roughness": 0.508177643129535
+    },
+    {
+      "step": 800,
+      "nll": 15.62876713406251,
+      "roughness": 0.2719306661803589
+    },
+    {
+      "step": 1200,
+      "nll": 15.629543484480743,
+      "roughness": 0.22692889872973943
+    },
+    {
+      "step": 1600,
+      "nll": 15.628034757081103,
+      "roughness": 0.2161421731617065
+    },
+    {
+      "step": 2000,
+      "nll": 15.629712789099331,
+      "roughness": 0.2049477086579263
+    },
+    {
+      "step": 2400,
+      "nll": 15.630767613104311,
+      "roughness": 0.1855757791500881
+    },
+    {
+      "step": 2800,
+      "nll": 15.628574620260817,
+      "roughness": 0.18105788452866925
+    },
+    {
+      "step": 3200,
+      "nll": 15.628902615829837,
+      "roughness": 0.17535535597833346
+    },
+    {
+      "step": 3600,
+      "nll": 15.630060973148197,
+      "roughness": 0.18476617545150342
+    },
+    {
+      "step": 4000,
+      "nll": 15.630691876330067,
+      "roughness": 0.17811948664235314
+    },
+    {
+      "step": 4400,
+      "nll": 15.630958772122789,
+      "roughness": 0.16321513184725475
+    },
+    {
+      "step": 4800,
+      "nll": 15.62805802450562,
+      "roughness": 0.16495319325848465
+    },
+    {
+      "step": 5200,
+      "nll": 15.62840191947461,
+      "roughness": 0.1651925921196515
+    },
+    {
+      "step": 5600,
+      "nll": 15.629901426337762,
+      "roughness": 0.1625777035307097
+    },
+    {
+      "step": 6000,
+      "nll": 15.629456341666181,
+      "roughness": 0.15846793205392332
+    },
+    {
+      "step": 6400,
+      "nll": 15.628879020132803,
+      "roughness": 0.15705668323201705
+    },
+    {
+      "step": 6800,
+      "nll": 15.628037110691707,
+      "roughness": 0.15409489964940076
+    },
+    {
+      "step": 7200,
+      "nll": 15.629271371260359,
+      "roughness": 0.15415876912861662
+    },
+    {
+      "step": 7600,
+      "nll": 15.628817387284553,
+      "roughness": 0.1538658304445954
+    },
+    {
+      "step": 8000,
+      "nll": 15.627428053788854,
+      "roughness": 0.15482715294005756
+    }
+  ],
+  "seconds": 144.29304701811634,
+  "quadrature_log_error": 7.815970093361102e-14,
+  "settings": {
+    "setup": "artifacts/gl_rsi_trial/paired_setup.npz",
+    "output": "artifacts/noisy_reference_checkpoints",
+    "strengths": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "order": 2,
+    "n_coeffs": 33,
+    "legacy": false,
+    "steps": 8000,
+    "batch_size": 256,
+    "lr": 0.0005,
+    "n_train": 100000,
+    "noise_scale": 1.5,
+    "train_seed": 0,
+    "valid_seed": 2,
+    "warm_start": "artifacts/noisy_recovery_n25_mid/h2_3e-05/fit.npz",
+    "reference": "artifacts/noisy_reference/selected.npz",
+    "fisher_floor": null,
+    "checkpoint_rule": "paired-one-se"
+  }
+}

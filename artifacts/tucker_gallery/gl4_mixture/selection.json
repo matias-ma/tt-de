@@ -1,0 +1,21 @@
+{
+  "selected": "strong",
+  "scores": {
+    "strong": 6.304750943097501,
+    "curriculum": 6.3047766589781595
+  },
+  "files": {
+    "artifacts/tucker_gallery/gl4_mixture/strong/fit.npz": "279427f6a0e28c4184dbf513d430a49e693b247a647b18c0c68e609a8a18a0fc",
+    "artifacts/tucker_gallery/gl4_mixture/strong/result.json": "72c4ad6dae090f5dba5fe2e91a07581f2eacddcb1bc89b967de4994d467bb20e",
+    "artifacts/tucker_gallery/gl4_mixture/strong/config.json": "ea3cdb1f512ca2eee246c36b46f92fa98e0d2210cd3630f832a9c1fa040de394",
+    "artifacts/tucker_gallery/gl4_mixture/strong/validation.npy": "6a266929753921966cfc6d60ed41fe33946659e84e3456e4a6bee156dad26cd7",
+    "artifacts/tucker_gallery/gl4_mixture/curriculum/fit.npz": "693cb77f10a9845851b67f761df44c97535ba6838411254b55bbeda984b08b00",
+    "artifacts/tucker_gallery/gl4_mixture/curriculum/result.json": "282428bdc6a935df6033d7e8023f62cdc6026e4e485abfadbca8281338a4255a",
+    "artifacts/tucker_gallery/gl4_mixture/curriculum/config.json": "61013d066005d93869d149a67fc79f10cd62c176be6324953f201d85e9b72c9a",
+    "artifacts/tucker_gallery/gl4_mixture/curriculum/validation.npy": "78f38c52d19b7b3f7f9539e6d1e716129df4b49ae9e25fe9ecab1ab32c7a0172",
+    "artifacts/dimension_gallery_v9/gl4_mixture/data.npz": "852c79c6691fce5c85389d1d1aa12618dc871c9326bba71ddb91d130f3937bb8",
+    "artifacts/tucker_gallery/gl4_mixture/protocol.json": "38c99165862dc0b15c42d7fb4be4a60235e81944f62b698242ae2372ef2cc3d9",
+    "artifacts/dimension_gallery_v9/gl4_mixture/kernel.npz": "bce47f8cf5df89a3a202c9df0ea8b1d9dfd6ebe41c12e4115344e6900600840e"
+  },
+  "truth_evaluated": false
+}

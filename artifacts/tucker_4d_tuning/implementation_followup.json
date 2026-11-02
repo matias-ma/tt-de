@@ -1,0 +1,5 @@
+{
+  "reason": "Avoid forming dense pair matrices for exactly separable noise blocks; mathematical objective, data and tuning grid unchanged.",
+  "interrupted_run": "interrupted_dense_pairs",
+  "truth_evaluated": false
+}

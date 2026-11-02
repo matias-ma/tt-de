@@ -1,0 +1,53 @@
+{
+  "best_nll": 24.652808658638918,
+  "best_step": 2400,
+  "strength": 0.0003,
+  "steps": 2400,
+  "lr": 0.0002,
+  "batch_size": 128,
+  "history": [
+    {
+      "step": 0,
+      "nll": 24.677509434630394,
+      "penalty": 171.8674699768996
+    },
+    {
+      "step": 400,
+      "nll": 24.687117609042453,
+      "penalty": 178.48445265647914
+    },
+    {
+      "step": 800,
+      "nll": 24.677232285378686,
+      "penalty": 168.93669441718396
+    },
+    {
+      "step": 1200,
+      "nll": 24.669030518377827,
+      "penalty": 165.263801187164
+    },
+    {
+      "step": 1600,
+      "nll": 24.665083001549625,
+      "penalty": 161.22516388664224
+    },
+    {
+      "step": 2000,
+      "nll": 24.655895571292163,
+      "penalty": 159.9974967917965
+    },
+    {
+      "step": 2400,
+      "nll": 24.652808658638918,
+      "penalty": 158.62144331922906
+    }
+  ],
+  "checkpoint_rule": "regularized",
+  "selection_score": 24.700395091634686,
+  "seed": 0,
+  "preconditioning": "sobolev",
+  "microbatches": 8,
+  "device": "NVIDIA A100-SXM4-80GB",
+  "quadrature_log_error": 2.0605739337042905e-12,
+  "seconds": 794.3286447180435
+}

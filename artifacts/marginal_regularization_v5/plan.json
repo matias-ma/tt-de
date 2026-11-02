@@ -1,0 +1,38 @@
+{
+  "recipes": {
+    "control": [
+      0.001,
+      0.0
+    ],
+    "weak": [
+      0.0001,
+      0.0
+    ],
+    "weaker": [
+      1e-05,
+      0.0
+    ],
+    "marginal_low": [
+      0.0001,
+      0.001
+    ],
+    "marginal_medium": [
+      0.0001,
+      0.01
+    ],
+    "marginal_high": [
+      0.0001,
+      0.1
+    ]
+  },
+  "cases": [
+    "swirl4_mixture",
+    "gl6_mixture"
+  ],
+  "continuation_steps": 2000,
+  "fresh_steps": 4000,
+  "followup": "fresh seed0 runs of best marginal and best non-marginal continuation recipes",
+  "selection": "minimum observed validation NLL, including original control",
+  "truth": "unavailable until every setting and checkpoint is frozen",
+  "storage_budget_MiB": 256
+}

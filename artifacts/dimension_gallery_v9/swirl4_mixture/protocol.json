@@ -1,0 +1,193 @@
+{
+  "family": "swirl",
+  "dim": 4,
+  "noise": "mixture",
+  "data": "artifacts/swirl/swirl_mixture_dim4/data.npz",
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "domain": [
+    [
+      -2.3977334329072773,
+      2.1960368639246535
+    ],
+    [
+      -2.132891069145988,
+      2.1717388479744097
+    ],
+    [
+      -2.3334871568543107,
+      2.6147759590767214
+    ],
+    [
+      -2.2980397369166243,
+      2.38189702851914
+    ]
+  ],
+  "kernel": "artifacts/swirl/swirl_mixture_dim4/kernel.npz",
+  "noise_weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0484,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0484,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0484,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0484
+      ]
+    ],
+    [
+      [
+        0.2025,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0625,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2025,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0625
+      ]
+    ],
+    [
+      [
+        0.25,
+        0.15,
+        0.0,
+        0.0
+      ],
+      [
+        0.15,
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25,
+        -0.15
+      ],
+      [
+        0.0,
+        0.0,
+        -0.15,
+        0.25
+      ]
+    ]
+  ],
+  "training_count": 100000,
+  "validation_count": 4096,
+  "recipes": {
+    "curriculum": {
+      "regularizer": "hessian",
+      "strength": 1e-05,
+      "rank": 32,
+      "modes": 49,
+      "seed": 0,
+      "steps": 4000,
+      "learning_rate": 0.001,
+      "batch_size": 256,
+      "marginal_strength": 0.0,
+      "parent": null,
+      "mode_schedule": [
+        [
+          0,
+          13
+        ],
+        [
+          1000,
+          25
+        ],
+        [
+          2000,
+          49
+        ]
+      ],
+      "selection_start": 2000,
+      "optimizer": "adam"
+    },
+    "strong": {
+      "regularizer": "hessian",
+      "strength": 0.001,
+      "rank": 32,
+      "modes": 49,
+      "seed": 0,
+      "steps": 4000,
+      "learning_rate": 0.001,
+      "batch_size": 256,
+      "marginal_strength": 0.0,
+      "parent": null,
+      "mode_schedule": null,
+      "selection_start": 0,
+      "optimizer": "adam"
+    },
+    "weak_continuation": {
+      "regularizer": "hessian",
+      "strength": 1e-05,
+      "rank": 32,
+      "modes": 49,
+      "seed": 0,
+      "steps": 2000,
+      "learning_rate": 0.0003,
+      "batch_size": 256,
+      "marginal_strength": 0.0,
+      "parent": "strong",
+      "mode_schedule": null,
+      "selection_start": 0,
+      "optimizer": "adam"
+    },
+    "marginal_continuation": {
+      "regularizer": "hessian",
+      "strength": 1e-05,
+      "rank": 32,
+      "modes": 49,
+      "seed": 0,
+      "steps": 2000,
+      "learning_rate": 0.0001,
+      "batch_size": 256,
+      "marginal_strength": 0.0,
+      "parent": "weak_continuation",
+      "mode_schedule": null,
+      "selection_start": 0,
+      "optimizer": "adam",
+      "marginal_budget": 0.003
+    }
+  },
+  "initialization": "near-uniform, perturbation 0.01, seed 0; no learned signal pilot",
+  "selection": "minimum exact marginal curvature within one paired SE of minimum held-out NLL",
+  "validation_clusters": null,
+  "truth_used_for_selection": false
+}

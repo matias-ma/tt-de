@@ -1,0 +1,69 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 15.754956590636187,
+      "training_objective": 15.754985811851315,
+      "roughness_hessian": 3.623711908117608e-05,
+      "roughness_axis_h2": 3.62371184119656e-05,
+      "roughness_h1": 2.499987284986442e-07,
+      "seconds": 1.3027712320908904
+    },
+    {
+      "step": 1,
+      "validation_nll": -0.9235239564460247,
+      "training_objective": -0.9792007366351136,
+      "roughness_hessian": 429.5091200469621,
+      "roughness_axis_h2": 282.1185479810558,
+      "roughness_h1": 10.15431577761218,
+      "seconds": 6.726391389966011
+    },
+    {
+      "step": 2,
+      "validation_nll": -1.5753351778947624,
+      "training_objective": -1.6481552412174016,
+      "roughness_hessian": 132.01946756957537,
+      "roughness_axis_h2": 55.05716339880682,
+      "roughness_h1": 8.153230236491392,
+      "seconds": 8.781024669995531
+    },
+    {
+      "step": 3,
+      "validation_nll": -1.7270140035762154,
+      "training_objective": -1.8066380094935781,
+      "roughness_hessian": 98.70168383841751,
+      "roughness_axis_h2": 35.62363403794885,
+      "roughness_h1": 7.608328507988306,
+      "seconds": 10.40523288003169
+    },
+    {
+      "step": 4,
+      "validation_nll": -1.7710679584218605,
+      "training_objective": -1.8509543842419938,
+      "roughness_hessian": 92.68358406232242,
+      "roughness_axis_h2": 32.488829715606144,
+      "roughness_h1": 7.528994949621711,
+      "seconds": 11.82987040001899
+    },
+    {
+      "step": 5,
+      "validation_nll": -1.7864638833629791,
+      "training_objective": -1.869342154706983,
+      "roughness_hessian": 89.11891875541825,
+      "roughness_axis_h2": 30.558876537721556,
+      "roughness_h1": 7.482456227969499,
+      "seconds": 13.243269454920664
+    },
+    {
+      "step": 6,
+      "validation_nll": -1.7938817235573379,
+      "training_objective": -1.8774504668794303,
+      "roughness_hessian": 87.56858359715395,
+      "roughness_axis_h2": 29.797118690498873,
+      "roughness_h1": 7.458393027680237,
+      "seconds": 14.577537653967738
+    }
+  ],
+  "best_step": 6,
+  "best_nll": -1.7938817235573379
+}

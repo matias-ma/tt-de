@@ -1,0 +1,14 @@
+{
+  "reason": "The frozen, validation-selected noise-free 4D fit improved relative L2 from 0.102245 to 0.091643. Rerun cryo-EM as requested, despite weaker 10D and noisy recovery; no claim of universal improvement.",
+  "cases": [
+    "dim4",
+    "path_dim4",
+    "dim10",
+    "dim20"
+  ],
+  "recipe": "Near-uniform Chebyshev TT, 49 modes/rank 32. Adam: 4000 updates, batch 256, learning rate 0.001. Curvature strengths 1e-4 and 1e-3 come from the observation-only swirl grid. Choose by existing noisy validation (paired one-SE, then physical H2), then run 40 full-data L-BFGS steps.",
+  "initialization": "box and seeded random coefficients only",
+  "noise": "Reuse and independently verify the existing frozen prescribed measurement-noise kernels.",
+  "selection": "Existing development-validation split; not a fresh independent test. No clean labels or oracle density.",
+  "reference": "Historical fits remain unchanged; comparison figures only."
+}

@@ -1,0 +1,16 @@
+{
+  "rank": 16,
+  "dimension": 4,
+  "modes": 49,
+  "batch": 16,
+  "seconds": {
+    "sequential": 0.03242792175151408,
+    "paired": 0.006333324650768191
+  },
+  "speedup": 5.120205190741451,
+  "absolute_value_error": 0.0,
+  "maximum_absolute_gradient_error": 2.220446049250313e-15,
+  "device": "cuda:0",
+  "kernel": "artifacts/swirl/swirl_mixture_dim4/kernel.npz",
+  "timing_note": "Warm value-and-gradient calls; other fits may share this allocated GPU"
+}

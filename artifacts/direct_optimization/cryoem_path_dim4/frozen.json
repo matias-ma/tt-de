@@ -1,0 +1,98 @@
+{
+  "files": {
+    "artifacts/cryoem_continuity/gallery_path_dim4/selected.npz": "a794db057537167a73837402b49aba3f9f6279fb44b8eeb3a212e90a17a90e4c",
+    "artifacts/direct_optimization/cryoem_path_dim4/constant_h2_0.0001/fit.npz": "b498d370fa986596b2561fa4879ea3fff43ca6a0e68812b478fb93525e9552ed",
+    "artifacts/direct_optimization/cryoem_path_dim4/constant_h2_0.001/fit.npz": "8d0326963a86d694048470ca727f83ef844824d3586c1ed15a228d79545ca6b9",
+    "artifacts/direct_optimization/cryoem_path_dim4/lbfgs/fit.npz": "77b7db033e54e47874965520d54e62d30b5d40978e806bca74cdbd3261babb8f"
+  },
+  "selection": {
+    "selected": "historical",
+    "new_selected": "lbfgs",
+    "names": [
+      "historical",
+      "constant_h2_0.0001",
+      "constant_h2_0.001",
+      "lbfgs"
+    ],
+    "validation_nll": [
+      3.539249591871772,
+      3.541816404757192,
+      3.5465958681968086,
+      3.5411406681862707
+    ],
+    "roughness": [
+      37.48204235820326,
+      46.73261438559857,
+      12.300267625120679,
+      46.84270531511985
+    ],
+    "selection": {
+      "minimum_nll_index": 0,
+      "selected_index": 0,
+      "clusters": 4096,
+      "se_factor": 1.0,
+      "candidates": [
+        {
+          "validation_nll": 3.539249591871772,
+          "excess_nll": 0.0,
+          "paired_cluster_se": 0.0,
+          "roughness": 37.48204235820326,
+          "eligible": true
+        },
+        {
+          "validation_nll": 3.541816404757192,
+          "excess_nll": 0.002566812885420427,
+          "paired_cluster_se": 0.001053266748144964,
+          "roughness": 46.73261438559857,
+          "eligible": false
+        },
+        {
+          "validation_nll": 3.5465958681968086,
+          "excess_nll": 0.007346276325037133,
+          "paired_cluster_se": 0.001417704791717053,
+          "roughness": 12.300267625120679,
+          "eligible": false
+        },
+        {
+          "validation_nll": 3.5411406681862707,
+          "excess_nll": 0.001891076314499302,
+          "paired_cluster_se": 0.0009016278155495687,
+          "roughness": 46.84270531511985,
+          "eligible": false
+        }
+      ]
+    },
+    "new_selection": {
+      "minimum_nll_index": 2,
+      "selected_index": 2,
+      "clusters": 4096,
+      "se_factor": 1.0,
+      "candidates": [
+        {
+          "validation_nll": 3.541816404757192,
+          "excess_nll": 0.0006757365709211252,
+          "paired_cluster_se": 0.0005807871559727929,
+          "roughness": 46.73261438559857,
+          "eligible": false
+        },
+        {
+          "validation_nll": 3.5465958681968086,
+          "excess_nll": 0.005455200010537831,
+          "paired_cluster_se": 0.0013486775069992177,
+          "roughness": 12.300267625120679,
+          "eligible": false
+        },
+        {
+          "validation_nll": 3.5411406681862707,
+          "excess_nll": 0.0,
+          "paired_cluster_se": 0.0,
+          "roughness": 46.84270531511985,
+          "eligible": true
+        }
+      ]
+    },
+    "source": "constant_h2_0.0001",
+    "uses_clean_truth": false,
+    "historical_budget_differs": true
+  }
+}

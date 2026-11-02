@@ -1,0 +1,11 @@
+{
+  "base": "artifacts/cryoem_stability/gallery_dim10",
+  "pilot": "artifacts/swirl_improvement/cryoem_dim10/tied_diagonal_64/fit.npz",
+  "output": "artifacts/swirl_improvement/tt_cryoem_dim10_r64_m81",
+  "rank": 64,
+  "modes": 81,
+  "steps": 400,
+  "strength": 0.0003,
+  "batch_size": 64,
+  "microbatches": 4
+}

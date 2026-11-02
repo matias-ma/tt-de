@@ -1,0 +1,16 @@
+{
+  "pair01": {
+    "convolution_refinement": 0.00043786022190901356,
+    "selected_latent_pair_relative_l2": 0.11991654400755156,
+    "selected_observed_pair_relative_l2": 0.03311900600013024,
+    "old_latent_pair_relative_l2": 0.12246861570442644,
+    "old_observed_pair_relative_l2": 0.03557399426834439
+  },
+  "pair23": {
+    "convolution_refinement": 0.00035130725989842204,
+    "selected_latent_pair_relative_l2": 0.12802301043324485,
+    "selected_observed_pair_relative_l2": 0.03728478485643436,
+    "old_latent_pair_relative_l2": 0.12441675872655536,
+    "old_observed_pair_relative_l2": 0.034662021360924195
+  }
+}

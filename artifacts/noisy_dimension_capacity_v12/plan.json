@@ -1,0 +1,21 @@
+{
+  "case": "swirl20_mixture",
+  "ranks": [
+    32,
+    64
+  ],
+  "steps": 1000,
+  "learning_rate": 0.0001,
+  "effective_batch_size": 256,
+  "microbatches": [
+    2,
+    8
+  ],
+  "jitter": 0.001,
+  "seed": 0,
+  "source": "observation-selected noisy baseline; never use the clean fit",
+  "penalties": "retain the source amplitude and marginal penalties",
+  "initialization": "physical-L2 canonicalize both; perturb added ranks only",
+  "selection": "lowest rank, then marginal curvature, within one paired SE of minimum noisy validation NLL",
+  "truth_evaluated_after_selection": true
+}

@@ -1,0 +1,21 @@
+{
+  "source": "artifacts/direct_optimization/swirl_free4/signed_n49_r32_l0.0001_s0/fit.npz",
+  "source_sha256": "ef94298164ed5271f763500f8b734da6083b52c9d3db2bf023c17821573a8c10",
+  "data_sha256": "36c11aca0bc9669f685248c9a24e2c0849680c1b26256fa08daecca2801205fc",
+  "fractions_of_box_width": [
+    0.0,
+    0.0025,
+    0.005,
+    0.01,
+    0.02,
+    0.04,
+    0.08,
+    0.16
+  ],
+  "selection": "minimum held-out least-squares risk",
+  "operation": "mass-preserving Galerkin heat smoothing in the existing Chebyshev TT; truncate residual negatives only afterward",
+  "changes_original_fits": false,
+  "truth_used_for_selection": false,
+  "new_test_seed": 61492,
+  "order": 129
+}

@@ -1,0 +1,17 @@
+{
+  "regularizer": "hessian",
+  "strength": 1e-05,
+  "rank": 32,
+  "modes": 49,
+  "seed": 0,
+  "steps": 2000,
+  "learning_rate": 0.0003,
+  "batch_size": 256,
+  "marginal_strength": 0.0,
+  "parent": "strong",
+  "mode_schedule": null,
+  "selection_start": 0,
+  "optimizer": "adam",
+  "microbatches": 2,
+  "parent_sha256": "56585ae7f2313102dfde5b1ddfc311cd7499583edc80c61a447d578d9e077280"
+}

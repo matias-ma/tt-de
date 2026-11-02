@@ -1,0 +1,5 @@
+{
+  "rule": "lowest marginal curvature within one paired SE of minimum validation NLL",
+  "GL_clusters": 200,
+  "truth_evaluation_not_yet_run": true
+}

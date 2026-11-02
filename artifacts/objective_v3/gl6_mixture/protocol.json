@@ -1,0 +1,153 @@
+{
+  "case": "gl6_mixture",
+  "source": "artifacts/figure_refresh/gl_mixture_dim6",
+  "data_sha256": "3662b0177d644a0369229ba9f2491e40d98b3ac036fdc15cabc9f308186e898a",
+  "domain": [
+    [
+      -3.7552370059516162,
+      3.652102406972644
+    ],
+    [
+      -3.7370906580205174,
+      3.772903782865411
+    ],
+    [
+      -3.74149264411523,
+      3.705003507001053
+    ],
+    [
+      -3.7304431244350713,
+      3.7203410261958583
+    ],
+    [
+      -3.7360388548516914,
+      3.7000483851348056
+    ],
+    [
+      -3.7554838133957316,
+      3.7470297368630003
+    ]
+  ],
+  "noise_weights": [
+    0.7,
+    0.3
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.2025,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.2025,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2025,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.2025,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2025,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2025
+      ]
+    ],
+    [
+      [
+        1.8225000000000002,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.8225000000000002,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.8225000000000002,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.8225000000000002,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.8225000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.8225000000000002
+      ]
+    ]
+  ],
+  "training_count": 100000,
+  "validation_count": 2048,
+  "uses_clean_truth": false,
+  "uses_signal_pilot": false,
+  "initialization": "constant plus random coefficients, perturbation .01, seed 0",
+  "kernel": "Gaussian bandwidth mixture (.2,.5,1) times sqrt(d) in training-standardized coordinates",
+  "training_frequencies": 1024,
+  "validation_frequencies": 512,
+  "frequency_seeds": [
+    2701,
+    2702
+  ],
+  "regularizer": "full amplitude Hessian, scales .05 box width",
+  "selection": "separate paired-one-SE NLL and kernel choices; prefer fewer coefficients",
+  "truth_evaluation": "only after all candidate and checkpoint hashes are frozen",
+  "storage_budget_MiB": 512
+}

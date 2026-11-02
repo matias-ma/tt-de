@@ -1,0 +1,6 @@
+{
+  "swirl4_free": "artifacts/tucker_4d_tuning/clean_refine/swirl4_free",
+  "swirl6_free": "artifacts/tucker_capacity/r10/swirl6_free",
+  "swirl4_mixture": "artifacts/tucker_4d_tuning/noisy_refine_m0.001/swirl4_mixture",
+  "swirl6_mixture": "artifacts/tucker_noisy_rank10/r10/swirl6_mixture"
+}

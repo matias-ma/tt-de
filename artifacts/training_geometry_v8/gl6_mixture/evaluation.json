@@ -1,0 +1,185 @@
+{
+  "models": {
+    "original": {
+      "relative_l2": 0.9607559651262616,
+      "quadrature_relative_change": 1.1601660459621214e-13,
+      "test_nll": 9.4121419756184,
+      "training_subset_nll": 9.45293859285054,
+      "training_subset_count": 20000,
+      "roughness_hessian": 50.19536892362383,
+      "estimated_observed_kl": 0.0005369799483913994,
+      "observed_kl_se": 0.001436617272714154,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.4569493086274407,
+      "pair23_relative_l2": 0.2574226545593163,
+      "validation_nll_minus_original": 0.0,
+      "paired_validation_se": 0.0,
+      "marginal_curvature": 131.61641293808717,
+      "univariate_relative_l2": [
+        0.16896817247262474,
+        0.3310559261850486,
+        0.08474831028173678,
+        0.23553012113734856,
+        0.11016825933783639,
+        0.3357531364780505
+      ],
+      "mean_univariate_relative_l2": 0.21103732098210762
+    },
+    "precondition_seed0": {
+      "relative_l2": 0.9857138972691458,
+      "quadrature_relative_change": 1.169277297631981e-13,
+      "test_nll": 9.412237928062051,
+      "training_subset_nll": 9.452785149306717,
+      "training_subset_count": 20000,
+      "roughness_hessian": 52.21760732061189,
+      "estimated_observed_kl": 0.0006329323920442147,
+      "observed_kl_se": 0.0014375617894284872,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.4258646827603693,
+      "pair23_relative_l2": 0.27682132953095534,
+      "validation_nll_minus_original": -8.071379672191679e-05,
+      "paired_validation_se": 0.0002386622665902658,
+      "marginal_curvature": 128.37605614200936,
+      "univariate_relative_l2": [
+        0.12417751481478123,
+        0.3503960055148715,
+        0.10990186020963881,
+        0.2467880113339177,
+        0.12112466064936338,
+        0.3362324018629339
+      ],
+      "mean_univariate_relative_l2": 0.21477007573091775
+    },
+    "curriculum_seed0": {
+      "relative_l2": 0.18529850153419164,
+      "quadrature_relative_change": 5.238969710169265e-14,
+      "test_nll": 9.412848490559362,
+      "training_subset_nll": 9.452359380181276,
+      "training_subset_count": 20000,
+      "roughness_hessian": 8.479808888834464,
+      "estimated_observed_kl": 0.0012434948893531464,
+      "observed_kl_se": 0.0012975592608556756,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.10584736707763596,
+      "pair23_relative_l2": 0.09985732797344085,
+      "validation_nll_minus_original": 0.0005836962214814745,
+      "paired_validation_se": 0.0008689742157828383,
+      "marginal_curvature": 38.52426103381989,
+      "univariate_relative_l2": [
+        0.08681163948106756,
+        0.042180862179620464,
+        0.07312741712788537,
+        0.06079220820967396,
+        0.06810870648893576,
+        0.06910014799314029
+      ],
+      "mean_univariate_relative_l2": 0.06668683024672056
+    },
+    "precondition_seed1": {
+      "relative_l2": 1.0182899727205486,
+      "quadrature_relative_change": 1.2239448076511384e-13,
+      "test_nll": 9.413040469035767,
+      "training_subset_nll": 9.452473599632196,
+      "training_subset_count": 20000,
+      "roughness_hessian": 56.53636749760936,
+      "estimated_observed_kl": 0.001435473365756949,
+      "observed_kl_se": 0.0013336954811426645,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.43040298723755244,
+      "pair23_relative_l2": 0.47651753485329373,
+      "validation_nll_minus_original": 3.0478913852622063e-05,
+      "paired_validation_se": 0.0010129815514325438,
+      "marginal_curvature": 198.89414314406469,
+      "univariate_relative_l2": [
+        0.132082045495131,
+        0.30659110716920673,
+        0.3672273170947562,
+        0.1730698397346099,
+        0.36725037263014076,
+        0.3121845566883032
+      ],
+      "mean_univariate_relative_l2": 0.27640087313535794
+    },
+    "combined_seed0": {
+      "relative_l2": 0.18872945753360373,
+      "quadrature_relative_change": 5.269340549068797e-14,
+      "test_nll": 9.412895413233887,
+      "training_subset_nll": 9.452345224214223,
+      "training_subset_count": 20000,
+      "roughness_hessian": 7.848356312190054,
+      "estimated_observed_kl": 0.001290417563878143,
+      "observed_kl_se": 0.0013147118015506012,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.10518412644291275,
+      "pair23_relative_l2": 0.10278602248764056,
+      "validation_nll_minus_original": 0.0006116757442429267,
+      "paired_validation_se": 0.0008793077516249392,
+      "marginal_curvature": 39.50581755113202,
+      "univariate_relative_l2": [
+        0.08695550543172702,
+        0.0407737995821319,
+        0.07376782957673089,
+        0.06389102584782351,
+        0.07281049212271416,
+        0.07034070538046339
+      ],
+      "mean_univariate_relative_l2": 0.06808989299026515
+    },
+    "baseline_seed1": {
+      "relative_l2": 0.9017011259514864,
+      "quadrature_relative_change": 1.017423103134321e-13,
+      "test_nll": 9.413077104071249,
+      "training_subset_nll": 9.45266239414012,
+      "training_subset_count": 20000,
+      "roughness_hessian": 45.95283606860995,
+      "estimated_observed_kl": 0.00147210840123988,
+      "observed_kl_se": 0.0013740419849215492,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.4354624273626382,
+      "pair23_relative_l2": 0.30270772590520106,
+      "validation_nll_minus_original": 0.0002498748523290556,
+      "paired_validation_se": 0.0009762705353464095,
+      "marginal_curvature": 162.05745471177968,
+      "univariate_relative_l2": [
+        0.12750133639446767,
+        0.29614301741769367,
+        0.2037376291449682,
+        0.15870151939999244,
+        0.3531419611144452,
+        0.3080974552467782
+      ],
+      "mean_univariate_relative_l2": 0.24122048645305752
+    }
+  },
+  "selected": "precondition_seed0",
+  "test_comparisons_reference": "original",
+  "test_comparisons": {
+    "original": {
+      "test_nll_minus_reference": 0.0,
+      "paired_se": 0.0
+    },
+    "precondition_seed0": {
+      "test_nll_minus_reference": 9.595244365281528e-05,
+      "paired_se": 0.00016813848717759007
+    },
+    "curriculum_seed0": {
+      "test_nll_minus_reference": 0.000706514940961747,
+      "paired_se": 0.0005975917845889687
+    },
+    "precondition_seed1": {
+      "test_nll_minus_reference": 0.0008984934173655497,
+      "paired_se": 0.0006832413445164216
+    },
+    "combined_seed0": {
+      "test_nll_minus_reference": 0.0007534376154867436,
+      "paired_se": 0.0005987452243129224
+    },
+    "baseline_seed1": {
+      "test_nll_minus_reference": 0.0009351284528484806,
+      "paired_se": 0.0006999043505796995
+    }
+  },
+  "test_count": 4096,
+  "truth_used_only_after_freeze": true,
+  "standard_errors": "clustered by 200 MCMC chains"
+}

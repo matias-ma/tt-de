@@ -1,0 +1,8 @@
+{
+  "method": "gaussian",
+  "seed": 1,
+  "rank": 32,
+  "modes": 49,
+  "seconds": 6.579266528831795,
+  "pilot_is_final_model": false
+}

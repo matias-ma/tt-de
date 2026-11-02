@@ -1,0 +1,129 @@
+{
+  "capacity_grid": {
+    "gl6_free": [
+      [
+        10,
+        25
+      ],
+      [
+        5,
+        25
+      ],
+      [
+        10,
+        17
+      ],
+      [
+        10,
+        49
+      ],
+      [
+        20,
+        25
+      ],
+      [
+        32,
+        25
+      ],
+      [
+        32,
+        49
+      ]
+    ],
+    "swirl4_free": [
+      [
+        10,
+        25
+      ],
+      [
+        10,
+        49
+      ],
+      [
+        20,
+        49
+      ],
+      [
+        32,
+        49
+      ]
+    ],
+    "gl6_paired": [
+      [
+        10,
+        25
+      ],
+      [
+        10,
+        49
+      ],
+      [
+        20,
+        25
+      ]
+    ],
+    "gl6_mixture": [
+      [
+        10,
+        25
+      ],
+      [
+        10,
+        49
+      ],
+      [
+        20,
+        25
+      ]
+    ],
+    "swirl4_mixture": [
+      [
+        10,
+        25
+      ],
+      [
+        10,
+        49
+      ],
+      [
+        20,
+        25
+      ]
+    ],
+    "swirl10_mixture": [
+      [
+        10,
+        25
+      ],
+      [
+        10,
+        49
+      ],
+      [
+        20,
+        25
+      ]
+    ]
+  },
+  "steps_per_fit": 4000,
+  "alternative_objectives_at_observation_selected_capacity": [
+    [
+      "mmd",
+      100.0
+    ],
+    [
+      "hybrid",
+      10.0
+    ],
+    [
+      "hybrid",
+      100.0
+    ]
+  ],
+  "regularizer_grid_at_selected_capacity": [
+    0.0001,
+    0.01
+  ],
+  "all_starts": "near uniform; no fitted signal pilot",
+  "uses_truth": false
+}

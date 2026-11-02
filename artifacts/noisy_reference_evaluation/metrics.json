@@ -1,0 +1,47 @@
+{
+  "previous_curvature": {
+    "relative_sample_l2": 0.5087702689844609,
+    "relative_squared_sample_error": 0.25884718660252065,
+    "integrated_relative_l2": 0.45488917055479566,
+    "quadrature_relative_change": 1.7507080907581677e-11,
+    "integral_estimate_squared": 0.00015631106768756396,
+    "integral_product": 0.00017575743960526237,
+    "integral_truth_squared": 0.0002461351122544305
+  },
+  "noisy_reference_fits/reference_0.001": {
+    "relative_sample_l2": 0.1654443373940626,
+    "relative_squared_sample_error": 0.027371828775760425,
+    "integrated_relative_l2": 0.17801849592817978,
+    "quadrature_relative_change": 6.470558870577365e-10,
+    "integral_estimate_squared": 0.00021285668034597878,
+    "integral_product": 0.00022559581346523876,
+    "integral_truth_squared": 0.0002461351122544305
+  },
+  "noisy_reference_fits/reference_0.003": {
+    "relative_sample_l2": 0.1537905111552403,
+    "relative_squared_sample_error": 0.023651521321390093,
+    "integrated_relative_l2": 0.16445254511224927,
+    "quadrature_relative_change": 6.76560501860815e-10,
+    "integral_estimate_squared": 0.00021162179528707426,
+    "integral_product": 0.00022555013606959023,
+    "integral_truth_squared": 0.0002461351122544305
+  },
+  "noisy_reference_fits/reference_0.01": {
+    "relative_sample_l2": 0.1575241915629396,
+    "relative_squared_sample_error": 0.02481387092755769,
+    "integrated_relative_l2": 0.16947527883686647,
+    "quadrature_relative_change": 7.003815758423886e-10,
+    "integral_estimate_squared": 0.00021002016647751916,
+    "integral_product": 0.00022454290900083147,
+    "integral_truth_squared": 0.0002461351122544305
+  },
+  "noisy_reference_fits/reference_0.03": {
+    "relative_sample_l2": 0.5087702689844609,
+    "relative_squared_sample_error": 0.25884718660252065,
+    "integrated_relative_l2": 0.4548891705546887,
+    "quadrature_relative_change": 4.885922364777415e-12,
+    "integral_estimate_squared": 0.00015631106768758618,
+    "integral_product": 0.00017575743960528546,
+    "integral_truth_squared": 0.0002461351122544305
+  }
+}

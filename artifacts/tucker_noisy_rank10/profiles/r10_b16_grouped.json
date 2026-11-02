@@ -1,0 +1,26 @@
+{
+  "rank": 10,
+  "dimension": 6,
+  "batch": 16,
+  "core_entries": 1000000,
+  "device": "NVIDIA H100 80GB HBM3",
+  "ungrouped": false,
+  "measurements": {
+    "clean": {
+      "seconds": 0.003026554104872048,
+      "compile_seconds": 0.23157589393667877,
+      "compiled_temporary_bytes": 335965208,
+      "compiled_argument_bytes": 8061152,
+      "compiled_output_bytes": 8023592,
+      "loss": 9.314982210165462
+    },
+    "noisy": {
+      "seconds": 0.015849564806558192,
+      "compile_seconds": 20.904364048969,
+      "compiled_temporary_bytes": 1722064736,
+      "compiled_argument_bytes": 8024288,
+      "compiled_output_bytes": 8023592,
+      "loss": 9.377134246463733
+    }
+  }
+}

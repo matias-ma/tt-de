@@ -1,0 +1,59 @@
+{
+  "selected": "tied_diagonal_64",
+  "names": [
+    "tied_diagonal_64",
+    "tied_diagonal_128",
+    "full_32",
+    "full_64"
+  ],
+  "validation_nll": [
+    6.270576551950223,
+    6.271853876074758,
+    6.272331205769579,
+    6.27440822987942
+  ],
+  "complexity": [
+    714,
+    1418,
+    2112,
+    4224
+  ],
+  "selection": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 6.270576551950223,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 714.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 6.271853876074758,
+        "excess_nll": 0.001277324124536179,
+        "paired_cluster_se": 0.0015438993863125042,
+        "roughness": 1418.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 6.272331205769579,
+        "excess_nll": 0.0017546538193562583,
+        "paired_cluster_se": 0.0017158176301379246,
+        "roughness": 2112.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 6.27440822987942,
+        "excess_nll": 0.0038316779291976332,
+        "paired_cluster_se": 0.001850254680615157,
+        "roughness": 4224.0,
+        "eligible": false
+      }
+    ]
+  },
+  "rule": "paired one-SE, then fewest parameters",
+  "seconds": 18.32562833884731
+}

@@ -1,0 +1,367 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 5.821529731156479,
+      "roughness_h1": 0.00043829990620825916,
+      "roughness_axis_h2": 0.014373766511781884,
+      "roughness_hessian": 0.01586164291191322,
+      "batch_objective": null,
+      "seconds": 1.9351313090883195,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 200,
+      "validation_nll": 3.9735948007123865,
+      "roughness_h1": 0.43200396311221134,
+      "roughness_axis_h2": 0.6598098618753946,
+      "roughness_hessian": 0.8193269915399878,
+      "batch_objective": 3.8963763838618393,
+      "seconds": 12.602923694066703,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 400,
+      "validation_nll": 3.97189917682726,
+      "roughness_h1": 0.44345497060134376,
+      "roughness_axis_h2": 0.5554532179488637,
+      "roughness_hessian": 0.7182364934397777,
+      "batch_objective": 3.9175603869851385,
+      "seconds": 12.784129733219743,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 600,
+      "validation_nll": 3.9679988888953184,
+      "roughness_h1": 0.4296556332618382,
+      "roughness_axis_h2": 0.509257961458815,
+      "roughness_hessian": 0.6575379353698604,
+      "batch_objective": 3.9464420946699312,
+      "seconds": 12.966691394802183,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 800,
+      "validation_nll": 3.9663436462391664,
+      "roughness_h1": 0.42936551926602795,
+      "roughness_axis_h2": 0.41767341023292764,
+      "roughness_hessian": 0.5626991621079704,
+      "batch_objective": 3.8539279117378173,
+      "seconds": 13.150303762871772,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1000,
+      "validation_nll": 3.9667935257623,
+      "roughness_h1": 0.4280077179452882,
+      "roughness_axis_h2": 0.45040317256700535,
+      "roughness_hessian": 0.5946140815777822,
+      "batch_objective": 3.96699055664848,
+      "seconds": 13.33354438887909,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1200,
+      "validation_nll": 3.9655106341220447,
+      "roughness_h1": 0.43084838133373327,
+      "roughness_axis_h2": 0.5039389341015855,
+      "roughness_hessian": 0.6529123587309864,
+      "batch_objective": 3.8868505663089032,
+      "seconds": 13.50960007822141,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1400,
+      "validation_nll": 3.968211337966077,
+      "roughness_h1": 0.4270276681365675,
+      "roughness_axis_h2": 0.41880968830940035,
+      "roughness_hessian": 0.5594838215650625,
+      "batch_objective": 3.9612680280340835,
+      "seconds": 13.693375201895833,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1600,
+      "validation_nll": 3.9667325620175715,
+      "roughness_h1": 0.4242571520856211,
+      "roughness_axis_h2": 0.38122174278382076,
+      "roughness_hessian": 0.520019201640895,
+      "batch_objective": 3.988836653454793,
+      "seconds": 13.869223395828158,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1800,
+      "validation_nll": 3.965513864346571,
+      "roughness_h1": 0.42385241158151266,
+      "roughness_axis_h2": 0.4104679005828831,
+      "roughness_hessian": 0.5491862117949639,
+      "batch_objective": 3.9177414976735463,
+      "seconds": 14.053298010025173,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 2000,
+      "validation_nll": 3.9648040141555834,
+      "roughness_h1": 0.42350163268370905,
+      "roughness_axis_h2": 0.3772929268646617,
+      "roughness_hessian": 0.5153792532315473,
+      "batch_objective": 3.9872957394939936,
+      "seconds": 14.23876783112064,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 2200,
+      "validation_nll": 3.964307246689569,
+      "roughness_h1": 0.42786719913635696,
+      "roughness_axis_h2": 0.38579459608553707,
+      "roughness_hessian": 0.525973813109654,
+      "batch_objective": 3.920583951507388,
+      "seconds": 14.4208970409818,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 2400,
+      "validation_nll": 3.9651018391338297,
+      "roughness_h1": 0.4267883128134521,
+      "roughness_axis_h2": 0.38902792278601445,
+      "roughness_hessian": 0.5291396194667094,
+      "batch_objective": 3.8977472263171298,
+      "seconds": 14.602095500100404,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 2600,
+      "validation_nll": 3.9636690055996597,
+      "roughness_h1": 0.42539228288960096,
+      "roughness_axis_h2": 0.37701887275184603,
+      "roughness_hessian": 0.5160188332344987,
+      "batch_objective": 3.9240911339548368,
+      "seconds": 14.778853166848421,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 2800,
+      "validation_nll": 3.965020040899888,
+      "roughness_h1": 0.4307135748691601,
+      "roughness_axis_h2": 0.3668836518974467,
+      "roughness_hessian": 0.5097454735374658,
+      "batch_objective": 3.931845480799872,
+      "seconds": 14.960017983801663,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 3000,
+      "validation_nll": 3.9641719845312586,
+      "roughness_h1": 0.4273269136918489,
+      "roughness_axis_h2": 0.3612077103360886,
+      "roughness_hessian": 0.5009587914430077,
+      "batch_objective": 3.9352378240855677,
+      "seconds": 15.13699847785756,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 3200,
+      "validation_nll": 3.9640317022487306,
+      "roughness_h1": 0.42926484642124507,
+      "roughness_axis_h2": 0.35213113312333455,
+      "roughness_hessian": 0.4926048858639505,
+      "batch_objective": 3.9790483463644195,
+      "seconds": 15.315618209075183,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 3400,
+      "validation_nll": 3.963899215592722,
+      "roughness_h1": 0.42436071197508923,
+      "roughness_axis_h2": 0.34801562868506913,
+      "roughness_hessian": 0.48542952207153056,
+      "batch_objective": 3.893819888812547,
+      "seconds": 15.491424445062876,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 3600,
+      "validation_nll": 3.9641408713585538,
+      "roughness_h1": 0.42704753104575044,
+      "roughness_axis_h2": 0.34597802289297347,
+      "roughness_hessian": 0.485214789331628,
+      "batch_objective": 3.8404351203828395,
+      "seconds": 15.668085174169391,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 3800,
+      "validation_nll": 3.9641342741040413,
+      "roughness_h1": 0.4297606950907153,
+      "roughness_axis_h2": 0.3496152337014497,
+      "roughness_hessian": 0.4905395348517483,
+      "batch_objective": 3.9812560305784856,
+      "seconds": 15.845606081187725,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 4000,
+      "validation_nll": 3.9632158820552275,
+      "roughness_h1": 0.42588633767607414,
+      "roughness_axis_h2": 0.34529437521514694,
+      "roughness_hessian": 0.48377108728764573,
+      "batch_objective": 3.8928329224937746,
+      "seconds": 16.021632524207234,
+      "active_modes": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "selection_eligible": true
+    }
+  ],
+  "best_step": 4000,
+  "best_nll": 3.9632158820552275,
+  "seconds": 16.028869536239654,
+  "steps": 4000,
+  "batch_seed": 0,
+  "objective": "nll",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "marginal_strength": 0.0,
+  "precondition_strength": 0.001,
+  "mode_schedule": [
+    [
+      0,
+      [
+        25,
+        25,
+        25,
+        25
+      ]
+    ]
+  ],
+  "selection_start": 0,
+  "microbatches": 1,
+  "conditional_weight": 1.0,
+  "training_count": 100000,
+  "selection": "minimum held-out joint NLL checkpoint",
+  "uses_signal_pilot": false
+}

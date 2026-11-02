@@ -1,0 +1,12 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim20_r32",
+  "specs": [
+    "tied_diagonal:64",
+    "tied_diagonal:128",
+    "full:32",
+    "full:64"
+  ],
+  "iterations": 200,
+  "seed": 0,
+  "data_sha256": "c5f3431f5f771e1db9d0e1e4529bef7c9072b434cdae1d5bd25f7148c5e5a496"
+}

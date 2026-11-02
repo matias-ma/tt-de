@@ -1,0 +1,37 @@
+{
+  "case": "gaussian_0.3",
+  "seed": 0,
+  "rank": 32,
+  "modes": 49,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "objective": "nll",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "resume": null,
+  "initialization": "constant plus .01 random coefficients",
+  "uses_signal_pilot": false,
+  "uses_truth": false,
+  "domain": [
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -3.0,
+      3.0
+    ]
+  ],
+  "optimizer": "Adam",
+  "data_sha256": "068519af341d19afe687c6613f2bdc8f0933ac54f9d9ca2f0b819f8796fe59dd"
+}

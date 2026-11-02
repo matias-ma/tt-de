@@ -1,0 +1,15 @@
+{
+  "representation": "convex mixture of normalized squared ChebTT densities",
+  "members": [
+    "/home/ma4473/ft-de/artifacts/cryoem_stability/dim10_bootstrap_11/fit.npz",
+    "/home/ma4473/ft-de/artifacts/cryoem_stability/dim10_bootstrap_23/fit.npz",
+    "/home/ma4473/ft-de/artifacts/cryoem_stability/dim10_bootstrap_37/fit.npz"
+  ],
+  "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "kernel": "/home/ma4473/ft-de/artifacts/cryoem_continuity/gallery_dim10/kernel.npz",
+  "base": "/home/ma4473/ft-de/artifacts/cryoem_continuity/gallery_dim10"
+}

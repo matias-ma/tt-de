@@ -1,0 +1,15 @@
+{
+  "relative_l2": 0.10280219766731563,
+  "relative_squared_l2": 0.010568291845229836,
+  "integral_q_squared": 0.4941225952835559,
+  "integral_pq": 0.5058149857784108,
+  "integral_p_squared": 0.5230349624011801,
+  "path_quadrature_relative_change": 4.4490858678572304e-13,
+  "model": "h1_0.01",
+  "metric": "Lebesgue L2 of the latent full-dimensional density",
+  "test_nll": 1.247224257748281,
+  "test_count": 16384,
+  "curve_minimum_ratio": 0.7304070203378668,
+  "curve_fraction_below_half": 0.0,
+  "model_coefficients_sha256": "dad0b03e74b35bdef7b2e65104f3811b8ea101575bf945121cc8f71deb4ff1d6"
+}

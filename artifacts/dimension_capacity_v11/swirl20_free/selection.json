@@ -1,0 +1,43 @@
+{
+  "selected": "rank64",
+  "minimum_nll": "rank64",
+  "names": [
+    "hessian",
+    "rank64"
+  ],
+  "details": {
+    "minimum_nll_index": 1,
+    "selected_index": 1,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": -6.926637341415113,
+        "excess_nll": 0.05200536172111726,
+        "paired_cluster_se": 0.011302019415306522,
+        "roughness": 0.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": -6.97864270313623,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 0.0,
+        "eligible": true
+      }
+    ]
+  },
+  "files": {
+    "artifacts/dimension_capacity_v11/swirl20_free/hessian/fit.npz": "68fa4d422218069936d02c0013dc22a834edfa142f49d3275c82d8d4794d6b9d",
+    "artifacts/dimension_capacity_v11/swirl20_free/hessian/config.json": "c4bff68b4ada8f7650064659dcf09f7e4e972989193e419dc5f76f7ee5397aa1",
+    "artifacts/dimension_capacity_v11/swirl20_free/hessian/result.json": "e807501f4e0eaca11634893eb35d97a30d144863dee602bde14c11cd893d3760",
+    "artifacts/dimension_capacity_v11/swirl20_free/hessian/validation.npy": "fb07969d907dc501cd2e2bd71e1d8004a8b23dc0f24e3f5b2dde11c5fd42bca9",
+    "artifacts/dimension_capacity_v11/swirl20_free/rank64/fit.npz": "6330ce333da685889de180cf088da36b2f54e3135e965ed9af010a269200caea",
+    "artifacts/dimension_capacity_v11/swirl20_free/rank64/config.json": "96d351fddd75cf82737edfeb8605e8f88d88937fc71b0a49364a576d543f30fc",
+    "artifacts/dimension_capacity_v11/swirl20_free/rank64/result.json": "38eabd5f36b21fed3ef4e16562706ac7a50526922c8dfcbace130103f76ed10e",
+    "artifacts/dimension_capacity_v11/swirl20_free/rank64/validation.npy": "1cb0f6dba5c863917cb058a338e337ed1712a862c35eb668322ce14ab035439c",
+    "artifacts/swirl/swirl_free_dim20/data.npz": "4f66646f923abce9cfa95fd88c180929e18f00825cd0af4faae0a3211f0c19df",
+    "artifacts/dimension_capacity_v11/swirl20_free/protocol.json": "ef27e2234d24e940369adfdf7e4314a1d4169f7a970fa9841ac3989e6e3cc787"
+  },
+  "truth_evaluated": false
+}

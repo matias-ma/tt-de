@@ -1,0 +1,69 @@
+{
+  "fits": 61,
+  "frozen_hashes_checked": 366,
+  "evaluated_checkpoints": 46,
+  "zero_update_nll_choices": [],
+  "zero_update_kernel_choices": [],
+  "noise_kernel_checks": {
+    "gl6_paired": {
+      "maximum_absolute_error_64_probes": 4.649163921621735e-07,
+      "mass": 0.9999995350836078,
+      "sha256": "f94f58d4d0e85f9f4dd619c08850135fb91fd05dc32fb14e190b9d2e2cc8947e"
+    },
+    "gl6_mixture": {
+      "maximum_absolute_error_64_probes": 4.2943426592501055e-13,
+      "mass": 1.0000000000004294,
+      "sha256": "a96e63e27b7f5d51a4e07f8cd8a019f5d68f155e80015983f27078f956826fb3"
+    },
+    "swirl4_mixture": {
+      "maximum_absolute_error_64_probes": 3.25628415644925e-13,
+      "mass": 1.0000000000003242,
+      "sha256": "abb4fe29f92dcb26326fa8410f3868c3be9ef7c543b1ca335e366c2753cdb33d"
+    },
+    "swirl10_mixture": {
+      "maximum_absolute_error_64_probes": 8.160139230994901e-13,
+      "mass": 1.000000000000816,
+      "sha256": "1341bdc3e353c53118ed5f2bd2f363641debc4258f1680a762ad054d55fe50a5"
+    }
+  },
+  "swirl_cross_integral_checks": {
+    "swirl4_free/hybrid_r32_n49_l0.001_w100/nll": {
+      "bounded_box_cross_integral": 0.5069499001600348,
+      "relative_to_p2_difference": 6.053813404164514e-13,
+      "legendre_order": 193,
+      "path_order": 1600
+    },
+    "swirl4_free/nll_r32_n49_l0.0001_w100/kernel": {
+      "bounded_box_cross_integral": 0.5111444025383802,
+      "relative_to_p2_difference": 2.982543202731963e-12,
+      "legendre_order": 193,
+      "path_order": 1600
+    },
+    "swirl4_mixture/hybrid_r32_n49_l0.001_w100/nll": {
+      "bounded_box_cross_integral": 0.4359648615912468,
+      "relative_to_p2_difference": 5.06463748743335e-09,
+      "legendre_order": 193,
+      "path_order": 1600
+    },
+    "swirl4_mixture/hybrid_r20_n25_l0.001_w10/kernel": {
+      "bounded_box_cross_integral": 0.38403803934217695,
+      "relative_to_p2_difference": 1.099130892323977e-08,
+      "legendre_order": 193,
+      "path_order": 1600
+    },
+    "swirl10_mixture/hybrid_r32_n49_l0.001_w10/nll": {
+      "bounded_box_cross_integral": 9.502524072177122,
+      "relative_to_p2_difference": 8.275402550880619e-10,
+      "legendre_order": 193,
+      "path_order": 1600
+    },
+    "swirl10_mixture/hybrid_r32_n49_l0.001_w100/nll": {
+      "bounded_box_cross_integral": 9.711966382574982,
+      "relative_to_p2_difference": 1.771422134881253e-10,
+      "legendre_order": 193,
+      "path_order": 1600
+    }
+  },
+  "gallery_figures": 34,
+  "artifact_bytes": 89232367
+}

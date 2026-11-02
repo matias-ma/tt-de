@@ -1,0 +1,25 @@
+{
+  "selected": "constant_h2_0.0001",
+  "selection": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.541816404757192,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 46.73261438559857,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.5465958681968086,
+        "excess_nll": 0.004779463439616706,
+        "paired_cluster_se": 0.0012138478244658685,
+        "roughness": 12.300267625120679,
+        "eligible": false
+      }
+    ]
+  }
+}

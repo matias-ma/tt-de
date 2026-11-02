@@ -1,0 +1,92 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 11.299228839785078,
+      "validation_mmd": 0.060315660234850285,
+      "roughness_hessian": 3.6878002174702713e-06,
+      "batch_objective": null,
+      "seconds": 4.702267008833587
+    },
+    {
+      "step": 400,
+      "validation_nll": 9.525294693784126,
+      "validation_mmd": 0.0006264101006509653,
+      "roughness_hessian": 10.095718874783742,
+      "batch_objective": 9.51087321902137,
+      "seconds": 20.143371067009866
+    },
+    {
+      "step": 800,
+      "validation_nll": 9.520139782633482,
+      "validation_mmd": 0.000534160185358012,
+      "roughness_hessian": 5.281808516718473,
+      "batch_objective": 9.579443428723106,
+      "seconds": 27.980163224972785
+    },
+    {
+      "step": 1200,
+      "validation_nll": 9.522623104746422,
+      "validation_mmd": 0.0006222252075791057,
+      "roughness_hessian": 3.829984161371375,
+      "batch_objective": 9.612500826487326,
+      "seconds": 35.8374205629807
+    },
+    {
+      "step": 1600,
+      "validation_nll": 9.522296485746594,
+      "validation_mmd": 0.000627568322295289,
+      "roughness_hessian": 3.437130589091147,
+      "batch_objective": 9.39319102752935,
+      "seconds": 43.641880995826796
+    },
+    {
+      "step": 2000,
+      "validation_nll": 9.522699155228246,
+      "validation_mmd": 0.0006455819178416515,
+      "roughness_hessian": 3.0293525819261684,
+      "batch_objective": 9.67658332236201,
+      "seconds": 51.43051932682283
+    },
+    {
+      "step": 2400,
+      "validation_nll": 9.52117594538544,
+      "validation_mmd": 0.0005792097912995736,
+      "roughness_hessian": 2.855869427241868,
+      "batch_objective": 9.39262998811776,
+      "seconds": 59.195020811865106
+    },
+    {
+      "step": 2800,
+      "validation_nll": 9.52426679296153,
+      "validation_mmd": 0.0007064936401305793,
+      "roughness_hessian": 2.6328430868909782,
+      "batch_objective": 9.605168779678833,
+      "seconds": 66.91246203402989
+    },
+    {
+      "step": 3200,
+      "validation_nll": 9.522308731460505,
+      "validation_mmd": 0.0006365373836390413,
+      "roughness_hessian": 2.575741530335685,
+      "batch_objective": 9.487143658310822,
+      "seconds": 74.73157761781476
+    },
+    {
+      "step": 3600,
+      "validation_nll": 9.522176356848828,
+      "validation_mmd": 0.0006139978879098555,
+      "roughness_hessian": 2.4701059450818077,
+      "batch_objective": 9.568368798203421,
+      "seconds": 82.51648105494678
+    },
+    {
+      "step": 4000,
+      "validation_nll": 9.522569602408645,
+      "validation_mmd": 0.0006754610979394756,
+      "roughness_hessian": 2.4403194424142347,
+      "batch_objective": 9.493791661245155,
+      "seconds": 90.10331385186873
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "swirl_free4/squared_n25_r16_l0.0001_b1024_s0": {
+    "training_nll": 1.3363814335769753,
+    "roughness": 6.183482246223111,
+    "training_objective": 1.3369997818015975,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "83c96b088ea596e624cfc3baa05f1d0cd1bec95207b6d8f80399827d074ca2e7"
+  },
+  "swirl_free4/squared_n49_r32_l0.0001_b1024_s0": {
+    "training_nll": 1.2134157337906255,
+    "roughness": 14.590055921416514,
+    "training_objective": 1.2148747393827672,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "d6ad08a45613a8c232156fc0ab32e8abf8ec322e0d4e603d7aad3219000f2e0b"
+  },
+  "swirl_free4/squared_n49_r32_l0.0001_b1024_s0_lbfgs": {
+    "training_nll": 1.2098226538378503,
+    "roughness": 13.485333358662562,
+    "training_objective": 1.2111711871737165,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "b6ccc5c8eb9dc8df378d3f48bd916ec0ea405bf60063b00bb119dd979c4e9120"
+  },
+  "swirl_free4/squared_n49_r32_l0.0001_b1024_s1": {
+    "training_nll": 1.2120581048990493,
+    "roughness": 13.323343825740308,
+    "training_objective": 1.2133904392816233,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "2a0866106be01fb313022c161b9a210eb432aef174b9fbb644394f5dc8444bb5"
+  },
+  "swirl_free4/squared_n49_r32_l0.001_b1024_s0": {
+    "training_nll": 1.217756316346963,
+    "roughness": 6.615803143198229,
+    "training_objective": 1.2243721194901611,
+    "strength": 0.001,
+    "observations": 100000,
+    "fit_sha256": "e9be68c1a25d0a3b9c76c8da9393157c2b89ae73dd84d182918df9ed52fb7a6d"
+  },
+  "swirl_free4/squared_n49_r32_l0.001_b1024_s0_lbfgs": {
+    "training_nll": 1.2164323584623642,
+    "roughness": 6.505712771236927,
+    "training_objective": 1.222938071233601,
+    "strength": 0.001,
+    "observations": 100000,
+    "fit_sha256": "9e725ae8fe5596dc9cc4c771246b7ffee11a69159e51d240246302f5938042f8"
+  },
+  "swirl_free4/squared_n49_r32_l0_b1024_s0": {
+    "training_nll": 1.2101725901892924,
+    "roughness": 2244.7383296732605,
+    "training_objective": 1.2101725901892924,
+    "strength": 0.0,
+    "observations": 100000,
+    "fit_sha256": "110aa9f7182d2ef649af7356bf74128c4859ac163817c9efc01859ff164c9fdb"
+  },
+  "swirl_free4/squared_n49_r32_l1e-05_b1024_s0": {
+    "training_nll": 1.211074852686747,
+    "roughness": 48.65425194024967,
+    "training_objective": 1.2115613952061495,
+    "strength": 1e-05,
+    "observations": 100000,
+    "fit_sha256": "dd8767924ab380733b437a8d8d086365ac1f6d5bc13b091dd68e58a3aff25384"
+  },
+  "swirl_free4/squared_n49_r64_l0.0001_b1024_s0": {
+    "training_nll": 1.1979037867353053,
+    "roughness": 16.57008358713656,
+    "training_objective": 1.199560795094019,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "ba2a2f3972cce828e39bb65d247232901f12904e6bc8d8b30750fedec5d551bd"
+  },
+  "swirl_free4/squared_n65_r32_l0.0001_b1024_s0": {
+    "training_nll": 1.2049713452795408,
+    "roughness": 24.819472289392717,
+    "training_objective": 1.20745329250848,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "053a2df873eb75f68b9886b85cc0b2cd162d700d664cee5663f20a178ed3172d"
+  },
+  "swirl_free10/squared_n49_r32_l0.0001_b256_s0": {
+    "training_nll": -1.694991070183214,
+    "roughness": 33.16124375582799,
+    "training_objective": -1.6916749458076312,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "87397e5e17000d406954fbf257eb8c1ecd0c2319127c24ffd76d3b1b7747f9ec"
+  },
+  "swirl_free10/squared_n49_r32_l0.0001_b256_s0_lbfgs": {
+    "training_nll": -1.7488187117579688,
+    "roughness": 33.92337784719228,
+    "training_objective": -1.7454263739732496,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "e8135fef1ac1eca2d8dc2a72f2b7f17f08fcb06c1eab99fc5292883572a5cc3f"
+  },
+  "swirl_free10/squared_n49_r64_l0.0001_b256_s0": {
+    "training_nll": -1.6065214824322196,
+    "roughness": 43.81494699061796,
+    "training_objective": -1.6021399877331577,
+    "strength": 0.0001,
+    "observations": 100000,
+    "fit_sha256": "c92f06d61d08df004a49bdd1b2174df36475d39b6ad336d9cbf45c8d5dd78248"
+  }
+}

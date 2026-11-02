@@ -1,0 +1,95 @@
+{
+  "dim": 10,
+  "noise": "mixture",
+  "n_train": 20000,
+  "n_test": 500,
+  "rank": 4,
+  "n_coeffs": 9,
+  "steps": 10000,
+  "naive_steps": 0,
+  "deconv_steps": 500,
+  "batch_size": 256,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 3,
+  "kernel_n_coeffs": 129,
+  "compare_spectral": false,
+  "convolution_backend": "direct",
+  "rsi_max_rank": 16,
+  "output": "results/gl_rsi_trial/gl10_500_direct.json",
+  "save_figures": false,
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.9965667918760107,
+      "relative_sample_l2": 0.9982819200386285
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.9967110645755156,
+      "relative_sample_l2": 0.9983541779226026
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.9235187181846528,
+      "relative_sample_l2": 0.9609988127904492
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 1.6697754290362354e-13,
+    "analytic_mixture_max_abs_log_error": 6.153516040185991e-05
+  },
+  "histories": {
+    "naive": {
+      "best_step": 0,
+      "best_nll": 13.991505683486057,
+      "nonfinite_step": null,
+      "training_seconds": 0.14073082013055682,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 13.991505683486057
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 500,
+      "best_nll": 13.827916083022574,
+      "nonfinite_step": null,
+      "training_seconds": 8.673592460108921,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 14.549102014625355
+        },
+        {
+          "step": 200,
+          "validation_nll": 13.8879258189802
+        },
+        {
+          "step": 400,
+          "validation_nll": 13.832490047205582
+        },
+        {
+          "step": 500,
+          "validation_nll": 13.827916083022574
+        }
+      ]
+    }
+  },
+  "rsi_setup": null,
+  "orders": [
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73
+  ],
+  "fit_seconds": 14.6343587951269,
+  "seconds": 39.57354838214815
+}

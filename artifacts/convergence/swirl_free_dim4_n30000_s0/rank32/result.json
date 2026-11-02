@@ -1,0 +1,63 @@
+{
+  "best_nll": 1.3077307293526244,
+  "best_step": 400,
+  "strength": 0.0,
+  "steps": 3200,
+  "lr": 0.0002,
+  "batch_size": 1024,
+  "history": [
+    {
+      "step": 0,
+      "nll": 1.377895176984646,
+      "penalty": 0.0
+    },
+    {
+      "step": 400,
+      "nll": 1.3077307293526244,
+      "penalty": 0.0
+    },
+    {
+      "step": 800,
+      "nll": 1.3279230404616416,
+      "penalty": 0.0
+    },
+    {
+      "step": 1200,
+      "nll": 1.3355946323272192,
+      "penalty": 0.0
+    },
+    {
+      "step": 1600,
+      "nll": 1.3342282565538879,
+      "penalty": 0.0
+    },
+    {
+      "step": 2000,
+      "nll": 1.337985464484889,
+      "penalty": 0.0
+    },
+    {
+      "step": 2400,
+      "nll": 1.3372298625560213,
+      "penalty": 0.0
+    },
+    {
+      "step": 2800,
+      "nll": 1.3374066566232292,
+      "penalty": 0.0
+    },
+    {
+      "step": 3200,
+      "nll": 1.34465047921393,
+      "penalty": 0.0
+    }
+  ],
+  "checkpoint_rule": "nll",
+  "selection_score": 1.3077307293526244,
+  "seed": 0,
+  "preconditioning": "l2",
+  "microbatches": 1,
+  "device": "NVIDIA H100 80GB HBM3",
+  "quadrature_log_error": 0.0,
+  "seconds": 43.59247359097935
+}

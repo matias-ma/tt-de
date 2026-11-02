@@ -1,0 +1,8 @@
+{
+  "relative_l2": 0.16721347959987531,
+  "integral_q_squared": 0.03128574870421475,
+  "integral_pq": 0.03108482274638951,
+  "integral_p_squared": 0.03177226023381985,
+  "quadrature_relative_change": 4.171339167855424e-14,
+  "model_sha256": "9955205bdb930554b19f40e841cbf8837c1c8220ffafb25e30b8d94caf02ec0b"
+}

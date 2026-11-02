@@ -1,0 +1,116 @@
+{
+  "best_nll": null,
+  "best_step": 3200,
+  "history": [
+    {
+      "step": 0,
+      "nll": 3.539896711407811,
+      "nonpositive_observed": 0,
+      "roughness": 39.41429473503233
+    },
+    {
+      "step": 200,
+      "nll": null,
+      "nonpositive_observed": 5,
+      "roughness": 38.978881277742786
+    },
+    {
+      "step": 400,
+      "nll": null,
+      "nonpositive_observed": 7,
+      "roughness": 38.76488282422059
+    },
+    {
+      "step": 600,
+      "nll": null,
+      "nonpositive_observed": 10,
+      "roughness": 38.63854025265451
+    },
+    {
+      "step": 800,
+      "nll": null,
+      "nonpositive_observed": 11,
+      "roughness": 38.55817870453886
+    },
+    {
+      "step": 1000,
+      "nll": null,
+      "nonpositive_observed": 11,
+      "roughness": 38.53670788207053
+    },
+    {
+      "step": 1200,
+      "nll": null,
+      "nonpositive_observed": 13,
+      "roughness": 38.48563483157438
+    },
+    {
+      "step": 1400,
+      "nll": null,
+      "nonpositive_observed": 15,
+      "roughness": 38.394602299556894
+    },
+    {
+      "step": 1600,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.372293062097704
+    },
+    {
+      "step": 1800,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.3519876252784
+    },
+    {
+      "step": 2000,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.32693017227427
+    },
+    {
+      "step": 2200,
+      "nll": null,
+      "nonpositive_observed": 17,
+      "roughness": 38.31197636660812
+    },
+    {
+      "step": 2400,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.27916092835045
+    },
+    {
+      "step": 2600,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.27023040650643
+    },
+    {
+      "step": 2800,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.257115398690004
+    },
+    {
+      "step": 3000,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.255659640428114
+    },
+    {
+      "step": 3200,
+      "nll": null,
+      "nonpositive_observed": 16,
+      "roughness": 38.25750789805439
+    }
+  ],
+  "seconds": 32.63594012684189,
+  "parameterization": "unsquared signed density TT",
+  "checkpoint_rule": "final",
+  "raw_validation_nonpositive": 16,
+  "preconditioning": "sobolev",
+  "lr": 2e-06,
+  "strength": 0.0001,
+  "negative_penalty": 0.0
+}

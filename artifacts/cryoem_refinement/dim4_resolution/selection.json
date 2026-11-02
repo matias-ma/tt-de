@@ -1,0 +1,52 @@
+{
+  "selected": "mixture49_rank12",
+  "names": [
+    "baseline",
+    "resolution49_rank8",
+    "resolution49_rank12",
+    "mixture49_rank12"
+  ],
+  "curvature": [
+    15.730277996390774,
+    21.13049383272419,
+    24.987930910544492,
+    22.82989627298222
+  ],
+  "selection": {
+    "minimum_nll_index": 3,
+    "selected_index": 3,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.611117622321606,
+        "excess_nll": 0.12873285570234913,
+        "paired_cluster_se": 0.0034707931998052667,
+        "roughness": 15.730277996390774,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.609708529850348,
+        "excess_nll": 0.1273237632310913,
+        "paired_cluster_se": 0.003388060433860455,
+        "roughness": 21.13049383272419,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.5650517866662423,
+        "excess_nll": 0.0826670200469855,
+        "paired_cluster_se": 0.0008709709792178348,
+        "roughness": 24.987930910544492,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.482384766619257,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 22.82989627298222,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired noisy one-SE, then minimum physical amplitude curvature"
+}

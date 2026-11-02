@@ -1,0 +1,26 @@
+{
+  "naive": {
+    "relative_l2": 0.9510388219180229,
+    "relative_squared_l2": 0.9044748407952209,
+    "integral_q_squared": 2.5520516657895892e-05,
+    "integral_pq": 6.523887678765303e-05,
+    "integral_p_squared": 0.0010987391990879723,
+    "quadrature_relative_change": 8.646566486651373e-15,
+    "quadrature_orders": [
+      64,
+      128
+    ]
+  },
+  "deconvolved": {
+    "relative_l2": 0.34545584717600547,
+    "relative_squared_l2": 0.11933974234809167,
+    "integral_q_squared": 0.001411324613184993,
+    "integral_pq": 0.001189470279673029,
+    "integral_p_squared": 0.0010987391990879723,
+    "quadrature_relative_change": 1.8235497708795136e-13,
+    "quadrature_orders": [
+      64,
+      128
+    ]
+  }
+}

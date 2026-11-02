@@ -1,0 +1,26 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim4",
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "kernel_sha256": "abb4fe29f92dcb26326fa8410f3868c3be9ef7c543b1ca335e366c2753cdb33d",
+  "domain": [
+    [
+      -2.3977334329072773,
+      2.1960368639246535
+    ],
+    [
+      -2.132891069145988,
+      2.1717388479744097
+    ],
+    [
+      -2.3334871568543107,
+      2.6147759590767214
+    ],
+    [
+      -2.2980397369166243,
+      2.38189702851914
+    ]
+  ],
+  "noise_source": "artifacts/swirl_improvement/swirl_mixture_dim4/noise.npz",
+  "initialization": "constant plus small random coefficients; no fitted pilot",
+  "selection": "noisy validation only; truth reserved for final evaluation"
+}

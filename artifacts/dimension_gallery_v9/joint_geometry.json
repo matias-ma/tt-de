@@ -1,0 +1,41 @@
+{
+  "dimension": 20,
+  "sample_count": 8192,
+  "seed": 92637,
+  "true_95_percent_distance_threshold": 0.7685231469004262,
+  "truth": {
+    "rms_normal_distance_per_sqrt_d_minus_1": 0.1398154153617361,
+    "median_distance": 0.5987808265321164,
+    "distance_p95": 0.7685231469004262,
+    "fraction_outside_true_95_percent_tube": 0.050048828125,
+    "curve_grid_refinement_max_distance_change": 5.34359051451716e-07
+  },
+  "models": {
+    "free": {
+      "rms_normal_distance_per_sqrt_d_minus_1": 0.16717810387583823,
+      "median_distance": 0.6087545094170492,
+      "distance_p95": 0.8475680768574166,
+      "fraction_outside_true_95_percent_tube": 0.0941162109375,
+      "curve_grid_refinement_max_distance_change": 6.876595180504985e-07,
+      "selected": "rank64",
+      "source": "artifacts/dimension_capacity_v11/swirl20_free",
+      "selection_sha256": "8b46099b49736035fb30cd6c27b5b1f5f5f4953cd86aa0e0ac8fac70ffa9e805",
+      "model_sha256": "6330ce333da685889de180cf088da36b2f54e3135e965ed9af010a269200caea",
+      "sampler_max_mean_standard_errors": 0.866823044408444
+    },
+    "mixture": {
+      "rms_normal_distance_per_sqrt_d_minus_1": 0.17788848562004841,
+      "median_distance": 0.7075882422995656,
+      "distance_p95": 1.0240083472211745,
+      "fraction_outside_true_95_percent_tube": 0.32958984375,
+      "curve_grid_refinement_max_distance_change": 5.892268299945158e-07,
+      "selected": "continue_rank64",
+      "source": "artifacts/noisy_dimension_capacity_v12/swirl20_mixture",
+      "selection_sha256": "92a26cd4e1a79aa3a8bdf65642671583a479fdf7e571249a4b1605cca59f08f9",
+      "model_sha256": "d6c38ee9ce58b94ff50bfdadcb2180ad5dff3fde9644a92329f606823dc57ff3",
+      "sampler_max_mean_standard_errors": 0.9674942718693795
+    }
+  },
+  "used_for_training_or_selection": false,
+  "interpretation": "RMS nearest-curve distance divided by sqrt(d-1); not a fitted Gaussian width parameter"
+}

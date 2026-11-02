@@ -1,0 +1,14 @@
+{
+  "selected": "base",
+  "names": [
+    "base",
+    "rank32"
+  ],
+  "validation_nll": [
+    1.3924638114177617,
+    1.3924638177370672
+  ],
+  "roughness": null,
+  "selection": null,
+  "rule": "minimum validation NLL"
+}

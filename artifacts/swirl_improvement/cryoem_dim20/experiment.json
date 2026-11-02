@@ -1,0 +1,15 @@
+{
+  "base": "artifacts/cryoem_stability/gallery_dim20",
+  "specs": [
+    "tied_diagonal:64",
+    "tied_diagonal:128",
+    "full:16",
+    "full:32",
+    "tied_isotropic_rank1:16",
+    "tied_isotropic_rank1:32",
+    "tied_isotropic_rank1:64"
+  ],
+  "iterations": 300,
+  "seed": 0,
+  "data_sha256": "70cf33fd768cbd4bde517e2b0b0e1f0eb4e18ef4ccc78ce4d487585078a32975"
+}

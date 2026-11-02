@@ -1,0 +1,22 @@
+{
+  "selection": "minimum noisy validation NLL, before any target-density evaluation",
+  "swirl_dimensions": [
+    4,
+    10
+  ],
+  "candidates": [
+    "rank 8 / 33 modes diagnostic",
+    "rank 16 / 49 modes",
+    "rank 32 / 49 modes",
+    "rank 32 / 65 modes continuation",
+    "rank 32 / 65 modes with narrower data-only initialization",
+    "rank 32 / 97 direct modes: degree 96, matching the squared 49-mode amplitude; initialize from best noisy-validation 65-mode rank-32 fit"
+  ],
+  "known_target_used_for": "post-selection evaluation only",
+  "cryoem_rule": "rerun if swirl latent recovery improves",
+  "figures": "keep existing files; add labelled comparisons inside existing folders",
+  "controls": [
+    "Continue 49 modes for the same 60 sweeps used for 65-mode expansion, from the same 49-mode checkpoint.",
+    "Continue 65 modes for the same budget as the 97-mode expansion, from the same validation-selected 65-mode checkpoint."
+  ]
+}

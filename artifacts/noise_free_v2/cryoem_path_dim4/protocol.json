@@ -1,0 +1,32 @@
+{
+  "source": "artifacts/cryoem_continuity/gallery_path_dim4",
+  "data_sha256": "c2326d31e97dcb34345b21728ba71d82f811601ad9a9c707923c8de6d52f5298",
+  "kernel_sha256": "d6ac72fefa29810c04a333d8cca50fb8c99c22c7357c12a5af5f667c8d5a6210",
+  "recipes": {
+    "hessian_0.01_logpen": {
+      "regularizer": "hessian",
+      "strength": 0.01,
+      "objective": "logpen"
+    },
+    "hessian_0.003_logpen": {
+      "regularizer": "hessian",
+      "strength": 0.003,
+      "objective": "logpen"
+    }
+  },
+  "selection_source": "frozen observation-only swirl4 and swirl10 selection",
+  "length_scales": [
+    0.18404907920506158,
+    0.2180854182278151,
+    0.22845333745490676,
+    0.23168035690331046
+  ],
+  "uses_signal_pilot": false,
+  "initialization": "box-only near uniform",
+  "steps": 4000,
+  "batch": 256,
+  "rank": 32,
+  "modes": 49,
+  "refinement": "lbfgs",
+  "refinement_iterations": 100
+}

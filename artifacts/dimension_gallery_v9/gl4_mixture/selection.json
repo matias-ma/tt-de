@@ -1,0 +1,44 @@
+{
+  "selected": "curriculum",
+  "minimum_nll": "curriculum",
+  "names": [
+    "curriculum",
+    "strong"
+  ],
+  "details": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 6.303878128653303,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 26.033788353340583,
+        "eligible": true
+      },
+      {
+        "validation_nll": 6.304429104065413,
+        "excess_nll": 0.0005509754121100175,
+        "paired_cluster_se": 0.0005096200907752057,
+        "roughness": 37.30590417999186,
+        "eligible": false
+      }
+    ]
+  },
+  "files": {
+    "artifacts/dimension_gallery_v9/gl4_mixture/curriculum/fit.npz": "9955205bdb930554b19f40e841cbf8837c1c8220ffafb25e30b8d94caf02ec0b",
+    "artifacts/dimension_gallery_v9/gl4_mixture/curriculum/config.json": "bd78c70b5837aaf7f84f99a6a09d4b3e878cc4f3b7b66807c32eb241f7367d4c",
+    "artifacts/dimension_gallery_v9/gl4_mixture/curriculum/result.json": "21cc5be08507e471b2bfbfae241bdb7ac57df572585f01ddd5d90c494a3c203d",
+    "artifacts/dimension_gallery_v9/gl4_mixture/curriculum/validation.npy": "87a6196de94124f1c33a7a0973c627044b299499d1666246cc7349b09531b2a5",
+    "artifacts/dimension_gallery_v9/gl4_mixture/strong/fit.npz": "210bb494b5f7d84111799bb947cb3b3896fcd9abc1964c7b61251e09f10efa8b",
+    "artifacts/dimension_gallery_v9/gl4_mixture/strong/config.json": "13b158c70bc51aafc04d7587b6c5cbdc3858777c75d1c5e7f90ee629cec6b08a",
+    "artifacts/dimension_gallery_v9/gl4_mixture/strong/result.json": "c7f5b299c846608d31f9df6edbf48aeddde46706c6c7536398bd93852559f594",
+    "artifacts/dimension_gallery_v9/gl4_mixture/strong/validation.npy": "5f2d5918e4ec2fadaa8215fdcc34ebea68fb5b67e7d34e7952274eb82afa2162",
+    "artifacts/dimension_gallery_v9/gl4_mixture/data.npz": "852c79c6691fce5c85389d1d1aa12618dc871c9326bba71ddb91d130f3937bb8",
+    "artifacts/dimension_gallery_v9/gl4_mixture/protocol.json": "80e9a2982a8395ca5534f60047daa14c3c8f979582d489e2ed29e8ade1e22f4f",
+    "artifacts/dimension_gallery_v9/gl4_mixture/kernel.npz": "bce47f8cf5df89a3a202c9df0ea8b1d9dfd6ebe41c12e4115344e6900600840e"
+  },
+  "truth_evaluated": false
+}

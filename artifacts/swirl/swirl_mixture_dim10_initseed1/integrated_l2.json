@@ -1,0 +1,24 @@
+{
+  "rank32_h2_0.0003": {
+    "relative_l2": 0.5878579778513251,
+    "relative_squared_l2": 0.34557700212344905,
+    "integral_q_squared": 9.734916694995237,
+    "integral_pq": 14.302320845943049,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.62194496983774e-11,
+    "model": "rank32_h2_0.0003",
+    "metric": "Lebesgue L2 of the latent full-dimensional density",
+    "sha256": "bf42853c831a7f0e86a31e904a1f95412ed405f34f2d51b6e6a39aaa9d4cc197"
+  },
+  "base": {
+    "relative_l2": 0.780242975266857,
+    "relative_squared_l2": 0.6087791004532772,
+    "integral_q_squared": 5.271444900411565,
+    "integral_pq": 8.2759817407843,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.556949996382842e-10,
+    "model": "base",
+    "metric": "Lebesgue L2 of the latent full-dimensional density",
+    "sha256": "99eeb200face63fdba7effbec367e1b030195bcddf24d4c185e00cd48e2c0a78"
+  }
+}

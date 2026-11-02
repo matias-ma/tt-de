@@ -1,0 +1,8 @@
+{
+  "family": "gaussian",
+  "dim": 4,
+  "train_count": 30000,
+  "valid_count": 4096,
+  "source": "independent synthetic observations, seeds 1701 and 2701",
+  "data_sha256": "2fe06ec8c4b6350d3dd525c1083bbfbb08b9e71f13e50b406f9faddc301eb0d7"
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "artifacts/direct_optimization/smoothing_free4/protocol.json": "242fea34e2114465c75111669f5bc59f7da4aacba08bfd4b257a00364bdf54d6",
+    "artifacts/direct_optimization/smoothing_free4/selection.json": "429463a87013bb5e2c97b1fef6c86a8a7196cb19c9b296091c40d608f8fca672",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.16/fit.npz": "0cda68456e0588a249ea0dcab310d565dcbc68ef61105227f01ce7e7826ab368",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.005/fit.npz": "08068c89f4f584590e8d56681f8136038772fa2d02a8f8aeef2c8c78eaed9096",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.04/fit.npz": "8e8f2b7327e66f0e906241c7a7347766171ad8a06990300f47b1b621c4d456f2",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.02/fit.npz": "9a007d6a41f509b724fe5ab7b0cb1228ba0970cb12a5de4e579e1a18e9ae095d",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.08/fit.npz": "6248e2ad5422f4eeb69a251189e12d38a78c4d33723d9f4abfb700f4e43fb756",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.01/fit.npz": "cb514fa8af9db563074c0cb99b92e855b2de541cc096ddc32edbc9c0a3fb5559",
+    "artifacts/direct_optimization/smoothing_free4/heat_0/fit.npz": "ef94298164ed5271f763500f8b734da6083b52c9d3db2bf023c17821573a8c10",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.0025/fit.npz": "40814dee937cc0a270c4bec4a78f59c12ad3927014df63095b5124599114c519",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.16/validation.json": "435e147aef25e5eaa848dec8bfa791e42aa99260d30161602c971ce12a947ab1",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.005/validation.json": "84fdc466bba447b93ff046cf37523ae0c3724d72bf64a9ded2a3be529b79cbc6",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.04/validation.json": "ef3145c7793aad8773a09616f8c8ec79aaada7a1c04e43c7f80b279fe16da39f",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.02/validation.json": "ad889c7e80bd8c3a93b38f0353f06baba429d0b2c715bfaaf13a6216da9bfeeb",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.08/validation.json": "5326a4759ee072f57e2c355a9f878bad45a7b0dd7418cc7515841d938a2e2bde",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.01/validation.json": "5669e69a2c24dcb6765d1c2c9f27e6df40e4438fa0d3dc61315860605c05cc11",
+    "artifacts/direct_optimization/smoothing_free4/heat_0/validation.json": "7b241318d3672d951e45c27c917554790147d33a34bc99d1f68ab1943b0c9196",
+    "artifacts/direct_optimization/smoothing_free4/heat_0.0025/validation.json": "a532af7ae7aa2fac3dc48bed666299bcddecbda27988e7951b2d7920c6ac4ae9"
+  },
+  "selected": "heat_0",
+  "truth_used_for_selection": false
+}

@@ -1,0 +1,272 @@
+{
+  "models": {
+    "original": {
+      "relative_l2": 0.49897835052771966,
+      "quadrature_relative_change": 5.254155129619031e-14,
+      "test_nll": 9.413657640518775,
+      "training_subset_nll": 9.453414886619004,
+      "training_subset_count": 20000,
+      "roughness_hessian": 11.39574009454328,
+      "estimated_observed_kl": 0.0020526448487661986,
+      "observed_kl_se": 0.0016367317332682703,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.19145303138180236,
+      "pair23_relative_l2": 0.1954271550604454,
+      "validation_nll_minus_original": 0.0,
+      "paired_validation_se": 0.0,
+      "marginal_curvature": 67.32276161821821,
+      "univariate_relative_l2": [
+        0.11216344953079127,
+        0.14405008599035973,
+        0.15118335734603064,
+        0.11378759535278261,
+        0.3329953042853194,
+        0.32123998398064463
+      ],
+      "mean_univariate_relative_l2": 0.19590329608098803
+    },
+    "weaker": {
+      "relative_l2": 0.5044844908712202,
+      "quadrature_relative_change": 6.286763652203118e-14,
+      "test_nll": 9.411045993652738,
+      "training_subset_nll": 9.451227306034884,
+      "training_subset_count": 20000,
+      "roughness_hessian": 13.803396719819792,
+      "estimated_observed_kl": -0.000559002017269918,
+      "observed_kl_se": 0.001308821199438642,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.1309636936963951,
+      "pair23_relative_l2": 0.15792069419712473,
+      "validation_nll_minus_original": -6.806458061714687e-05,
+      "paired_validation_se": 0.0016788505813239494,
+      "marginal_curvature": 75.60514180639572,
+      "univariate_relative_l2": [
+        0.10309981498280084,
+        0.05885221085147429,
+        0.13111929338146006,
+        0.07375786297525881,
+        0.3344027611205588,
+        0.32706231067729163
+      ],
+      "mean_univariate_relative_l2": 0.1713823756648074
+    },
+    "weak": {
+      "relative_l2": 0.4989783505277227,
+      "quadrature_relative_change": 5.254155129619031e-14,
+      "test_nll": 9.413657640518775,
+      "training_subset_nll": 9.453414886619004,
+      "training_subset_count": 20000,
+      "roughness_hessian": 11.39574009454328,
+      "estimated_observed_kl": 0.0020526448487649357,
+      "observed_kl_se": 0.0016367317332682712,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.19145303138180236,
+      "pair23_relative_l2": 0.19542715506044545,
+      "validation_nll_minus_original": 2.2685846257086695e-15,
+      "paired_validation_se": 1.162224142131433e-16,
+      "marginal_curvature": 67.32276161821821,
+      "univariate_relative_l2": [
+        0.11216344953079126,
+        0.14405008599035968,
+        0.15118335734603067,
+        0.11378759535278261,
+        0.3329953042853194,
+        0.3212399839806445
+      ],
+      "mean_univariate_relative_l2": 0.19590329608098803
+    },
+    "marginal_medium": {
+      "relative_l2": 0.4989783505277227,
+      "quadrature_relative_change": 5.254155129619031e-14,
+      "test_nll": 9.413657640518775,
+      "training_subset_nll": 9.453414886619004,
+      "training_subset_count": 20000,
+      "roughness_hessian": 11.39574009454328,
+      "estimated_observed_kl": 0.0020526448487649357,
+      "observed_kl_se": 0.0016367317332682712,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.19145303138180236,
+      "pair23_relative_l2": 0.19542715506044545,
+      "validation_nll_minus_original": 2.2685846257086695e-15,
+      "paired_validation_se": 1.162224142131433e-16,
+      "marginal_curvature": 67.32276161821821,
+      "univariate_relative_l2": [
+        0.11216344953079126,
+        0.14405008599035968,
+        0.15118335734603067,
+        0.11378759535278261,
+        0.3329953042853194,
+        0.3212399839806445
+      ],
+      "mean_univariate_relative_l2": 0.19590329608098803
+    },
+    "control": {
+      "relative_l2": 0.49897835052771966,
+      "quadrature_relative_change": 5.254155129619031e-14,
+      "test_nll": 9.413657640518778,
+      "training_subset_nll": 9.453414886619006,
+      "training_subset_count": 20000,
+      "roughness_hessian": 11.39574009454328,
+      "estimated_observed_kl": 0.0020526448487676006,
+      "observed_kl_se": 0.00163673173326827,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.19145303138180242,
+      "pair23_relative_l2": 0.19542715506044545,
+      "validation_nll_minus_original": 1.300175245244617e-15,
+      "paired_validation_se": 1.1515519962761028e-16,
+      "marginal_curvature": 67.32276161821822,
+      "univariate_relative_l2": [
+        0.11216344953079133,
+        0.14405008599035976,
+        0.1511833573460306,
+        0.1137875953527827,
+        0.3329953042853195,
+        0.3212399839806445
+      ],
+      "mean_univariate_relative_l2": 0.19590329608098808
+    },
+    "fresh_marginal": {
+      "relative_l2": 0.8024817767657246,
+      "quadrature_relative_change": 4.7226654488772216e-14,
+      "test_nll": 9.416445083365684,
+      "training_subset_nll": 9.456805749683461,
+      "training_subset_count": 20000,
+      "roughness_hessian": 26.33354564944015,
+      "estimated_observed_kl": 0.0048400876956741475,
+      "observed_kl_se": 0.0022326002467080433,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.5497984616815517,
+      "pair23_relative_l2": 0.27590159936136094,
+      "validation_nll_minus_original": 0.004142093276280003,
+      "paired_validation_se": 0.0024931250287832294,
+      "marginal_curvature": 10.957378279365814,
+      "univariate_relative_l2": [
+        0.19166765088500012,
+        0.2104477475280266,
+        0.1775606026344979,
+        0.17893419625257384,
+        0.2068922528372246,
+        0.18953668691745199
+      ],
+      "mean_univariate_relative_l2": 0.1925065228424625
+    },
+    "fresh_amplitude": {
+      "relative_l2": 0.9607559651262616,
+      "quadrature_relative_change": 1.0143860192443678e-13,
+      "test_nll": 9.412141975618397,
+      "training_subset_nll": 9.452938592850536,
+      "training_subset_count": 20000,
+      "roughness_hessian": 50.19536892362381,
+      "estimated_observed_kl": 0.0005369799483887286,
+      "observed_kl_se": 0.001436617272714149,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.45694930862744065,
+      "pair23_relative_l2": 0.25742265455931634,
+      "validation_nll_minus_original": -0.0014539620911994578,
+      "paired_validation_se": 0.002048680203496233,
+      "marginal_curvature": 131.6164129380872,
+      "univariate_relative_l2": [
+        0.16896817247262477,
+        0.3310559261850485,
+        0.08474831028173682,
+        0.23553012113734859,
+        0.11016825933783637,
+        0.3357531364780506
+      ],
+      "mean_univariate_relative_l2": 0.21103732098210762
+    },
+    "marginal_low": {
+      "relative_l2": 0.4989783505277227,
+      "quadrature_relative_change": 5.254155129619031e-14,
+      "test_nll": 9.413657640518775,
+      "training_subset_nll": 9.453414886619004,
+      "training_subset_count": 20000,
+      "roughness_hessian": 11.39574009454328,
+      "estimated_observed_kl": 0.0020526448487649357,
+      "observed_kl_se": 0.0016367317332682712,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.19145303138180236,
+      "pair23_relative_l2": 0.19542715506044545,
+      "validation_nll_minus_original": 2.2685846257086695e-15,
+      "paired_validation_se": 1.162224142131433e-16,
+      "marginal_curvature": 67.32276161821821,
+      "univariate_relative_l2": [
+        0.11216344953079126,
+        0.14405008599035968,
+        0.15118335734603067,
+        0.11378759535278261,
+        0.3329953042853194,
+        0.3212399839806445
+      ],
+      "mean_univariate_relative_l2": 0.19590329608098803
+    },
+    "marginal_high": {
+      "relative_l2": 0.4989783505277227,
+      "quadrature_relative_change": 5.254155129619031e-14,
+      "test_nll": 9.413657640518775,
+      "training_subset_nll": 9.453414886619004,
+      "training_subset_count": 20000,
+      "roughness_hessian": 11.39574009454328,
+      "estimated_observed_kl": 0.0020526448487649357,
+      "observed_kl_se": 0.0016367317332682712,
+      "true_observed_test_nll": 9.41160499567001,
+      "pair01_relative_l2": 0.19145303138180236,
+      "pair23_relative_l2": 0.19542715506044545,
+      "validation_nll_minus_original": 2.2685846257086695e-15,
+      "paired_validation_se": 1.162224142131433e-16,
+      "marginal_curvature": 67.32276161821821,
+      "univariate_relative_l2": [
+        0.11216344953079126,
+        0.14405008599035968,
+        0.15118335734603067,
+        0.11378759535278261,
+        0.3329953042853194,
+        0.3212399839806445
+      ],
+      "mean_univariate_relative_l2": 0.19590329608098803
+    }
+  },
+  "selected": "fresh_amplitude",
+  "test_comparisons_reference": "original",
+  "test_comparisons": {
+    "original": {
+      "test_nll_minus_reference": 0.0,
+      "paired_se": 0.0
+    },
+    "weaker": {
+      "test_nll_minus_reference": -0.0026116468660361165,
+      "paired_se": 0.001276449626845228
+    },
+    "weak": {
+      "test_nll_minus_reference": -1.2628786905111156e-15,
+      "paired_se": 1.4060207217100388e-17
+    },
+    "marginal_medium": {
+      "test_nll_minus_reference": -1.2628786905111156e-15,
+      "paired_se": 1.4060207217100388e-17
+    },
+    "control": {
+      "test_nll_minus_reference": 1.4020902494582543e-15,
+      "paired_se": 1.3935796190131395e-17
+    },
+    "fresh_marginal": {
+      "test_nll_minus_reference": 0.0027874428469079494,
+      "paired_se": 0.0020457810683095824
+    },
+    "fresh_amplitude": {
+      "test_nll_minus_reference": -0.00151566490037747,
+      "paired_se": 0.0015369732172281871
+    },
+    "marginal_low": {
+      "test_nll_minus_reference": -1.2628786905111156e-15,
+      "paired_se": 1.4060207217100388e-17
+    },
+    "marginal_high": {
+      "test_nll_minus_reference": -1.2628786905111156e-15,
+      "paired_se": 1.4060207217100388e-17
+    }
+  },
+  "test_count": 4096,
+  "truth_used_only_after_freeze": true,
+  "standard_errors": "clustered by 200 MCMC chains"
+}

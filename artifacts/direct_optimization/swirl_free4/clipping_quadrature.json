@@ -1,0 +1,26 @@
+{
+  "signed_n49_r32_l0.0001_s0": {
+    "low_order": 129,
+    "high_order": 145,
+    "positive_mass_change": -2.0479179552168603e-06,
+    "negative_mass_change": -2.047917918024389e-06,
+    "high_order_relative_l2": 0.18229671442890472,
+    "relative_l2_change": 8.407043470270992e-07
+  },
+  "signed_n49_r32_l1e-05_s0_neg1": {
+    "low_order": 129,
+    "high_order": 145,
+    "positive_mass_change": 2.8306778234732377e-05,
+    "negative_mass_change": 2.8306778273451405e-05,
+    "high_order_relative_l2": 0.182954611232055,
+    "relative_l2_change": 1.5665919331081524e-05
+  },
+  "squared_n49_r32_l0.0001_b1024_s0_lbfgs": {
+    "low_order": 129,
+    "high_order": 145,
+    "positive_mass_change": -1.1141310096718371e-11,
+    "negative_mass_change": 0.0,
+    "high_order_relative_l2": 0.09164285033092667,
+    "relative_l2_change": 1.7950918529408e-13
+  }
+}

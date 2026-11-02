@@ -1,0 +1,77 @@
+{
+  "minimum_nll_index": 7,
+  "selected_index": 7,
+  "clusters": 200,
+  "se_factor": 1.0,
+  "candidates": [
+    {
+      "validation_nll": 15.627066507698547,
+      "excess_nll": 0.00033577338441311867,
+      "paired_cluster_se": 0.00032134410844957033,
+      "roughness": 0.4456109658182474,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.627121691383127,
+      "excess_nll": 0.0003909570689927481,
+      "paired_cluster_se": 0.00029750379077514595,
+      "roughness": 0.23430016722971628,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.627428053788854,
+      "excess_nll": 0.0006973194747196682,
+      "paired_cluster_se": 0.00038117359128368364,
+      "roughness": 0.15482715294008773,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.628066324376679,
+      "excess_nll": 0.0013355900625454066,
+      "paired_cluster_se": 0.0008781655973824444,
+      "roughness": 21.137555282324875,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.627534862243492,
+      "excess_nll": 0.0008041279293578719,
+      "paired_cluster_se": 0.0005714657178670718,
+      "roughness": 18.490664136996642,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.627240535449964,
+      "excess_nll": 0.0005098011358282955,
+      "paired_cluster_se": 0.0004369625551161309,
+      "roughness": 13.115576477544655,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.62679868810275,
+      "excess_nll": 6.795378861551137e-05,
+      "paired_cluster_se": 0.00023866942669442751,
+      "roughness": 5.790971551775199,
+      "eligible": true
+    },
+    {
+      "validation_nll": 15.626730734314133,
+      "excess_nll": 0.0,
+      "paired_cluster_se": 0.0,
+      "roughness": 1.4911091070181568,
+      "eligible": true
+    }
+  ],
+  "selected": "noisy_fisher_fits/fisher_0.3",
+  "names": [
+    "noisy_reference_fits/reference_0.001",
+    "noisy_reference_fits/reference_0.003",
+    "noisy_reference_fits/reference_0.01",
+    "noisy_reference_fits/reference_0.03",
+    "noisy_fisher_fits/fisher_0.01",
+    "noisy_fisher_fits/fisher_0.03",
+    "noisy_fisher_fits/fisher_0.1",
+    "noisy_fisher_fits/fisher_0.3"
+  ],
+  "selection_reference": "artifacts/noisy_reference/selected.npz",
+  "checkpoint": "artifacts/noisy_fisher_fits/fisher_0.3/fit.npz"
+}

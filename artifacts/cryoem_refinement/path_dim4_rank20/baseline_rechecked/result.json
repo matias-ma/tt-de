@@ -1,0 +1,19 @@
+{
+  "best_nll": 3.623018829485604,
+  "best_step": 0,
+  "strength": 0.0,
+  "steps": 0,
+  "lr": 0.0005,
+  "batch_size": 256,
+  "history": [
+    {
+      "step": 0,
+      "nll": 3.623018829485604,
+      "penalty": 0.0
+    }
+  ],
+  "checkpoint_rule": "nll",
+  "selection_score": 3.623018829485604,
+  "quadrature_log_error": 1.580957587066223e-13,
+  "seconds": 20.758070481941104
+}

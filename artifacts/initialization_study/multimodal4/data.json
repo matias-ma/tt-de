@@ -1,0 +1,8 @@
+{
+  "family": "multimodal",
+  "dim": 4,
+  "train_count": 30000,
+  "valid_count": 4096,
+  "source": "independent synthetic observations, seeds 1701 and 2701",
+  "data_sha256": "7b31aa7ad83abcbc2f4e682d546040ec04b75384fade693d1f1998e9d52a8cc8"
+}

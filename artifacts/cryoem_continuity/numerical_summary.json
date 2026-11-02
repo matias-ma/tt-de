@@ -1,0 +1,293 @@
+{
+  "fits": {
+    "dim10_h1_0.01": {
+      "best_nll": 9.999512379285552,
+      "best_step": 2400,
+      "common_h2": 36.57710324009647,
+      "seconds": 70.84644636209123,
+      "quadrature_log_error": 1.0444978215673473e-12,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_h1_0.01",
+        "rank": 20,
+        "modes": 49,
+        "order": 1,
+        "strength": 0.01,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank20_modes49": {
+      "best_nll": 9.972207083256293,
+      "best_step": 2400,
+      "common_h2": 111.70709858879306,
+      "seconds": 99.42733790189959,
+      "quadrature_log_error": 1.0516032489249483e-12,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank20_modes49",
+        "rank": 20,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank20_modes81": {
+      "best_nll": 9.978320180951407,
+      "best_step": 0,
+      "common_h2": 110.5433779039192,
+      "seconds": 140.4351830361411,
+      "quadrature_log_error": 3.623767952376511e-13,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank20_modes81",
+        "rank": 20,
+        "modes": 81,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank32_h1_0.003": {
+      "best_nll": 9.901963506953207,
+      "best_step": 2400,
+      "common_h2": 106.44476903022596,
+      "seconds": 100.47635735105723,
+      "quadrature_log_error": 1.0516032489249483e-12,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank32_h1_0.003",
+        "rank": 32,
+        "modes": 49,
+        "order": 1,
+        "strength": 0.003,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "l2",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank32_modes49": {
+      "best_nll": 9.896137065745544,
+      "best_step": 2400,
+      "common_h2": 126.57506946391182,
+      "seconds": 149.93538025394082,
+      "quadrature_log_error": 1.0480505352461478e-12,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank32_modes49",
+        "rank": 32,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank32_modes65_sobolev": {
+      "best_nll": 9.895201508207318,
+      "best_step": 2400,
+      "common_h2": 133.15589701924316,
+      "seconds": 161.86272063292563,
+      "quadrature_log_error": 5.879741138414829e-13,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank32_modes65_sobolev",
+        "rank": 32,
+        "modes": 65,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "sobolev",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank40_modes65": {
+      "best_nll": 9.975580551440267,
+      "best_step": 4000,
+      "common_h2": 84.68184738140359,
+      "seconds": 346.85533782700077,
+      "quadrature_log_error": 5.773159728050814e-13,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank40_modes65",
+        "rank": 40,
+        "modes": 65,
+        "order": 2,
+        "strength": 0.0003,
+        "steps": 4000,
+        "lr": 0.0002,
+        "seed": 0,
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank48_modes49_sobolev": {
+      "best_nll": 9.865520804829654,
+      "best_step": 3200,
+      "common_h2": 151.87022584003768,
+      "seconds": 262.70800189697184,
+      "quadrature_log_error": 1.0444978215673473e-12,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank48_modes49_sobolev",
+        "rank": 48,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 3200,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "sobolev",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_rank48_modes49_sobolev_seed19": {
+      "best_nll": 9.866187806928895,
+      "best_step": 3200,
+      "common_h2": 151.64401736526855,
+      "seconds": 219.37057427386753,
+      "quadrature_log_error": 1.0551559626037488e-12,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_rank48_modes49_sobolev_seed19",
+        "rank": 48,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 3200,
+        "lr": 0.0002,
+        "seed": 19,
+        "preconditioning": "sobolev",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim10_repeat_seed19": {
+      "best_nll": 9.942672359616708,
+      "best_step": 2400,
+      "common_h2": 115.41112867148647,
+      "seconds": 130.52879491099156,
+      "quadrature_log_error": 5.790923296444817e-13,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim10",
+        "output": "artifacts/cryoem_continuity/dim10_repeat_seed19",
+        "rank": 32,
+        "modes": 65,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 19,
+        "preconditioning": "l2",
+        "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+        "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+      }
+    },
+    "dim20_rank32_modes49": {
+      "best_nll": 24.68819147434823,
+      "best_step": 2400,
+      "common_h2": 229.75599595337147,
+      "seconds": 215.17292346502654,
+      "quadrature_log_error": 2.0605739337042905e-12,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim20",
+        "output": "artifacts/cryoem_continuity/dim20_rank32_modes49",
+        "rank": 32,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "l2",
+        "source_sha256": "879fee8e1bb156643733b4ad2bff86b4d1f1ad58076fb0b7ce3297d4436b79ae",
+        "kernel_sha256": "2522a4d0e9c1fef793b78afff875de946c7a83cac53a79589985830ee308c78b"
+      }
+    },
+    "dim4_rank32_modes49": {
+      "best_nll": 3.531476721714644,
+      "best_step": 2400,
+      "common_h2": 17.398239734183452,
+      "seconds": 45.205937636084855,
+      "quadrature_log_error": 4.3165471197426086e-13,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_dim4",
+        "output": "artifacts/cryoem_continuity/dim4_rank32_modes49",
+        "rank": 32,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "l2",
+        "source_sha256": "08722ab3ebe97dc18776af097336fd2e40a4e887faa8e81d1eaa9b54671df4c2",
+        "kernel_sha256": "18e89ed59e90e27b41f00c375d58d3dcaeb0cdfe8407dcd5ec86adc02e69b22b"
+      }
+    },
+    "path_dim4_rank32_modes49": {
+      "best_nll": 3.5392495918717715,
+      "best_step": 2400,
+      "common_h2": 37.482042358212304,
+      "seconds": 45.93783155805431,
+      "quadrature_log_error": 4.334310688136611e-13,
+      "configuration": {
+        "base": "artifacts/cryoem_refinement/gallery_path_dim4",
+        "output": "artifacts/cryoem_continuity/path_dim4_rank32_modes49",
+        "rank": 32,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "l2",
+        "source_sha256": "baaa62229767626984d6ec1f49b7ffa50077d210946f13f5b247455dc57e01d2",
+        "kernel_sha256": "d6ac72fefa29810c04a333d8cca50fb8c99c22c7357c12a5af5f667c8d5a6210"
+      }
+    }
+  },
+  "matched_seed_checks": [
+    {
+      "first": "dim10_rank48_modes49_sobolev",
+      "second": "dim10_rank48_modes49_sobolev_seed19",
+      "second_minus_first_nll": 0.0006670020992423976,
+      "paired_se": 0.0015714061936791196,
+      "marginals": {
+        "01": {
+          "l1_between_seeds": 0.06578511481701911,
+          "first_l1_change_from_previous": 0.1936919377480907,
+          "second_l1_change_from_previous": 0.1989165893633389
+        },
+        "23": {
+          "l1_between_seeds": 0.05999866894092726,
+          "first_l1_change_from_previous": 0.257479285776494,
+          "second_l1_change_from_previous": 0.2636257444681924
+        }
+      }
+    }
+  ],
+  "stability_scope": "Different minibatch and rank-perturbation seeds from the same frozen warm start and observations; not independent data or bootstrap replications."
+}

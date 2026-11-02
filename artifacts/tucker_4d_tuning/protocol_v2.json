@@ -1,0 +1,95 @@
+{
+  "prior_selection": {
+    "path": "artifacts/tucker_noisy_rank10/selection.json",
+    "sha256": "221b4ad912fb51a618a94124765c3bb0cb4bdbe0faa9f0e2f8e4f009cd9222a3",
+    "report": "artifacts/tucker_noisy_rank10/report.md"
+  },
+  "prior_sources": {
+    "swirl4_free": "artifacts/tucker_capacity/r24/swirl4_free",
+    "swirl6_free": "artifacts/tucker_capacity/r10/swirl6_free",
+    "swirl4_mixture": "artifacts/tucker_capacity/r16_noisy/swirl4_mixture",
+    "swirl6_mixture": "artifacts/tucker_noisy_rank10/r10/swirl6_mixture"
+  },
+  "candidates": {
+    "clean_r32_h0.003": {
+      "noise": "free",
+      "rank": 32,
+      "strength": 0.003,
+      "steps": 20000,
+      "batch_size": 1024,
+      "learning_rate": 0.001
+    },
+    "clean_r32_h0.01": {
+      "noise": "free",
+      "rank": 32,
+      "strength": 0.01,
+      "steps": 20000,
+      "batch_size": 1024,
+      "learning_rate": 0.001
+    },
+    "clean_r32_h0.03": {
+      "noise": "free",
+      "rank": 32,
+      "strength": 0.03,
+      "steps": 20000,
+      "batch_size": 1024,
+      "learning_rate": 0.001
+    },
+    "noisy_r24_h1e-05": {
+      "noise": "mixture",
+      "rank": 24,
+      "strength": 1e-05,
+      "steps": 4000,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "parent": "artifacts/tucker_capacity/r16_noisy/swirl4_mixture/curriculum/fit.npz",
+      "parent_sha256": "447bb97f442baa7c2c5b7bc64f6420486ad23ea763dc8bc0201d97442960e32a"
+    },
+    "noisy_r24_h0.0001": {
+      "noise": "mixture",
+      "rank": 24,
+      "strength": 0.0001,
+      "steps": 4000,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "parent": "artifacts/tucker_capacity/r16_noisy/swirl4_mixture/curriculum/fit.npz",
+      "parent_sha256": "447bb97f442baa7c2c5b7bc64f6420486ad23ea763dc8bc0201d97442960e32a"
+    },
+    "noisy_r24_h0.001": {
+      "noise": "mixture",
+      "rank": 24,
+      "strength": 0.001,
+      "steps": 4000,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "parent": "artifacts/tucker_capacity/r16_noisy/swirl4_mixture/curriculum/fit.npz",
+      "parent_sha256": "447bb97f442baa7c2c5b7bc64f6420486ad23ea763dc8bc0201d97442960e32a"
+    }
+  },
+  "selection": "minimum held-out NLL including the prior candidates; truth only after final freeze",
+  "truth_used_for_selection": false,
+  "baseline_truth_previously_inspected": true,
+  "refinement": {
+    "clean": {
+      "steps": 5000,
+      "batch_size": 4096,
+      "learning_rate": 0.0001
+    },
+    "noisy": {
+      "steps": 2000,
+      "batch_size": 256,
+      "learning_rate": 0.0001,
+      "marginal_strengths": [
+        0.0,
+        0.0003,
+        0.001
+      ]
+    }
+  },
+  "refinement_parent": "minimum held-out NLL across scratch fits and the current published fit, separately by condition",
+  "amendment": {
+    "previous_protocol_sha256": "570d2c94eae277b3661985a15dd6e7adc4e35aa52a156fce0a07d6a2c388879f",
+    "reason": "Measured rank-24 noisy update cost. Replace scratch starts with exact rank expansion of the existing observation-selected rank-16 fit. Reduce noisy updates to 4000 and refinement to 2000 at batch256. No new truth evaluated.",
+    "benchmark": "separable_benchmark.json"
+  }
+}

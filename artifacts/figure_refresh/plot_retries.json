@@ -1,0 +1,8 @@
+{
+  "gl_paired_dim6": {
+    "initial_plot_exit": 1,
+    "final_plot_exit": 0,
+    "reason": "Bounded negligible negative noise approximation tails; redraw passed",
+    "log": "logs/gl_paired_dim6_replot.log"
+  }
+}

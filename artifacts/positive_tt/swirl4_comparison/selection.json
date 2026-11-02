@@ -1,0 +1,23 @@
+{
+  "selected": "artifacts/positive_tt/swirl4_r32_m97_v3",
+  "rule": "minimum noisy validation NLL; frozen before truth evaluation",
+  "candidates": [
+    "artifacts/positive_tt/swirl4_r16_m49_v3",
+    "artifacts/positive_tt/swirl4_r32_m49_v3",
+    "artifacts/positive_tt/swirl4_r32_m49_control",
+    "artifacts/positive_tt/swirl4_r32_m65_v3",
+    "artifacts/positive_tt/swirl4_r32_m65_width025",
+    "artifacts/positive_tt/swirl4_r32_m65_control",
+    "artifacts/positive_tt/swirl4_r32_m97_v3"
+  ],
+  "validation_nll": [
+    3.8820338763454565,
+    3.880930653705497,
+    3.875342082516204,
+    3.873374036182465,
+    3.872683497804924,
+    3.8709768628874954,
+    3.870608253237714
+  ],
+  "selected_sha256": "afef87e18f686db6f3370c4b923bede2be1b6cf743521a59dd2384f9e783a51b"
+}

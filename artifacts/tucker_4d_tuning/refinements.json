@@ -1,0 +1,45 @@
+{
+  "clean_refine": {
+    "noise": "free",
+    "rank": 24,
+    "strength": 0.01,
+    "parent": "artifacts/tucker_capacity/r24/swirl4_free/strong/fit.npz",
+    "parent_sha256": "94956b963ebf3b6c03797c1285aa59860c1848d2a8116929b5e3f824d5ae0141",
+    "steps": 5000,
+    "batch_size": 4096,
+    "learning_rate": 0.0001
+  },
+  "noisy_refine_m0": {
+    "noise": "mixture",
+    "rank": 24,
+    "strength": 0.0001,
+    "parent": "artifacts/tucker_4d_tuning/noisy_r24_h0.0001/swirl4_mixture/fit/fit.npz",
+    "parent_sha256": "167791cf01931469f5c02107cea0545f40156f3578fc35db93d34bdf5a3eef46",
+    "steps": 2000,
+    "batch_size": 256,
+    "learning_rate": 0.0001,
+    "marginal_strength": 0.0
+  },
+  "noisy_refine_m0.0003": {
+    "noise": "mixture",
+    "rank": 24,
+    "strength": 0.0001,
+    "parent": "artifacts/tucker_4d_tuning/noisy_r24_h0.0001/swirl4_mixture/fit/fit.npz",
+    "parent_sha256": "167791cf01931469f5c02107cea0545f40156f3578fc35db93d34bdf5a3eef46",
+    "steps": 2000,
+    "batch_size": 256,
+    "learning_rate": 0.0001,
+    "marginal_strength": 0.0003
+  },
+  "noisy_refine_m0.001": {
+    "noise": "mixture",
+    "rank": 24,
+    "strength": 0.0001,
+    "parent": "artifacts/tucker_4d_tuning/noisy_r24_h0.0001/swirl4_mixture/fit/fit.npz",
+    "parent_sha256": "167791cf01931469f5c02107cea0545f40156f3578fc35db93d34bdf5a3eef46",
+    "steps": 2000,
+    "batch_size": 256,
+    "learning_rate": 0.0001,
+    "marginal_strength": 0.001
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "minimum_nll": "h2_3e-05",
+  "selected": "h2_3e-05",
+  "rule": "paired cluster one-SE, then minimum integrated roughness",
+  "candidates": {
+    "h2_3e-05": {
+      "validation_nll": 15.628066324376817,
+      "excess_nll": 0.0,
+      "paired_cluster_se": 0.0,
+      "roughness": 74.11276525821097,
+      "eligible": true
+    }
+  }
+}

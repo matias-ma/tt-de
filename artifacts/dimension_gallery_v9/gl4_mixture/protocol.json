@@ -1,0 +1,135 @@
+{
+  "family": "gl",
+  "dim": 4,
+  "noise": "mixture",
+  "data": "artifacts/dimension_gallery_v9/gl4_mixture/data.npz",
+  "data_sha256": "852c79c6691fce5c85389d1d1aa12618dc871c9326bba71ddb91d130f3937bb8",
+  "domain": [
+    [
+      -3.72235467566455,
+      3.76640414776055
+    ],
+    [
+      -3.7396131011388594,
+      3.7484056233355387
+    ],
+    [
+      -3.7161248587957627,
+      3.7275594384320083
+    ],
+    [
+      -3.755901999489256,
+      3.733861370959426
+    ]
+  ],
+  "kernel": "artifacts/dimension_gallery_v9/gl4_mixture/kernel.npz",
+  "noise_weights": [
+    0.7,
+    0.3
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.2025,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.2025,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2025,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.2025
+      ]
+    ],
+    [
+      [
+        1.8225000000000002,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.8225000000000002,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.8225000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.8225000000000002
+      ]
+    ]
+  ],
+  "training_count": 100000,
+  "validation_count": 4096,
+  "recipes": {
+    "curriculum": {
+      "regularizer": "hessian",
+      "strength": 1e-05,
+      "rank": 10,
+      "modes": 25,
+      "seed": 0,
+      "steps": 4000,
+      "learning_rate": 0.001,
+      "batch_size": 256,
+      "marginal_strength": 0.0,
+      "parent": null,
+      "mode_schedule": [
+        [
+          0,
+          9
+        ],
+        [
+          1000,
+          17
+        ],
+        [
+          2000,
+          25
+        ]
+      ],
+      "selection_start": 2000,
+      "optimizer": "adam"
+    },
+    "strong": {
+      "regularizer": "hessian",
+      "strength": 0.001,
+      "rank": 10,
+      "modes": 25,
+      "seed": 0,
+      "steps": 4000,
+      "learning_rate": 0.001,
+      "batch_size": 256,
+      "marginal_strength": 0.0,
+      "parent": null,
+      "mode_schedule": null,
+      "selection_start": 0,
+      "optimizer": "adam"
+    }
+  },
+  "initialization": "near-uniform, perturbation 0.01, seed 0; no learned signal pilot",
+  "selection": "minimum exact marginal curvature within one paired SE of minimum held-out NLL",
+  "validation_clusters": 200,
+  "truth_used_for_selection": false
+}

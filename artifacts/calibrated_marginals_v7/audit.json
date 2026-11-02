@@ -1,0 +1,19 @@
+{
+  "verified_distinct_frozen_files": 130,
+  "completed_new_fits": 28,
+  "targeted_tests_passed": 18,
+  "study_bytes": {
+    "artifacts/marginal_regularization_v5": 24981228,
+    "artifacts/smooth_initialization_v6": 12029014,
+    "artifacts/calibrated_marginals_v7": 10717108
+  },
+  "selected_primary": {
+    "swirl4_mixture": "calibrated:control",
+    "gl6_mixture": "calibrated:control"
+  },
+  "selected_smooth": {
+    "swirl4_mixture": "calibrated:marginal_moderate",
+    "gl6_mixture": "regularization:original"
+  },
+  "truth_used_for_selection": false
+}

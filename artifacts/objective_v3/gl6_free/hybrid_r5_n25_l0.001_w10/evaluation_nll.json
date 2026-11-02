@@ -1,0 +1,9 @@
+{
+  "relative_l2": 0.05705801852523611,
+  "quadrature_relative_change": 5.527492679714818e-14,
+  "test_nll": 5.8862960768400425,
+  "test_kernel_discrepancy": 0.0005875051137667443,
+  "test_count": 4096,
+  "fourier_refinement_max_error": 1.1882365505505735e-14,
+  "sha256": "e187e1e91b5216937eec54800fbe6592ca1b8fce9986054df425cce6abec8195"
+}

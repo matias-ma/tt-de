@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "family": "gl",
+      "dimension": 4,
+      "mode_rank": 5,
+      "tucker_core_entries": 625,
+      "diagnostic_max_tt_bond": 25,
+      "one_quartic_environment_bytes": 3125000,
+      "run": true
+    },
+    {
+      "family": "gl",
+      "dimension": 8,
+      "mode_rank": 3,
+      "tucker_core_entries": 6561,
+      "diagnostic_max_tt_bond": 81,
+      "one_quartic_environment_bytes": 344373768,
+      "run": true
+    },
+    {
+      "family": "gl",
+      "dimension": 10,
+      "mode_rank": 3,
+      "tucker_core_entries": 59049,
+      "diagnostic_max_tt_bond": 243,
+      "one_quartic_environment_bytes": 27894275208,
+      "run": false
+    },
+    {
+      "family": "swirl",
+      "dimension": 4,
+      "mode_rank": 8,
+      "tucker_core_entries": 4096,
+      "diagnostic_max_tt_bond": 64,
+      "one_quartic_environment_bytes": 134217728,
+      "run": true
+    },
+    {
+      "family": "swirl",
+      "dimension": 6,
+      "mode_rank": 4,
+      "tucker_core_entries": 4096,
+      "diagnostic_max_tt_bond": 64,
+      "one_quartic_environment_bytes": 134217728,
+      "run": true
+    },
+    {
+      "family": "swirl",
+      "dimension": 8,
+      "mode_rank": 4,
+      "tucker_core_entries": 65536,
+      "diagnostic_max_tt_bond": 256,
+      "one_quartic_environment_bytes": 34359738368,
+      "run": false
+    }
+  ],
+  "note": "Conservative exact-evaluation resource screen, not a theoretical Tucker dimensional limit. These are size estimates, not measured peak memory. An untruncated TT conversion has the listed maximal bond. Exact fourth-moment contraction needs that bond to the fourth power for one environment, plus intermediates. Higher dimensions can be fitted with lower ranks or assessed with approximate error integration; those are different experiments.",
+  "next_GL10_one_environment_GiB": 25.978568203747272,
+  "next_Swirl8_one_environment_GiB": 32.0
+}

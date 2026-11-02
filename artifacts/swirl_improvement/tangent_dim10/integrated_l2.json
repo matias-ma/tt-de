@@ -1,0 +1,30 @@
+{
+  "full_16": {
+    "relative_l2": 0.32562379261607743,
+    "integral_q_squared": 28.597098168022903,
+    "integral_pq": 27.186965283829203,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 2.4211168204827304e-13
+  },
+  "tied_isotropic_rank1_16": {
+    "relative_l2": 0.24682229398842923,
+    "integral_q_squared": 30.786496622288894,
+    "integral_pq": 28.932012931551363,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 2.408795615289434e-13
+  },
+  "tied_isotropic_rank1_32": {
+    "relative_l2": 0.28180578247113497,
+    "integral_q_squared": 31.86635961821934,
+    "integral_pq": 29.205325879553172,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.8654304662650654e-13
+  },
+  "tied_isotropic_rank1_64": {
+    "relative_l2": 0.4269809502404514,
+    "integral_q_squared": 30.983372758029727,
+    "integral_pq": 27.280341372169527,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.6941657140782465e-13
+  }
+}

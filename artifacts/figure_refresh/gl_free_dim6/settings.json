@@ -1,0 +1,13 @@
+{
+  "family": "gl",
+  "dim": 6,
+  "noise": "free",
+  "path": false,
+  "output": "artifacts/figure_refresh/gl_free_dim6",
+  "steps": 8000,
+  "strengths": [
+    0.1,
+    0.3,
+    1.0
+  ]
+}

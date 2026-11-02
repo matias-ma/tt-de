@@ -1,0 +1,42 @@
+{
+  "swirl4": {
+    "baseline": {
+      "observations": 4096,
+      "minority_sign_fraction": 0.001953125,
+      "exact_zeros": 0,
+      "finite_sample_check_only": true
+    },
+    "sweep_hessian_strong_flat_long": {
+      "observations": 4096,
+      "minority_sign_fraction": 0.000244140625,
+      "exact_zeros": 0,
+      "finite_sample_check_only": true
+    },
+    "sweep_hessian_continue": {
+      "observations": 4096,
+      "minority_sign_fraction": 0.00146484375,
+      "exact_zeros": 0,
+      "finite_sample_check_only": true
+    }
+  },
+  "swirl10": {
+    "baseline": {
+      "observations": 4096,
+      "minority_sign_fraction": 0.002685546875,
+      "exact_zeros": 0,
+      "finite_sample_check_only": true
+    },
+    "sweep_hessian_medium_flat_long": {
+      "observations": 4096,
+      "minority_sign_fraction": 0.000732421875,
+      "exact_zeros": 0,
+      "finite_sample_check_only": true
+    },
+    "sweep_hessian_continue": {
+      "observations": 4096,
+      "minority_sign_fraction": 0.00244140625,
+      "exact_zeros": 0,
+      "finite_sample_check_only": true
+    }
+  }
+}

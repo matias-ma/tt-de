@@ -1,0 +1,102 @@
+{
+  "case": "gl6_paired",
+  "source": "artifacts/figure_refresh/gl_paired_dim6",
+  "data_sha256": "4d4c8a19e1864089a5dc694ada1eda65922d9ffc58ea42585732797d8410d3a1",
+  "domain": [
+    [
+      -3.1847659060814713,
+      3.1552500919106383
+    ],
+    [
+      -3.2232580634034513,
+      3.2084009729112646
+    ],
+    [
+      -3.193454932163447,
+      3.196688478747716
+    ],
+    [
+      -3.173391088178336,
+      3.1952209736508577
+    ],
+    [
+      -3.1781742539729856,
+      3.199925187330826
+    ],
+    [
+      -3.1969573452339435,
+      3.1840260124100097
+    ]
+  ],
+  "noise_weights": [
+    1.0
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.6885,
+        0.34425,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.34425,
+        0.6885,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.6885,
+        0.34425,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.34425,
+        0.6885,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6885,
+        0.34425
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.34425,
+        0.6885
+      ]
+    ]
+  ],
+  "training_count": 100000,
+  "validation_count": 2048,
+  "uses_clean_truth": false,
+  "uses_signal_pilot": false,
+  "initialization": "constant plus random coefficients, perturbation .01, seed 0",
+  "kernel": "Gaussian bandwidth mixture (.2,.5,1) times sqrt(d) in training-standardized coordinates",
+  "training_frequencies": 1024,
+  "validation_frequencies": 512,
+  "frequency_seeds": [
+    2701,
+    2702
+  ],
+  "regularizer": "full amplitude Hessian, scales .05 box width",
+  "selection": "separate paired-one-SE NLL and kernel choices; prefer fewer coefficients",
+  "truth_evaluation": "only after all candidate and checkpoint hashes are frozen",
+  "storage_budget_MiB": 512
+}

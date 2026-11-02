@@ -1,0 +1,14 @@
+{
+  "fit_path": "artifacts/swirl/swirl_free_dim4/selected.npz",
+  "fit_sha256": "dc85108142eab641160fba87dc4b88ce6df5b987279a216a85e05bff5515d7e4",
+  "kind": "squared",
+  "order": 129,
+  "positive_mass": 1.177827355276666,
+  "negative_mass": 0.0,
+  "norm_q_squared": 0.5125160976145416,
+  "raw_tt_negative_fraction_validation": 0.001708984375,
+  "raw_tt_minority_sign_fraction_validation": 0.001708984375,
+  "validation_risk": -0.521941017468975,
+  "nll": 1.2474247660902964,
+  "nonpositive_predictions": 0
+}

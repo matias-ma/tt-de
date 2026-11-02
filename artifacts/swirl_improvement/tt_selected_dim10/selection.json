@@ -1,0 +1,48 @@
+{
+  "selected": "artifacts/swirl_improvement/tt_tangent_smallbatch_dim10_r64",
+  "names": [
+    "previous",
+    "artifacts/swirl_improvement/tt_control_smallbatch_dim10_r64",
+    "artifacts/swirl_improvement/tt_tangent_smallbatch_dim10_r64"
+  ],
+  "nll": [
+    6.284201534177997,
+    6.284201533588657,
+    6.269018416746482
+  ],
+  "energy": [
+    68.49255866537136,
+    68.4925621319381,
+    58.47725462543618
+  ],
+  "selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 2,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 6.284201534177997,
+        "excess_nll": 0.015183117431515292,
+        "paired_cluster_se": 0.002646207613460637,
+        "roughness": 68.49255866537136,
+        "eligible": false
+      },
+      {
+        "validation_nll": 6.284201533588657,
+        "excess_nll": 0.015183116842175262,
+        "paired_cluster_se": 0.0026462076006669027,
+        "roughness": 68.4925621319381,
+        "eligible": false
+      },
+      {
+        "validation_nll": 6.269018416746482,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 58.47725462543618,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired one-SE, then common amplitude H2"
+}

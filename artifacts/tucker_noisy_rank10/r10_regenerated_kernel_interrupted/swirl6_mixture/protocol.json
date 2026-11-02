@@ -1,0 +1,206 @@
+{
+  "family": "swirl",
+  "dim": 6,
+  "noise": "mixture",
+  "rank": 10,
+  "steps": 8000,
+  "decomposition": "tucker",
+  "domain": [
+    [
+      -2.4303809280390465,
+      2.215027638304379
+    ],
+    [
+      -2.138556484018991,
+      2.1636804887970977
+    ],
+    [
+      -2.3564737710689068,
+      2.5944531476909347
+    ],
+    [
+      -2.2971637151239293,
+      2.3707575571857062
+    ],
+    [
+      -2.4194354469284907,
+      2.60140055868167
+    ],
+    [
+      -2.4104890948698934,
+      2.345939809196488
+    ]
+  ],
+  "data": "artifacts/tucker_noisy_rank10/r10/swirl6_mixture/data.npz",
+  "data_sha256": "50b1a5a3b2930bfadb46bd6f57ba41c02ba94f9ee30cc538cb66228b317917a8",
+  "kernel": "artifacts/tucker_noisy_rank10/r10/swirl6_mixture/kernel.npz",
+  "noise_weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0484,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0484,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0484,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0484,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0484,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0484
+      ]
+    ],
+    [
+      [
+        0.2025,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0625,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2025,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0625,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2025,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0625
+      ]
+    ],
+    [
+      [
+        0.25,
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.15,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25,
+        -0.15,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.15,
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.15
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.25
+      ]
+    ]
+  ],
+  "modes": 49,
+  "seed": 0,
+  "perturbation": 0.01,
+  "initialization": "near-uniform native Tucker; no fitted pilot",
+  "optimizer": "Adam (TT canonical core sweeps are decomposition-specific)",
+  "selection": "minimum held-out NLL checkpoint and recipe",
+  "truth_used_for_selection": false,
+  "recipes": [
+    "curriculum"
+  ],
+  "recipe_choice": "Prior held-out winner at rank 6; fixed before rank-10 training",
+  "comparison": "Same observations, domain, noise kernel and loss; rank 6 to 10, updates 4000 to 8000"
+}

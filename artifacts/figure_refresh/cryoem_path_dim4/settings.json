@@ -1,0 +1,13 @@
+{
+  "family": "cryoem",
+  "dim": 4,
+  "noise": "paired",
+  "path": true,
+  "output": "artifacts/figure_refresh/cryoem_path_dim4",
+  "steps": 8000,
+  "strengths": [
+    0.1,
+    0.3,
+    1.0
+  ]
+}

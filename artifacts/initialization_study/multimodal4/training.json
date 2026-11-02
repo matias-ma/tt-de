@@ -1,0 +1,12 @@
+{
+  "rank": 32,
+  "modes": 49,
+  "steps": 1200,
+  "lr": 0.001,
+  "strength": 0.0001,
+  "batch_size": 128,
+  "components": 32,
+  "em_iterations": 150,
+  "optimizer_seed": 41023,
+  "checkpoint_rule": "minimum noisy validation NLL + fixed amplitude H2"
+}

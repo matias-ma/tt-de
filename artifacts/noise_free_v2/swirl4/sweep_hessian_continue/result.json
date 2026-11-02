@@ -1,0 +1,78 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 1.238852834996254,
+      "training_objective": 1.2312181205156705,
+      "roughness_hessian": 11.53830183954132,
+      "roughness_axis_h2": 6.265964004071023,
+      "roughness_h1": 2.434955193301285,
+      "seconds": 0.12577884714119136
+    },
+    {
+      "step": 1,
+      "validation_nll": 1.2419892352341357,
+      "training_objective": 1.2172952372881665,
+      "roughness_hessian": 13.281151864246365,
+      "roughness_axis_h2": 6.899794464234026,
+      "roughness_h1": 2.5168943203116805,
+      "seconds": 11.086232014000416
+    },
+    {
+      "step": 2,
+      "validation_nll": 1.2401024368724545,
+      "training_objective": 1.2159826037921544,
+      "roughness_hessian": 13.29093718948161,
+      "roughness_axis_h2": 6.891140464154889,
+      "roughness_h1": 2.5207214415981283,
+      "seconds": 11.380691724130884
+    },
+    {
+      "step": 3,
+      "validation_nll": 1.2411944499382868,
+      "training_objective": 1.2153245253958964,
+      "roughness_hessian": 13.30818063078776,
+      "roughness_axis_h2": 6.900365311049383,
+      "roughness_h1": 2.5222653743212664,
+      "seconds": 11.690059249056503
+    },
+    {
+      "step": 4,
+      "validation_nll": 1.240366086825857,
+      "training_objective": 1.2149837757043038,
+      "roughness_hessian": 13.300487946440715,
+      "roughness_axis_h2": 6.892675383767306,
+      "roughness_h1": 2.522465907887407,
+      "seconds": 11.996005942113698
+    },
+    {
+      "step": 5,
+      "validation_nll": 1.2397802173310053,
+      "training_objective": 1.214797431713571,
+      "roughness_hessian": 13.291748168654006,
+      "roughness_axis_h2": 6.889910039427727,
+      "roughness_h1": 2.5224919095330005,
+      "seconds": 12.299943539081141
+    },
+    {
+      "step": 6,
+      "validation_nll": 1.2399040187005377,
+      "training_objective": 1.2146870461098995,
+      "roughness_hessian": 13.288586291164924,
+      "roughness_axis_h2": 6.8868104759007025,
+      "roughness_h1": 2.522472108701449,
+      "seconds": 12.640975713031366
+    }
+  ],
+  "best_step": 0,
+  "best_nll": 1.238852834996254,
+  "objective": "NLL + log(1 + lambda * normalized amplitude Sobolev energy)",
+  "strength": 0.001,
+  "regularizer": "hessian",
+  "sweeps": 6,
+  "newton_steps": 5,
+  "seconds": 12.694603265961632,
+  "training_count": 100000,
+  "uses_signal_pilot": false,
+  "selection": "minimum held-out joint NLL checkpoint"
+}

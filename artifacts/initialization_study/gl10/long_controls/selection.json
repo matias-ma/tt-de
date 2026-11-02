@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "name": "long_controls/kde_s1",
+      "method": "kde",
+      "score": 15.467992334017902,
+      "nll": 15.459337820259044,
+      "best_step": 0,
+      "extra_steps": 2400,
+      "source_run": "kde_s1"
+    },
+    {
+      "name": "long_controls/full_s0",
+      "method": "full",
+      "score": 15.463412589332213,
+      "nll": 15.454546206575404,
+      "best_step": 0,
+      "extra_steps": 2400,
+      "source_run": "full_s0"
+    }
+  ],
+  "selected": "long_controls/full_s0",
+  "frozen_sha256": {
+    "artifacts/initialization_study/gl10/long_controls/kde_s1/fit.npz": "0ebbb6f357e007b92484b503702adbdce3eb4b315c9b7aaf0da695f075594739",
+    "artifacts/initialization_study/gl10/long_controls/kde_s1/init.npz": "75dc0b4cae3a0f06079464f9a51de096c6f2f62a386fdd203c2afb044bb99f0f",
+    "artifacts/initialization_study/gl10/long_controls/kde_s1/fit.json": "03b1e93669022d3018ccd321cbc2521591521207a3ad920838b2bed81b311fae",
+    "artifacts/initialization_study/gl10/long_controls/full_s0/fit.npz": "a1b55a6c5700267f4399e4114610f7709ca237d3dc1d099c10233ef97e605b6d",
+    "artifacts/initialization_study/gl10/long_controls/full_s0/init.npz": "e4cb54433d35bf424a64120e76e282a4fe37f1137b31de34781b912ffedc610a",
+    "artifacts/initialization_study/gl10/long_controls/full_s0/fit.json": "a2c00fd54afc40ce52992dd617661cad97ee34b847afc2676999ab313acbd571"
+  },
+  "truth_used": false,
+  "independent_test_used": false
+}

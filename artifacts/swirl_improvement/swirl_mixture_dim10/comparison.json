@@ -1,0 +1,26 @@
+{
+  "score": {
+    "old_nll": 6.284201534177997,
+    "new_nll": 6.270072536631231,
+    "improvement": 0.014128997546765259,
+    "paired_se": 0.0026674238219783326,
+    "replace": true
+  },
+  "selected": "tied_isotropic_rank1_32",
+  "pairs": {
+    "01": {
+      "old_relative_l2": 0.12406314678327125,
+      "local_relative_l2": 0.04782958801864455
+    },
+    "23": {
+      "old_relative_l2": 0.25326531645240424,
+      "local_relative_l2": 0.09550597216658768
+    },
+    "09": {
+      "old_relative_l2": 0.10647751352359598,
+      "local_relative_l2": 0.048368246969503224
+    }
+  },
+  "old_full_l2": 0.4877718980500103,
+  "local_full_l2": 0.28180578247113497
+}

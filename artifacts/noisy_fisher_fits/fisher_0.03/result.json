@@ -1,0 +1,142 @@
+{
+  "name": "fisher_0.03",
+  "strength": 0.03,
+  "best_nll": 15.627240535449964,
+  "best_step": 8000,
+  "minimum_nll": 15.627240535449964,
+  "checkpoint_selection": null,
+  "roughness": 0.01872808105046557,
+  "history": [
+    {
+      "step": 0,
+      "nll": 15.628066324376679,
+      "roughness": 0.10899720588836491
+    },
+    {
+      "step": 400,
+      "nll": 15.629565850022253,
+      "roughness": 0.04051768348664949
+    },
+    {
+      "step": 800,
+      "nll": 15.628523843520693,
+      "roughness": 0.03293828661846393
+    },
+    {
+      "step": 1200,
+      "nll": 15.629124408531345,
+      "roughness": 0.029672187428878474
+    },
+    {
+      "step": 1600,
+      "nll": 15.62822926664531,
+      "roughness": 0.027796304184677826
+    },
+    {
+      "step": 2000,
+      "nll": 15.63006350000206,
+      "roughness": 0.025892664328963942
+    },
+    {
+      "step": 2400,
+      "nll": 15.630475050679205,
+      "roughness": 0.024644770793845975
+    },
+    {
+      "step": 2800,
+      "nll": 15.628364634141455,
+      "roughness": 0.022412651259305368
+    },
+    {
+      "step": 3200,
+      "nll": 15.629505399891645,
+      "roughness": 0.02272284794133383
+    },
+    {
+      "step": 3600,
+      "nll": 15.630117606786445,
+      "roughness": 0.02211452957550577
+    },
+    {
+      "step": 4000,
+      "nll": 15.631295103939404,
+      "roughness": 0.02124814726758833
+    },
+    {
+      "step": 4400,
+      "nll": 15.631017370700718,
+      "roughness": 0.019734125376904138
+    },
+    {
+      "step": 4800,
+      "nll": 15.627273891709333,
+      "roughness": 0.02074903492578945
+    },
+    {
+      "step": 5200,
+      "nll": 15.628389592811692,
+      "roughness": 0.01995293523676181
+    },
+    {
+      "step": 5600,
+      "nll": 15.630084337849421,
+      "roughness": 0.019782292986777642
+    },
+    {
+      "step": 6000,
+      "nll": 15.62951616624014,
+      "roughness": 0.019053686312079567
+    },
+    {
+      "step": 6400,
+      "nll": 15.629173371674693,
+      "roughness": 0.019174145630377584
+    },
+    {
+      "step": 6800,
+      "nll": 15.628078364076874,
+      "roughness": 0.018655556295996994
+    },
+    {
+      "step": 7200,
+      "nll": 15.629327448096978,
+      "roughness": 0.018873031667911513
+    },
+    {
+      "step": 7600,
+      "nll": 15.628813191981537,
+      "roughness": 0.018987668406059997
+    },
+    {
+      "step": 8000,
+      "nll": 15.627240535449964,
+      "roughness": 0.01872808105046557
+    }
+  ],
+  "seconds": 149.23310962086543,
+  "quadrature_log_error": 7.815970093361102e-14,
+  "settings": {
+    "setup": "artifacts/gl_rsi_trial/paired_setup.npz",
+    "output": "artifacts/noisy_fisher_fits",
+    "strengths": [
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ],
+    "order": 2,
+    "n_coeffs": 33,
+    "legacy": false,
+    "steps": 8000,
+    "batch_size": 256,
+    "lr": 0.0005,
+    "n_train": 100000,
+    "noise_scale": 1.5,
+    "train_seed": 0,
+    "valid_seed": 2,
+    "warm_start": "artifacts/noisy_recovery_n25_mid/h2_3e-05/fit.npz",
+    "reference": "artifacts/noisy_reference/selected.npz",
+    "fisher_floor": 0.01,
+    "checkpoint_rule": "minimum-nll"
+  }
+}

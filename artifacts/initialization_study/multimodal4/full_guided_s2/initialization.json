@@ -1,0 +1,102 @@
+{
+  "method": "full_guided",
+  "seed": 2,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 150,
+    "validation_nll": 4.14210517870384,
+    "history": [
+      {
+        "step": 10,
+        "nll": 4.179827774964762
+      },
+      {
+        "step": 20,
+        "nll": 4.15918244416536
+      },
+      {
+        "step": 30,
+        "nll": 4.151530540756851
+      },
+      {
+        "step": 40,
+        "nll": 4.1479400898003345
+      },
+      {
+        "step": 50,
+        "nll": 4.145957302378165
+      },
+      {
+        "step": 60,
+        "nll": 4.14472119318944
+      },
+      {
+        "step": 70,
+        "nll": 4.1438981032668405
+      },
+      {
+        "step": 80,
+        "nll": 4.143339505106143
+      },
+      {
+        "step": 90,
+        "nll": 4.142953117129034
+      },
+      {
+        "step": 100,
+        "nll": 4.142678164722374
+      },
+      {
+        "step": 110,
+        "nll": 4.142477875650469
+      },
+      {
+        "step": 120,
+        "nll": 4.142330561640165
+      },
+      {
+        "step": 130,
+        "nll": 4.142223610925181
+      },
+      {
+        "step": 140,
+        "nll": 4.142149856429218
+      },
+      {
+        "step": 150,
+        "nll": 4.14210517870384
+      }
+    ],
+    "seconds": 0.2178826150484383
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.5513397945093623,
+        "sample_matrix_relative_tail": 1.93803191878256e-06
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 9.480156157802295,
+        "sample_matrix_relative_tail": 0.023970446032843047
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 6.232244900842851,
+        "sample_matrix_relative_tail": 1.6445974709175987e-05
+      }
+    ]
+  },
+  "seconds": 3.818285470828414,
+  "pilot_is_final_model": false
+}

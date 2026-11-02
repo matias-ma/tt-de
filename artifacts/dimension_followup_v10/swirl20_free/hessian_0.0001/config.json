@@ -1,0 +1,16 @@
+{
+  "regularizer": "hessian",
+  "strength": 0.0001,
+  "rank": 32,
+  "modes": 49,
+  "seed": 0,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 1024,
+  "marginal_strength": 0.0,
+  "parent": null,
+  "mode_schedule": null,
+  "selection_start": 0,
+  "optimizer": "core_sweeps",
+  "sweeps": 20
+}

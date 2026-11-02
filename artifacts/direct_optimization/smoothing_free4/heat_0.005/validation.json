@@ -1,0 +1,10 @@
+{
+  "fraction": 0.005,
+  "fit_sha256": "08068c89f4f584590e8d56681f8136038772fa2d02a8f8aeef2c8c78eaed9096",
+  "positive_mass": 1.1277738342193524,
+  "negative_mass": 0.12777383421935945,
+  "norm_q_squared": 0.387906438545242,
+  "validation_risk": -0.5089174950599964,
+  "nll": null,
+  "nonpositive_predictions": 31
+}

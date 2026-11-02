@@ -1,0 +1,14 @@
+{
+  "full_data_lbfgs": {
+    "swirl4_mixture": 30,
+    "gl6_mixture": 30
+  },
+  "lbfgs_initialization": "original 4000-update noisy NLL fit, no clean input",
+  "box_controls": [
+    "gl6_free",
+    "gl6_wide_free"
+  ],
+  "wide_box_resolution_control": "49 modes, chosen to offset the roughly 1.7x wider box (25 * 1.7 rounded up to existing mode grid)",
+  "box_control_note": "Noise-free GL observations only for these separately labeled controls; never passed to a noisy fit.",
+  "all_selection": "observed validation NLL only"
+}

@@ -1,0 +1,74 @@
+{
+  "dim4": {
+    "states": 50,
+    "median_step_over_noise_std": 1.2419662881310645,
+    "median_clean_std_over_noise_std": 0.6540768640611218,
+    "median_within_std_over_noise_std": 1.193546705589887,
+    "pairs": {
+      "01": {
+        "deconvolved_vs_discrete_oracle": 0.3138228248612596,
+        "deconvolved_vs_continuous_path": 0.161422653934799,
+        "continuous_path_vs_discrete_oracle": 0.26758606056825734,
+        "observed_fit_vs_oracle_convolved": 0.04380176749443026
+      },
+      "23": {
+        "deconvolved_vs_discrete_oracle": 0.3046151096277481,
+        "deconvolved_vs_continuous_path": 0.3206517526278935,
+        "continuous_path_vs_discrete_oracle": 0.34878216038549137,
+        "observed_fit_vs_oracle_convolved": 0.06192765818076658
+      }
+    }
+  },
+  "dim10": {
+    "states": 50,
+    "median_step_over_noise_std": 2.1637664437238637,
+    "median_clean_std_over_noise_std": 0.4292715582975364,
+    "median_within_std_over_noise_std": 1.0841248199127769,
+    "pairs": {
+      "01": {
+        "deconvolved_vs_discrete_oracle": 0.44798356968667347,
+        "deconvolved_vs_continuous_path": 0.29973654846347164,
+        "continuous_path_vs_discrete_oracle": 0.31194769333260525,
+        "observed_fit_vs_oracle_convolved": 0.04557250988221027
+      },
+      "23": {
+        "deconvolved_vs_discrete_oracle": 0.46289200685506304,
+        "deconvolved_vs_continuous_path": 0.3819523971608025,
+        "continuous_path_vs_discrete_oracle": 0.5580065014334296,
+        "observed_fit_vs_oracle_convolved": 0.1348765848101841
+      },
+      "89": {
+        "deconvolved_vs_discrete_oracle": 0.19656516319063555,
+        "deconvolved_vs_continuous_path": 0.20818259887657672,
+        "continuous_path_vs_discrete_oracle": 0.024845074251731745,
+        "observed_fit_vs_oracle_convolved": 0.032832984521690575
+      }
+    }
+  },
+  "dim20": {
+    "states": 50,
+    "median_step_over_noise_std": 2.0508831593205965,
+    "median_clean_std_over_noise_std": 0.410516931672724,
+    "median_within_std_over_noise_std": 1.073827900279553,
+    "pairs": {
+      "01": {
+        "deconvolved_vs_discrete_oracle": 0.37183093986349514,
+        "deconvolved_vs_continuous_path": 0.3121592045296586,
+        "continuous_path_vs_discrete_oracle": 0.17335760062713843,
+        "observed_fit_vs_oracle_convolved": 0.038825016540880566
+      },
+      "23": {
+        "deconvolved_vs_discrete_oracle": 0.40793557405789144,
+        "deconvolved_vs_continuous_path": 0.3094659907504358,
+        "continuous_path_vs_discrete_oracle": 0.467114827568832,
+        "observed_fit_vs_oracle_convolved": 0.053955741046302214
+      },
+      "89": {
+        "deconvolved_vs_discrete_oracle": 0.24368613247897936,
+        "deconvolved_vs_continuous_path": 0.2526222698149352,
+        "continuous_path_vs_discrete_oracle": 0.025767849129596863,
+        "observed_fit_vs_oracle_convolved": 0.017128052760353354
+      }
+    }
+  }
+}

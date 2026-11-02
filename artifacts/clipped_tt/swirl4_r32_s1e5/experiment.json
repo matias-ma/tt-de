@@ -1,0 +1,13 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim4",
+  "output": "artifacts/clipped_tt/swirl4_r32_s1e5",
+  "initial": null,
+  "initial_is_density": false,
+  "rank": 32,
+  "order": 65,
+  "steps": 1600,
+  "batch_size": 256,
+  "lr": 0.0005,
+  "strength": 1e-05,
+  "seed": 0
+}

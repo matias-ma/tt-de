@@ -1,0 +1,6 @@
+{
+  "base": "artifacts/figure_refresh/cryoem_dim4",
+  "noise_metadata": "artifacts/cryoem_refinement/noise_dim4.npz",
+  "output": "artifacts/cryoem_refinement/dim4_resolution",
+  "steps": 3000
+}

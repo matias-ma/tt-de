@@ -1,0 +1,433 @@
+%======================================================================
+\section{Experiments}
+\label{sec:experiments}
+
+All experiments use one GPU (NVIDIA A100 or H100). Truth, clean samples and state labels enter only after fitting and selection. The
+error $\relLtwo$ is always full-dimensional. For Ginzburg--Landau, $\int\hat p^2$ is Gauss--Legendre quadrature of
+the degree-$4(n-1)$ amplitude polynomial, and $\int p\hat p$ and $\int p^2$ come from the transfer-operator
+recursion of the chain. For the swirl--pretzel density they are path quadratures (\S\ref{sec:swirl}). Every quadrature is
+refined until it changes by less than $10^{-7}$ relative.
+
+\subsection{Ginzburg--Landau}
+\label{sec:gl}
+The target is the discretized Ginzburg--Landau field of~\cite[Simulation IV]{peng2024vrs},
+\[
+  p(x)\propto\exp\Bigl(-\beta\Bigl[\sum_{i=0}^{d}\tfrac{\lambda}{2}\bigl(\tfrac{x_{i+1}-x_i}{h}\bigr)^2
+  +\sum_{i=1}^{d}\tfrac1{4\lambda}(1-x_i^2)^2\Bigr]\Bigr),\quad x_0=x_{d+1}=0,\ \beta=\tfrac18,\ \lambda=0.02,\ h=\tfrac1{d+1}.
+\]
+It has double-well marginals coupled along a chain, so every pair marginal is a set of four blobs. Samples come
+from 200 single-site Metropolis chains; there are 100{,}000 training and 2{,}048 validation samples. Two noise families
+are scaled by $1.5$: a \emph{paired} Gaussian with standard deviation $0.83$ and correlation $0.5$ within
+coordinate pairs, and an isotropic \emph{mixture} $0.7\,\mathcal N(0,0.45^2I)+0.3\,\mathcal N(0,1.35^2I)$. The noise
+is comparable to the distance between the wells at $\pm1$. The recipe is Algorithm~\ref{alg:gl}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{rccc}
+\toprule
+$d$ & noise-free & paired Gaussian noise & Gaussian-mixture noise \\
+\midrule
+6  & 0.081 & 0.095 & 0.131 \\
+10 & 0.109 & 0.141 & 0.136 \\
+14 & 0.132 & 0.231 & 0.169 \\
+20 & 0.161 & 0.244 & 0.236 \\
+\bottomrule
+\end{tabular}
+\caption{Ginzburg--Landau, $N=100{,}000$: $\relLtwo$ of the recovered latent density (Algorithm~\ref{alg:gl}).}
+\label{tab:gl}
+\end{table}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figures/gl_free_d10_23.png}\\[2mm]
+\includegraphics[width=.8\textwidth]{figures/gl_mix_d10_23.png}
+\caption{Ginzburg--Landau, $d=10$, coordinates $(2,3)$. Top: noise-free (truth, training histogram, KDE, ft-de). Bottom:
+mixture noise. Top row: truth, noise kernel, true convolved marginal. Bottom row: histogram and KDE of the noisy
+data, and the deconvolved latent ft-de, with the same color scale as the truth. The recovered density separates the
+four wells, including their unequal weights, although the noisy data show only two diffuse lobes.}
+\label{fig:gl}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.49\textwidth]{figures/gl_mix_d20_23.png}\hfill
+\includegraphics[width=.49\textwidth]{figures/gl_pair_d10_01.png}
+\caption{Left: GL, $d=20$, mixture noise ($\relLtwo=0.236$). Right: $d=10$, correlated paired noise ($0.141$).}
+\label{fig:gl2}
+\end{figure}
+
+The errors in Table~\ref{tab:gl} grow slowly with $d$. Figure~\ref{fig:gl} shows the qualitative behaviour: the deconvolved
+estimate recovers four well-separated modes from data in which they are not visible. The GL density is close to
+low rank and its pair marginals are nearly separable blobs. These are favourable conditions for a squared
+Chebyshev TT, which is why we also test the harder geometry of \S\ref{sec:swirl}.
+
+\paragraph{Fisher-visibility spectra.}
+Figure~\ref{fig:fisher} shows the eigenvalues $\lambda_m$ of~\eqref{eq:fisher} for the $d=10$ mixture case. They decay
+roughly geometrically, $\lambda\approx 0.63,0.18,0.07,0.02,0.007,\dots$, so on each axis only four or five amplitude
+directions are observed above the floor $\alpha=0.01$. The filter leaves those almost free and damps the rest.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.85\textwidth]{figures/fisher_spectrum.png}
+\caption{Marginal Fisher-visibility eigenvalues~\eqref{eq:fisher} (one curve per axis) and the resulting penalty
+weights~\eqref{eq:filter}, GL $d=10$ with mixture noise.}
+\label{fig:fisher}
+\end{figure}
+
+\subsection{Sample-size convergence}
+\label{sec:convergence}
+To measure the finite-$N$ behaviour we reran the recipes \emph{unchanged} for
+$N\in\{10^3,3\cdot10^3,10^4,3\cdot10^4,10^5,3\cdot10^5\}$: GL in $d=10$, noise-free and with mixture noise
+(Algorithm~\ref{alg:gl}, training seeds 0 and 1), and the swirl--pretzel in $d=4$, noise-free and noisy
+(Algorithm~\ref{alg:hi} with rank-32 continuations only, one seed). Rank, degree, step counts and penalty grids do
+not depend on $N$, and the validation sets are fixed (2{,}048 GL and 4{,}096 swirl observations), so this measures
+the recipe as used, not an estimator tuned to each $N$. The baseline is a Gaussian KDE whose LSCV bandwidth is
+rescaled with Scott's exponent $N^{-1/(d+4)}$. In the noisy cases it is the KDE of the \emph{noisy} observations. It
+estimates $q$, not $p$, so it shows what is lost without deconvolution. All errors are full-dimensional $\relLtwo$
+against the clean latent density (for the GL KDE, $\int p\,\widehat{p}_{\rm KDE}$ is a Monte Carlo estimate over 200{,}000 exact
+samples, with standard error below $10^{-3}$).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/convergence.png}
+\caption{Full-dimensional $\relLtwo$ of the latent density against the number of training observations (log--log).
+Solid: ft-de; dotted: Gaussian KDE (in the noisy cases, of the noisy data). Lines are means over training seeds, points
+individual fits. The dashed guide has slope $-\tfrac12$, anchored at the noise-free fit at $N=10^5$.}
+\label{fig:convergence}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\small
+\input{convergence_table}
+\caption{Data of Figure~\ref{fig:convergence}: $\relLtwo$, mean over training seeds (two for GL, one for the swirl).}
+\label{tab:convergence}
+\end{table}
+
+\begin{enumerate}[leftmargin=2em,itemsep=2pt]
+\item \emph{Every ft-de curve decreases monotonically in $N$} (Figure~\ref{fig:convergence},
+Table~\ref{tab:convergence}). The log--log slopes between $N=10^4$ and $3\cdot10^5$ are $-0.54$ (GL, noise-free), $-0.20$ (GL, noisy),
+$-0.33$ (swirl, noise-free) and $-0.23$ (swirl, noisy). Over the last interval, $10^5$ to $3\cdot10^5$, they are
+$-0.40$, $-0.05$, $-0.12$ and $-0.26$: the noisy GL and noise-free swirl curves level off, the other two do not.
+\item \emph{Noise-free GL} follows the $N^{-1/2}$ guide from $10^4$ to $3\cdot10^5$ (0.44 to 0.071). The KDE barely moves
+(0.97 to 0.85, slope $-0.03$), well below even the asymptotic kernel rate $N^{-2/(d+4)}=N^{-1/7}$: in ten
+dimensions it is still pre-asymptotic. For $N\le3\cdot10^3$ the unregularized noise-free recipe is worse than
+the zero function ($\relLtwo=1.3$--$2.3$): with about $1.7\cdot10^4$ coefficients, checkpointing by validation NLL
+does not prevent overfitting. The overfitted fits are too peaked rather than misplaced: $\int\hat p^2$ is
+$2.7$--$6$ times $\int p^2$, while $\int p\hat p\approx\int p^2$. A penalty or a smaller rank at small $N$ would be needed.
+\item \emph{Noisy GL.} The deconvolved estimate beats the KDE of \emph{clean} data at every $N$, and at $N\le3\cdot10^3$
+it also beats the noise-free ft-de fit, presumably because the noisy recipe is regularized. Its error falls from 0.75 to 0.13
+but levels off above $10^5$ (0.138 and 0.130; seeds 0.142 and 0.117 at $3\cdot10^5$). We cannot say from this sweep whether the floor is statistical
+or computational. The step budget is fixed (8{,}000 steps of 256 observations, about seven passes over the data at
+$N=3\cdot10^5$), and so are the rank (10) and the penalty grid.
+\item \emph{Noise-free swirl.} ft-de and KDE tie at $N=10^3$ (0.49). At every larger $N$ ft-de is more accurate, by a
+factor of 1.1--1.8 (largest at $10^5$), and it reaches 0.089 at $3\cdot10^5$. The flattening between $10^5$ and $3\cdot10^5$ (0.102 to 0.089) is
+consistent with a rank-32 capacity floor (the remark in \S\ref{sec:swirl} predicts that ranks of several tens are
+needed), but the sweep did not try other ranks.
+\item \emph{Noisy swirl.} Deconvolution gains nothing at $N=10^3$ (0.90 against the noisy KDE's 0.91). After that, the error
+falls to 0.19 at $3\cdot10^5$, while the noisy KDE stays at 0.86--0.90. Noise costs roughly a factor of ten in
+sample size here: the deconvolved fit at $3\cdot10^5$ matches the noise-free fit at about $3\cdot10^4$. The sweep's
+value at $N=10^5$ (0.250) is above the 0.216 of Table~\ref{tab:swirl} because the sweep does not try rank 64.
+\end{enumerate}
+These slopes are empirical and cover only two and a half decades. They are not in conflict with the logarithmic
+minimax rate for supersmooth noise~\cite{fan1991optimal}. That rate is a worst case over a smoothness class, whereas
+both targets are close to low rank and analytic, and at fixed capacity the relevant question is how fast the variance
+of a finite-dimensional fit decays.
+
+%----------------------------------------------------------------------
+\subsection{A continuous benchmark: the swirl--pretzel tube}
+\label{sec:swirl}
+The deconvolved cryo-EM marginals (\S\ref{sec:cryo}) look \emph{beaded}: bright blobs strung along curved arms. To test whether the
+estimator fragments continuous ridges, we built a target whose truth is a continuous, curved ridge with the same
+noise-to-width ratio as cryo-EM. A latent path parameter $t\in[0,1]$ with density $w(t)\propto 1+0.6\sin(4\pi t+0.4)$
+is embedded as
+\[
+  X=\gamma(t)+0.14\,\xi,\qquad \xi\sim\mathcal N(0,I_d),
+\]
+where $(\gamma_0,\gamma_1)$ is an Archimedean spiral (1.6 turns; the \emph{swirl}), $(\gamma_2,\gamma_3)$ a trefoil with
+three self-crossings (the \emph{pretzel}), and $\gamma_k$ for $k\ge4$ are slow sinusoids plus drift. This is the continuous
+analogue of the cryo-EM latent space, one path in $\R^d$, but without discrete states. Its density
+$p(x)=\int_0^1w(t)\prod_k\mathcal N(x_k;\gamma_k(t),0.14^2)\dd t$, pair marginals, $\int p^2$ (a double path
+integral), and the exact noisy density (the path integral of Gaussians with covariance $\Sigma_c+0.14^2I$) are all
+computed by path quadrature with error $\approx10^{-10}$. For $\int p\hat p$ we use
+$\int w(t)\int\hat g^2(x)\prod_k\mathcal N(x_k;\gamma_k(t),0.14^2)\dd x\dd t$. For each path node the inner integral
+is a product of Gaussian-weighted polynomials, exact under Gauss--Hermite quadrature, so it is a transfer
+contraction as in~\eqref{eq:transfer}. We cross-checked it against 200{,}000-sample Monte Carlo.
+
+\begin{remark}[Rank of a tube, and why beads are the signature of too little rank]
+For every split $x=(x_{\le k},x_{>k})$,
+$p(x)=\int_0^1 w(t)\,a_k(x_{\le k};t)\,b_k(x_{>k};t)\dd t$ with $a_k,b_k$ products of Gaussians centred on the path.
+Every unfolding of $p$ is therefore a continuous superposition of rank-one terms indexed by $t$. A rank-$r$ TT is
+akin to an $r$-node quadrature of this integral. It is accurate once the nodes are closer than the tube width
+along the path, i.e.\ $r\gtrsim L_k/(0.14)$, where $L_k$ is the length of the path projected onto the smaller of the two
+coordinate blocks. For the spiral alone $L\approx14$, so ranks of several tens are needed. Squaring changes the
+constants but not the picture. With too little effective rank, the fit resembles a quadrature with too few
+nodes: about $r$ blobs strung along the ridge, i.e.\ beads. Separable pieces aligned with the axes produce the
+straight segments seen below. This is a heuristic explanation, not a theorem, but it predicts what we observe: beads
+appear where information is weakest (faint path segments, noisy data) and in higher $d$, where the path is longer
+in every unfolding.
+\end{remark}
+
+The noise is a sum of three Gaussians: $0.5\,\mathcal N(0,0.22^2I)+0.3\,\mathcal N(0,\mathrm{diag}(0.45^2,0.25^2,\dots))
++0.2\,\mathcal N(0,\Sigma_\rho)$, where $\Sigma_\rho$ has $2\times2$ blocks $0.5^2\bigl[\begin{smallmatrix}1&\pm0.6\\\pm0.6&1\end{smallmatrix}\bigr]$.
+Its kernel TT has ranks 30 within pairs and 3 between pairs. The per-axis noise standard deviation (0.30--0.37) is
+about $2.5\times$ the tube width, the same ratio as the cryo-EM oracle below. The spiral's turns are $2.7$--$3.3$
+noise standard deviations apart. There are $N=100{,}000$ i.i.d.\ training and 4{,}096 validation samples, and the
+fits use Algorithm~\ref{alg:hi}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{llcccc}
+\toprule
+ & $d$ & selected & $\relLtwo$ & NLL gap to truth (nats) & ripple (0,1) / (2,3) \\
+\midrule
+noise-free & 4  & rank 32 & 0.102 & $0.033\pm0.004$ & 0.015 / 0.032 \\
+           & 10 & rank 32 & 0.221 & $0.129\pm0.007$ & 0.018 / 0.024 \\
+           & 20 & rank 64 & 0.373 & $0.388\pm0.013$ & 0.015 / 0.028 \\
+\midrule
+noisy      & 4  & rank 64, $\lambda=10^{-4}$ & 0.216 & $0.0021\pm0.0010$ & 0.023 / 0.062 \\
+           & 10 & rank 64, $\lambda=10^{-4}$ & 0.488 & $0.0157\pm0.0027$ & 0.046 / 0.183 \\
+           & 20 & rank 32, $\lambda=3\cdot10^{-4}$\,$^\dagger$ & 0.866 & $0.160\pm0.008$ & 0.032 / 0.088 \\
+\bottomrule
+\end{tabular}
+\caption{Swirl--pretzel results. The \emph{NLL gap} is the paired mean, on held-out observations (noisy ones in the noisy
+rows), of $\log q_{\rm true}-\log q_{\rm fit}$. It is a reference that fitting can approach but not beat in
+expectation. \emph{Ripple} isolates bead-like errors. The estimate minus the truth is evaluated along the projected
+true path, high-pass filtered (Gaussian filter in $t$, width $0.012$, about 1.5 tube widths), and its norm is divided
+by that of the true profile. Sharp features of the truth itself (crossings, fold caustics) cancel in the difference.
+$^\dagger$In $d=20$ the rank-64 noisy continuations were omitted for compute (an estimated $\approx 6$\,h each on a
+shared GPU), so selection is among the base fit and two rank-32 fits.}
+\label{tab:swirl}
+\end{table}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figures/sw_free_d10_23.png}\\[1mm]
+\includegraphics[width=\textwidth]{figures/sw_free_d20_23.png}
+\caption{Noise-free swirl--pretzel, pretzel coordinates, $d=10$ (top) and $d=20$ (bottom). The recovered ridge is
+continuous, with no beads, and sharper than the KDE.}
+\label{fig:swirl-free}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=.49\textwidth]{figures/sw_noisy_d4_23.png}\hfill
+\includegraphics[width=.49\textwidth]{figures/sw_noisy_d4_01.png}\\[2mm]
+\includegraphics[width=.49\textwidth]{figures/sw_noisy_d10_23.png}\hfill
+\includegraphics[width=.49\textwidth]{figures/sw_noisy_d10_01.png}
+\caption{Noisy swirl--pretzel. Top: $d=4$; the deconvolved density (bottom right of each panel) recovers the
+trefoil and the spiral, including the inner lobes that are invisible in the noisy histogram and KDE, with only faint
+ripples. Bottom: $d=10$. The spiral's faint outer arm breaks into beads, and the pretzel has straight
+axis-aligned segments, a spurious detached blob near $(1.3,0.1)$ and a missing crossing.}
+\label{fig:swirl-noisy}
+\end{figure}
+
+\paragraph{Findings.}
+\begin{enumerate}[leftmargin=2em,itemsep=2pt]
+\item \emph{No noise, no beads.} In all dimensions the noise-free fits are continuous (Figure~\ref{fig:swirl-free}), with
+ripple at most $3.7\%$ for every searched candidate. Representation and optimization alone do not fragment
+ridges. Rank-64, 49-mode fits show faint ripple along the ridge from the global Chebyshev basis, far below bead
+contrast.
+\item \emph{Deconvolution in $d=4$ is nearly as good as the data allow.} The selected fit is within
+$0.0021\pm0.0010$ nats of the true noisy density, and its marginals are continuous
+(Figure~\ref{fig:swirl-noisy}, top).
+\item \emph{Deconvolution in $d=10$ fragments ridges} (Figure~\ref{fig:swirl-noisy}, bottom; ripple on the pretzel
+$16$--$19\%$). The artifacts are already present in the rank-16 base fit, and every continuation inherits them
+(Figure~\ref{fig:cand10}). The noisy likelihood \emph{does} detect that this fit is wrong: the truth scores
+$0.0157\pm0.0027$ nats better, about six standard errors. The failure is therefore not an identifiability limit
+at this $N$. The optimizer is stuck in a worse basin. Figure~\ref{fig:seeds} repeats the $d=10$ fit (rank 32, $\lambda=3\cdot10^{-4}$) from three chebdGE initializations
+(different KDE subsamples and pivot searches). All three reach the same noisy NLL within noise (gaps to the truth
+$0.030$, $0.033$, $0.031$, each $\pm0.004$) and the same latent error ($\relLtwo=0.588,0.588,0.600$). The artifacts, however,
+sit in \emph{different places}: a detached blob, vertical and horizontal streaks, or a broken spiral arm. The
+normalized-density average of the three has the same noisy NLL as its best member ($\Delta=0.0003\pm0.0007$), yet
+its pretzel marginal is markedly closer to the truth (2D relative $L^2$ $0.18$ against $0.21$--$0.26$). Artifact
+\emph{locations} are therefore basin-dependent and invisible to the noisy likelihood. Agreement across independent
+initializations is a diagnostic the likelihood cannot provide.
+\item \emph{In $d=20$} the pretzel marginal is again mostly continuous, with a broken upper-left lobe
+(Figure~\ref{fig:swirl20}), but the fit is far from the truth in full dimension ($\relLtwo=0.87$; NLL gap
+$0.160\pm0.008$ nats). With a fixed budget of steps and rank, the gap to the truth grows with $d$ both with and without
+noise (Table~\ref{tab:swirl}).
+\item \emph{Held-out noisy NLL tracks latent error} (Figure~\ref{fig:gap}). Across every searched candidate, in every
+dimension, a smaller gap to the true observation density goes with a smaller latent $\relLtwo$. The only inversion,
+between the two rank-32 fits in $d=10$, is within one standard error. The
+one-standard-error rule therefore selects sensibly among the candidates it is offered. Its weakness is that it only
+chooses among fits that share the base fit's topology.
+\item \emph{Smoothing trades beads for bias} (Figure~\ref{fig:h2}). Raising the amplitude-$H^2$ strength in $d=10$
+from $10^{-4}$ to $10^{-2}$ removes the spiral beads (ripple $0.050\to0.008$) and halves the pretzel ripple
+($0.19\to0.10$). But $\relLtwo$ rises from $0.55$ to $0.90$ and the NLL gap from $0.030$ to $0.109$ nats. The
+pretzel's misplaced segments remain, only blurred. Beads are a visible but minor part of the error.
+\end{enumerate}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.49\textwidth]{figures/sw_noisy_d20_23.png}\hfill
+\includegraphics[width=.49\textwidth]{figures/sw_noisy_d20_01.png}
+\caption{Noisy swirl--pretzel, $d=20$ (rank 32, $\lambda=3\cdot10^{-4}$).}
+\label{fig:swirl20}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figures/sw_cand_noisy_d10.png}
+\caption{Every searched candidate for the $d=10$ noisy swirl--pretzel (base, rank 32 and 64, $H^2$ strengths
+$10^{-4}$ and $3\cdot10^{-4}$). The profiles underneath evaluate each pair marginal along the projected true path
+(gray: truth; orange: estimate). The pretzel's spurious blob and straight segments are present in the base fit and
+in every continuation.}
+\label{fig:cand10}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/init_seeds.png}
+\caption{$d=10$ noisy swirl--pretzel: the same data and recipe from three chebdGE initializations, and the average of
+their normalized densities. The noisy validation NLL cannot distinguish the four (gaps to the truth
+$0.030$--$0.033\pm0.004$ nats), but the artifacts move between initializations and partly cancel in the average.}
+\label{fig:seeds}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/nll_gap_vs_l2.png}
+\caption{Held-out NLL minus the NLL of the true (observation) density against latent $\relLtwo$, for every searched
+swirl--pretzel candidate. Stars mark the selected candidates.}
+\label{fig:gap}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/h2_tradeoff.png}
+\caption{Stronger amplitude smoothing in the $d=10$ noisy swirl--pretzel (rank-32 continuations of one base fit):
+the ripple falls, while the latent error and the noisy-likelihood gap rise.}
+\label{fig:h2}
+\end{figure}
+
+%----------------------------------------------------------------------
+\subsection{Cryo-EM latent space}
+\label{sec:cryo}
+The data are RECOVAR~\cite{gilles2025recovar} latent embeddings of a simulated heterogeneous dataset, in 4, 10 and 20
+dimensions (separately fitted embeddings), together with per-image posterior covariances. After dropping the 1\% of
+images with the largest covariance trace, 99{,}000 remain: 94{,}904 for training and 4{,}096 for validation. Coordinates
+are standardized, and plots map back with the Jacobian. The prescribed noise is a 4-component mixture of diagonal
+Gaussians obtained by $k$-means clustering of the log per-image variances. It uses only the supplied metadata,
+never positions or labels. The current fits come from Algorithm~\ref{alg:hi} continued from earlier
+gallery fits: ranks 32 (4D), 64 (10D) and 48 (20D), 49 modes, $H^2$ strength $10^{-4}$ (4D) or $3\cdot10^{-4}$
+(10D and 20D), Sobolev preconditioning. Held-out noisy NLLs are 3.531, 9.857 and 24.657.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/cryo_d10_23.png}\\
+\includegraphics[width=\textwidth]{figures/cryo_d4_23.png}
+\caption{Cryo-EM, coordinates $(2,3)$ of the 10D (top) and 4D (bottom) embeddings: supplied noise kernel, data
+histogram, KDE, a TT fitted to the observations (no deconvolution), and the deconvolved ft-de.}
+\label{fig:cryo}
+\end{figure}
+
+\paragraph{Is the clean density beaded?}
+The deconvolved marginals in Figure~\ref{fig:cryo} are beaded. The simulation assigns every image to one of
+\emph{50 discrete conformational states} (between 20 and about 4{,}900 images each), and these labels can be used, after all fitting, to build
+an oracle. For each state we take the mean of its noisy embeddings and the PSD part of
+(within-state covariance $-$ mean supplied noise covariance). The oracle clean density is the resulting
+50-component Gaussian mixture. We compare it with a \emph{continuous-path counterfactual}: consecutive state
+means joined by segments, with interpolated weights and covariances. The oracle convolved with the noise
+reproduces the observation-space TT fit to 2D relative $L^2$ between $0.02$ and $0.14$, which validates both the oracle
+and the supplied noise model.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+embedding & consecutive-state spacing & clean state s.d. & within-state s.d.\\
+\midrule
+4D  & 1.24 & 0.65 & 1.19\\
+10D & 2.16 & 0.43 & 1.08\\
+20D & 2.05 & 0.41 & 1.07\\
+\bottomrule
+\end{tabular}
+\caption{Cryo-EM label oracle, in units of the supplied noise standard deviation (medians over states and axes).}
+\label{tab:oracle}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/cryo_oracle_d10_23.png}\\
+\includegraphics[width=\textwidth]{figures/cryo_oracle_d4_23.png}
+\caption{Label oracle for the 10D (top) and 4D (bottom) embeddings: data histogram, oracle $*$ noise, discrete-state
+oracle, continuous-path counterfactual, deconvolved ft-de. The last three share a color scale.}
+\label{fig:oracle}
+\end{figure}
+
+In 10 and 20 dimensions, consecutive states are about five clean-state widths apart (Table~\ref{tab:oracle}), so
+the clean density really is a string of separated beads. The noise merges them, which is why histograms and KDEs
+look continuous. The deconvolved ft-de reproduces the oracle's qualitative pattern (Figure~\ref{fig:oracle}):
+beaded arms, a separate central cluster, and isolated blobs on the lower loops. It does not match individual bead
+positions. Its 2D relative $L^2$ is $0.20$--$0.46$ against the discrete oracle and $0.16$--$0.38$ against the
+continuous counterfactual, and pointwise $L^2$ heavily penalizes misplaced beads. In the separately fitted 4D
+embedding the states are only about two clean widths apart and the oracle is a lumpy but mostly connected ridge. There the
+estimate is more beaded than the truth.
+
+The swirl--pretzel experiment gives the other half of the answer. At the same noise-to-width ratio, a continuous
+ridge is recovered continuously in 4D, but in 10D the fit fragments it through a detectably suboptimal basin. For
+the 10D and 20D cryo-EM fits, both mechanisms are therefore present. The truth is beaded, and the estimator can
+also create or move beads. Individual beads should not be read as individual states unless they recur across
+independent initializations (Figure~\ref{fig:seeds}); the noisy likelihood alone cannot make this distinction.
+
+%======================================================================
+\section{Discussion and open problems}
+\label{sec:discussion}
+\begin{itemize}[leftmargin=2em,itemsep=2pt]
+\item \textbf{What is exact.} Normalization, marginals, smoothness functionals and the convolved likelihood are all exact
+contractions. The only numerical approximation is the Chebyshev representation of the prescribed kernel, which is
+checked a priori. This removes Monte Carlo deconvolution error entirely, and it makes post-hoc diagnostics exact
+when the truth is known.
+\item \textbf{Optimization is the bottleneck in higher dimension.} In the swirl--pretzel benchmark the $d=10$ deconvolution
+error is associated with a detectable likelihood deficit ($0.016$--$0.03$ nats) that neither continuation, stronger
+smoothing nor re-initialization removes. Different initializations land in equally likely basins whose artifacts
+differ in location, and averaging their densities cancels part of them without any change in likelihood. Ensembles
+over initializations, annealed regularization and rank-adaptive growth are the natural next steps; we have not
+established which of them closes the gap.
+\item \textbf{Selection.} Noisy held-out NLL ordered the candidates correctly here. However, it is flat at the scale of
+the smallest artifacts in $d=4$, and it cannot certify a single fit. Stability across independent initializations
+or resamples is a useful complementary diagnostic.
+\item \textbf{Rates.} For Gaussian noise the minimax rate is logarithmic~\cite{fan1991optimal}. Our fixed-capacity
+estimator does not adapt its rank or degree to $N$. Over $N=10^4$--$3\cdot10^5$ its deconvolution error falls like
+$N^{-0.2}$--$N^{-0.25}$, against about $N^{-0.5}$ without noise for GL, and for GL it levels off at the largest $N$
+(\S\ref{sec:convergence}). Rank, degree and step budgets that grow with $N$ are needed to tell a statistical floor
+from a computational one. A theory for squared low-rank models under supersmooth deconvolution is open.
+\item \textbf{Cost.} One convolved likelihood evaluation costs $O(d(r^3sn+r^2s^2n^2))$ per observation. Rank 64 with a
+rank-30 kernel is feasible on one GPU, but memory forced gradient accumulation. The noise-free model is
+$O(dr^2n)$ per point.
+\end{itemize}
+
+\clearpage
+\appendix
+\section{Code map and reproduction}
+\label{app:code}
+\begin{center}
+\small
+\begin{tabular}{p{0.42\textwidth}p{0.53\textwidth}}
+\toprule
+concept & module / script \\
+\midrule
+Chebyshev Gram matrices, moments~\eqref{eq:gram} & \texttt{ftde/cheb\_gram.py}\\
+squared-TT NLL, $Z$~\eqref{eq:density}--\eqref{eq:nll} & \texttt{ftde/tt\_density.py}\\
+exact pair marginals~\eqref{eq:pair} & \texttt{ftde/marginals.py}\\
+KDE / LSCV, cross-approximation init & \texttt{ftde/kde.py}, \texttt{ftde/init.py} (chebdGE \texttt{tt\_qtensge})\\
+noise TT kernels & \texttt{ftde/noise\_kernel.py}\\
+exact convolved likelihood (Prop.~\ref{prop:exact}) & \texttt{ftde/tt\_convolution.py}\\
+amplitude Sobolev penalty~\eqref{eq:sobolev} & \texttt{ftde/sobolev.py}\\
+Fisher-visibility filter~\eqref{eq:filter}, pilots & \texttt{ftde/fisher\_visibility.py}, \texttt{ftde/marginal\_reference.py}\\
+paired one-SE selection & \texttt{ftde/noisy\_model\_selection.py}\\
+Algorithm~\ref{alg:gl} & \texttt{scripts/refresh\_density\_fits.py}\\
+Algorithm~\ref{alg:hi} & \texttt{scripts/refine\_cryoem\_continuity.py}, \texttt{scripts/swirl\_fits.py}\\
+swirl--pretzel truth & \texttt{ftde/swirl.py}; figures \texttt{scripts/swirl\_figures.py}, \texttt{swirl\_ripple.py}\\
+cryo-EM label oracle & \texttt{scripts/audit\_cryoem\_oracle.py}\\
+sample-size sweep & \texttt{scripts/run\_convergence\_sweep.py}, \texttt{scripts/convergence\_summary.py}\\
+figures of this note & \texttt{scripts/note\_figures.py}\\
+\bottomrule
+\end{tabular}
+\end{center}
+Run commands from the repository root in the \texttt{chebdGE} environment, inside one GPU allocation (\texttt{salloc}, then
+\texttt{srun} per step), for example
+\texttt{python scripts/swirl\_fits.py -{}-dim 10 -{}-noise mixture -{}-output artifacts/swirl/swirl\_mixture\_dim10}.
+Completed candidates are reused, and runs refuse to overwrite a directory whose settings differ.
+See \texttt{docs/swirl\_benchmark.md} and \texttt{docs/figure\_refresh.md} for full settings.

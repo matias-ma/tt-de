@@ -1,0 +1,13 @@
+{
+  "family": "cryoem",
+  "dim": 20,
+  "noise": "paired",
+  "path": false,
+  "output": "/home/ma4473/ft-de/artifacts/cryoem_refinement/gallery_dim20",
+  "steps": 8000,
+  "strengths": [
+    0.1,
+    0.3,
+    1.0
+  ]
+}

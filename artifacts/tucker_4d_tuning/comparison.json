@@ -1,0 +1,47 @@
+{
+  "rows": [
+    {
+      "condition": "clean",
+      "case": "swirl4_free",
+      "source": "artifacts/tucker_4d_tuning/clean_refine/swirl4_free",
+      "rank": 24,
+      "strength": 0.01,
+      "marginal_strength": 0.0,
+      "tucker_l2": 0.11367996576535176,
+      "prior_tucker_l2": 0.11977628741384155,
+      "tt_l2": 0.11554842694562227,
+      "tucker_nll": 1.2275349087367622,
+      "tt_nll": 1.2298051804161738,
+      "paired_nll_difference": -0.0022702716794116666,
+      "paired_nll_standard_error": 0.0015366535582489263,
+      "selected_step": 750,
+      "final_stage_steps": 5000
+    },
+    {
+      "condition": "noisy",
+      "case": "swirl4_mixture",
+      "source": "artifacts/tucker_4d_tuning/noisy_refine_m0.001/swirl4_mixture",
+      "rank": 24,
+      "strength": 0.0001,
+      "marginal_strength": 0.001,
+      "tucker_l2": 0.224602811837619,
+      "prior_tucker_l2": 0.31078292022556825,
+      "tt_l2": 0.2960520267393097,
+      "tucker_nll": 3.862347165960173,
+      "tt_nll": 3.8638997151173697,
+      "paired_nll_difference": -0.001552549157197297,
+      "paired_nll_standard_error": 0.001090533571809456,
+      "selected_step": 400,
+      "final_stage_steps": 2000
+    }
+  ],
+  "minimum_nll_controls": {
+    "swirl4_mixture": {
+      "source": "artifacts/tucker_4d_tuning/noisy_refine_m0/swirl4_mixture",
+      "relative_l2": 0.22084180348686905,
+      "validation_nll": 3.862005411144339
+    }
+  },
+  "selection_sha256": "46d32779965f915f1d1f0f9777304a94172700705f8bd8dec5fd56951bc5fa33",
+  "paired_nll_standard_error_is_selection_unadjusted": true
+}

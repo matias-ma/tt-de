@@ -1,0 +1,14 @@
+{
+  "name": "signed_n25_r16_l1e-06_s0",
+  "kind": "signed",
+  "order": 65,
+  "positive_mass": 2.9457020826168203,
+  "negative_mass": 1.9457020826168172,
+  "validation_nll": 4.330790648541452,
+  "fit_path": "artifacts/direct_optimization/swirl4/signed_n25_r16_l1e-06_s0/fit.npz",
+  "fit_sha256": "c054691cd8ab2e86cae931212d2bd88f412428f13efeb31308a3e6cf541029e4",
+  "coefficient_count": 21250,
+  "seconds": 6.718683384009637,
+  "raw_convolved_nonpositive": 56,
+  "raw_nll_if_positive": null
+}

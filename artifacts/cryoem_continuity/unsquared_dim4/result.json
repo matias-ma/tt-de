@@ -1,0 +1,89 @@
+{
+  "best_nll": 3.878037178375489,
+  "best_step": 0,
+  "history": [
+    {
+      "step": 0,
+      "nll": 3.878037178375489,
+      "nonpositive_observed": 0,
+      "roughness": 1.5007874658070692
+    },
+    {
+      "step": 200,
+      "nll": null,
+      "nonpositive_observed": 22,
+      "roughness": 6.303972865090795
+    },
+    {
+      "step": 400,
+      "nll": null,
+      "nonpositive_observed": 31,
+      "roughness": 9.392652248499989
+    },
+    {
+      "step": 600,
+      "nll": null,
+      "nonpositive_observed": 3967,
+      "roughness": 14.105349799262942
+    },
+    {
+      "step": 800,
+      "nll": null,
+      "nonpositive_observed": 4,
+      "roughness": 4.382299101219545
+    },
+    {
+      "step": 1000,
+      "nll": null,
+      "nonpositive_observed": 4,
+      "roughness": 6.5330912631926825
+    },
+    {
+      "step": 1200,
+      "nll": null,
+      "nonpositive_observed": 12,
+      "roughness": 8.162237400761967
+    },
+    {
+      "step": 1400,
+      "nll": null,
+      "nonpositive_observed": 18,
+      "roughness": 9.827614223513153
+    },
+    {
+      "step": 1600,
+      "nll": null,
+      "nonpositive_observed": 22,
+      "roughness": 10.846079205272533
+    },
+    {
+      "step": 1800,
+      "nll": null,
+      "nonpositive_observed": 19,
+      "roughness": 11.732588736427982
+    },
+    {
+      "step": 2000,
+      "nll": null,
+      "nonpositive_observed": 19,
+      "roughness": 12.17454942260318
+    },
+    {
+      "step": 2200,
+      "nll": null,
+      "nonpositive_observed": 20,
+      "roughness": 12.76892108255449
+    },
+    {
+      "step": 2400,
+      "nll": null,
+      "nonpositive_observed": 20,
+      "roughness": 12.979908349889115
+    }
+  ],
+  "seconds": 24.96196178905666,
+  "parameterization": "unsquared signed density TT",
+  "preconditioning": "sobolev",
+  "strength": 0.0001,
+  "negative_penalty": 0.0
+}

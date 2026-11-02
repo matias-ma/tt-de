@@ -1,0 +1,27 @@
+[project]
+name = "ftde"
+version = "0.1.0"
+description = "Functional tensor decomposition density estimator (Chebyshev TT/Tucker)"
+requires-python = ">=3.10"
+dependencies = [
+    "chebttge>=0.1.0",
+    "jax",
+    "equinox",
+    "optax",
+    "numpy",
+    "scipy",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+examples = ["matplotlib>=3.5", "joblib", "tqdm"]
+
+[tool.ruff]
+target-version = "py310"

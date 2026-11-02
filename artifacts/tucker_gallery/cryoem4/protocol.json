@@ -1,0 +1,35 @@
+{
+  "family": "cryoem",
+  "dim": 4,
+  "decomposition": "tucker",
+  "data": "artifacts/cryoem_continuity/gallery_dim4/data.npz",
+  "data_sha256": "40a23a3875242a3a828a26a6f2734155b6f5f96df6c9bf9ae3f5a15c74df929f",
+  "kernel": "artifacts/cryoem_continuity/gallery_dim4/kernel.npz",
+  "domain": [
+    [
+      -1.893764174863488,
+      1.907702175877582
+    ],
+    [
+      -2.483162354539686,
+      1.84698159261918
+    ],
+    [
+      -2.283352033844469,
+      2.2754380119227737
+    ],
+    [
+      -2.3415732956689808,
+      2.216201979932965
+    ]
+  ],
+  "recipes": [
+    "strong",
+    "weak"
+  ],
+  "rank": 8,
+  "modes": 49,
+  "steps": 4000,
+  "selection": "minimum held-out noisy NLL; no latent oracle",
+  "uses_signal_pilot": false
+}

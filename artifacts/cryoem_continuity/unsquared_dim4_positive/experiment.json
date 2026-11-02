@@ -1,0 +1,13 @@
+{
+  "base": "artifacts/cryoem_refinement/gallery_dim4",
+  "initial_amplitude": "artifacts/figure_refresh/cryoem_dim4/init.npz",
+  "output": "artifacts/cryoem_continuity/unsquared_dim4_positive",
+  "rank": 32,
+  "steps": 2400,
+  "strength": 0.0001,
+  "negative_penalty": 10.0,
+  "orders": [
+    49,
+    65
+  ]
+}

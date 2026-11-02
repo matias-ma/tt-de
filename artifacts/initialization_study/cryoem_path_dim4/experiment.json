@@ -1,0 +1,11 @@
+{
+  "base": "artifacts/cryoem_continuity/gallery_path_dim4",
+  "method": "tangent",
+  "rank": 32,
+  "modes": 49,
+  "steps": 1200,
+  "seed": 0,
+  "training_count": 94904,
+  "source_selection_sha256": "c425ae51006d6a5f082d488f8e8370e57f8eaf7eab4729a1585976d289c86946",
+  "uses_oracle_or_labels": false
+}

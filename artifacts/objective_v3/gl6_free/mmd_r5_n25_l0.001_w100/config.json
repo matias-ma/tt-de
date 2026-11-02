@@ -1,0 +1,12 @@
+{
+  "rank": 5,
+  "modes": 25,
+  "objective": "mmd",
+  "strength": 0.001,
+  "steps": 4000,
+  "kernel_weight": 100.0,
+  "batch_size": 1024,
+  "seed": 0,
+  "perturbation": 0.01,
+  "learning_rate": 0.001
+}

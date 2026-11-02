@@ -1,0 +1,32 @@
+{
+  "selected": "previous",
+  "method": "tangent",
+  "old_nll": 24.656632940100586,
+  "new_nll": 24.677509434630387,
+  "noisy_validation_gain": -0.020876494529801455,
+  "paired_se": 0.0038204795961949336,
+  "selection": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 24.656632940100586,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 152.60989856830759,
+        "eligible": true
+      },
+      {
+        "validation_nll": 24.677509434630387,
+        "excess_nll": 0.020876494529801455,
+        "paired_cluster_se": 0.0038204795961949336,
+        "roughness": 171.86746997689968,
+        "eligible": false
+      }
+    ]
+  },
+  "rule": "paired one-SE, then common amplitude H2",
+  "evaluation_note": "reused historical development observations; not a fresh test or clean-density error"
+}

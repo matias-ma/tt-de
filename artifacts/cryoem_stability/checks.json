@@ -1,0 +1,7 @@
+{
+  "completed_fits": 6,
+  "maximum_convolution_log_discrepancy": 2.0676793610618915e-12,
+  "sum_new_fit_seconds": 3076.7153415963985,
+  "tests_passed": 11,
+  "new_core_tests_after_marginal_optimization": 3
+}

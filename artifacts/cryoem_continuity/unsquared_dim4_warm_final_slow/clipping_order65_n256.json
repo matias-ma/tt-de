@@ -1,0 +1,15 @@
+{
+  "order": 65,
+  "validation_count": 256,
+  "signed_integral": 1.000000000000002,
+  "negative_mass": 0.12051878110293274,
+  "positive_mass": 1.120518781102935,
+  "minimum_density_on_grid": -0.052750294699170495,
+  "negative_grid_fraction": 0.6145241973320262,
+  "clipped_validation_nll": 3.39846619521022,
+  "raw_validation_nll": 3.30323538686791,
+  "raw_validation_nonpositive": 0,
+  "raw_quadrature_max_absolute_error": 4.777559130426934e-09,
+  "raw_quadrature_max_log_error": 3.1846799410928384e-06,
+  "seconds": 1.8865675579290837
+}

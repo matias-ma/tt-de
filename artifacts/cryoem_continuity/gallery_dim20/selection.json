@@ -1,0 +1,34 @@
+{
+  "selected": "dim20_rank32_modes49",
+  "names": [
+    "previous",
+    "dim20_rank32_modes49"
+  ],
+  "roughness": [
+    221.24958743698946,
+    229.75599595337147
+  ],
+  "selection": {
+    "minimum_nll_index": 1,
+    "selected_index": 1,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 24.758697264007843,
+        "excess_nll": 0.07050578965961413,
+        "paired_cluster_se": 0.003982533256512909,
+        "roughness": 221.24958743698946,
+        "eligible": false
+      },
+      {
+        "validation_nll": 24.68819147434823,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 229.75599595337147,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired noisy one-SE, then minimum common physical amplitude H2"
+}

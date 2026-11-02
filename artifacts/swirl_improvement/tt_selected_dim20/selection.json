@@ -1,0 +1,38 @@
+{
+  "selected": "artifacts/swirl_improvement/tt_swirl_dim20_r64",
+  "names": [
+    "previous",
+    "artifacts/swirl_improvement/tt_swirl_dim20_r64"
+  ],
+  "nll": [
+    9.808088915417848,
+    9.656059720221268
+  ],
+  "energy": [
+    97.99519601702508,
+    126.11801112122303
+  ],
+  "selection": {
+    "minimum_nll_index": 1,
+    "selected_index": 1,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 9.808088915417848,
+        "excess_nll": 0.15202919519658098,
+        "paired_cluster_se": 0.008099461503314396,
+        "roughness": 97.99519601702508,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.656059720221268,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 126.11801112122303,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired one-SE, then common amplitude H2"
+}

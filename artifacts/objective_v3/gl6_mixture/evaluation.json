@@ -1,0 +1,61 @@
+{
+  "models": {
+    "nll_r10_n25_l0.0001_w100/nll": {
+      "relative_l2": 0.7959940406761602,
+      "quadrature_relative_change": 8.443093214069888e-14,
+      "test_nll": 9.414315762079823,
+      "test_kernel_discrepancy": 0.0005113563016173968,
+      "test_count": 4096,
+      "fourier_refinement_max_error": 3.1092942014192936e-14,
+      "sha256": "5fa595321af9305b92c9387c5e80060664bf10f745bf9cbe2c00f8fbc4c3ca4c"
+    },
+    "nll_r10_n49_l0.001_w100/nll": {
+      "relative_l2": 0.3090118885566612,
+      "quadrature_relative_change": 4.4037716404321357e-14,
+      "test_nll": 9.413506782228605,
+      "test_kernel_discrepancy": 0.0005228737007410434,
+      "test_count": 4096,
+      "fourier_refinement_max_error": 3.153154028979315e-14,
+      "sha256": "d37b715ae24e9d4dbdc0c8f21b9e914f7a3292880e424d659e69b652b77b1802"
+    },
+    "nll_r10_n25_l0.001_w100/nll": {
+      "relative_l2": 0.49897835052771966,
+      "quadrature_relative_change": 4.904890482274413e-14,
+      "test_nll": 9.413657640518775,
+      "test_kernel_discrepancy": 0.0005314602486246151,
+      "test_count": 4096,
+      "fourier_refinement_max_error": 3.1093530448743e-14,
+      "sha256": "a653af49e2145565a3f1fed44bf55cfc358a6e36f900af9ec25153f49fac568b"
+    },
+    "hybrid_r10_n25_l0.001_w10/nll": {
+      "relative_l2": 0.5017822955900699,
+      "quadrature_relative_change": 5.6641614547627125e-14,
+      "test_nll": 9.413324431710928,
+      "test_kernel_discrepancy": 0.0005183831744425514,
+      "test_count": 4096,
+      "fourier_refinement_max_error": 3.0982571988090196e-14,
+      "sha256": "7e81f7d457d9dc1f017289fe5c94a5b591986376b19dd9edf213fcb74b7918b4"
+    },
+    "hybrid_r10_n25_l0.001_w100/nll": {
+      "relative_l2": 0.5104079559774655,
+      "quadrature_relative_change": 5.2997113879683285e-14,
+      "test_nll": 9.41220184302923,
+      "test_kernel_discrepancy": 0.0005125440915755349,
+      "test_count": 4096,
+      "fourier_refinement_max_error": 3.186402191360564e-14,
+      "sha256": "74ee5bcbb2e72bd07940678be763b877a71e8a237313ac432617591c9e546c9e"
+    },
+    "mmd_r10_n25_l0.001_w100/kernel": {
+      "relative_l2": 0.6799850093206267,
+      "quadrature_relative_change": 2.6954119523334623e-14,
+      "test_nll": 9.4266597665424,
+      "test_kernel_discrepancy": 0.0005258912669944323,
+      "test_count": 4096,
+      "fourier_refinement_max_error": 3.1308384997742446e-14,
+      "sha256": "0065b6bec38aa2ff235d35d37123336a4c129191a1a8340e52cdc12659a5a1fe"
+    }
+  },
+  "selected_nll": "nll_r10_n25_l0.0001_w100/nll",
+  "selected_kernel": "nll_r10_n49_l0.001_w100/nll",
+  "selection_frozen_before_truth": true
+}

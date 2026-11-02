@@ -1,0 +1,121 @@
+{
+  "dim": 10,
+  "noise": "mixture",
+  "n_train": 100000,
+  "n_test": 1000,
+  "rank": 6,
+  "n_coeffs": 19,
+  "steps": 10000,
+  "naive_steps": 0,
+  "deconv_steps": 1000,
+  "batch_size": 512,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 3,
+  "kernel_n_coeffs": 257,
+  "compare_spectral": false,
+  "convolution_backend": "rsi",
+  "rsi_max_rank": 32,
+  "output": "results/gl_rsi_trial/gl10_r6n19_1000_rsi.json",
+  "save_figures": false,
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.9952414554269305,
+      "relative_sample_l2": 0.9976178904906079
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.9938833472386868,
+      "relative_sample_l2": 0.9969369825814903
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.06150536133111779,
+      "relative_sample_l2": 0.2480027446040019
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 3.836930773104541e-13,
+    "rsi_max_abs_log_error": 0.2510992004083299,
+    "rsi_relative_log_error": 0.00235600442786581,
+    "exact_validation_nll_at_rsi_checkpoint": 13.674896746143181,
+    "analytic_mixture_max_abs_log_error": 1.1311840353300795e-11
+  },
+  "histories": {
+    "naive": {
+      "best_step": 0,
+      "best_nll": 13.927351419542743,
+      "nonfinite_step": null,
+      "training_seconds": 0.1549562430009246,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 13.927351419542743
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 800,
+      "best_nll": 13.663642865958387,
+      "nonfinite_step": null,
+      "training_seconds": 234.70346371713094,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 14.465571789081004
+        },
+        {
+          "step": 200,
+          "validation_nll": 13.715048998587246
+        },
+        {
+          "step": 400,
+          "validation_nll": 13.669404992647085
+        },
+        {
+          "step": 600,
+          "validation_nll": 13.673445702425134
+        },
+        {
+          "step": 800,
+          "validation_nll": 13.663642865958387
+        },
+        {
+          "step": 1000,
+          "validation_nll": 58.98616081861259
+        }
+      ]
+    }
+  },
+  "rsi_setup": {
+    "seconds": 45.203205168945715,
+    "ranks": [
+      29,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      29
+    ],
+    "validation_relative_rms_error": 0.004356725956240787,
+    "validation_max_error": 8.885860499148032e-09
+  },
+  "orders": [
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147
+  ],
+  "fit_seconds": 287.6673622080125,
+  "seconds": 383.60007810383104
+}

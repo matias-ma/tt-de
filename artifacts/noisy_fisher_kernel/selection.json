@@ -1,0 +1,14 @@
+{
+  "minimum_nll": "fisher_0.3",
+  "selected": "fisher_0.3",
+  "rule": "paired cluster one-SE, then minimum integrated roughness",
+  "candidates": {
+    "fisher_0.3": {
+      "validation_nll": 15.626730811049326,
+      "excess_nll": 0.0,
+      "paired_cluster_se": 0.0,
+      "roughness": 0.005462123814629091,
+      "eligible": true
+    }
+  }
+}

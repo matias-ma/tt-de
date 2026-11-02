@@ -1,0 +1,18 @@
+{
+  "case": "gl6_mixture",
+  "recipe": "weaker",
+  "strength": 1e-05,
+  "marginal_strength": 0.0,
+  "initialization": {
+    "spectral_scale": 4.0,
+    "seed": 0
+  },
+  "initial_hessian": 3.2473159281418554e-08,
+  "initial_roughness_h1": 3.297069948897781e-07,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "uses_truth": false,
+  "data_sha256": "3662b0177d644a0369229ba9f2491e40d98b3ac036fdc15cabc9f308186e898a"
+}

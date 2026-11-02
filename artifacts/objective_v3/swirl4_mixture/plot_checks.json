@@ -1,0 +1,32 @@
+{
+  "pair01": {
+    "convolution_refinement_errors": [
+      0.00043786022190901356,
+      0.00042340910812929867
+    ],
+    "latent_pair_relative_l2": 0.11539578996077597,
+    "observed_pair_relative_l2": 0.02843698026518644,
+    "kernel_convolution_refinement_error": 0.0004567638860109225,
+    "kernel_latent_pair_relative_l2": 0.1735566137346232,
+    "kernel_observed_pair_relative_l2": 0.042965584380499376,
+    "marginal_error_window": [
+      -2.6,
+      2.6
+    ]
+  },
+  "pair23": {
+    "convolution_refinement_errors": [
+      0.00035130725989842204,
+      0.0003383842305127036
+    ],
+    "latent_pair_relative_l2": 0.17345668479177156,
+    "observed_pair_relative_l2": 0.03225240036334796,
+    "kernel_convolution_refinement_error": 0.00032341522346751426,
+    "kernel_latent_pair_relative_l2": 0.22962378035357045,
+    "kernel_observed_pair_relative_l2": 0.0446631671548336,
+    "marginal_error_window": [
+      -2.6,
+      2.6
+    ]
+  }
+}

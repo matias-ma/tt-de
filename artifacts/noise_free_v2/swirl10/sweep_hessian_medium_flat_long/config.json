@@ -1,0 +1,11 @@
+{
+  "name": "sweep_hessian_medium_flat_long",
+  "regularizer": "hessian",
+  "strength": 0.003,
+  "parent": null,
+  "uses_signal_pilot": false,
+  "uses_clean_truth": false,
+  "sweeps": 20,
+  "adam_steps": 12000,
+  "learning_rate": 0.001
+}

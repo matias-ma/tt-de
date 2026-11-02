@@ -1,0 +1,47 @@
+{
+  "selected": "nll_r32_n49_l0.001_w100",
+  "rank": 32,
+  "modes": 49,
+  "names": [
+    "nll_r10_n25_l0.001_w100",
+    "nll_r10_n49_l0.001_w100",
+    "nll_r20_n49_l0.001_w100",
+    "nll_r32_n49_l0.001_w100"
+  ],
+  "details": {
+    "minimum_nll_index": 3,
+    "selected_index": 3,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 1.5913371966470329,
+        "excess_nll": 0.35271487218132885,
+        "paired_cluster_se": 0.009030520467862986,
+        "roughness": 5500.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.588668138818591,
+        "excess_nll": 0.350045814352887,
+        "paired_cluster_se": 0.008955225451712064,
+        "roughness": 10780.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.2972411241046649,
+        "excess_nll": 0.0586187996389609,
+        "paired_cluster_se": 0.004296814738876452,
+        "roughness": 41160.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.238622324465704,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 103488.0,
+        "eligible": true
+      }
+    ]
+  }
+}

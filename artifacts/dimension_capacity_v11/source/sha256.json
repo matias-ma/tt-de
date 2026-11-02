@@ -1,0 +1,15 @@
+{
+  "src/ftde/benchmark_defaults.py": "bbfb50ef0f81ad93a15efaf0b3acec6cc64ac7508c0b27b91b91582be4dbe277",
+  "src/ftde/direct_training.py": "ff368ae00e9fc572979b0c240b437edf74953dfcd97800157d7084d3bce2c890",
+  "src/ftde/core_sweeps.py": "83320c0b51c416cb17744bbd8089971fad75b0d9d47364b5c71fbd9d5e59ac7a",
+  "src/ftde/mode_schedule.py": "e02e4d4dee27e8cb2b4efdfe38809aebc1ba11bcd837eec53d2e2aec129ba541",
+  "src/ftde/marginal_regularization.py": "97f8c20cc7dce2bcc3a28be1e24d09fc553455785f10983f67f20d1df44ab06c",
+  "src/ftde/tt_convolution.py": "ca7f8886ee31f9b0b252d83e4ceb2c79b94615e825cd0577c323b6307fafe718",
+  "src/ftde/simple_initialization.py": "7ba2ed61f57a6dfddbcaa4821a6c834450323d4a5b05cc85104f097c698db44c",
+  "scripts/run_dimension_gallery.py": "7d1d98d7fe7de7ffdbbb05c4b5fc7532054e27749cf2b063842c2f915834fef7",
+  "scripts/plot_dimension_gallery.py": "b5964a277e15e29d929934f1b91ff5e8aedd51212ac866f2cd99188772852664",
+  "scripts/audit_dimension_gallery.py": "9285097a8b8cef04ceb292c537618c70566b97f0883885a8b09d253481ff6a17",
+  "scripts/diagnose_dimension_results.py": "6becf747f2ee77fe1c4fdc557fc6f7a5b26e6c61e67763fdc6cbb63c275f90f2",
+  "scripts/run_dimension_followup.py": "6669ff8754cbc31bb092504914ab79cfd870809f3e03210227c9b7038eb53cb0",
+  "scripts/run_noisy_dimension_capacity.py": "7320798918e9bea1366699f206d256628072208f651a55fec3c1ec6f8a1db7df"
+}

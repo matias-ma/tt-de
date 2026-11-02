@@ -1,0 +1,52 @@
+{
+  "models": {
+    "hessian": {
+      "relative_l2": 0.509222108651903,
+      "relative_squared_l2": 0.25930715593989045,
+      "integral_q_squared": 8134.342482174256,
+      "integral_pq": 13275.879153191005,
+      "integral_p_squared": 24865.119154186297,
+      "path_quadrature_relative_change": 3.110519155736612e-13,
+      "model": "hessian",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "292bdd63093ec16163e3bd8dd7dcd15fe804d0ee8fc8a366f742dbc2303f1a52"
+    },
+    "hessian_0.001": {
+      "relative_l2": 0.43689544161245075,
+      "relative_squared_l2": 0.19087762690173837,
+      "integral_q_squared": 11260.772914440586,
+      "integral_pq": 15689.848565923421,
+      "integral_p_squared": 24865.119154186297,
+      "path_quadrature_relative_change": 3.676733131874932e-13,
+      "model": "hessian_0.001",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "68fa4d422218069936d02c0013dc22a834edfa142f49d3275c82d8d4794d6b9d"
+    },
+    "hessian_0.0003": {
+      "relative_l2": 0.4069630884873631,
+      "relative_squared_l2": 0.16561895539117336,
+      "integral_q_squared": 13195.899496155567,
+      "integral_pq": 16971.441795174236,
+      "integral_p_squared": 24865.119154186297,
+      "path_quadrature_relative_change": 3.976665599855179e-13,
+      "model": "hessian_0.0003",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "48cc183fc7518d5fb89b2a3691b1004f46678ae1b4425a09686ae25cbfbf448b"
+    },
+    "hessian_0.0001": {
+      "relative_l2": 0.3987922093861055,
+      "relative_squared_l2": 0.15903522626705138,
+      "integral_q_squared": 13949.918886951255,
+      "integral_pq": 17430.30409514717,
+      "integral_p_squared": 24865.119154186297,
+      "path_quadrature_relative_change": 4.0849339053700003e-13,
+      "model": "hessian_0.0001",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "af5dcbfe822b7d08bd27c22dda4812a0aabada985f6daec8d54c03e048711009"
+    }
+  },
+  "selected": "hessian_0.001",
+  "minimum_nll": "hessian_0.001",
+  "selection_sha256": "1e71c471197a73135c01ecf60ca7c205a62a493244cbed991578b362b56c9db1",
+  "metric": "unsquared full-dimensional relative Lebesgue L2"
+}

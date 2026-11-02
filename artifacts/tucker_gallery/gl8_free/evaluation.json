@@ -1,0 +1,9 @@
+{
+  "relative_l2": 0.09754245764190285,
+  "integral_q_squared": 0.0010786812809014399,
+  "integral_pq": 0.001083483245885862,
+  "integral_p_squared": 0.0010987391990879723,
+  "quadrature_relative_change": 7.38103478689327e-14,
+  "selection_sha256": "64441c6308fd240aad7fe81c0a97bc47086e977bccf4aa2cad21b10eb2b79ddf",
+  "metric": "unsquared full-dimensional latent relative Lebesgue L2"
+}

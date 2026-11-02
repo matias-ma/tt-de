@@ -1,0 +1,11 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim20_r32",
+  "pilot": "artifacts/swirl_improvement/swirl_mixture_dim20/selected.npz",
+  "output": "artifacts/swirl_improvement/tt_swirl_dim20_r64",
+  "rank": 64,
+  "modes": 49,
+  "steps": 0,
+  "strength": 0.0001,
+  "batch_size": 64,
+  "microbatches": 16
+}

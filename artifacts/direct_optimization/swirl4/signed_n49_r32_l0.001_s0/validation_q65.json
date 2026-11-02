@@ -1,0 +1,14 @@
+{
+  "name": "signed_n49_r32_l0.001_s0",
+  "kind": "signed",
+  "order": 65,
+  "positive_mass": 1.5350508709567952,
+  "negative_mass": 0.5350508709567927,
+  "validation_nll": 4.0079465586162994,
+  "fit_path": "artifacts/direct_optimization/swirl4/signed_n49_r32_l0.001_s0/fit.npz",
+  "fit_sha256": "361d7e7be3d0626313640c8507e5f01c745d8f15306c24b595cc89c1e1a394ee",
+  "coefficient_count": 158466,
+  "seconds": 6.570024990011007,
+  "raw_convolved_nonpositive": 43,
+  "raw_nll_if_positive": null
+}

@@ -1,0 +1,99 @@
+{
+  "minimum_nll_index": 8,
+  "selected_index": 10,
+  "clusters": 200,
+  "se_factor": 1.0,
+  "candidates": [
+    {
+      "validation_nll": 15.62981752879411,
+      "excess_nll": 0.0022311636058327733,
+      "paired_cluster_se": 0.0012954260217968752,
+      "roughness": 44.55602854146571,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.641643795281139,
+      "excess_nll": 0.014057430092863015,
+      "paired_cluster_se": 0.0032006399135572883,
+      "roughness": 11.165082393479805,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.66920109521585,
+      "excess_nll": 0.04161473002757379,
+      "paired_cluster_se": 0.005481954676488132,
+      "roughness": 2.1590542716249357,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.6276425972828,
+      "excess_nll": 5.6232094525190436e-05,
+      "paired_cluster_se": 0.0003428043200310679,
+      "roughness": 311.2005577928225,
+      "eligible": true
+    },
+    {
+      "validation_nll": 15.627643969005984,
+      "excess_nll": 5.760381770808943e-05,
+      "paired_cluster_se": 0.00034697197021354515,
+      "roughness": 266.4957208742131,
+      "eligible": true
+    },
+    {
+      "validation_nll": 15.629782576965052,
+      "excess_nll": 0.002196211776777185,
+      "paired_cluster_se": 0.0012893413843229069,
+      "roughness": 44.55852782612619,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.641688697459594,
+      "excess_nll": 0.01410233227131839,
+      "paired_cluster_se": 0.00319601232535015,
+      "roughness": 11.151728653034864,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.669759037141048,
+      "excess_nll": 0.04217267195277251,
+      "paired_cluster_se": 0.005474763181485974,
+      "roughness": 2.162041687070036,
+      "eligible": false
+    },
+    {
+      "validation_nll": 15.627586365188275,
+      "excess_nll": 0.0,
+      "paired_cluster_se": 0.0,
+      "roughness": 2619.504867624712,
+      "eligible": true
+    },
+    {
+      "validation_nll": 15.627697848855231,
+      "excess_nll": 0.00011148366695447765,
+      "paired_cluster_se": 0.0004164628733454875,
+      "roughness": 109.70254983740853,
+      "eligible": true
+    },
+    {
+      "validation_nll": 15.628066324376817,
+      "excess_nll": 0.00047995918854178317,
+      "paired_cluster_se": 0.0007048194019563114,
+      "roughness": 74.11276525821097,
+      "eligible": true
+    }
+  ],
+  "selected": "noisy_recovery_n25_mid/h2_3e-05",
+  "names": [
+    "noisy_recovery/h2_0.0001",
+    "noisy_recovery/h2_0.001",
+    "noisy_recovery/h2_0.01",
+    "noisy_recovery_controls/h2_0",
+    "noisy_recovery_controls/legacy",
+    "noisy_recovery_n25/h2_0.0001",
+    "noisy_recovery_n25/h2_0.001",
+    "noisy_recovery_n25/h2_0.01",
+    "noisy_recovery_n25_weak/h2_0",
+    "noisy_recovery_n25_weak/h2_1e-05",
+    "noisy_recovery_n25_mid/h2_3e-05"
+  ]
+}

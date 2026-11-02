@@ -1,0 +1,21 @@
+{
+  "selected": "weak",
+  "scores": {
+    "strong": 3.5568580208044023,
+    "weak": 3.5541415210943286
+  },
+  "files": {
+    "artifacts/tucker_gallery/cryoem4/strong/fit.npz": "fd9aa469f17792d9b4f05af663fb7232593de009b596c2a957695fa96adf7d6c",
+    "artifacts/tucker_gallery/cryoem4/strong/result.json": "18ab2b1eb4df3b11af145119e6a0d87be89a0a3d3bb80e27f5eb237bb5f41800",
+    "artifacts/tucker_gallery/cryoem4/strong/config.json": "b3dce7c91aed6121fa8b1134a48b5f14fcfe6ba74c9c8781442ae77ee89b2313",
+    "artifacts/tucker_gallery/cryoem4/strong/validation.npy": "8b73d4f41223bbb924065d66d157f3e5f19917c8a19000200e2062fcc3fd0f8e",
+    "artifacts/tucker_gallery/cryoem4/weak/fit.npz": "f2addf73f980ccd40508bb52757e05b0d43e5225ce2e243e60b9410435e65031",
+    "artifacts/tucker_gallery/cryoem4/weak/result.json": "2a7c98187af46e2ec9d9e2938f6dcfd9bcb63a67f8e6259ee8a1fd57d3f5dbbf",
+    "artifacts/tucker_gallery/cryoem4/weak/config.json": "f83842754cd25cb8ff3eab5fa3e9b4e6c5b18a34a56952c98104117e190ac1c0",
+    "artifacts/tucker_gallery/cryoem4/weak/validation.npy": "dc76271b5e053e49eeec0318fb80c1dcd11af40fc4b8318fbe05ba72c04f22e4",
+    "artifacts/cryoem_continuity/gallery_dim4/data.npz": "40a23a3875242a3a828a26a6f2734155b6f5f96df6c9bf9ae3f5a15c74df929f",
+    "artifacts/tucker_gallery/cryoem4/protocol.json": "b024406dde9c6a1b99ad32b4cb17a4e4022d30499ddc66702683391f50df2a1d",
+    "artifacts/cryoem_continuity/gallery_dim4/kernel.npz": "18e89ed59e90e27b41f00c375d58d3dcaeb0cdfe8407dcd5ec86adc02e69b22b"
+  },
+  "truth_evaluated": false
+}

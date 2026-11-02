@@ -1,0 +1,14 @@
+{
+  "method": "kde",
+  "seed": 0,
+  "rank": 32,
+  "modes": 49,
+  "attempts": [
+    {
+      "bandwidth_factor": 1.0,
+      "accepted": true
+    }
+  ],
+  "seconds": 24.01747671305202,
+  "pilot_is_final_model": false
+}

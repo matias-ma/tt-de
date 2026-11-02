@@ -1,0 +1,11 @@
+{
+  "name": "baseline",
+  "regularizer": "axis_h2",
+  "strength": 0.0001,
+  "parent": null,
+  "uses_signal_pilot": false,
+  "uses_clean_truth": false,
+  "sweeps": 6,
+  "adam_steps": 4000,
+  "learning_rate": 0.001
+}

@@ -1,0 +1,8 @@
+{
+  "family": "gl",
+  "dim": 6,
+  "train_count": 30000,
+  "valid_count": 4096,
+  "source": "independent synthetic observations, seeds 1701 and 2701",
+  "data_sha256": "5d17803ef08aec95222202a5293559b12d80555ca59bc73e6f2aca1cbbae9bf4"
+}

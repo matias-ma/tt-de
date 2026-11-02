@@ -1,0 +1,23 @@
+{
+  "selection_sha256": "92a26cd4e1a79aa3a8bdf65642671583a479fdf7e571249a4b1605cca59f08f9",
+  "selected": "continue_rank64",
+  "models": {
+    "source": {
+      "observed_kl_estimate": 0.21719727185016768,
+      "standard_error": 0.006444161526121087
+    },
+    "continue_rank32": {
+      "observed_kl_estimate": 0.19525567028522633,
+      "standard_error": 0.006159844950458533
+    },
+    "continue_rank64": {
+      "observed_kl_estimate": 0.12447473431752659,
+      "standard_error": 0.005103559320141469
+    }
+  },
+  "quadrature_max_log_difference": 2.2382096176443156e-13,
+  "true_observed_test_nll": 9.747514225174466,
+  "test_count": 8192,
+  "used_for_selection": false,
+  "metric": "Monte Carlo KL(true observed || fitted observed)"
+}

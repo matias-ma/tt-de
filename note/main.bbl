@@ -1,0 +1,140 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bigoni et~al.(2016)Bigoni, Engsig-Karup, and
+  Marzouk]{bigoni2016spectral}
+D.~Bigoni, A.~P. Engsig-Karup, and Y.~M. Marzouk.
+\newblock Spectral tensor-train decomposition.
+\newblock \emph{SIAM Journal on Scientific Computing}, 38\penalty0
+  (4):\penalty0 A2405--A2439, 2016.
+
+\bibitem[Bowman(1984)]{bowman1984alternative}
+A.~W. Bowman.
+\newblock An alternative method of cross-validation for the smoothing of
+  density estimates.
+\newblock \emph{Biometrika}, 71\penalty0 (2):\penalty0 353--360, 1984.
+
+\bibitem[Carroll and Hall(1988)]{carroll1988optimal}
+R.~J. Carroll and P.~Hall.
+\newblock Optimal rates of convergence for deconvolving a density.
+\newblock \emph{Journal of the American Statistical Association}, 83\penalty0
+  (404):\penalty0 1184--1186, 1988.
+
+\bibitem[Cui and Dolgov(2022)]{cui2022deep}
+T.~Cui and S.~Dolgov.
+\newblock Deep composition of tensor-trains using squared inverse {R}osenblatt
+  transports.
+\newblock \emph{Foundations of Computational Mathematics}, 22:\penalty0
+  1863--1922, 2022.
+
+\bibitem[Dolgov et~al.(2020)Dolgov, Anaya-Izquierdo, Fox, and
+  Scheichl]{dolgov2020approximation}
+S.~Dolgov, K.~Anaya-Izquierdo, C.~Fox, and R.~Scheichl.
+\newblock Approximation and sampling of multivariate probability distributions
+  in the tensor train decomposition.
+\newblock \emph{Statistics and Computing}, 30\penalty0 (3):\penalty0 603--625,
+  2020.
+
+\bibitem[Fan(1991)]{fan1991optimal}
+J.~Fan.
+\newblock On the optimal rates of convergence for nonparametric deconvolution
+  problems.
+\newblock \emph{The Annals of Statistics}, 19\penalty0 (3):\penalty0
+  1257--1272, 1991.
+
+\bibitem[Gilles and Singer(2025)]{gilles2025recovar}
+M.~A. Gilles and A.~Singer.
+\newblock Cryo-{EM} heterogeneity analysis using regularized covariance
+  estimation and kernel regression.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 122\penalty0
+  (9):\penalty0 e2419140122, 2025.
+
+\bibitem[Gorodetsky et~al.(2019)Gorodetsky, Karaman, and
+  Marzouk]{gorodetsky2019continuous}
+A.~Gorodetsky, S.~Karaman, and Y.~Marzouk.
+\newblock A continuous analogue of the tensor-train decomposition.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
+  347:\penalty0 59--84, 2019.
+\newblock \doi{10.1016/j.cma.2018.12.015}.
+
+\bibitem[Hashemi and Trefethen(2017)]{hashemi2017chebfun3}
+B.~Hashemi and L.~N. Trefethen.
+\newblock Chebfun in three dimensions.
+\newblock \emph{SIAM Journal on Scientific Computing}, 39\penalty0
+  (5):\penalty0 C341--C363, 2017.
+
+\bibitem[Hastie et~al.(2009)Hastie, Tibshirani, and
+  Friedman]{hastie2009elements}
+T.~Hastie, R.~Tibshirani, and J.~Friedman.
+\newblock \emph{The Elements of Statistical Learning}.
+\newblock Springer, 2 edition, 2009.
+
+\bibitem[Hur et~al.(2023)Hur, Hoskins, Lindsey, Stoudenmire, and
+  Khoo]{hur2023generative}
+Y.~Hur, J.~G. Hoskins, M.~Lindsey, E.~M. Stoudenmire, and Y.~Khoo.
+\newblock Generative modeling via tensor train sketching.
+\newblock \emph{Applied and Computational Harmonic Analysis}, 67:\penalty0
+  101575, 2023.
+
+\bibitem[Kingma and Ba(2015)]{kingma2015adam}
+D.~P. Kingma and J.~Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock In \emph{International Conference on Learning Representations}, 2015.
+
+\bibitem[Novikov et~al.(2021)Novikov, Panov, and Oseledets]{novikov2021ttde}
+G.~S. Novikov, M.~E. Panov, and I.~V. Oseledets.
+\newblock Tensor-train density estimation.
+\newblock In \emph{Proceedings of the Thirty-Seventh Conference on Uncertainty
+  in Artificial Intelligence}, volume 161 of \emph{Proceedings of Machine
+  Learning Research}, pages 1321--1331, 2021.
+
+\bibitem[Oseledets and Tyrtyshnikov(2010)]{oseledets2010ttcross}
+I.~Oseledets and E.~Tyrtyshnikov.
+\newblock {TT}-cross approximation for multidimensional arrays.
+\newblock \emph{Linear Algebra and its Applications}, 432\penalty0
+  (1):\penalty0 70--88, 2010.
+
+\bibitem[Oseledets(2011)]{oseledets2011tt}
+I.~V. Oseledets.
+\newblock Tensor-train decomposition.
+\newblock \emph{SIAM Journal on Scientific Computing}, 33\penalty0
+  (5):\penalty0 2295--2317, 2011.
+
+\bibitem[Peng et~al.(2024)Peng, Khoo, and Wang]{peng2024vrs}
+Y.~Peng, Y.~Khoo, and D.~Wang.
+\newblock Multivariate density estimation via variance-reduced sketching, 2024.
+
+\bibitem[Rudemo(1982)]{rudemo1982empirical}
+M.~Rudemo.
+\newblock Empirical choice of histograms and kernel density estimators.
+\newblock \emph{Scandinavian Journal of Statistics}, 9\penalty0 (2):\penalty0
+  65--78, 1982.
+
+\bibitem[Scott(2015)]{scott2015multivariate}
+D.~W. Scott.
+\newblock \emph{Multivariate Density Estimation: Theory, Practice, and
+  Visualization}.
+\newblock Wiley, 2 edition, 2015.
+
+\bibitem[Stefanski and Carroll(1990)]{stefanski1990deconvolving}
+L.~A. Stefanski and R.~J. Carroll.
+\newblock Deconvolving kernel density estimators.
+\newblock \emph{Statistics}, 21\penalty0 (2):\penalty0 169--184, 1990.
+
+\bibitem[Townsend and Trefethen(2013)]{townsend2013chebfun2}
+A.~Townsend and L.~N. Trefethen.
+\newblock An extension of {C}hebfun to two dimensions.
+\newblock \emph{SIAM Journal on Scientific Computing}, 35\penalty0
+  (6):\penalty0 C495--C518, 2013.
+
+\bibitem[Trefethen(2019)]{trefethen2019atap}
+L.~N. Trefethen.
+\newblock \emph{Approximation Theory and Approximation Practice, Extended
+  Edition}.
+\newblock SIAM, Philadelphia, 2019.
+
+\end{thebibliography}

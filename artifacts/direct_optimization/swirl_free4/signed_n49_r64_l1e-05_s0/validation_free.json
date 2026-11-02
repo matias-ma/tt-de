@@ -1,0 +1,14 @@
+{
+  "fit_path": "artifacts/direct_optimization/swirl_free4/signed_n49_r64_l1e-05_s0/fit.npz",
+  "fit_sha256": "ab7606988d16305a4fc93993a96a604a253f793b48aa0f68a9bc9b63e5722f1d",
+  "kind": "signed",
+  "order": 129,
+  "positive_mass": 1.2729143681461703,
+  "negative_mass": 0.27291436814617714,
+  "norm_q_squared": 0.32343177002544965,
+  "raw_tt_negative_fraction_validation": 0.010986328125,
+  "raw_tt_minority_sign_fraction_validation": 0.010986328125,
+  "validation_risk": -0.49640217294111655,
+  "nll": null,
+  "nonpositive_predictions": 45
+}

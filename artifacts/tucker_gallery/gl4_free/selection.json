@@ -1,0 +1,15 @@
+{
+  "selected": "strong",
+  "scores": {
+    "strong": 3.9632158820552275
+  },
+  "files": {
+    "artifacts/tucker_gallery/gl4_free/strong/fit.npz": "0c6788b6acf9dba7c396b0932524c2a22cf72a7188f4c250b2b7459ce6ed2c33",
+    "artifacts/tucker_gallery/gl4_free/strong/result.json": "a592b1da157058e120006097fa72b90c47e82127fddc44e2e098895665dce9a8",
+    "artifacts/tucker_gallery/gl4_free/strong/config.json": "c84aaa502094342ce52763523453867169ee2f2583f0b2d78e25afa93427a857",
+    "artifacts/tucker_gallery/gl4_free/strong/validation.npy": "90b8d4c6ffbb0b7db7a0883bc9b01d0a7895007c52fbe95f395058f5ce25f41b",
+    "artifacts/dimension_gallery_v9/gl4_free/data.npz": "0d80e4dd004f70d9b5bf9a40c52bfe4eae12e7a20f24c1bdb77df36b9ae36e29",
+    "artifacts/tucker_gallery/gl4_free/protocol.json": "fb5a8aebaca2c8c4ba637dda81a4d16821d0d97e229b38b14cf82b645276b1cb"
+  },
+  "truth_evaluated": false
+}

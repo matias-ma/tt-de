@@ -1,0 +1,102 @@
+{
+  "method": "full_guided",
+  "seed": 0,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 150,
+    "validation_nll": 4.143902087026865,
+    "history": [
+      {
+        "step": 10,
+        "nll": 4.177204264440867
+      },
+      {
+        "step": 20,
+        "nll": 4.15750497262084
+      },
+      {
+        "step": 30,
+        "nll": 4.150736199714215
+      },
+      {
+        "step": 40,
+        "nll": 4.147824484026911
+      },
+      {
+        "step": 50,
+        "nll": 4.146355763374405
+      },
+      {
+        "step": 60,
+        "nll": 4.1455145662388055
+      },
+      {
+        "step": 70,
+        "nll": 4.1449852484987915
+      },
+      {
+        "step": 80,
+        "nll": 4.144629992226527
+      },
+      {
+        "step": 90,
+        "nll": 4.144382191979441
+      },
+      {
+        "step": 100,
+        "nll": 4.144206650518019
+      },
+      {
+        "step": 110,
+        "nll": 4.144083075349808
+      },
+      {
+        "step": 120,
+        "nll": 4.1439986498723425
+      },
+      {
+        "step": 130,
+        "nll": 4.143944515396704
+      },
+      {
+        "step": 140,
+        "nll": 4.143914062706205
+      },
+      {
+        "step": 150,
+        "nll": 4.143902087026865
+      }
+    ],
+    "seconds": 0.48499879403971136
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.3487965304579825,
+        "sample_matrix_relative_tail": 1.7529394706183468e-06
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 6.084582282091618,
+        "sample_matrix_relative_tail": 0.020767734734467
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 8.649004154589017,
+        "sample_matrix_relative_tail": 1.0746957786230569e-05
+      }
+    ]
+  },
+  "seconds": 4.422544700093567,
+  "pilot_is_final_model": false
+}

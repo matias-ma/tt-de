@@ -1,0 +1,35 @@
+{
+  "rank": 24,
+  "dimension": 4,
+  "device": "cuda:0",
+  "measurements": [
+    {
+      "batch": 64,
+      "dense": {
+        "seconds": 0.03616319019347429,
+        "temporary_bytes": 2259263040
+      },
+      "separable": {
+        "seconds": 0.028660297906026245,
+        "temporary_bytes": 2359967552
+      },
+      "value_error": 0.0,
+      "gradient_error": 1.3322676295501878e-15,
+      "speedup": 1.2617869609049128
+    },
+    {
+      "batch": 256,
+      "dense": {
+        "seconds": 0.13027850268408656,
+        "temporary_bytes": 9052003392
+      },
+      "separable": {
+        "seconds": 0.10464519690722227,
+        "temporary_bytes": 9208011328
+      },
+      "value_error": 0.0,
+      "gradient_error": 1.0547118733938987e-15,
+      "speedup": 1.2449544416223002
+    }
+  ]
+}

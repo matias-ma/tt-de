@@ -1,0 +1,52 @@
+[
+  {
+    "case": "gl_free_dim6",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_free_dim10",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_free_dim14",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_free_dim20",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_paired_dim6",
+    "fit_exit": 0,
+    "plot_exit": 1
+  },
+  {
+    "case": "gl_paired_dim10",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_paired_dim14",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_paired_dim20",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_mixture_dim6",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_mixture_dim10",
+    "fit_exit": 1,
+    "plot_exit": null
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "noise4": {
+    "max_relative_error": 3.892108857428411e-12,
+    "samples": 1024
+  },
+  "noise10": {
+    "max_relative_error": 6.879141700721902e-11,
+    "samples": 1024
+  },
+  "left_grams": {
+    "relative_frobenius_error": 1.5890768095797475e-13,
+    "orders": [
+      81,
+      97
+    ]
+  },
+  "right_grams": {
+    "relative_frobenius_error": 1.5893317503267048e-13,
+    "orders": [
+      81,
+      97
+    ]
+  },
+  "clipping_signed_n49_r32_l0.001_s0": {
+    "orders": [
+      97,
+      129
+    ],
+    "maximum_log_error": 0.000175373239765797,
+    "mean_log_error": 2.2923419225138325e-06,
+    "positive_mass_change": -3.1841546235256146e-06
+  },
+  "clipping_signed_n49_r32_l1e-05_s0_neg1": {
+    "orders": [
+      97,
+      129
+    ],
+    "maximum_log_error": 0.0009360357556849053,
+    "mean_log_error": 1.0888819680995518e-05,
+    "positive_mass_change": -3.3010626913299035e-05
+  },
+  "clipping_signed_n49_r32_l1e-05_s0_neg100": {
+    "orders": [
+      97,
+      129
+    ],
+    "maximum_log_error": 0.0011575326343109538,
+    "mean_log_error": 1.0333327387280003e-05,
+    "positive_mass_change": -3.95812284639252e-05
+  }
+}

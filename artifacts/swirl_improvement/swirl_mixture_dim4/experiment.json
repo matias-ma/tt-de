@@ -1,0 +1,15 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim4",
+  "specs": [
+    "tied_diagonal:64",
+    "tied_diagonal:128",
+    "full:16",
+    "full:32",
+    "tied_isotropic_rank1:16",
+    "tied_isotropic_rank1:32",
+    "tied_isotropic_rank1:64"
+  ],
+  "iterations": 300,
+  "seed": 0,
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92"
+}

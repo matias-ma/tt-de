@@ -1,0 +1,89 @@
+{
+  "best_nll": 3.683431389197741,
+  "best_step": 2400,
+  "history": [
+    {
+      "step": 0,
+      "nll": 3.8780371783754886,
+      "nonpositive_observed": 0,
+      "roughness": 1.5007874658070692
+    },
+    {
+      "step": 200,
+      "nll": 3.8799691599158757,
+      "nonpositive_observed": 0,
+      "roughness": 6.341979575365234
+    },
+    {
+      "step": 400,
+      "nll": 3.8404208342213595,
+      "nonpositive_observed": 0,
+      "roughness": 5.83239256834448
+    },
+    {
+      "step": 600,
+      "nll": 3.809009668403899,
+      "nonpositive_observed": 0,
+      "roughness": 5.113916517555994
+    },
+    {
+      "step": 800,
+      "nll": 3.786041887445686,
+      "nonpositive_observed": 0,
+      "roughness": 4.932083106209944
+    },
+    {
+      "step": 1000,
+      "nll": 3.7635496302579625,
+      "nonpositive_observed": 0,
+      "roughness": 4.296098367502091
+    },
+    {
+      "step": 1200,
+      "nll": 3.746774775745676,
+      "nonpositive_observed": 0,
+      "roughness": 3.9385080276786004
+    },
+    {
+      "step": 1400,
+      "nll": 3.7295258146971877,
+      "nonpositive_observed": 0,
+      "roughness": 3.5845100124462754
+    },
+    {
+      "step": 1600,
+      "nll": 3.71630990524672,
+      "nonpositive_observed": 0,
+      "roughness": 3.2788085061064933
+    },
+    {
+      "step": 1800,
+      "nll": 3.702264720076724,
+      "nonpositive_observed": 0,
+      "roughness": 3.0393925003699827
+    },
+    {
+      "step": 2000,
+      "nll": 3.6932173169723677,
+      "nonpositive_observed": 0,
+      "roughness": 2.9186318257439985
+    },
+    {
+      "step": 2200,
+      "nll": 3.686716732230909,
+      "nonpositive_observed": 0,
+      "roughness": 2.839959749380787
+    },
+    {
+      "step": 2400,
+      "nll": 3.683431389197741,
+      "nonpositive_observed": 0,
+      "roughness": 2.8005848781824056
+    }
+  ],
+  "seconds": 82.07443798403256,
+  "parameterization": "unsquared signed density TT",
+  "preconditioning": "sobolev",
+  "strength": 0.0001,
+  "negative_penalty": 10.0
+}

@@ -1,0 +1,49 @@
+{
+  "recording_stage": "after observation-only exploration; before any new truth or independent-test evaluation",
+  "initialization": "near-uniform functional Chebyshev TT; box and seeded random perturbation only; no fitted signal estimator",
+  "data": "original swirl 100000 training and 4096 validation observations; original prescribed correlated measurement noise",
+  "trials": [
+    "4D signed convolved least squares, n25/r16 and n49/r32, curvature strengths 1e-6,1e-5,1e-4,1e-3",
+    "4D squared convolved likelihood from same elementary recipe, n25/r16 and n49/r32, Adam4000,batch256,lambda1e-4",
+    "4D signed plus squared-negative-part penalty eta1, n25/r16 and n49/r32,lambda1e-5/1e-4",
+    "4D signed stronger negative penalty eta100,n49/r32,lambda1e-5",
+    "4D original squared likelihood full-data L-BFGS80 after uniform-start Adam,n25/r16",
+    "10D squared likelihood from near uniform,n49/r32,Adam4000,batch256,lambda1e-4",
+    "4D full-data L-BFGS40 at n49/r32 after uniform-start Adam4000; same objective, all100k observations"
+  ],
+  "selection": "checkpoints on noisy validation; actual clipped joint densities rescored; one-SE then stored coefficient count; historical fit is reference only",
+  "truth_policy": "known swirl curve/density and fresh test seed87329 first used after evaluation choices and model hashes freeze",
+  "seed": 0,
+  "negative_penalty_motivation": "unconstrained signed optimizer fit the convolved least-squares objective but acquired large negative mass; final truncation worsened validation NLL",
+  "no_claims": [
+    "no equal-compute optimizer comparison",
+    "no general-dimensional signed-negative-penalty implementation",
+    "no ground-truth tuning"
+  ],
+  "numerical_amendment": "Strong-negative-penalty run restarted before completion/evaluation: replace eta*I CG preconditioner by exact active-set diagonal blocks; pass large matrices as JIT arguments to avoid cache serialization limit. Incomplete checkpoint archived.",
+  "noise_free_amendment": {
+    "reason": "User points out spikes also occur without noise; retain noisy work and add direct controls before truth evaluation",
+    "data": "original noise-free swirl4,100000 training/4096 validation, original box",
+    "curvature_scales": "5% of coordinate box width, independent of signal truth",
+    "selection": "common held-out least-squares risk of the FINAL normalized density; raw zero likelihood reported, never floored",
+    "trials": [
+      "Squared Adam4000,batch1024;25r16,49r32,65r32,49r64 at lambda1e-4 seed0",
+      "Squared49r32 lambda0,1e-5,1e-4; additional lambda1e-4 seed1",
+      "Signed25r16,49r32 lambda1e-6/1e-5/1e-4,30sweeps",
+      "Signed49r32lambda1e-5negativepenalty1,30sweeps",
+      "Squared49r32lambda1e-4 full-dataLBFGS100afterownuniform-startAdam",
+      "Signed49r64 capacity control at the same three strengths,30sweeps; added before new truth evaluation to separate middle-rank limitation of direct density from objective choice."
+    ],
+    "support": "noise-free log likelihood uses raw squared TT; signed least squares uses identity convolution, no noise tuning",
+    "ten_dimensional_control": "Same near-uniform recipe,n49/r32and64,Adam4000,batch256,lambda1e-4,then40full-dataLBFGSupdatesatrank32; addedbeforetruth tocheckdimension-dependentgapsandmiddle-ranklimitation.",
+    "observation_only_sign_check": {
+      "historical_noise_free4_negative_fraction_on_4096validation_samples": 0.001708984375,
+      "direct_n25r16_negative_fraction": 0.000732421875,
+      "interpretation": "few opposite-sign amplitudes on validation observations; do not assume squaring-related nodes explain all artifacts"
+    },
+    "stronger_smoothing_control": "Beforetruth:49r32lambda.001Adam4000batch1024plusLBFGS100. Motivatedbydata-onlycapacitycontrolsnotimprovingvalidationandonlysmallheld-outgainfromfull-datarefinement. This is the final plannedfittingamendment; nextfreezeandevaluate."
+  },
+  "noisy4_evaluation_scope": "Freeze all trials; independent8192test and cleanL2 evaluate lowest noisy-validationNLL representative permethod family (Adam,LBFGS,unconstrainedsigned,penalizedsigned),plusone-SEnewselection,historicalreference,uniformstart. Scopefixedbeforetruth; othertrials retainallvalidationandoptimizationdiagnostics. Noise-freecapacitycontrolsallevaluated.",
+  "final_integration": "Before any truth evaluation: noisy4candidatevalidationrescoredat97nodes(axis),selectedsignedrepresentativescheckedagainst129onheld-outobservationsbeforefreeze;noise-free4selectionuses129nodes(axis)forallfits,withhigher-orderfinalaudit. No fit uses truth.",
+  "penalized_representative_selection": "Observation-only amendment before truth: signedeta1and100n49lambda1e-5 have almostidenticalnoisyNLL(3.865249/3.865295)butnegative masses .0484/.00409. For the penalized method choose smallest negative mass withinpairedoneSEofbestNLL; ALSOevaluate minNLLpenalizedcontrol. Globalnewselection stilloneSEthencoefficientcount. Thisavoidschoosingdegreeofpositivityusingtruth."
+}

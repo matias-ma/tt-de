@@ -1,0 +1,30 @@
+{
+  "initial_test_nll": 3.89489964252585,
+  "test_nll": 3.608612367822305,
+  "relative_l2": 0.33415494834575893,
+  "relative_l2_mc_se": 0.001519609779131466,
+  "hellinger_squared": 0.0518770415509307,
+  "hellinger_squared_mc_se": 0.0007470936883600211,
+  "total_variation": 0.20746639560666863,
+  "total_variation_mc_se": 0.0010943258069019497,
+  "p2_importance_ratio": 1.0038343728258008,
+  "p2_ratio_mc_se": 0.005539864202122038,
+  "quadrature_log_discrepancy": 4.1389114358025836e-13,
+  "samples_per_stratum": 16384,
+  "max_fitted_sample_mean_z": 0.9545750610827676,
+  "evaluation_version": 2,
+  "initial_tail_check": {
+    "analytic_noise_tail_count": 0,
+    "tail_quadrature_log_discrepancy": 0.0,
+    "maximum_finite_tail_log_correction": 0.0,
+    "nonfinite_polynomial_predictions": 0
+  },
+  "fitted_tail_check": {
+    "analytic_noise_tail_count": 0,
+    "tail_quadrature_log_discrepancy": 0.0,
+    "maximum_finite_tail_log_correction": 0.0,
+    "nonfinite_polynomial_predictions": 0
+  },
+  "initial_ridge_sign_changes": 0,
+  "fitted_ridge_sign_changes": 0
+}

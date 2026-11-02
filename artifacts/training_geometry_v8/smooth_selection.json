@@ -1,0 +1,129 @@
+{
+  "cases": {
+    "swirl4_mixture": {
+      "selected": "curriculum_seed1",
+      "names": [
+        "original",
+        "curriculum_seed1",
+        "precondition_seed0",
+        "curriculum_seed0",
+        "combined_seed0",
+        "baseline_seed1"
+      ],
+      "detail": {
+        "minimum_nll_index": 1,
+        "selected_index": 1,
+        "clusters": 4096,
+        "se_factor": 1.0,
+        "candidates": [
+          {
+            "validation_nll": 3.865198134198514,
+            "excess_nll": 0.0014615609596701903,
+            "paired_cluster_se": 0.001093574972303762,
+            "roughness": 341.3151585790849,
+            "eligible": false
+          },
+          {
+            "validation_nll": 3.863736573238844,
+            "excess_nll": 0.0,
+            "paired_cluster_se": 0.0,
+            "roughness": 13.17365703457631,
+            "eligible": true
+          },
+          {
+            "validation_nll": 3.865386325704512,
+            "excess_nll": 0.0016497524656679421,
+            "paired_cluster_se": 0.0011121152067020898,
+            "roughness": 360.0020159154118,
+            "eligible": false
+          },
+          {
+            "validation_nll": 3.8637930168304653,
+            "excess_nll": 5.644359162072375e-05,
+            "paired_cluster_se": 0.0001772003809078302,
+            "roughness": 13.439045199814664,
+            "eligible": true
+          },
+          {
+            "validation_nll": 3.864276273112144,
+            "excess_nll": 0.000539699873299795,
+            "paired_cluster_se": 0.0008898033008971793,
+            "roughness": 14.540689820832212,
+            "eligible": true
+          },
+          {
+            "validation_nll": 3.865786309897227,
+            "excess_nll": 0.0020497366583828087,
+            "paired_cluster_se": 0.001126860202831057,
+            "roughness": 284.4874134433691,
+            "eligible": false
+          }
+        ]
+      }
+    },
+    "gl6_mixture": {
+      "selected": "curriculum_seed0",
+      "names": [
+        "original",
+        "precondition_seed0",
+        "curriculum_seed0",
+        "precondition_seed1",
+        "combined_seed0",
+        "baseline_seed1"
+      ],
+      "detail": {
+        "minimum_nll_index": 1,
+        "selected_index": 2,
+        "clusters": 200,
+        "se_factor": 1.0,
+        "candidates": [
+          {
+            "validation_nll": 9.474186373520627,
+            "excess_nll": 8.071379672191679e-05,
+            "paired_cluster_se": 0.0002386622665902658,
+            "roughness": 131.61641293808714,
+            "eligible": true
+          },
+          {
+            "validation_nll": 9.474105659723906,
+            "excess_nll": 0.0,
+            "paired_cluster_se": 0.0,
+            "roughness": 128.3760561420094,
+            "eligible": true
+          },
+          {
+            "validation_nll": 9.47477006974211,
+            "excess_nll": 0.0006644100182033913,
+            "paired_cluster_se": 0.0008935545777724516,
+            "roughness": 38.52426103381989,
+            "eligible": true
+          },
+          {
+            "validation_nll": 9.47421685243448,
+            "excess_nll": 0.00011119271057453885,
+            "paired_cluster_se": 0.0010412769395965102,
+            "roughness": 198.89414314406466,
+            "eligible": true
+          },
+          {
+            "validation_nll": 9.474798049264871,
+            "excess_nll": 0.0006923895409648435,
+            "paired_cluster_se": 0.0009011727908475738,
+            "roughness": 39.50581755113202,
+            "eligible": true
+          },
+          {
+            "validation_nll": 9.474436248372957,
+            "excess_nll": 0.0003305886490509724,
+            "paired_cluster_se": 0.0010092991001318223,
+            "roughness": 162.0574547117797,
+            "eligible": true
+          }
+        ]
+      }
+    }
+  },
+  "protocol_sha256": "69a28f99c3d8ec272901b2b9b9a336a65cdebc06acedbcce3697faddd054a2bf",
+  "frozen_sha256": "a1a6adc21f7a1f994ecc4ec4381133a6bab91448deacad55ad3e2ae9a14c05e4",
+  "truth_evaluation_not_yet_run": true
+}

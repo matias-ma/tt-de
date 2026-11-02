@@ -1,0 +1,14 @@
+{
+  "base": "artifacts/cryoem_continuity/gallery_dim20",
+  "output": "artifacts/cryoem_stability/dim20_rank48_h2_3e4",
+  "rank": 48,
+  "modes": 49,
+  "order": 2,
+  "strength": 0.0003,
+  "steps": 2400,
+  "lr": 0.0002,
+  "seed": 0,
+  "preconditioning": "sobolev",
+  "source_sha256": "73ad0417cd5bf275fff30d4559ace2c2d20d18d133469580d5a2aeb1983d5244",
+  "kernel_sha256": "2522a4d0e9c1fef793b78afff875de946c7a83cac53a79589985830ee308c78b"
+}

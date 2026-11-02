@@ -1,0 +1,48 @@
+{
+  "source": "artifacts/cryoem_stability/gallery_dim20",
+  "data_sha256": "70cf33fd768cbd4bde517e2b0b0e1f0eb4e18ef4ccc78ce4d487585078a32975",
+  "kernel_sha256": "2522a4d0e9c1fef793b78afff875de946c7a83cac53a79589985830ee308c78b",
+  "recipes": {
+    "hessian_0.01_logpen": {
+      "regularizer": "hessian",
+      "strength": 0.01,
+      "objective": "logpen"
+    },
+    "hessian_0.003_logpen": {
+      "regularizer": "hessian",
+      "strength": 0.003,
+      "objective": "logpen"
+    }
+  },
+  "selection_source": "frozen observation-only swirl4 and swirl10 selection",
+  "length_scales": [
+    0.19804687355032902,
+    0.2265573590334071,
+    0.2317059015299545,
+    0.23666532041149757,
+    0.2665766096944764,
+    0.26454233471500016,
+    0.2934273171760019,
+    0.30655851683127433,
+    0.3092418089354555,
+    0.2911744166412082,
+    0.29113431404449164,
+    0.28968238704992005,
+    0.28848789949868003,
+    0.29253683831851934,
+    0.29111871399003303,
+    0.28895926313238496,
+    0.28968318765518886,
+    0.2880033073934242,
+    0.28852673707928245,
+    0.28677183693227
+  ],
+  "uses_signal_pilot": false,
+  "initialization": "box-only near uniform",
+  "steps": 4000,
+  "batch": 256,
+  "rank": 32,
+  "modes": 49,
+  "refinement": "lbfgs",
+  "refinement_iterations": 40
+}

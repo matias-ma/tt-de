@@ -1,0 +1,71 @@
+{
+  "pairs": {
+    "(0, 1)": {
+      "lbfgs": {
+        "latent_pair_relative_change": 0.02693202107065134,
+        "observed_pair_relative_change": 0.01831969944422721,
+        "parseval_refinement": 1.8803627603458484e-13,
+        "validation_nll_minus_previous": -0.0006189629108686097
+      },
+      "longer_adam": {
+        "latent_pair_relative_change": 0.07239883191085193,
+        "observed_pair_relative_change": 0.03358958984807246,
+        "parseval_refinement": 1.8803627603458484e-13,
+        "validation_nll_minus_previous": -0.0019695079046202118
+      },
+      "seed0": {
+        "latent_pair_relative_change": 0.06907899288421414,
+        "observed_pair_relative_change": 0.027541653614265107,
+        "parseval_refinement": 1.8803627603458484e-13,
+        "validation_nll_minus_previous": 3.655086413109133e-05
+      },
+      "seed1": {
+        "latent_pair_relative_change": 0.06908767215366203,
+        "observed_pair_relative_change": 0.027390191668593626,
+        "parseval_refinement": 1.8803627603458484e-13,
+        "validation_nll_minus_previous": 0.0008095762897508863
+      },
+      "seed2": {
+        "latent_pair_relative_change": 0.07648283803777556,
+        "observed_pair_relative_change": 0.027315475623412584,
+        "parseval_refinement": 1.8803627603458484e-13,
+        "validation_nll_minus_previous": 0.00036939816138143334
+      }
+    },
+    "(2, 3)": {
+      "lbfgs": {
+        "latent_pair_relative_change": 0.043934265625146164,
+        "observed_pair_relative_change": 0.02294445609779142,
+        "parseval_refinement": 1.882661728893055e-13,
+        "validation_nll_minus_previous": -0.0006189629108686097
+      },
+      "longer_adam": {
+        "latent_pair_relative_change": 0.07322565766123566,
+        "observed_pair_relative_change": 0.036339850685495535,
+        "parseval_refinement": 1.882661728893055e-13,
+        "validation_nll_minus_previous": -0.0019695079046202118
+      },
+      "seed0": {
+        "latent_pair_relative_change": 0.10993329398602776,
+        "observed_pair_relative_change": 0.03633327256773327,
+        "parseval_refinement": 1.882661728893055e-13,
+        "validation_nll_minus_previous": 3.655086413109133e-05
+      },
+      "seed1": {
+        "latent_pair_relative_change": 0.11936938275473334,
+        "observed_pair_relative_change": 0.03664689037205809,
+        "parseval_refinement": 1.882661728893055e-13,
+        "validation_nll_minus_previous": 0.0008095762897508863
+      },
+      "seed2": {
+        "latent_pair_relative_change": 0.1122603722354211,
+        "observed_pair_relative_change": 0.03665235150645658,
+        "parseval_refinement": 1.882661728893055e-13,
+        "validation_nll_minus_previous": 0.00036939816138143334
+      }
+    }
+  },
+  "uses_truth": false,
+  "latent_metric": "exact full-plane pair L2 relative to previous fitted pair",
+  "observed_metric": "full-plane pair L2 via Parseval under analytic known noise; refined in frequency spacing and polynomial quadrature"
+}

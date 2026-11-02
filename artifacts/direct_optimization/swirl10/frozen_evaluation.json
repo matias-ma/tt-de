@@ -1,0 +1,14 @@
+{
+  "selection": {
+    "new_selected": "squared_n49_r32_l0.0001_b256_s0"
+  },
+  "files": {
+    "artifacts/direct_optimization/swirl10/squared_n49_r32_l0.0001_b256_s0/fit.npz": "7e79498ecd5bf56826a84eceb890c7915e8631de20f568e5f3270561b6dd834c",
+    "artifacts/direct_optimization/swirl10/squared_n49_r32_l0.0001_b256_s0/init.npz": "0241944ff89ab732a080f17e2d833be7538cf480c71f4ac111ef080a374c357f",
+    "artifacts/direct_optimization/swirl10/squared_n49_r32_l0.0001_b256_s0/result.json": "4ef85647e72502b0dd110338a9a63f4acc4faed0dc3a4efb5069fa7d6d8ceb4a",
+    "artifacts/swirl/swirl_mixture_dim10/init.npz": "e2f4b33390744cc7e7593a67b342c3ba7c2ac629747932de381e640e58f5d7a1",
+    "artifacts/swirl/swirl_mixture_dim10/selected.npz": "1c857e147a031d56ab1814d46ed92ca5ac2f9e9004b8feac897d1d904e0ffbbf"
+  },
+  "truth_used_for_selection": false,
+  "independent_test_seed": 87329
+}

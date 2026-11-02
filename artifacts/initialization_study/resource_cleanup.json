@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-09-27T00:22:44.205257+00:00",
+  "own_allocations": [
+    "14492351",
+    "14502932"
+  ],
+  "released": true,
+  "unrelated_jobs_modified": false,
+  "squeue": "",
+  "sacct": "14492351|ftde-init|CANCELLED by 355877|03:49:13|billing=4,cpu=4,gres/gpu=1,mem=32G,node=1\n14502932|ftde-init-eval|CANCELLED by 355877|01:38:55|billing=4,cpu=4,gres/gpu=1,mem=32G,node=1"
+}

@@ -1,0 +1,15 @@
+{
+  "selected": "strong",
+  "scores": {
+    "strong": 0.28623863150607043
+  },
+  "files": {
+    "artifacts/tucker_capacity/r10/swirl6_free/strong/fit.npz": "b7ee2bcd5eb7d561619e47e5d4fcfbdcbd1ed6e7e9f72a71f9416dc2c779a322",
+    "artifacts/tucker_capacity/r10/swirl6_free/strong/result.json": "31a9357cf0e434cc7833fe177674a8998b3dc4da79d4b8d31284a200cd5907f0",
+    "artifacts/tucker_capacity/r10/swirl6_free/strong/config.json": "b75ad13bd7f5938a3dfc3e91bacb1b8ffd5e69946e73697c7755c38c8e15e0cb",
+    "artifacts/tucker_capacity/r10/swirl6_free/strong/validation.npy": "1345328aff75a2c67b68a25366b850eac72f1661cb91be6d6d9b4fdd574081af",
+    "artifacts/tucker_capacity/r10/swirl6_free/data.npz": "1fe62daa9c0a1ecadb82b691d29e85fe017b7e0fed3e6ef9f35e8c15c13462a2",
+    "artifacts/tucker_capacity/r10/swirl6_free/protocol.json": "0739c97b3f101a71a06f43f558be8f21e1fd7637480257ed344cb29f4d742598"
+  },
+  "truth_evaluated": false
+}

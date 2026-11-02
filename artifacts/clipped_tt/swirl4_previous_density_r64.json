@@ -1,0 +1,9 @@
+{
+  "quadrature_order": 97,
+  "modes": 65,
+  "rank": 64,
+  "seed": 0,
+  "projection_relative_l2": 0.00018947739139442773,
+  "total_relative_l2": 0.0016432159538500668,
+  "method": "physical projection and randomized TT-SVD of previous squared density"
+}

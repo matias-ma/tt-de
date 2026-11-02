@@ -1,0 +1,15 @@
+{
+  "relative_l2": 0.3334210559561846,
+  "test_nll": 3.8830860103179745,
+  "positive_mass": 1.049017377667741,
+  "negative_mass": 0.04901737766776429,
+  "norm_p_squared": 0.5230349624010963,
+  "norm_q_squared": 0.3609708266984687,
+  "cross_integral": 0.41293010062658425,
+  "order": 97,
+  "kind": "signed",
+  "fit_path": "artifacts/direct_optimization/swirl4/signed_n49_r32_l1e-05_s0_neg1/fit.npz",
+  "fit_sha256": "a676cafdd167f6a0720d1ab3b8ee03508631c45c3240fe57670411b2dd57ec83",
+  "raw_tt_sign_changes_on_true_curve": 0,
+  "raw_tt_negative_fraction_on_true_curve": 0.0
+}

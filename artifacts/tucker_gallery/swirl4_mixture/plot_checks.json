@@ -1,0 +1,18 @@
+{
+  "pair01": {
+    "latent_pair_relative_l2": 0.2778301269219531,
+    "observed_pair_relative_l2": 0.06941758080348273,
+    "convolution_grid_refinement": [
+      0.0004378602219090129,
+      0.0004441650659730956
+    ]
+  },
+  "pair23": {
+    "latent_pair_relative_l2": 0.3251986653836547,
+    "observed_pair_relative_l2": 0.06998109266669196,
+    "convolution_grid_refinement": [
+      0.0003513072598984195,
+      0.00046499172874469956
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_recipe": "sweep_hessian_medium_flat_long",
+  "seed": 2,
+  "uses_clean_truth": false,
+  "uses_signal_pilot": false,
+  "reselects_main_fit": false,
+  "strength": 0.003,
+  "regularizer": "hessian"
+}

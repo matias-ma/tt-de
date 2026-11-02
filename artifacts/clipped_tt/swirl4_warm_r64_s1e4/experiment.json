@@ -1,0 +1,15 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim4",
+  "output": "artifacts/clipped_tt/swirl4_warm_r64_s1e4",
+  "initial": "artifacts/clipped_tt/swirl4_previous_density_r64.npz",
+  "initial_is_density": true,
+  "rank": 64,
+  "order": 97,
+  "steps": 3000,
+  "batch_size": 2048,
+  "lr": 2e-05,
+  "strength": 0.0001,
+  "penalty_normalization": "positive",
+  "negative_penalty": 0.0,
+  "seed": 0
+}

@@ -1,0 +1,11 @@
+{
+  "src/ftde/tucker_operations.py": "287724ee42583f8229771af214f09d17a4615e6314510351aa2fe2c66ef2d46c",
+  "src/ftde/tucker_convolution.py": "13dd81138b29d2b41312d619b4ceae4bdf6db85fb8e9c644bd69863a015adeae",
+  "src/ftde/tucker_training.py": "39d9fc94e48a3862ba28c9932e9684d82e99dbcead72b2a6aaed0bddf68a950c",
+  "src/ftde/direct_training.py": "2427cc661847720b629cf6dc4dad442c2d9f4d1542ea094448d8a88811e0425c",
+  "scripts/tune_tucker_4d.py": "8a931905126ce20708b071c91c5f8acb5e973e5b0a8352a88b0fca24605ada69",
+  "scripts/publish_tucker_4d_tuning.py": "c36d0906b1999a033cc4dc953157d7b8adf90a0f8f9d30ee9bb175c39ce3a6b9",
+  "scripts/plot_tucker_gallery.py": "fc6f7b3e2d62ebb528831006495e79c4c9ec4762288424eb3ea10d8c917e6b4e",
+  "scripts/audit_tucker_gallery.py": "caa061983691d2e14f2fdff39150309614c8afa275521a11631e5d4a42938409",
+  "scripts/benchmark_tucker_separable_pairs.py": "54e9e817d57ad9ed6ac248370bfb5be8fae612080478e1a7a4990f5964ae7e2b"
+}

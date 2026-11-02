@@ -1,0 +1,20 @@
+{
+  "gaussian_shortcut": {
+    "relative_sample_l2": 0.1496998193880479,
+    "relative_squared_sample_error": 0.022410035924814165,
+    "integrated_relative_l2": 0.14105928157529896,
+    "quadrature_relative_change": 8.893455703550672e-10,
+    "integral_estimate_squared": 0.0002058705866272348,
+    "integral_product": 0.00022355408555488663,
+    "integral_truth_squared": 0.0002461351122544305
+  },
+  "noisy_fisher_kernel/fisher_0.3": {
+    "relative_sample_l2": 0.14979315161203485,
+    "relative_squared_sample_error": 0.02243798826986606,
+    "integrated_relative_l2": 0.1411151347454996,
+    "quadrature_relative_change": 8.888175321802767e-10,
+    "integral_estimate_squared": 0.00020583935655289445,
+    "integral_product": 0.00022353653093171798,
+    "integral_truth_squared": 0.0002461351122544305
+  }
+}

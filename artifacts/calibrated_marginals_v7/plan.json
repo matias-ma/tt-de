@@ -1,0 +1,13 @@
+{
+  "budgets_nats_at_source": {
+    "control": 0.0,
+    "marginal_light": 0.001,
+    "marginal_moderate": 0.003
+  },
+  "strength_rule": "budget divided by exact marginal curvature of preceding observation-selected fit",
+  "source_rule": "preceding regularization study minimum noisy validation NLL",
+  "objective": "same amplitude-Hessian strength as source, plus marginal curvature",
+  "all_runs": "2000 Adam updates, learning rate .0001, identical batches and checkpoints",
+  "primary": "minimum observed validation NLL",
+  "truth_evaluation_not_yet_run": true
+}

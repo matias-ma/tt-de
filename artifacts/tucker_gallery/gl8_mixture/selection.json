@@ -1,0 +1,21 @@
+{
+  "selected": "curriculum",
+  "scores": {
+    "strong": 12.466005020566362,
+    "curriculum": 12.463955970296466
+  },
+  "files": {
+    "artifacts/tucker_gallery/gl8_mixture/strong/fit.npz": "498f094f09d3bd579160d9818244512a95eb3106cacc390872fee622c577f958",
+    "artifacts/tucker_gallery/gl8_mixture/strong/result.json": "c74848be05a9c03e6d8411086bd88207810223131f653d5813a263df8dab6c92",
+    "artifacts/tucker_gallery/gl8_mixture/strong/config.json": "0ab90a288418cf3a07a06d9943b92967eb5fd4d6defefbdfa76b266036e7fa32",
+    "artifacts/tucker_gallery/gl8_mixture/strong/validation.npy": "00bc2e6ffe2fd6dbc35f98a7d7c0a329c108b7018768ebafed05e9bda45fef7d",
+    "artifacts/tucker_gallery/gl8_mixture/curriculum/fit.npz": "b77dd79203e8cccce5637f830cd42a0f27d198562ab0a9794580c1fe4ab79257",
+    "artifacts/tucker_gallery/gl8_mixture/curriculum/result.json": "16a102b83c24640eb663366cd01f1d196167a44f6f06bcb2d16a8634b6bc15c2",
+    "artifacts/tucker_gallery/gl8_mixture/curriculum/config.json": "5f5a6902e303a83567642eb6507d95cf97204ed6cb66833f7134232b8dd9ad76",
+    "artifacts/tucker_gallery/gl8_mixture/curriculum/validation.npy": "24f096690b42903611e5fd218683584a61346625d443a8d03c3849c1bb1bc608",
+    "artifacts/tucker_gallery/gl8_mixture/data.npz": "5fdf9e341f783e2964008881bc9506ad83c277584c38f543b3f993cd83b137c0",
+    "artifacts/tucker_gallery/gl8_mixture/protocol.json": "e7b8e258f432171193ca2302ee5160214a9402d38e1d156472c09e75ac8d212b",
+    "artifacts/tucker_gallery/gl8_mixture/kernel.npz": "00bcfc0c9ab41ac4fe8699dc3502d9db2c2796ee6023046cc96e69bb9026fab2"
+  },
+  "truth_evaluated": false
+}

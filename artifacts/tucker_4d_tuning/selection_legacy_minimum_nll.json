@@ -1,0 +1,203 @@
+{
+  "selected": {
+    "swirl4_free": "artifacts/tucker_4d_tuning/clean_refine/swirl4_free",
+    "swirl6_free": "artifacts/tucker_capacity/r10/swirl6_free",
+    "swirl4_mixture": "artifacts/tucker_4d_tuning/noisy_refine_m0/swirl4_mixture",
+    "swirl6_mixture": "artifacts/tucker_noisy_rank10/r10/swirl6_mixture"
+  },
+  "candidates": {
+    "swirl4_free": [
+      {
+        "folder": "artifacts/tucker_gallery/swirl4_free",
+        "rank": 8,
+        "steps": 4000,
+        "objective": "nll",
+        "validation_nll": 1.468023822320275,
+        "selection_sha256": "cfdc8ae530aaf69e4252ec6b32c17465928bea825dd6e0857122be66d9f57d6a"
+      },
+      {
+        "folder": "artifacts/tucker_capacity/r8_control/swirl4_free",
+        "rank": 8,
+        "steps": 12000,
+        "objective": "nll",
+        "validation_nll": 1.389945120168766,
+        "selection_sha256": "763e8cc0bacfccdac481fa85506341ede7f7eeb3b5491c661818992842b94a2d"
+      },
+      {
+        "folder": "artifacts/tucker_capacity/r16/swirl4_free",
+        "rank": 16,
+        "steps": 12000,
+        "objective": "nll",
+        "validation_nll": 1.2379765922473158,
+        "selection_sha256": "b85bd03c9af67d427b1b8dff351d1b37e226b449206e67823dce83b158e33ff1"
+      },
+      {
+        "folder": "artifacts/tucker_capacity/r24/swirl4_free",
+        "rank": 24,
+        "steps": 20000,
+        "objective": "logpen",
+        "validation_nll": 1.2283045536579262,
+        "selection_sha256": "53c0f28d890dd774da991b3b83613febc64f1af5d6a36bb7a6bc0672cde68b43"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/clean_r32_h0.003/swirl4_free",
+        "rank": 32,
+        "steps": 20000,
+        "objective": "logpen",
+        "validation_nll": 1.2458059075702415,
+        "selection_sha256": "e82d3943037958fbeded7792070277b6a8218fafd7ca6b3b27aa9b440b63432b"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/clean_r32_h0.01/swirl4_free",
+        "rank": 32,
+        "steps": 20000,
+        "objective": "logpen",
+        "validation_nll": 1.2530936321276027,
+        "selection_sha256": "986c7d2792af0002356a8333cb6258894497f92e597e50eb7dfe41a3da369cce"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/clean_r32_h0.03/swirl4_free",
+        "rank": 32,
+        "steps": 20000,
+        "objective": "logpen",
+        "validation_nll": 1.2698298351428683,
+        "selection_sha256": "c699308a1d6b464ad7bab9ac47d4f7ed0921a1251e3a977e9f5e94306ee3772c"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/clean_refine/swirl4_free",
+        "rank": 24,
+        "steps": 5000,
+        "objective": "logpen",
+        "validation_nll": 1.2275349087367622,
+        "selection_sha256": "81af69bbbcefb21bb3b8c544d7c2c446a1574ad6340a1b75ebe5c72f73533540"
+      }
+    ],
+    "swirl6_free": [
+      {
+        "folder": "artifacts/tucker_gallery/swirl6_free",
+        "rank": 4,
+        "steps": 4000,
+        "objective": "nll",
+        "validation_nll": 2.095473695814931,
+        "selection_sha256": "485913e8aef90b5f6e747dbb3b180455a3f2eab0df32fe7ae7a7dfe04dcb03c4"
+      },
+      {
+        "folder": "artifacts/tucker_capacity/r8/swirl6_free",
+        "rank": 8,
+        "steps": 20000,
+        "objective": "logpen",
+        "validation_nll": 0.3960615430814611,
+        "selection_sha256": "06bdc1f10a306bcee5a5fc92b7b82bed5e7a8a6d8ee808a20b61d87a48482573"
+      },
+      {
+        "folder": "artifacts/tucker_capacity/r10/swirl6_free",
+        "rank": 10,
+        "steps": 20000,
+        "objective": "logpen",
+        "validation_nll": 0.28623863150607043,
+        "selection_sha256": "950fe9cfaa2c1388037c1620981054c7432dba35bb2e06239485e4f448d89480"
+      }
+    ],
+    "swirl4_mixture": [
+      {
+        "folder": "artifacts/tucker_gallery/swirl4_mixture",
+        "rank": 8,
+        "steps": 4000,
+        "objective": "nll",
+        "validation_nll": 3.8802013606686234,
+        "selection_sha256": "13d9f84c885444e4c82d005ebf56ff07b33e6e24ad1f674f08d6b65d64b2ec93"
+      },
+      {
+        "folder": "artifacts/tucker_capacity/r16_noisy/swirl4_mixture",
+        "rank": 16,
+        "steps": 4000,
+        "objective": "logpen",
+        "validation_nll": 3.8645099500779017,
+        "selection_sha256": "a45e5a8970af56a01f2c499d8ca4378f98007efb3f3353c5a2a4a1fcd2b1922b"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/noisy_r24_h1e-05/swirl4_mixture",
+        "rank": 24,
+        "steps": 4000,
+        "objective": "logpen",
+        "validation_nll": 3.8630794913162534,
+        "selection_sha256": "f283002db5a291eb038bc8b7e8497c34382178eb6e9a4e7d5fc55f3d64a35b02"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/noisy_r24_h0.0001/swirl4_mixture",
+        "rank": 24,
+        "steps": 4000,
+        "objective": "logpen",
+        "validation_nll": 3.8628719629824166,
+        "selection_sha256": "fb987f0847947af40f17089bce5b63fd8fc3e177e3c514db3f293d5a12e64b47"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/noisy_r24_h0.001/swirl4_mixture",
+        "rank": 24,
+        "steps": 4000,
+        "objective": "logpen",
+        "validation_nll": 3.863301561583144,
+        "selection_sha256": "515c7b9652440becc1d29e92094ce0ba874426d61ea3519bf521764921b11381"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/noisy_refine_m0/swirl4_mixture",
+        "rank": 24,
+        "steps": 2000,
+        "objective": "logpen",
+        "validation_nll": 3.862005411144339,
+        "selection_sha256": "4f7e52b5872bfec66a843e6ca42d1470b968d1425c9616e09ddaa73d4e858541"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/noisy_refine_m0.0003/swirl4_mixture",
+        "rank": 24,
+        "steps": 2000,
+        "objective": "logpen",
+        "validation_nll": 3.862020661611159,
+        "selection_sha256": "900368243ac459e084283ccf81fddba90adde498af61496be95f9b516b1d5bf9"
+      },
+      {
+        "folder": "artifacts/tucker_4d_tuning/noisy_refine_m0.001/swirl4_mixture",
+        "rank": 24,
+        "steps": 2000,
+        "objective": "logpen",
+        "validation_nll": 3.862347165960173,
+        "selection_sha256": "1d7fb734c8307232ed0dd1b4d29582ab84a3500802ff6dbbfe129c2fe520f79b"
+      }
+    ],
+    "swirl6_mixture": [
+      {
+        "folder": "artifacts/tucker_gallery/swirl6_mixture",
+        "rank": 4,
+        "steps": 4000,
+        "objective": "nll",
+        "validation_nll": 5.140604599578254,
+        "selection_sha256": "5fbc9215f9f8a04c76e844cbe3008e40f3a7c2a642be8f9acac90ad86dd0197b"
+      },
+      {
+        "folder": "artifacts/tucker_capacity/r6_noisy/swirl6_mixture",
+        "rank": 6,
+        "steps": 4000,
+        "objective": "logpen",
+        "validation_nll": 4.832956554322604,
+        "selection_sha256": "61e02bcb160665b076e9d1fa53afb591bff4b3b39462aa9157594c62d6473c34"
+      },
+      {
+        "folder": "artifacts/tucker_noisy_rank10/r10/swirl6_mixture",
+        "rank": 10,
+        "steps": 8000,
+        "objective": "logpen",
+        "validation_nll": 4.7589406404661485,
+        "selection_sha256": "935d325bb6645b1be26eace5df260ea8d4b60044e7a7fea2b2d155b5512c3086"
+      }
+    ]
+  },
+  "selection": "minimum held-out NLL across rank/optimizer recipes",
+  "truth_used_for_selection": false,
+  "prior_selection": {
+    "path": "artifacts/tucker_noisy_rank10/selection.json",
+    "sha256": "221b4ad912fb51a618a94124765c3bb0cb4bdbe0faa9f0e2f8e4f009cd9222a3"
+  },
+  "tuning_protocol": "artifacts/tucker_4d_tuning/protocol_v2.json",
+  "tuning_protocol_sha256": "f6319666142f61b44ba071b154eafdc082f37a08ab9301144eb9e11813fe4efc",
+  "refinements_sha256": "82cdf64e9a4379e5b8e7eff555189358d557c3e6736bfbc172a9072123ac8d91"
+}

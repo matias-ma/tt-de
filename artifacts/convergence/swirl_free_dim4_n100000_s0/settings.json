@@ -1,0 +1,19 @@
+{
+  "dim": 4,
+  "noise": "free",
+  "output": "artifacts/convergence/swirl_free_dim4_n100000_s0",
+  "n_train": 100000,
+  "n_valid": 4096,
+  "init_rank": 16,
+  "ranks": [
+    32
+  ],
+  "modes": 49,
+  "strengths": [
+    0.0001,
+    0.0003
+  ],
+  "base_steps": 8000,
+  "steps": 3200,
+  "family": "swirl"
+}

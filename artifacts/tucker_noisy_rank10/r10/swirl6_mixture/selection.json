@@ -1,0 +1,16 @@
+{
+  "selected": "curriculum",
+  "scores": {
+    "curriculum": 4.7589406404661485
+  },
+  "files": {
+    "artifacts/tucker_noisy_rank10/r10/swirl6_mixture/curriculum/fit.npz": "88c6ae86e9c1582bbb878c6e1913ac42c09481b9896103c22155495c7cc34439",
+    "artifacts/tucker_noisy_rank10/r10/swirl6_mixture/curriculum/result.json": "52d6eb953d739bede5777cd7436824ecb32b0bc192b3d518c772ca7c3eaeb8c6",
+    "artifacts/tucker_noisy_rank10/r10/swirl6_mixture/curriculum/config.json": "6d82e09e2b09ece660c5f664601ea690a09858cddfcf29f5301abd6a3c9afe98",
+    "artifacts/tucker_noisy_rank10/r10/swirl6_mixture/curriculum/validation.npy": "d4783fcd4d6251b9c099d760ff2ac170d3077542c895086bd55e5b18f94ee82c",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/data.npz": "50b1a5a3b2930bfadb46bd6f57ba41c02ba94f9ee30cc538cb66228b317917a8",
+    "artifacts/tucker_noisy_rank10/r10/swirl6_mixture/protocol.json": "6f2ab8439d08ec945cdc0172b3326cd34261b2e3e2da495058c9fe79eb1b294c",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/kernel.npz": "363879d1ffb0957615ee5c8d76c7077c22cae643a999838d36925052548edbf6"
+  },
+  "truth_evaluated": false
+}

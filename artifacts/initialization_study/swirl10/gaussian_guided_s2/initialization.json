@@ -1,0 +1,68 @@
+{
+  "method": "gaussian_guided",
+  "seed": 2,
+  "rank": 32,
+  "modes": 49,
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 129,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.4136773427726355,
+        "sample_matrix_relative_tail": 5.606614649995834e-11
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 3.7288000340821705,
+        "sample_matrix_relative_tail": 0.08289107368692637
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 4.2128168356356,
+        "sample_matrix_relative_tail": 0.1178789933161301
+      },
+      {
+        "axis": 3,
+        "rank": 32,
+        "interpolation_condition": 4.191227111009253,
+        "sample_matrix_relative_tail": 0.047679173230519116
+      },
+      {
+        "axis": 4,
+        "rank": 32,
+        "interpolation_condition": 3.3088021443688787,
+        "sample_matrix_relative_tail": 0.21519582570069481
+      },
+      {
+        "axis": 5,
+        "rank": 32,
+        "interpolation_condition": 3.133681893312871,
+        "sample_matrix_relative_tail": 0.28119046052093943
+      },
+      {
+        "axis": 6,
+        "rank": 32,
+        "interpolation_condition": 3.0909590796318485,
+        "sample_matrix_relative_tail": 0.16585868664024922
+      },
+      {
+        "axis": 7,
+        "rank": 32,
+        "interpolation_condition": 2.5495876301925118,
+        "sample_matrix_relative_tail": 0.011926445654082008
+      },
+      {
+        "axis": 8,
+        "rank": 25,
+        "interpolation_condition": 2.6310325490487068,
+        "sample_matrix_relative_tail": 2.1308173351732775e-11
+      }
+    ]
+  },
+  "seconds": 1.547613644041121,
+  "pilot_is_final_model": false
+}

@@ -1,0 +1,57 @@
+{
+  "frozen_selection": "artifacts/positive_tt/swirl10_r32_m97_v3",
+  "stages": [
+    {
+      "stage": 1,
+      "names": [
+        "swirl10_r32_m49_control",
+        "swirl10_r32_m65_v3"
+      ],
+      "higher_degree_validation_gain": 0.0069676778248059686,
+      "paired_se": 0.00040585293647764923,
+      "errors": [
+        {
+          "relative_l2": 0.8951670494489435,
+          "integral_q_squared": 1.3223556417846254,
+          "integral_p_squared": 28.83414100376923,
+          "integral_pq": 3.525503050696909,
+          "refined_cross_integral_change_relative_to_p2": 8.655646648294813e-15
+        },
+        {
+          "relative_l2": 0.8896835552925119,
+          "integral_q_squared": 1.5581586020725835,
+          "integral_p_squared": 28.83414100376923,
+          "integral_pq": 3.7845075407631614,
+          "refined_cross_integral_change_relative_to_p2": 9.009881297602253e-15
+        }
+      ],
+      "maximum_initial_core_coefficient_difference": 1.6862782094007045e-06
+    },
+    {
+      "stage": 2,
+      "names": [
+        "swirl10_r32_m65_control",
+        "swirl10_r32_m97_v3"
+      ],
+      "higher_degree_validation_gain": 0.00097265775199402,
+      "paired_se": 0.0001137063583760174,
+      "errors": [
+        {
+          "relative_l2": 0.8074341305573319,
+          "integral_q_squared": 3.7357681974301835,
+          "integral_p_squared": 28.83414100376923,
+          "integral_pq": 6.885747286306826,
+          "refined_cross_integral_change_relative_to_p2": 3.43145564633467e-14
+        },
+        {
+          "relative_l2": 0.8067606697116598,
+          "integral_q_squared": 3.7816678724474166,
+          "integral_p_squared": 28.83414100376923,
+          "integral_pq": 6.924369877838618,
+          "refined_cross_integral_change_relative_to_p2": 3.4068132359480654e-14
+        }
+      ],
+      "maximum_initial_core_coefficient_difference": 1.5652406321065016e-06
+    }
+  ]
+}

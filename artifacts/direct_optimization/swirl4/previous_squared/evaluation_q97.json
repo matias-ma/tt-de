@@ -1,0 +1,15 @@
+{
+  "relative_l2": 0.2161879835349097,
+  "test_nll": 3.881296562989242,
+  "positive_mass": 1.1834779231371142,
+  "negative_mass": 0.0,
+  "norm_p_squared": 0.5230349624010963,
+  "norm_q_squared": 0.4614465727937337,
+  "cross_integral": 0.4800181612094668,
+  "order": 97,
+  "kind": "squared",
+  "fit_path": "artifacts/swirl/swirl_mixture_dim4/selected.npz",
+  "fit_sha256": "93c1ed7ff3b9bf065e1e88c4f13a27c23041cb3a8a86edfaa79f67ec2bd376b6",
+  "raw_tt_sign_changes_on_true_curve": 0,
+  "raw_tt_negative_fraction_on_true_curve": 0.0
+}

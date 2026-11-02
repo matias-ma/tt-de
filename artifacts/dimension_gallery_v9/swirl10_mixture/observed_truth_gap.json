@@ -1,0 +1,27 @@
+{
+  "selection_sha256": "d697e4127333fa3e248c7009b2da25204180f0f67b23151cd2c3f43e6b18ac51",
+  "selected": "marginal_continuation",
+  "models": {
+    "curriculum": {
+      "observed_kl_estimate": 0.054328333993651834,
+      "standard_error": 0.0031996938033865595
+    },
+    "strong": {
+      "observed_kl_estimate": 0.06281828659091485,
+      "standard_error": 0.003511246842373306
+    },
+    "weak_continuation": {
+      "observed_kl_estimate": 0.05234060830198725,
+      "standard_error": 0.0031000316993246226
+    },
+    "marginal_continuation": {
+      "observed_kl_estimate": 0.049908631776006504,
+      "standard_error": 0.003026832807398054
+    }
+  },
+  "quadrature_max_log_difference": 4.3165471197426086e-13,
+  "true_observed_test_nll": 6.280506909845435,
+  "test_count": 8192,
+  "used_for_selection": false,
+  "metric": "Monte Carlo KL(true observed || fitted observed)"
+}

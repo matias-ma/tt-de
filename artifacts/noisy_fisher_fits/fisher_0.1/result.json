@@ -1,0 +1,142 @@
+{
+  "name": "fisher_0.1",
+  "strength": 0.1,
+  "best_nll": 15.62679868810275,
+  "best_step": 8000,
+  "minimum_nll": 15.62679868810275,
+  "checkpoint_selection": null,
+  "roughness": 0.008861210484964776,
+  "history": [
+    {
+      "step": 0,
+      "nll": 15.628066324376679,
+      "roughness": 0.10899720588836491
+    },
+    {
+      "step": 400,
+      "nll": 15.62929715138288,
+      "roughness": 0.02485633300786333
+    },
+    {
+      "step": 800,
+      "nll": 15.628205756465965,
+      "roughness": 0.0185438237289049
+    },
+    {
+      "step": 1200,
+      "nll": 15.628864528221854,
+      "roughness": 0.015429215193765996
+    },
+    {
+      "step": 1600,
+      "nll": 15.627829113269193,
+      "roughness": 0.014108638159264294
+    },
+    {
+      "step": 2000,
+      "nll": 15.629564188968793,
+      "roughness": 0.013029412668742973
+    },
+    {
+      "step": 2400,
+      "nll": 15.630240486003931,
+      "roughness": 0.012044822136941406
+    },
+    {
+      "step": 2800,
+      "nll": 15.628005488844167,
+      "roughness": 0.010890685842365784
+    },
+    {
+      "step": 3200,
+      "nll": 15.628857440472684,
+      "roughness": 0.011352843633887806
+    },
+    {
+      "step": 3600,
+      "nll": 15.629646842321756,
+      "roughness": 0.010883037411863007
+    },
+    {
+      "step": 4000,
+      "nll": 15.630672371063515,
+      "roughness": 0.010538228513308153
+    },
+    {
+      "step": 4400,
+      "nll": 15.630518073947712,
+      "roughness": 0.009286666601114246
+    },
+    {
+      "step": 4800,
+      "nll": 15.626929534228957,
+      "roughness": 0.009855314430169937
+    },
+    {
+      "step": 5200,
+      "nll": 15.62788595710325,
+      "roughness": 0.0094050478011025
+    },
+    {
+      "step": 5600,
+      "nll": 15.62959206693051,
+      "roughness": 0.009553483699740427
+    },
+    {
+      "step": 6000,
+      "nll": 15.62899934487018,
+      "roughness": 0.00902914383269528
+    },
+    {
+      "step": 6400,
+      "nll": 15.628619567084714,
+      "roughness": 0.00921047797075449
+    },
+    {
+      "step": 6800,
+      "nll": 15.627595588282352,
+      "roughness": 0.008799268590173038
+    },
+    {
+      "step": 7200,
+      "nll": 15.628842748753392,
+      "roughness": 0.008906729459427372
+    },
+    {
+      "step": 7600,
+      "nll": 15.628383675584791,
+      "roughness": 0.008997526470233039
+    },
+    {
+      "step": 8000,
+      "nll": 15.62679868810275,
+      "roughness": 0.008861210484964776
+    }
+  ],
+  "seconds": 149.28647255618125,
+  "quadrature_log_error": 7.815970093361102e-14,
+  "settings": {
+    "setup": "artifacts/gl_rsi_trial/paired_setup.npz",
+    "output": "artifacts/noisy_fisher_fits",
+    "strengths": [
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ],
+    "order": 2,
+    "n_coeffs": 33,
+    "legacy": false,
+    "steps": 8000,
+    "batch_size": 256,
+    "lr": 0.0005,
+    "n_train": 100000,
+    "noise_scale": 1.5,
+    "train_seed": 0,
+    "valid_seed": 2,
+    "warm_start": "artifacts/noisy_recovery_n25_mid/h2_3e-05/fit.npz",
+    "reference": "artifacts/noisy_reference/selected.npz",
+    "fisher_floor": 0.01,
+    "checkpoint_rule": "minimum-nll"
+  }
+}

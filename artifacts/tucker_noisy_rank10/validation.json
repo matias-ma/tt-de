@@ -1,0 +1,42 @@
+{
+  "tests": {
+    "passed": 28,
+    "command": "python -m pytest -q tests/test_tucker_direct.py tests/test_tucker_diagnostics.py tests/test_gallery_marginals.py tests/test_squared_marginals.py tests/test_direct_microbatches.py",
+    "log": "artifacts/tucker_noisy_rank10/regression_tests.log"
+  },
+  "ruff": "passed",
+  "data_equivalence": {
+    "training": true,
+    "validation": true,
+    "domain": true,
+    "noise_covariance": true,
+    "same_kernel_checkpoint": true
+  },
+  "tucker_audit": {
+    "cases": 9,
+    "pngs": 27
+  },
+  "tt_audit": {
+    "cases": 12,
+    "pngs": 42,
+    "figures_unchanged": true
+  },
+  "publication_sha256": "bcba3b03f0655a28d74dac4b0249f2b355403a2cae9873d89d1b44245a92910e",
+  "source_sha256": {
+    "src/ftde/tucker_convolution.py": "f94fb653ab710a17c01a6cb7758108eb5558fc909359b36d911d82f220331c4d",
+    "scripts/profile_tucker_noisy_rank.py": "ae9c702165294fca992f9099f442cdae25500a36a2df65f4841a93f0aea50d1e",
+    "scripts/run_tucker_noisy_rank10.py": "9b2ab574fea884ea97d76f6ae076e436fbbc9744890391b3ad66da1e1db616e2",
+    "scripts/publish_tucker_noisy_rank10.py": "5dc20a0b46c2afa078fa847997a666af55a49cc1f1dbe96b2a0475514aff50d8",
+    "scripts/audit_tucker_gallery.py": "336544d9f3d279591346dafe33ea032e532669bd7bd329f52870c01d2eeb09fb",
+    "scripts/summarize_tucker_gallery.py": "3199de52f69d6357c241c0f7e9ce01fd5ba18cd8773ecf01f1e880c451f0273b",
+    "tests/test_tucker_direct.py": "f6af4bbb6c3621f775cb1cea9f08c926296f3d96438387ae3e99fc2cbc010bba"
+  },
+  "allocation": {
+    "job_id": 14730669,
+    "partition": "cryoem",
+    "gpus": 1,
+    "cpus": 4,
+    "host_memory": "32G",
+    "gpu": "NVIDIA H100 80GB HBM3"
+  }
+}

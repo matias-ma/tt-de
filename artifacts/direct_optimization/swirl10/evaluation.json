@@ -1,0 +1,56 @@
+{
+  "selection": "squared_n49_r32_l0.0001_b256_s0",
+  "models": {
+    "squared_n49_r32_l0.0001_b256_s0": {
+      "relative_l2": 0.6910458800862351,
+      "relative_l2_mc_se": 0.00511608334157948,
+      "test_nll": 6.308267142112407,
+      "test_zero_predictions": 0,
+      "max_sample_mean_z": 1.9294083550541872,
+      "p2_importance_ratio": 0.984787835256069,
+      "quadrature_log_discrepancy": 1.0516032489249483e-12,
+      "p2_ratio_mc_se": 0.011872681663148341,
+      "fit_path": "artifacts/direct_optimization/swirl10/squared_n49_r32_l0.0001_b256_s0/fit.npz",
+      "fit_sha256": "7e79498ecd5bf56826a84eceb890c7915e8631de20f568e5f3270561b6dd834c",
+      "raw_tt_sign_changes_on_true_curve": 29,
+      "minimum_density_ratio_on_true_curve": 1.036852977180993e-08,
+      "fraction_true_curve_below_half_density": 0.9090454772613693,
+      "test_gain_vs_previous": -0.0360621848063529,
+      "test_gain_paired_se": 0.0021876004242362716
+    },
+    "previous_squared": {
+      "relative_l2": 0.48644044097455763,
+      "relative_l2_mc_se": 0.004163246782063252,
+      "test_nll": 6.272204957306054,
+      "test_zero_predictions": 0,
+      "max_sample_mean_z": 2.1342309464498435,
+      "p2_importance_ratio": 0.995248903374583,
+      "quadrature_log_discrepancy": 1.0444978215673473e-12,
+      "p2_ratio_mc_se": 0.011138085395864637,
+      "fit_path": "artifacts/swirl/swirl_mixture_dim10/selected.npz",
+      "fit_sha256": "1c857e147a031d56ab1814d46ed92ca5ac2f9e9004b8feac897d1d904e0ffbbf",
+      "raw_tt_sign_changes_on_true_curve": 6,
+      "minimum_density_ratio_on_true_curve": 5.612977995390805e-10,
+      "fraction_true_curve_below_half_density": 0.7246376811594203,
+      "test_gain_vs_previous": 0.0,
+      "test_gain_paired_se": 0.0
+    },
+    "uniform_start": {
+      "relative_l2": 0.9953689055003627,
+      "relative_l2_mc_se": 0.006849933445413979,
+      "test_nll": 15.444007026397735,
+      "test_zero_predictions": 0,
+      "max_sample_mean_z": 1.1983602539031502,
+      "p2_importance_ratio": 0.9907592659905833,
+      "quadrature_log_discrepancy": 1.0160761121369433e-12,
+      "p2_ratio_mc_se": 0.0136364215126465,
+      "fit_path": "artifacts/direct_optimization/swirl10/squared_n49_r32_l0.0001_b256_s0/init.npz",
+      "fit_sha256": "0241944ff89ab732a080f17e2d833be7538cf480c71f4ac111ef080a374c357f",
+      "raw_tt_sign_changes_on_true_curve": 0,
+      "minimum_density_ratio_on_true_curve": 2.241873111040829e-10,
+      "fraction_true_curve_below_half_density": 1.0,
+      "test_gain_vs_previous": -9.17180206909168,
+      "test_gain_paired_se": 0.03385838061821111
+    }
+  }
+}

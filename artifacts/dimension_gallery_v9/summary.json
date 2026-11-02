@@ -1,0 +1,50 @@
+[
+  {
+    "family": "gl",
+    "dim": 4,
+    "noise_free": 0.03669834451493765,
+    "noisy": 0.16721347959987531,
+    "noise_free_source": "artifacts/dimension_gallery_v9/gl4_free",
+    "noisy_source": "artifacts/dimension_gallery_v9/gl4_mixture"
+  },
+  {
+    "family": "gl",
+    "dim": 10,
+    "noise_free": 0.08153140660943656,
+    "noisy": 0.2891562657635334,
+    "noise_free_source": "artifacts/dimension_gallery_v9/gl10_free",
+    "noisy_source": "artifacts/dimension_gallery_v9/gl10_mixture"
+  },
+  {
+    "family": "gl",
+    "dim": 20,
+    "noise_free": 0.10274318282388202,
+    "noisy": 0.37505735948421687,
+    "noise_free_source": "artifacts/dimension_gallery_v9/gl20_free",
+    "noisy_source": "artifacts/dimension_gallery_v9/gl20_mixture"
+  },
+  {
+    "family": "swirl",
+    "dim": 4,
+    "noise_free": 0.11554842694562227,
+    "noisy": 0.2960520267393097,
+    "noise_free_source": "artifacts/dimension_gallery_v9/swirl4_free",
+    "noisy_source": "artifacts/dimension_gallery_v9/swirl4_mixture"
+  },
+  {
+    "family": "swirl",
+    "dim": 10,
+    "noise_free": 0.22717854894638745,
+    "noisy": 0.5908940183724728,
+    "noise_free_source": "artifacts/dimension_gallery_v9/swirl10_free",
+    "noisy_source": "artifacts/dimension_gallery_v9/swirl10_mixture"
+  },
+  {
+    "family": "swirl",
+    "dim": 20,
+    "noise_free": 0.2561043551814929,
+    "noisy": 0.7810322536709964,
+    "noise_free_source": "artifacts/dimension_capacity_v11/swirl20_free",
+    "noisy_source": "artifacts/noisy_dimension_capacity_v12/swirl20_mixture"
+  }
+]

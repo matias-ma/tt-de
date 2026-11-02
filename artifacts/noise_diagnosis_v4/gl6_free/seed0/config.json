@@ -1,0 +1,45 @@
+{
+  "case": "gl6_free",
+  "seed": 0,
+  "rank": 10,
+  "modes": 25,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "objective": "nll",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "resume": null,
+  "initialization": "constant plus .01 random coefficients",
+  "uses_signal_pilot": false,
+  "uses_truth": false,
+  "domain": [
+    [
+      -2.10833871355701,
+      2.1539717227196014
+    ],
+    [
+      -2.1639802403521387,
+      2.113215429611559
+    ],
+    [
+      -2.167109359651684,
+      2.2767483223683582
+    ],
+    [
+      -2.1414076095223384,
+      2.13729390100922
+    ],
+    [
+      -2.112717063233589,
+      2.254388045707122
+    ],
+    [
+      -2.1842252130727133,
+      2.1184257325287184
+    ]
+  ],
+  "optimizer": "Adam",
+  "data_sha256": "5ef5cafe1d4b5497a492eb6df4df8937996d31030d55535c0634b3c9790f44c1"
+}

@@ -1,0 +1,221 @@
+{
+  "scores": {
+    "previous": {
+      "noisy_validation_nll": 9.866187806928895,
+      "nll_change_from_previous": 0.0,
+      "paired_se": 0.0
+    },
+    "dim10_rank48_h2_3e4_control": {
+      "noisy_validation_nll": 9.862305641993078,
+      "nll_change_from_previous": -0.0038821649358172774,
+      "paired_se": 0.001988941360698897
+    },
+    "dim10_rank64_h2_3e4": {
+      "noisy_validation_nll": 9.857317830448455,
+      "nll_change_from_previous": -0.008869976480442791,
+      "paired_se": 0.002615266722831943
+    }
+  },
+  "records": {
+    "dim10_rank48_h2_3e4_control": {
+      "best_nll": 9.862305641993078,
+      "best_step": 3200,
+      "strength": 0.0003,
+      "steps": 3200,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 9.866187806928897,
+          "penalty": 151.64401736526813
+        },
+        {
+          "step": 400,
+          "nll": 9.87318803524279,
+          "penalty": 109.8472476031709
+        },
+        {
+          "step": 800,
+          "nll": 9.876498229731535,
+          "penalty": 103.85924495958275
+        },
+        {
+          "step": 1200,
+          "nll": 9.866476484781472,
+          "penalty": 98.81334531049534
+        },
+        {
+          "step": 1600,
+          "nll": 9.868315241934315,
+          "penalty": 97.34701438498917
+        },
+        {
+          "step": 2000,
+          "nll": 9.866919174967641,
+          "penalty": 96.93211374352384
+        },
+        {
+          "step": 2400,
+          "nll": 9.864086999011946,
+          "penalty": 95.95968204613473
+        },
+        {
+          "step": 2800,
+          "nll": 9.86336313323392,
+          "penalty": 95.39136140771397
+        },
+        {
+          "step": 3200,
+          "nll": 9.862305641993078,
+          "penalty": 95.32553511437442
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 9.890903302527391,
+      "seed": 0,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 1.0480505352461478e-12,
+      "seconds": 450.66703933896497,
+      "common_h2": 95.32553511437442
+    },
+    "dim10_rank64_h2_3e4": {
+      "best_nll": 9.857317830448455,
+      "best_step": 3200,
+      "strength": 0.0003,
+      "steps": 3200,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 9.866187806419516,
+          "penalty": 151.64404101796816
+        },
+        {
+          "step": 400,
+          "nll": 9.871870465480104,
+          "penalty": 109.92096315374575
+        },
+        {
+          "step": 800,
+          "nll": 9.87404965699369,
+          "penalty": 104.40629520928248
+        },
+        {
+          "step": 1200,
+          "nll": 9.862170880130464,
+          "penalty": 99.31571426473273
+        },
+        {
+          "step": 1600,
+          "nll": 9.86283935463155,
+          "penalty": 97.89898051909363
+        },
+        {
+          "step": 2000,
+          "nll": 9.861996885208614,
+          "penalty": 97.56324933557946
+        },
+        {
+          "step": 2400,
+          "nll": 9.859009270899108,
+          "penalty": 96.76041023569503
+        },
+        {
+          "step": 2800,
+          "nll": 9.858407205937075,
+          "penalty": 96.33729385014456
+        },
+        {
+          "step": 3200,
+          "nll": 9.857317830448455,
+          "penalty": 96.26315587489488
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 9.886196777210923,
+      "seed": 0,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 1.0516032489249483e-12,
+      "seconds": 723.0805357231293,
+      "common_h2": 96.26315587489566
+    }
+  },
+  "best_single": "dim10_rank64_h2_3e4",
+  "ensemble_members": [],
+  "marginals": {
+    "01": {
+      "previous": {
+        "mass_on_grid": 1.0000144741626178,
+        "finite_difference_relative_density_hessian_energy": 67.49998276246617,
+        "differential_entropy": 0.8230374448058808,
+        "relative_density_hessian_energy": 71.36140625926299,
+        "l1_change_from_previous": 0.0
+      },
+      "dim10_rank48_h2_3e4_control": {
+        "mass_on_grid": 1.0000129902449348,
+        "finite_difference_relative_density_hessian_energy": 39.878440964605005,
+        "differential_entropy": 0.9266325624679369,
+        "relative_density_hessian_energy": 41.567904765152534,
+        "l1_change_from_previous": 0.1337442223637889
+      },
+      "dim10_rank64_h2_3e4": {
+        "mass_on_grid": 1.000013676137454,
+        "finite_difference_relative_density_hessian_energy": 39.59217150848379,
+        "differential_entropy": 0.9289228360965773,
+        "relative_density_hessian_energy": 41.26370330443653,
+        "l1_change_from_previous": 0.13575402649207902
+      }
+    },
+    "23": {
+      "previous": {
+        "mass_on_grid": 1.0000259143205001,
+        "finite_difference_relative_density_hessian_energy": 81.99410441193086,
+        "differential_entropy": 1.854809216899738,
+        "relative_density_hessian_energy": 85.08083750297256,
+        "l1_change_from_previous": 0.0
+      },
+      "dim10_rank48_h2_3e4_control": {
+        "mass_on_grid": 1.0000257026592654,
+        "finite_difference_relative_density_hessian_energy": 49.175387195765325,
+        "differential_entropy": 1.9334333241706254,
+        "relative_density_hessian_energy": 50.63164148167688,
+        "l1_change_from_previous": 0.12068046382526784
+      },
+      "dim10_rank64_h2_3e4": {
+        "mass_on_grid": 1.0000286391648372,
+        "finite_difference_relative_density_hessian_energy": 48.67472828409997,
+        "differential_entropy": 1.935426212637439,
+        "relative_density_hessian_energy": 50.107722835783946,
+        "l1_change_from_previous": 0.12864056261219511
+      }
+    },
+    "89": {
+      "previous": {
+        "mass_on_grid": 1.000009247451321,
+        "finite_difference_relative_density_hessian_energy": 36.53806111016257,
+        "differential_entropy": 1.4693698617690587,
+        "relative_density_hessian_energy": 36.81310292666268,
+        "l1_change_from_previous": 0.0
+      },
+      "dim10_rank48_h2_3e4_control": {
+        "mass_on_grid": 1.0000044227167244,
+        "finite_difference_relative_density_hessian_energy": 23.710736888660286,
+        "differential_entropy": 1.5626337596508042,
+        "relative_density_hessian_energy": 23.846750862946198,
+        "l1_change_from_previous": 0.10739252059582453
+      },
+      "dim10_rank64_h2_3e4": {
+        "mass_on_grid": 1.000004142231288,
+        "finite_difference_relative_density_hessian_energy": 23.529145481093682,
+        "differential_entropy": 1.566033411519562,
+        "relative_density_hessian_energy": 23.663229263565,
+        "l1_change_from_previous": 0.11058831305366196
+      }
+    }
+  },
+  "stability_scope": "Conditional resampled continuations from a fit trained on all original training observations. Not independent-data replication or calibrated confidence intervals."
+}

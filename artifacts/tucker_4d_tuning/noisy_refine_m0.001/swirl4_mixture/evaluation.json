@@ -1,0 +1,11 @@
+{
+  "relative_l2": 0.224602811837619,
+  "relative_squared_l2": 0.05044642308536488,
+  "integral_q_squared": 0.46447274160683316,
+  "integral_pq": 0.4805612305031427,
+  "integral_p_squared": 0.5230349624011801,
+  "path_quadrature_relative_change": 8.016632918481107e-11,
+  "integration": "exact blocked Tucker quartic quadrature; native product-measure cross integral",
+  "selection_sha256": "1d7fb734c8307232ed0dd1b4d29582ab84a3500802ff6dbbfe129c2fe520f79b",
+  "metric": "unsquared full-dimensional latent relative Lebesgue L2"
+}

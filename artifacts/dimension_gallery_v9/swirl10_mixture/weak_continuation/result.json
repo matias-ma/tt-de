@@ -1,0 +1,279 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 6.33021010630905,
+      "roughness_h1": 4.3238581591348355,
+      "roughness_axis_h2": 5.927163870199279,
+      "roughness_hessian": 22.91341776227614,
+      "batch_objective": null,
+      "seconds": 2.8826230170670897,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 200,
+      "validation_nll": 6.3293566182853755,
+      "roughness_h1": 4.892743996599742,
+      "roughness_axis_h2": 18.09744427561814,
+      "roughness_hessian": 39.98960626984544,
+      "batch_objective": 6.428620554049313,
+      "seconds": 47.968908957904205,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 400,
+      "validation_nll": 6.328918500438881,
+      "roughness_h1": 5.186289431562799,
+      "roughness_axis_h2": 15.452865132240477,
+      "roughness_hessian": 40.05200818762193,
+      "batch_objective": 6.172937719839209,
+      "seconds": 99.00738209299743,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 600,
+      "validation_nll": 6.3286981572557925,
+      "roughness_h1": 5.394879085372016,
+      "roughness_axis_h2": 18.30088824059025,
+      "roughness_hessian": 44.91621019922473,
+      "batch_objective": 6.315609886297826,
+      "seconds": 145.23990468098782,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 800,
+      "validation_nll": 6.324440763189887,
+      "roughness_h1": 5.462304034573272,
+      "roughness_axis_h2": 15.842836377811693,
+      "roughness_hessian": 43.119799805861966,
+      "batch_objective": 6.268602796506442,
+      "seconds": 190.99480259302072,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1000,
+      "validation_nll": 6.325427228506476,
+      "roughness_h1": 5.5192179506043875,
+      "roughness_axis_h2": 15.563823508827909,
+      "roughness_hessian": 43.40542353119665,
+      "batch_objective": 5.833572838396413,
+      "seconds": 238.57886627409607,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1200,
+      "validation_nll": 6.326524388972364,
+      "roughness_h1": 5.559496412125157,
+      "roughness_axis_h2": 15.422418990021372,
+      "roughness_hessian": 43.68500108674445,
+      "batch_objective": 6.55430702698304,
+      "seconds": 286.28695241897367,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1400,
+      "validation_nll": 6.324417953992562,
+      "roughness_h1": 5.56833583427725,
+      "roughness_axis_h2": 15.7452054370687,
+      "roughness_hessian": 44.07344356006733,
+      "batch_objective": 5.965798283228511,
+      "seconds": 332.31121762492694,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1600,
+      "validation_nll": 6.323644488964257,
+      "roughness_h1": 5.5832903264823255,
+      "roughness_axis_h2": 14.706532079349344,
+      "roughness_hessian": 43.172398685018884,
+      "batch_objective": 6.0671687492437,
+      "seconds": 377.6418684630189,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 1800,
+      "validation_nll": 6.322209753947552,
+      "roughness_h1": 5.58776250162132,
+      "roughness_axis_h2": 14.5830657494702,
+      "roughness_hessian": 43.110520278570405,
+      "batch_objective": 6.2865724041503865,
+      "seconds": 426.44660407607444,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    },
+    {
+      "step": 2000,
+      "validation_nll": 6.320424947164139,
+      "roughness_h1": 5.57990978121681,
+      "roughness_axis_h2": 14.323466698333032,
+      "roughness_hessian": 42.77635765303188,
+      "batch_objective": 6.24759219049304,
+      "seconds": 473.01684883306734,
+      "active_modes": [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "selection_eligible": true
+    }
+  ],
+  "best_step": 2000,
+  "best_nll": 6.320424947164139,
+  "seconds": 473.1238616919145,
+  "steps": 2000,
+  "batch_seed": 0,
+  "objective": "nll",
+  "regularizer": "hessian",
+  "strength": 1e-05,
+  "marginal_strength": 0.0,
+  "precondition_strength": 1e-05,
+  "mode_schedule": [
+    [
+      0,
+      [
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49,
+        49
+      ]
+    ]
+  ],
+  "selection_start": 0,
+  "microbatches": 1,
+  "conditional_weight": 1.0,
+  "training_count": 100000,
+  "selection": "minimum held-out joint NLL checkpoint",
+  "uses_signal_pilot": false
+}

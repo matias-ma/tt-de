@@ -1,0 +1,113 @@
+{
+  "dim": 10,
+  "noise": "mixture",
+  "n_train": 20000,
+  "n_test": 500,
+  "rank": 4,
+  "n_coeffs": 9,
+  "steps": 10000,
+  "naive_steps": 0,
+  "deconv_steps": 500,
+  "batch_size": 256,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 3,
+  "kernel_n_coeffs": 129,
+  "compare_spectral": false,
+  "convolution_backend": "rsi",
+  "rsi_max_rank": 16,
+  "output": "results/gl_rsi_trial/gl10_500_rsi.json",
+  "save_figures": false,
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.9965667918760107,
+      "relative_sample_l2": 0.9982819200386285
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.9967110645755156,
+      "relative_sample_l2": 0.9983541779226026
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.9236112786950182,
+      "relative_sample_l2": 0.961046970077435
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 1.687538997430238e-13,
+    "rsi_max_abs_log_error": 0.017860226258157752,
+    "rsi_relative_log_error": 0.00015704453467361342,
+    "exact_validation_nll_at_rsi_checkpoint": 13.8279339632235,
+    "analytic_mixture_max_abs_log_error": 6.255293237700243e-05
+  },
+  "histories": {
+    "naive": {
+      "best_step": 0,
+      "best_nll": 13.991505683486057,
+      "nonfinite_step": null,
+      "training_seconds": 0.2772173648700118,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 13.991505683486057
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 500,
+      "best_nll": 13.827965353830432,
+      "nonfinite_step": null,
+      "training_seconds": 35.86660925508477,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 14.549143392200003
+        },
+        {
+          "step": 200,
+          "validation_nll": 13.888050675002505
+        },
+        {
+          "step": 400,
+          "validation_nll": 13.832534162316609
+        },
+        {
+          "step": 500,
+          "validation_nll": 13.827965353830432
+        }
+      ]
+    }
+  },
+  "rsi_setup": {
+    "seconds": 6.541296165902168,
+    "ranks": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "validation_relative_rms_error": 0.003557349082126692,
+    "validation_max_error": 6.382793094441041e-08
+  },
+  "orders": [
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73
+  ],
+  "fit_seconds": 48.584918722976,
+  "seconds": 78.57339649484493
+}

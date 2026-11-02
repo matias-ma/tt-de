@@ -1,0 +1,30 @@
+{
+  "source": "noise-free swirl held-out NLL capacity selection",
+  "rank": 32,
+  "modes": 49,
+  "uses_truth": false,
+  "cases": [
+    "swirl4_mixture",
+    "swirl10_mixture"
+  ],
+  "recipes": [
+    [
+      "nll",
+      100.0
+    ],
+    [
+      "mmd",
+      100.0
+    ],
+    [
+      "hybrid",
+      10.0
+    ],
+    [
+      "hybrid",
+      100.0
+    ]
+  ],
+  "strength": 0.001,
+  "steps": 4000
+}

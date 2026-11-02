@@ -1,0 +1,8 @@
+{
+  "name": "sweep_hessian_continue",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "parent": "artifacts/noise_free_v2/swirl4/hessian_0.001/fit.npz",
+  "uses_signal_pilot": false,
+  "uses_clean_truth": false
+}

@@ -1,0 +1,25 @@
+{
+  "selection_sha256": "92a26cd4e1a79aa3a8bdf65642671583a479fdf7e571249a4b1605cca59f08f9",
+  "selected": "continue_rank64",
+  "models": {
+    "source": {
+      "test_nll": 9.964711497024632,
+      "test_nll_minus_selected": 0.09272253753264109,
+      "paired_se": 0.003043492796559236
+    },
+    "continue_rank32": {
+      "test_nll": 9.942769895459692,
+      "test_nll_minus_selected": 0.07078093596769974,
+      "paired_se": 0.0026717175951877213
+    },
+    "continue_rank64": {
+      "test_nll": 9.871988959491992,
+      "test_nll_minus_selected": 0.0,
+      "paired_se": 0.0
+    }
+  },
+  "test_count": 8192,
+  "signal_seed": 852731,
+  "noise_seed": 852732,
+  "used_for_selection": false
+}

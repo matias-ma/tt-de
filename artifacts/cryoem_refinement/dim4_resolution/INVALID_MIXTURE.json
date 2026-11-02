@@ -1,0 +1,3 @@
+{
+  "reason": "Pilot mixture combined Chebyshev coefficients on different component domains; all mixture scores and selection invalid. Original-kernel resolution candidates remain valid. Superseded by common-domain construction with analytic unit test."
+}

@@ -1,0 +1,34 @@
+{
+  "base": "/home/ma4473/ft-de/artifacts/cryoem_refinement/gallery_dim4",
+  "configuration": {
+    "correct_projection": false
+  },
+  "kernel_description": "4-component stationary Gaussian noise mixture; diagonal within components; supplied noise metadata only",
+  "baseline_nll": 3.53989131540263,
+  "selected_nll": 3.531476721714644,
+  "continuity": {
+    "ranks": [
+      32
+    ],
+    "modes": [
+      49
+    ],
+    "selected_order": 2,
+    "candidates": [
+      {
+        "base": "artifacts/cryoem_refinement/gallery_dim4",
+        "output": "artifacts/cryoem_continuity/dim4_rank32_modes49",
+        "rank": 32,
+        "modes": 49,
+        "order": 2,
+        "strength": 0.0001,
+        "steps": 2400,
+        "lr": 0.0002,
+        "seed": 0,
+        "preconditioning": "l2",
+        "source_sha256": "08722ab3ebe97dc18776af097336fd2e40a4e887faa8e81d1eaa9b54671df4c2",
+        "kernel_sha256": "18e89ed59e90e27b41f00c375d58d3dcaeb0cdfe8407dcd5ec86adc02e69b22b"
+      }
+    ]
+  }
+}

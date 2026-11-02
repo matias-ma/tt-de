@@ -1,0 +1,88 @@
+{
+  "selected": "polish_h2_0.0001",
+  "names": [
+    "baseline",
+    "resolution49_rank10",
+    "resolution49_rank20_h2_3e-05",
+    "mixture49_rank20_h2_3e-05",
+    "resolution49_rank20_h2_0.0003",
+    "mixture49_rank20_h2_0.0003",
+    "polish_h2_0.0001",
+    "polish_h2_0.0003"
+  ],
+  "curvature": [
+    11994.596376360325,
+    370.12200078137624,
+    433.13130143557134,
+    316.61834674426194,
+    150.88962704131856,
+    128.17169470115738,
+    221.3119179312963,
+    150.01166594302495
+  ],
+  "selection": {
+    "minimum_nll_index": 6,
+    "selected_index": 6,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 25.24612160700953,
+        "excess_nll": 0.48742434300168774,
+        "paired_cluster_se": 0.011462793690921234,
+        "roughness": 11994.596376360325,
+        "eligible": false
+      },
+      {
+        "validation_nll": 25.213218041842836,
+        "excess_nll": 0.45452077783499467,
+        "paired_cluster_se": 0.01133766417641271,
+        "roughness": 370.12200078137624,
+        "eligible": false
+      },
+      {
+        "validation_nll": 24.93426362538394,
+        "excess_nll": 0.17556636137610127,
+        "paired_cluster_se": 0.006486047016543728,
+        "roughness": 433.13130143557134,
+        "eligible": false
+      },
+      {
+        "validation_nll": 24.769264164888895,
+        "excess_nll": 0.010566900881052374,
+        "paired_cluster_se": 0.001315244174030809,
+        "roughness": 316.61834674426194,
+        "eligible": false
+      },
+      {
+        "validation_nll": 24.9838870513559,
+        "excess_nll": 0.2251897873480597,
+        "paired_cluster_se": 0.007205232935874854,
+        "roughness": 150.88962704131856,
+        "eligible": false
+      },
+      {
+        "validation_nll": 24.810836236849863,
+        "excess_nll": 0.05213897284201857,
+        "paired_cluster_se": 0.0030507886693267863,
+        "roughness": 128.17169470115738,
+        "eligible": false
+      },
+      {
+        "validation_nll": 24.758697264007843,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 221.3119179312963,
+        "eligible": true
+      },
+      {
+        "validation_nll": 24.77000053702737,
+        "excess_nll": 0.011303273019529204,
+        "paired_cluster_se": 0.0008980922542286741,
+        "roughness": 150.01166594302495,
+        "eligible": false
+      }
+    ]
+  },
+  "rule": "paired noisy one-SE, then minimum physical amplitude curvature"
+}

@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "dimension": 3,
+      "rank": 2,
+      "amplitude_core_entries": 8,
+      "explicit_square_core_entries": 64,
+      "value_error": 1.7763568394002505e-15,
+      "max_gradient_error": 4.829470157119431e-15,
+      "timings": {
+        "explicit": {
+          "compile_and_first_seconds": 0.25586534617468715,
+          "value_and_gradient_seconds": 0.0004365957574918866
+        },
+        "direct": {
+          "compile_and_first_seconds": 1.8634965540841222,
+          "value_and_gradient_seconds": 0.00035704309120774267
+        }
+      },
+      "speedup": 1.2228097062879641
+    },
+    {
+      "dimension": 4,
+      "rank": 3,
+      "amplitude_core_entries": 81,
+      "explicit_square_core_entries": 6561,
+      "value_error": 0.0,
+      "max_gradient_error": 5.521624824034177e-15,
+      "timings": {
+        "explicit": {
+          "compile_and_first_seconds": 0.30914020305499434,
+          "value_and_gradient_seconds": 0.000641772267408669
+        },
+        "direct": {
+          "compile_and_first_seconds": 2.3268472887575626,
+          "value_and_gradient_seconds": 0.00032509323209524156
+        }
+      },
+      "speedup": 1.9741175885834834
+    },
+    {
+      "dimension": 4,
+      "rank": 5,
+      "amplitude_core_entries": 625,
+      "explicit_square_core_entries": 390625,
+      "value_error": 8.881784197001252e-16,
+      "max_gradient_error": 5.365499711196264e-15,
+      "timings": {
+        "explicit": {
+          "compile_and_first_seconds": 0.22898351587355137,
+          "value_and_gradient_seconds": 0.0006032089004293084
+        },
+        "direct": {
+          "compile_and_first_seconds": 1.7339398353360593,
+          "value_and_gradient_seconds": 0.00040963883511722086
+        }
+      },
+      "speedup": 1.4725383648176233
+    },
+    {
+      "dimension": 4,
+      "rank": 8,
+      "amplitude_core_entries": 4096,
+      "explicit_square_core_entries": 16777216,
+      "value_error": 0.0,
+      "max_gradient_error": 6.934557095217286e-15,
+      "timings": {
+        "explicit": {
+          "compile_and_first_seconds": 6.8116251500323415,
+          "value_and_gradient_seconds": 0.0014449709095060825
+        },
+        "direct": {
+          "compile_and_first_seconds": 3.7093340470455587,
+          "value_and_gradient_seconds": 0.00032303712796419857
+        }
+      },
+      "speedup": 4.473079978801152
+    }
+  ],
+  "precision": "float64",
+  "device": "cuda:0"
+}

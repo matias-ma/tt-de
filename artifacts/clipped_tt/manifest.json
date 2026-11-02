@@ -1,0 +1,80 @@
+{
+  "completed_utc": "2026-09-26T16:45:25.950475+00:00",
+  "allocation": {
+    "job_id": 14484071,
+    "gpus": 1,
+    "cpus": 4,
+    "memory": "32G",
+    "partition": "cryoem"
+  },
+  "source_sha256": {
+    "src/ftde/clipped_tt_density.py": "dc5261408d1c6298d4a3975e0cbfcd5078a4cddf94c5c5a9ee33bb43380507ba",
+    "src/ftde/__init__.py": "14907d753a2ca979cc3b59af34b40edb985862283db3c440a7767cfab782482c",
+    "tests/test_clipped_tt_density.py": "0b57609780102fcb99d3733fa79cf75f31feac32ac02c6d3ea1a7f422d4d4d94",
+    "scripts/fit_clipped_tt.py": "4d67638876861ca7896fb4c6e69e61493ffae1b1daa8db7006bb572a8bda118c",
+    "scripts/evaluate_clipped_tt.py": "9492b3a3160718a33454252ef5c70960ace433bbdb706042a67a627358edb839",
+    "scripts/initialize_direct_tt_grid.py": "d58401e6d7e107ceddd712306252360cdc296dfab56129a86a65237464b60658",
+    "scripts/select_clipped_tt.py": "54ce626b6ea067770d4d58b9ca0759a01177a0baaa73c32ff0e534f8867cb9eb",
+    "scripts/score_clipped_baseline.py": "16f8463c400333d0d472c77d7458da55706ddc4d3fc3947d1fb39724dcbb6e96",
+    "scripts/plot_clipped_tt.py": "415f7d12bcf5bc6ceb39f5c938779306d51994b1fc3ad67fcad3f16565c9a0c0",
+    "docs/clipped_tt_experiment.md": "c9ce109dd10df407aedf1c2286e439e29f795bbda3fb3e35279f9f1548648936",
+    "figs/README.md": "7302d4231083112e3ee808c3dd165bf4e15862f3bad876d9094ec6f195062a86"
+  },
+  "figure_sha256": {
+    "figs/swirl/noisy_mixture_clipped_dim4.png": "08cceeb80e78ad38976a16bb803ffad6de1ab0df1795d97ae7b0c7020c423ee3",
+    "figs/swirl/noisy_mixture_clipped_ridges_dim4.png": "0f2dc4bb6779246ae59e41e297a5d125c98f8d65aa3735f3e737fa1675361fad",
+    "figs/swirl/noisy_mixture_clipped_training_dim4.png": "b6638da4c852646134fade05df4848877c00e0009f863009dce933fc88ab9a06"
+  },
+  "unchanged_existing_figures": 89,
+  "selection": {
+    "selected": "swirl4_r32_positive_s1e5",
+    "warm_selected": "swirl4_warm_r64_s1e4",
+    "candidates": [
+      {
+        "name": "swirl4_r32_positive_s1e5",
+        "nll": 3.860234540614371,
+        "best_step": 2800
+      },
+      {
+        "name": "swirl4_r32_s1e5",
+        "nll": 3.861183851104415,
+        "best_step": 1200
+      },
+      {
+        "name": "swirl4_r64_positive_s1e4_neg001",
+        "nll": 3.8629677110419576,
+        "best_step": 2000
+      },
+      {
+        "name": "swirl4_r64_positive_s1e5_neg001",
+        "nll": 3.8624033425292623,
+        "best_step": 2000
+      },
+      {
+        "name": "swirl4_warm_r64_s1e4",
+        "nll": 3.862014105327715,
+        "best_step": 0
+      },
+      {
+        "name": "swirl4_warm_r64_s1e5",
+        "nll": 3.862014105327715,
+        "best_step": 0
+      }
+    ],
+    "rule": "minimum noisy validation NLL; no target evaluation"
+  },
+  "tests": {
+    "numerical_clipped_and_linear": {
+      "passed": 7,
+      "failed": 0
+    },
+    "broader_density_run": {
+      "passed": 14,
+      "failed": 1,
+      "failure": "Existing 5D correlated-Gaussian squared fit: mean absolute log error 0.5734045306851199 exceeds 0.4; identical failure reproduced with clipped export removed in isolated copy."
+    },
+    "ruff": "passed"
+  },
+  "scope": "4D noisy swirl only; no learned signal mixture; clipping inside training normalization and convolution",
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92"
+}

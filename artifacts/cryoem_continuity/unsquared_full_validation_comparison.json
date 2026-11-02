@@ -1,0 +1,7 @@
+{
+  "baseline_nll": 3.53989131540263,
+  "clipped_unsquared_nll": 3.5512563413077785,
+  "clipped_minus_baseline_nll": 0.011365025905148445,
+  "paired_se": 0.001364726386058112,
+  "quadrature_nll_difference_97_minus_65": 3.748627751010147e-05
+}

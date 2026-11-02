@@ -1,0 +1,12 @@
+{
+  "name": "previous_squared",
+  "kind": "squared",
+  "order": 97,
+  "positive_mass": 1.1834779231371142,
+  "negative_mass": 0.0,
+  "validation_nll": 3.861537817202558,
+  "fit_path": "artifacts/swirl/swirl_mixture_dim4/selected.npz",
+  "fit_sha256": "93c1ed7ff3b9bf065e1e88c4f13a27c23041cb3a8a86edfaa79f67ec2bd376b6",
+  "coefficient_count": 407680,
+  "seconds": 4.344368270016275
+}

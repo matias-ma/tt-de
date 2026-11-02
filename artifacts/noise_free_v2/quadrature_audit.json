@@ -1,0 +1,16 @@
+{
+  "swirl4": {
+    "fit": "sweep_hessian_strong_flat_long",
+    "legendre_order": 193,
+    "path_order": 1600,
+    "bounded_box_cross_integral": 0.4821775183109387,
+    "relative_to_p2_difference": 5.876571672310468e-13
+  },
+  "swirl10": {
+    "fit": "sweep_hessian_medium_flat_long",
+    "legendre_order": 193,
+    "path_order": 1600,
+    "bounded_box_cross_integral": 23.557905510435347,
+    "relative_to_p2_difference": 7.13274568639925e-13
+  }
+}

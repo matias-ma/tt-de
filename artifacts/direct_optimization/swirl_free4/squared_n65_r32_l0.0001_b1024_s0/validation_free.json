@@ -1,0 +1,14 @@
+{
+  "fit_path": "artifacts/direct_optimization/swirl_free4/squared_n65_r32_l0.0001_b1024_s0/fit.npz",
+  "fit_sha256": "053a2df873eb75f68b9886b85cc0b2cd162d700d664cee5663f20a178ed3172d",
+  "kind": "squared",
+  "order": 129,
+  "positive_mass": 537.5799006128427,
+  "negative_mass": 0.0,
+  "norm_q_squared": 0.5051088430417029,
+  "raw_tt_negative_fraction_validation": 0.001220703125,
+  "raw_tt_minority_sign_fraction_validation": 0.001220703125,
+  "validation_risk": -0.5199767921624759,
+  "nll": 1.2500072287168074,
+  "nonpositive_predictions": 0
+}

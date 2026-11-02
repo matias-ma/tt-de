@@ -1,0 +1,36 @@
+{
+  "cases": [
+    "swirl4_mixture",
+    "gl6_mixture"
+  ],
+  "variants": {
+    "power4_seed0": {
+      "spectral_decay": 2.0,
+      "seed": 0
+    },
+    "lowpass_seed0": {
+      "spectral_scale": 4.0,
+      "seed": 0
+    },
+    "default_seed1": {
+      "seed": 1
+    },
+    "lowpass_seed1": {
+      "spectral_scale": 4.0,
+      "seed": 1
+    }
+  },
+  "seed1_controls": "swirl only, default versus lowpass at fixed seed and batch sequence",
+  "objective": "same as preceding fresh_amplitude per case; selected using observations before truth",
+  "primary": "minimum noisy validation NLL",
+  "secondary": "lowest marginal curvature within one paired SE",
+  "unchanged": [
+    "training and validation data",
+    "TT capacity",
+    "batch sequence",
+    "optimizer",
+    "regularizer"
+  ],
+  "truth_evaluation_not_yet_run": true,
+  "storage_budget_MiB": 128
+}

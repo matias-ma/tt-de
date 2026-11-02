@@ -1,0 +1,14 @@
+{
+  "degree": 4,
+  "shared": true,
+  "success": true,
+  "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "iterations": 36,
+  "binned_train_nll": 7.444539894407291,
+  "validation_marginal_nll": 1.6052740518171036,
+  "gradient_norm": 5.355865507435849e-08,
+  "quadrature_order": 320,
+  "bins": 3200,
+  "max_log_difference": 4.208099397828846e-06,
+  "coefficient_max_difference": 0.0004288349447499895
+}

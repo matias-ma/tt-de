@@ -1,0 +1,41 @@
+{
+  "uses_truth": false,
+  "models": {
+    "nll_r10_n25_l0.001_w100": {
+      "training_nll": 5.870873231245504,
+      "validation_nll": 5.864366908624492,
+      "validation_minus_training": -0.0065063226210124725
+    },
+    "nll_r5_n25_l0.001_w100": {
+      "training_nll": 5.8760028473600245,
+      "validation_nll": 5.859143667620204,
+      "validation_minus_training": -0.01685917973982054
+    },
+    "nll_r10_n17_l0.001_w100": {
+      "training_nll": 5.87769197105808,
+      "validation_nll": 5.861151341551398,
+      "validation_minus_training": -0.016540629506681448
+    },
+    "nll_r10_n49_l0.001_w100": {
+      "training_nll": 5.882705993862718,
+      "validation_nll": 5.8713629511686065,
+      "validation_minus_training": -0.01134304269411146
+    },
+    "nll_r20_n25_l0.001_w100": {
+      "training_nll": 5.864192994346132,
+      "validation_nll": 5.8692359784737524,
+      "validation_minus_training": 0.00504298412762072
+    },
+    "nll_r32_n25_l0.001_w100": {
+      "training_nll": 5.8606875682050825,
+      "validation_nll": 5.874929604376891,
+      "validation_minus_training": 0.014242036171808081
+    },
+    "nll_r32_n49_l0.001_w100": {
+      "training_nll": 5.876948527571269,
+      "validation_nll": 5.885648619655777,
+      "validation_minus_training": 0.00870009208450817
+    }
+  },
+  "note": "Observed train/validation gaps, not independent post-selection uncertainty estimates"
+}

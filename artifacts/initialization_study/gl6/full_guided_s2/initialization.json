@@ -1,0 +1,114 @@
+{
+  "method": "full_guided",
+  "seed": 2,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 150,
+    "validation_nll": 7.416641105660082,
+    "history": [
+      {
+        "step": 10,
+        "nll": 7.42477399270456
+      },
+      {
+        "step": 20,
+        "nll": 7.418064529192364
+      },
+      {
+        "step": 30,
+        "nll": 7.41782373684716
+      },
+      {
+        "step": 40,
+        "nll": 7.418064418098776
+      },
+      {
+        "step": 50,
+        "nll": 7.418199075945077
+      },
+      {
+        "step": 60,
+        "nll": 7.418237480871655
+      },
+      {
+        "step": 70,
+        "nll": 7.418200831961782
+      },
+      {
+        "step": 80,
+        "nll": 7.418067480903234
+      },
+      {
+        "step": 90,
+        "nll": 7.417779097129072
+      },
+      {
+        "step": 100,
+        "nll": 7.417396585663021
+      },
+      {
+        "step": 110,
+        "nll": 7.417122692963374
+      },
+      {
+        "step": 120,
+        "nll": 7.4169683320384365
+      },
+      {
+        "step": 130,
+        "nll": 7.416868423651865
+      },
+      {
+        "step": 140,
+        "nll": 7.4167780228079
+      },
+      {
+        "step": 150,
+        "nll": 7.416641105660082
+      }
+    ],
+    "seconds": 0.16028159810230136
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.114525401809681,
+        "sample_matrix_relative_tail": 1.0039722710497311e-06
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 5.835668007045613,
+        "sample_matrix_relative_tail": 0.007670254065029982
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 6.104594023439942,
+        "sample_matrix_relative_tail": 0.013713354420581823
+      },
+      {
+        "axis": 3,
+        "rank": 32,
+        "interpolation_condition": 5.335218448777741,
+        "sample_matrix_relative_tail": 0.002551704357777185
+      },
+      {
+        "axis": 4,
+        "rank": 32,
+        "interpolation_condition": 10.71115702087477,
+        "sample_matrix_relative_tail": 4.9303257911058785e-08
+      }
+    ]
+  },
+  "seconds": 2.042039127089083,
+  "pilot_is_final_model": false
+}

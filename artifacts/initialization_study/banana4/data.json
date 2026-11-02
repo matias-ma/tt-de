@@ -1,0 +1,8 @@
+{
+  "family": "banana",
+  "dim": 4,
+  "train_count": 30000,
+  "valid_count": 4096,
+  "source": "independent synthetic observations, seeds 1701 and 2701",
+  "data_sha256": "bf27537bd3e4cf426808b26ae3207c8218bb4297fdb8b7301707f93ac6d5760f"
+}

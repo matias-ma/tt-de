@@ -1,0 +1,20 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim10",
+  "output": "artifacts/positive_tt/swirl10_r32_m49_control",
+  "initial": "artifacts/positive_tt/swirl10_r32_m49_v3/fit.npz",
+  "rank": 32,
+  "modes": 49,
+  "subdivisions": 16,
+  "width": 0.4,
+  "sweeps": 60,
+  "inner_steps": 4,
+  "batch_size": 8192,
+  "barrier": 0.0001,
+  "barrier_final": 0.0001,
+  "strength": 1e-08,
+  "seed": 0,
+  "data_sha256": "09b716e072dcd28f4733b05c426d3eb5a0c89492298fefb6825662512d23e572",
+  "model": "direct Chebyshev density TT, positive polynomial cores, stochastic core integrals",
+  "solver_version": "qr_whitened_newton_v3",
+  "selection": "minimum noisy validation NLL; no truth in fitting or selection"
+}

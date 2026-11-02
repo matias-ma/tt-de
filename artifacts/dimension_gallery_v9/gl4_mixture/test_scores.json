@@ -1,0 +1,20 @@
+{
+  "selection_sha256": "3fd48425cab69818c63847f1f0dc61db6bba815aaff474a9ce0252739c593c9b",
+  "selected": "curriculum",
+  "models": {
+    "curriculum": {
+      "test_nll": 6.382590106512031,
+      "test_nll_minus_selected": 0.0,
+      "paired_se": 0.0
+    },
+    "strong": {
+      "test_nll": 6.382718193172984,
+      "test_nll_minus_selected": 0.0001280866609538829,
+      "paired_se": 0.0003643922785948938
+    }
+  },
+  "test_count": 8192,
+  "signal_seed": 852731,
+  "noise_seed": 852732,
+  "used_for_selection": false
+}

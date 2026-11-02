@@ -1,0 +1,48 @@
+{
+  "selected": "previous",
+  "names": [
+    "previous",
+    "artifacts/swirl_improvement/tt_cryoem_dim10_r64",
+    "artifacts/swirl_improvement/tt_cryoem_dim10_r64_m81"
+  ],
+  "nll": [
+    9.857317830448455,
+    9.872345227979775,
+    9.858688992353798
+  ],
+  "energy": [
+    96.2631558748915,
+    415.76041828633674,
+    313.51871771004113
+  ],
+  "selection": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 9.857317830448455,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 96.2631558748915,
+        "eligible": true
+      },
+      {
+        "validation_nll": 9.872345227979775,
+        "excess_nll": 0.015027397531321058,
+        "paired_cluster_se": 0.006243554352898885,
+        "roughness": 415.76041828633674,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.858688992353798,
+        "excess_nll": 0.0013711619053446626,
+        "paired_cluster_se": 0.005777977085223581,
+        "roughness": 313.51871771004113,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired one-SE, then common amplitude H2"
+}

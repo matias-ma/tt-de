@@ -1,0 +1,7 @@
+{
+  "source": "artifacts/direct_optimization/swirl_free4/squared_n49_r32_l0.001_b1024_s0/fit.npz",
+  "source_sha256": "e9be68c1a25d0a3b9c76c8da9393157c2b89ae73dd84d182918df9ed52fb7a6d",
+  "iterations": 100,
+  "strength": 0.001,
+  "initialization": "continuation of TT trained directly from constant, no pilot"
+}

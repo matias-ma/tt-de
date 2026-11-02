@@ -1,0 +1,48 @@
+{
+  "selected": "rank32_h2_0.0003",
+  "names": [
+    "base",
+    "rank32_h2_0.0001",
+    "rank32_h2_0.0003"
+  ],
+  "validation_nll": [
+    3.97741259036847,
+    3.9732361977810715,
+    3.971113621614268
+  ],
+  "roughness": [
+    43.23143411270305,
+    77.92833211352429,
+    48.74062864515271
+  ],
+  "selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 2,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.97741259036847,
+        "excess_nll": 0.006298968754201232,
+        "paired_cluster_se": 0.002489188125057668,
+        "roughness": 43.23143411270305,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.9732361977810715,
+        "excess_nll": 0.002122576166803476,
+        "paired_cluster_se": 0.0003433820359447885,
+        "roughness": 77.92833211352429,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.971113621614268,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 48.74062864515271,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired noisy one-SE, then minimum common amplitude H2"
+}

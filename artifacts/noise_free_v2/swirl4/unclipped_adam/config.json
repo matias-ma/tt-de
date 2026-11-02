@@ -1,0 +1,15 @@
+{
+  "modes": 49,
+  "rank": 32,
+  "steps": 4000,
+  "batch": 1024,
+  "learning_rate": 0.001,
+  "batch_seed": 0,
+  "seed": 0,
+  "perturbation": 0.01,
+  "objective": "nll",
+  "regularizer": "axis_h2",
+  "strength": 0.0001,
+  "gradient_clip": null,
+  "conditional_weight": 1.0
+}

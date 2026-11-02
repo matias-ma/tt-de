@@ -1,0 +1,16 @@
+{
+  "selected": "fit",
+  "scores": {
+    "fit": 3.862020661611159
+  },
+  "files": {
+    "artifacts/tucker_4d_tuning/noisy_refine_m0.0003/swirl4_mixture/fit/fit.npz": "7334c3c5baae3a8c86f842231e1ec8f13bbfb546a78e26932fe65f31903c025f",
+    "artifacts/tucker_4d_tuning/noisy_refine_m0.0003/swirl4_mixture/fit/result.json": "d4c780a714ba0ea49a05f6e74130587732c9f2473e00c23f425c45da162ff3f6",
+    "artifacts/tucker_4d_tuning/noisy_refine_m0.0003/swirl4_mixture/fit/config.json": "073f5d1def3365a5a8857f3e7104194b63219b4aaf3425acfa88397036a377e7",
+    "artifacts/tucker_4d_tuning/noisy_refine_m0.0003/swirl4_mixture/fit/validation.npy": "35da006dd0bccda4dfec7901f2e1e0f1956480eb10b286022a3c438b332b33c5",
+    "artifacts/swirl/swirl_mixture_dim4/data.npz": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+    "artifacts/tucker_4d_tuning/noisy_refine_m0.0003/swirl4_mixture/protocol.json": "caec57afb3b012ea3a5c68dd011afb84ab01e1b595cad9c5e8f724e440201a62",
+    "artifacts/swirl/swirl_mixture_dim4/kernel.npz": "abb4fe29f92dcb26326fa8410f3868c3be9ef7c543b1ca335e366c2753cdb33d"
+  },
+  "truth_evaluated": false
+}

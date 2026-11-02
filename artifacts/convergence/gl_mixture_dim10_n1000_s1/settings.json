@@ -1,0 +1,15 @@
+{
+  "family": "gl",
+  "dim": 10,
+  "noise": "mixture",
+  "path": false,
+  "output": "artifacts/convergence/gl_mixture_dim10_n1000_s1",
+  "steps": 8000,
+  "strengths": [
+    0.1,
+    0.3,
+    1.0
+  ],
+  "n_train": 1000,
+  "train_seed": 1
+}

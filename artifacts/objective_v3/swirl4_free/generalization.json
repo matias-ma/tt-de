@@ -1,0 +1,26 @@
+{
+  "uses_truth": false,
+  "models": {
+    "nll_r10_n25_l0.001_w100": {
+      "training_nll": 1.5825569069222385,
+      "validation_nll": 1.5913371966470327,
+      "validation_minus_training": 0.008780289724794166
+    },
+    "nll_r10_n49_l0.001_w100": {
+      "training_nll": 1.575083459680473,
+      "validation_nll": 1.5886681388185917,
+      "validation_minus_training": 0.013584679138118672
+    },
+    "nll_r20_n49_l0.001_w100": {
+      "training_nll": 1.2846697325877519,
+      "validation_nll": 1.2972411241046657,
+      "validation_minus_training": 0.012571391516913888
+    },
+    "nll_r32_n49_l0.001_w100": {
+      "training_nll": 1.2218490911121453,
+      "validation_nll": 1.2386223244657049,
+      "validation_minus_training": 0.016773233353559514
+    }
+  },
+  "note": "Observed train/validation gaps, not independent post-selection uncertainty estimates"
+}

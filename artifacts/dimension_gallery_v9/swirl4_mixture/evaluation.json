@@ -1,0 +1,52 @@
+{
+  "models": {
+    "curriculum": {
+      "relative_l2": 0.342840909663089,
+      "relative_squared_l2": 0.11753988933861437,
+      "integral_q_squared": 0.48421903204650085,
+      "integral_pq": 0.47288826142340995,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 9.166789540297284e-10,
+      "model": "curriculum",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "92bf6d0c272806e12aea4fc37fe77235e7ecae7b44fa160e30059b10efe86522"
+    },
+    "strong": {
+      "relative_l2": 0.3183600702725887,
+      "relative_squared_l2": 0.10135313434396763,
+      "integral_q_squared": 0.3459786895762347,
+      "integral_pq": 0.40800120958328795,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 3.960323219034327e-11,
+      "model": "strong",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "1470a691753ed145b3af0b9d49a47e555aaacd946fb99c39e8143a1250984d70"
+    },
+    "weak_continuation": {
+      "relative_l2": 0.3091878263618117,
+      "relative_squared_l2": 0.09559711197034183,
+      "integral_q_squared": 0.45606039571865414,
+      "integral_pq": 0.46454736312738254,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 3.15244054665529e-11,
+      "model": "weak_continuation",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "f300112ce19c802c9c260aeccf8ca79d5fa1b0f758600972e631c0c8ddd134d6"
+    },
+    "marginal_continuation": {
+      "relative_l2": 0.2960520267393097,
+      "relative_squared_l2": 0.08764680253645293,
+      "integral_q_squared": 0.43134577292905707,
+      "integral_pq": 0.4542691966304999,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 3.0593196511290984e-11,
+      "model": "marginal_continuation",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "model_sha256": "53fb6a3670127fff6e5d1a75d08f73223df69f5439131b22fc7f916f21d10b09"
+    }
+  },
+  "selected": "marginal_continuation",
+  "minimum_nll": "curriculum",
+  "selection_sha256": "1dad140eeed6e85f6fe9d5261ffde123c493039f7e87e5d1858a0f667b7969db",
+  "metric": "unsquared full-dimensional relative Lebesgue L2"
+}

@@ -1,0 +1,22 @@
+{
+  "samples": 100000,
+  "seed": 941,
+  "exact_p2": 24865.1191541863,
+  "importance_p2": 25216.47191457038,
+  "importance_p2_se": 340.11091195780705,
+  "models": {
+    "artifacts/swirl/swirl_mixture_dim20_r32/selected.npz": {
+      "relative_l2": 0.8730771836133404,
+      "monte_carlo_se": 0.0067167977290793525
+    },
+    "artifacts/swirl_improvement/tt_swirl_dim20_r64/init.npz": {
+      "relative_l2": 0.30665265705668837,
+      "monte_carlo_se": 0.0030401178318466737
+    },
+    "artifacts/swirl_improvement/tt_swirl_dim20_r64/fit.npz": {
+      "relative_l2": 0.30665265705668837,
+      "monte_carlo_se": 0.0030401178318466737,
+      "evaluation_note": "Zero-step saved fit coefficients match evaluated initialization to 1e-12."
+    }
+  }
+}

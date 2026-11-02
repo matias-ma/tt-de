@@ -1,0 +1,8 @@
+{
+  "family": "swirl",
+  "dim": 10,
+  "train_count": 30000,
+  "valid_count": 4096,
+  "source": "artifacts/swirl/swirl_mixture_dim10",
+  "data_sha256": "b5c11d7e322c2895177fea584667c814bee346df10c48454ead89f2cc81c6080"
+}

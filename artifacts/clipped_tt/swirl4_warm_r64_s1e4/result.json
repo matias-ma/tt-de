@@ -1,0 +1,228 @@
+{
+  "best_nll": 3.862014105327715,
+  "best_step": 0,
+  "history": [
+    {
+      "step": 0,
+      "nll": 3.862014105327715,
+      "negative_to_positive_mass": 0.0011802563119522392,
+      "roughness": 58.186588203937056,
+      "seconds": 31.09705168986693
+    },
+    {
+      "step": 100,
+      "nll": 3.862551960738058,
+      "negative_to_positive_mass": 0.06498414754405045,
+      "roughness": 57.40619167765352,
+      "seconds": 83.0956075869035
+    },
+    {
+      "step": 200,
+      "nll": 3.862394547673542,
+      "negative_to_positive_mass": 0.08706258182284184,
+      "roughness": 56.1558248766036,
+      "seconds": 96.98823315277696
+    },
+    {
+      "step": 300,
+      "nll": 3.8630866633620617,
+      "negative_to_positive_mass": 0.10535255803941398,
+      "roughness": 56.16729412501554,
+      "seconds": 110.95055626286194
+    },
+    {
+      "step": 400,
+      "nll": 3.8631599722058594,
+      "negative_to_positive_mass": 0.11729022277380391,
+      "roughness": 54.3915543279144,
+      "seconds": 124.96983279287815
+    },
+    {
+      "step": 500,
+      "nll": 3.8630884602374937,
+      "negative_to_positive_mass": 0.12980725992735836,
+      "roughness": 53.91714213719637,
+      "seconds": 138.95102551882155
+    },
+    {
+      "step": 600,
+      "nll": 3.8631601592965312,
+      "negative_to_positive_mass": 0.14122937835449545,
+      "roughness": 53.2090782775757,
+      "seconds": 156.0849505867809
+    },
+    {
+      "step": 700,
+      "nll": 3.863454612794077,
+      "negative_to_positive_mass": 0.1512536646150351,
+      "roughness": 52.76264991814009,
+      "seconds": 170.04645444988273
+    },
+    {
+      "step": 800,
+      "nll": 3.8634479936551416,
+      "negative_to_positive_mass": 0.16045560033947537,
+      "roughness": 52.41662879784189,
+      "seconds": 184.00620010797866
+    },
+    {
+      "step": 900,
+      "nll": 3.8636541143003473,
+      "negative_to_positive_mass": 0.17110306835098393,
+      "roughness": 51.9955883709899,
+      "seconds": 197.89622141979635
+    },
+    {
+      "step": 1000,
+      "nll": 3.8631514717024036,
+      "negative_to_positive_mass": 0.18064770791785953,
+      "roughness": 52.689860534488794,
+      "seconds": 213.43646260979585
+    },
+    {
+      "step": 1100,
+      "nll": 3.863071901415382,
+      "negative_to_positive_mass": 0.18721037001799187,
+      "roughness": 50.90849971997507,
+      "seconds": 228.71846898598596
+    },
+    {
+      "step": 1200,
+      "nll": 3.862823748984291,
+      "negative_to_positive_mass": 0.1960756816835873,
+      "roughness": 50.6191742901861,
+      "seconds": 247.06424236786552
+    },
+    {
+      "step": 1300,
+      "nll": 3.862868183274848,
+      "negative_to_positive_mass": 0.2026305680317296,
+      "roughness": 50.18447723621773,
+      "seconds": 261.4749041078612
+    },
+    {
+      "step": 1400,
+      "nll": 3.8631352316654697,
+      "negative_to_positive_mass": 0.20802285870154358,
+      "roughness": 49.91358594414197,
+      "seconds": 281.06425073579885
+    },
+    {
+      "step": 1500,
+      "nll": 3.8632110680198535,
+      "negative_to_positive_mass": 0.21408488246452353,
+      "roughness": 49.75375514865314,
+      "seconds": 296.5755388259422
+    },
+    {
+      "step": 1600,
+      "nll": 3.862899439367305,
+      "negative_to_positive_mass": 0.2194495543486959,
+      "roughness": 49.462099272442096,
+      "seconds": 310.55565465590917
+    },
+    {
+      "step": 1700,
+      "nll": 3.863261704239126,
+      "negative_to_positive_mass": 0.22403433656983335,
+      "roughness": 49.267171535351174,
+      "seconds": 324.55265379999764
+    },
+    {
+      "step": 1800,
+      "nll": 3.863009023586947,
+      "negative_to_positive_mass": 0.2270888045404863,
+      "roughness": 49.07353255329975,
+      "seconds": 343.0703944968991
+    },
+    {
+      "step": 1900,
+      "nll": 3.862937031722973,
+      "negative_to_positive_mass": 0.2303527291646083,
+      "roughness": 48.892137331722175,
+      "seconds": 360.5426751708146
+    },
+    {
+      "step": 2000,
+      "nll": 3.862848871168941,
+      "negative_to_positive_mass": 0.2328736642743655,
+      "roughness": 48.731590045260624,
+      "seconds": 374.5123090709094
+    },
+    {
+      "step": 2100,
+      "nll": 3.8630362228024526,
+      "negative_to_positive_mass": 0.23494660888729832,
+      "roughness": 48.655068474560764,
+      "seconds": 388.50453832698986
+    },
+    {
+      "step": 2200,
+      "nll": 3.8629160654947885,
+      "negative_to_positive_mass": 0.2370819536202863,
+      "roughness": 48.532177887718795,
+      "seconds": 402.5137942729052
+    },
+    {
+      "step": 2300,
+      "nll": 3.8629871606220796,
+      "negative_to_positive_mass": 0.2379130100396622,
+      "roughness": 48.4371302189583,
+      "seconds": 422.0145770749077
+    },
+    {
+      "step": 2400,
+      "nll": 3.8629440764950513,
+      "negative_to_positive_mass": 0.23917727274769676,
+      "roughness": 48.34270146230599,
+      "seconds": 439.0655130438972
+    },
+    {
+      "step": 2500,
+      "nll": 3.8628563452590763,
+      "negative_to_positive_mass": 0.2400109676765319,
+      "roughness": 48.30457345943265,
+      "seconds": 452.76544718584046
+    },
+    {
+      "step": 2600,
+      "nll": 3.8629473947573927,
+      "negative_to_positive_mass": 0.24044667131163144,
+      "roughness": 48.21797575099254,
+      "seconds": 466.4249822238926
+    },
+    {
+      "step": 2700,
+      "nll": 3.862979449063463,
+      "negative_to_positive_mass": 0.2413295304844996,
+      "roughness": 48.16961859308125,
+      "seconds": 480.13787026098
+    },
+    {
+      "step": 2800,
+      "nll": 3.8630049925468457,
+      "negative_to_positive_mass": 0.24191828295387535,
+      "roughness": 48.1320195837003,
+      "seconds": 495.7790887358133
+    },
+    {
+      "step": 2900,
+      "nll": 3.863031659258605,
+      "negative_to_positive_mass": 0.24259282650224803,
+      "roughness": 48.10206177559809,
+      "seconds": 515.2872667808551
+    },
+    {
+      "step": 3000,
+      "nll": 3.8629954687522594,
+      "negative_to_positive_mass": 0.24301603654011927,
+      "roughness": 48.06914030577578,
+      "seconds": 525.2275344508234
+    }
+  ],
+  "seconds": 525.2408646908589,
+  "parameterization": "max(f_TT, 0) / integral max(f_TT, 0)",
+  "selection": "minimum clipped noisy validation NLL",
+  "quadrature_order": 97,
+  "signal_mixture_used": false
+}

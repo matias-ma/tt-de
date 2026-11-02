@@ -1,0 +1,68 @@
+{
+  "recipes": {
+    "baseline": [
+      1e-05,
+      false
+    ],
+    "precondition": [
+      0.001,
+      false
+    ],
+    "curriculum": [
+      1e-05,
+      true
+    ],
+    "combined": [
+      0.001,
+      true
+    ]
+  },
+  "schedules": {
+    "swirl4_mixture": [
+      [
+        0,
+        13
+      ],
+      [
+        1000,
+        25
+      ],
+      [
+        2000,
+        49
+      ]
+    ],
+    "gl6_mixture": [
+      [
+        0,
+        9
+      ],
+      [
+        1000,
+        17
+      ],
+      [
+        2000,
+        25
+      ]
+    ]
+  },
+  "cases": [
+    "swirl4_mixture",
+    "gl6_mixture"
+  ],
+  "objective": "noisy NLL plus amplitude Hessian at strength 1e-5, no marginal penalty",
+  "matched": [
+    "data",
+    "capacity",
+    "batch sequence",
+    "4000 updates",
+    "global cosine learning rate",
+    "checkpoint cadence",
+    "selection restricted to steps >= 2000"
+  ],
+  "reuse": "seed0 full-mode baseline from v5; require its selected step >= 2000 and matching config",
+  "followup": "repeat lowest-validation-NLL new seed0 recipe and baseline at seed1 in each case",
+  "primary": "minimum observed validation NLL across matched fits",
+  "truth_evaluation_not_yet_run": true
+}

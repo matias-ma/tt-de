@@ -1,0 +1,7 @@
+{
+  "primary": "minimum observed validation NLL, unchanged",
+  "secondary": "minimum exact marginal curvature among candidates within one paired SE of minimum validation NLL",
+  "GL_clusters": 200,
+  "fixed_before_truth_evaluation": true,
+  "interpretation": "development heuristic, not a post-search confidence guarantee"
+}

@@ -1,0 +1,40 @@
+{
+  "tests": {
+    "command": "python -m pytest -q tests/test_tucker_direct.py tests/test_tucker_diagnostics.py tests/test_gallery_marginals.py tests/test_squared_marginals.py",
+    "passed": 20,
+    "log": "artifacts/tucker_capacity/final_tests.log",
+    "post_clipping_change": "tests/test_tucker_diagnostics.py: 3 passed"
+  },
+  "ruff": "passed on all changed Python files",
+  "tucker_publication": {
+    "cases": 9,
+    "pngs": 27
+  },
+  "tt_publication": {
+    "cases": 12,
+    "pngs": 42,
+    "unchanged": true
+  },
+  "real_kernel_log_density_errors": [
+    1.7763568394002505e-15,
+    1.0658141036401503e-14
+  ],
+  "source_sha256": {
+    "src/ftde/tucker_convolution.py": "9bef20a9ee160edba30edb3ed3d2fc7b8d6ad8e5f6248493795750f495d5c295",
+    "src/ftde/tucker_diagnostics.py": "6f7fcb9f9af8acb8cda67cc393d66c5a1bcd4f3bce5e5630f5c735a2b28f17f3",
+    "src/ftde/marginals.py": "a2578bd1850bebedd7624abf6bb3cba6cfc8c953d5114b060e1c9a162b0c29f4",
+    "scripts/run_tucker_gallery.py": "d762513671bcc30ed59dbc362c434bfc26e22983b2e576d9af45b0ec30a26e29",
+    "scripts/plot_tucker_gallery.py": "3fff8de20db1423d855781c0b73a34c6befe907001daaec2e1e1ba825486a87a",
+    "scripts/publish_tucker_capacity.py": "e88f2bb1165ca7390311732a73e487fedcf7a512ce9b005d37cacf1a2610bb11",
+    "tests/test_tucker_direct.py": "24cf497b45982a96d5d776e147f7812c837a8b274102cbb3333e3ffd6d433869",
+    "tests/test_tucker_diagnostics.py": "8f07d4efb8333d4614c885a0f30bc6e2f886eafccb9f59d9b3f3f7bb41476a19"
+  },
+  "allocation": {
+    "job_id": 14728555,
+    "partition": "cryoem",
+    "gpus": 1,
+    "cpus": 4,
+    "memory": "32G"
+  },
+  "publication_sha256": "ce05d2e75dd54ca5911d3628ad24ea91d451cecd386ef83ac0f6eabee188fdd5"
+}

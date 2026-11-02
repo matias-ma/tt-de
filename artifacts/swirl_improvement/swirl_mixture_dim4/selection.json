@@ -1,0 +1,89 @@
+{
+  "selected": "tied_isotropic_rank1_32",
+  "names": [
+    "tied_diagonal_64",
+    "tied_diagonal_128",
+    "full_16",
+    "full_32",
+    "tied_isotropic_rank1_16",
+    "tied_isotropic_rank1_32",
+    "tied_isotropic_rank1_64"
+  ],
+  "validation_nll": [
+    3.8599713088266467,
+    3.861865748198679,
+    3.861488414832817,
+    3.85979585696911,
+    3.862506489023488,
+    3.8599411884470998,
+    3.860528982959064
+  ],
+  "complexity": [
+    324,
+    644,
+    240,
+    480,
+    145,
+    289,
+    577
+  ],
+  "selection": {
+    "minimum_nll_index": 3,
+    "selected_index": 5,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.8599713088266467,
+        "excess_nll": 0.0001754518575366937,
+        "paired_cluster_se": 0.0007503635404676882,
+        "roughness": 324.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.861865748198679,
+        "excess_nll": 0.0020698912295684956,
+        "paired_cluster_se": 0.0008869163278210936,
+        "roughness": 644.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.861488414832817,
+        "excess_nll": 0.0016925578637071424,
+        "paired_cluster_se": 0.000880677993351248,
+        "roughness": 240.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.85979585696911,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 480.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.862506489023488,
+        "excess_nll": 0.002710632054378398,
+        "paired_cluster_se": 0.0010048229086372777,
+        "roughness": 145.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.8599411884470998,
+        "excess_nll": 0.0001453314779896271,
+        "paired_cluster_se": 0.00047454280750460534,
+        "roughness": 289.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 3.860528982959064,
+        "excess_nll": 0.0007331259899539125,
+        "paired_cluster_se": 0.0007866598220023032,
+        "roughness": 577.0,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired one-SE, then fewest parameters",
+  "seconds": 64.99642505217344
+}

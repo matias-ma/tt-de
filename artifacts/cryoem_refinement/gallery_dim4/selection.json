@@ -1,0 +1,70 @@
+{
+  "selected": "mixture49_rank20_h2_0.0003",
+  "names": [
+    "previous",
+    "resolution49_rank8",
+    "resolution49_rank20_h2_3e-05",
+    "mixture49_rank20_h2_3e-05",
+    "resolution49_rank20_h2_0.0003",
+    "mixture49_rank20_h2_0.0003"
+  ],
+  "curvature": [
+    15.730277996390774,
+    22.335761842433076,
+    31.450740447814894,
+    26.75228787689137,
+    11.566774870952745,
+    9.867026272895139
+  ],
+  "selection": {
+    "minimum_nll_index": 5,
+    "selected_index": 5,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.611117622321606,
+        "excess_nll": 0.07122630691897591,
+        "paired_cluster_se": 0.004673132611416773,
+        "roughness": 15.730277996390774,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.6099270952660683,
+        "excess_nll": 0.070035779863438,
+        "paired_cluster_se": 0.004652328335568952,
+        "roughness": 22.335761842433076,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.5483205876401755,
+        "excess_nll": 0.00842927223754538,
+        "paired_cluster_se": 0.0012519766488727447,
+        "roughness": 31.450740447814894,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.542161859924454,
+        "excess_nll": 0.0022705445218237554,
+        "paired_cluster_se": 0.0006642136087888983,
+        "roughness": 26.75228787689137,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.5473904572095636,
+        "excess_nll": 0.007499141806933678,
+        "paired_cluster_se": 0.001094186891028048,
+        "roughness": 11.566774870952745,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.53989131540263,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 9.867026272895139,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired noisy one-SE, then minimum physical amplitude curvature"
+}

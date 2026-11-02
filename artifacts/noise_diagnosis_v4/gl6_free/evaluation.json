@@ -1,0 +1,28 @@
+{
+  "models": {
+    "seed0": {
+      "relative_l2": 0.08610829884733248,
+      "quadrature_relative_change": 5.6641614547627125e-14,
+      "test_nll": 5.887741554458062,
+      "training_subset_nll": 5.871996514226202,
+      "training_subset_count": 20000,
+      "roughness_hessian": 1.2379319046968806,
+      "estimated_observed_kl": 0.007274917244177814,
+      "observed_kl_se": 0.0023036626447388757,
+      "true_observed_test_nll": 5.880466637213884,
+      "pair01_relative_l2": 0.04405423254799475,
+      "pair23_relative_l2": 0.037042586160325144
+    }
+  },
+  "selected": "seed0",
+  "test_comparisons_reference": "seed0",
+  "test_comparisons": {
+    "seed0": {
+      "test_nll_minus_reference": 0.0,
+      "paired_se": 0.0
+    }
+  },
+  "test_count": 4096,
+  "truth_used_only_after_freeze": true,
+  "standard_errors": "clustered by 200 MCMC chains"
+}

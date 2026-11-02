@@ -1,0 +1,85 @@
+[
+  {
+    "case": "gl_free_dim6",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_free_dim10",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_free_dim14",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_free_dim20",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_paired_dim6",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_paired_dim10",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_paired_dim14",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_paired_dim20",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_mixture_dim6",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_mixture_dim10",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_mixture_dim14",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "gl_mixture_dim20",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "cryoem_dim4",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "cryoem_dim10",
+    "fit_exit": 0,
+    "plot_exit": 0
+  },
+  {
+    "case": "cryoem_dim20",
+    "fit_exit": 0,
+    "plot_exit": 0,
+    "initial_fit_exit": 1,
+    "retry_log": "logs/cryoem_dim20_retry.log",
+    "plot_retry_log": "logs/cryoem_noise_panels.log"
+  },
+  {
+    "case": "cryoem_path_dim4",
+    "fit_exit": 0,
+    "plot_exit": 0
+  }
+]

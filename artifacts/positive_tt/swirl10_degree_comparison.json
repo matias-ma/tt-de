@@ -1,0 +1,18 @@
+{
+  "parent": "artifacts/positive_tt/swirl10_r32_m65_width025",
+  "candidates": [
+    "artifacts/positive_tt/swirl10_r32_m65_v3",
+    "artifacts/positive_tt/swirl10_r32_m65_width025"
+  ],
+  "nlls": [
+    6.364634984844258,
+    6.326756931885773
+  ],
+  "selection": "noisy validation only",
+  "same_budget": {
+    "sweeps": 60,
+    "inner_steps": 4,
+    "batch_size": 8192,
+    "seed": 0
+  }
+}

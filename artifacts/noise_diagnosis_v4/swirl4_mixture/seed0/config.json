@@ -1,0 +1,37 @@
+{
+  "case": "swirl4_mixture",
+  "seed": 0,
+  "rank": 32,
+  "modes": 49,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "objective": "nll",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "resume": null,
+  "initialization": "constant plus .01 random coefficients",
+  "uses_signal_pilot": false,
+  "uses_truth": false,
+  "domain": [
+    [
+      -2.3977334329072773,
+      2.1960368639246535
+    ],
+    [
+      -2.132891069145988,
+      2.1717388479744097
+    ],
+    [
+      -2.3334871568543107,
+      2.6147759590767214
+    ],
+    [
+      -2.2980397369166243,
+      2.38189702851914
+    ]
+  ],
+  "optimizer": "Adam",
+  "data_sha256": "eb48eba3b9577dd3c4c69996d2ddb8e1f4c02dadd995f40b563e64cbfecbd3d2"
+}

@@ -1,0 +1,20 @@
+{
+  "dim": 4,
+  "noise": "mixture",
+  "output": "artifacts/swirl/swirl_mixture_dim4",
+  "n_train": 100000,
+  "n_valid": 4096,
+  "init_rank": 16,
+  "ranks": [
+    32,
+    64
+  ],
+  "modes": 49,
+  "strengths": [
+    0.0001,
+    0.0003
+  ],
+  "base_steps": 8000,
+  "steps": 3200,
+  "family": "swirl"
+}

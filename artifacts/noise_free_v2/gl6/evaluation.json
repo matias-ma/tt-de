@@ -1,0 +1,21 @@
+{
+  "selected": "hessian",
+  "models": {
+    "baseline": {
+      "relative_l2": 0.1844238464183031,
+      "quadrature_relative_change": 5.770459390911074e-14,
+      "model_coefficients_sha256": "81546811aeebb9e2bb563f34c1cc940bb77d5fd8056bfea207fb6442a3735938"
+    },
+    "hessian": {
+      "relative_l2": 0.1605297438721643,
+      "quadrature_relative_change": 5.724903132561776e-14,
+      "model_coefficients_sha256": "328b3b3ed8cc967a97348be38713bb4b025af26bb11136118c4637bb1cd4a6f8"
+    },
+    "uniform_start": {
+      "relative_l2": 0.9864681784267034,
+      "quadrature_relative_change": 1.4805783963521835e-15,
+      "model_coefficients_sha256": "a2af880c3f4441494cfdc2af24e0b108405b599bf339ebe87d4df5061afbbd65"
+    }
+  },
+  "selection_frozen_before_truth": true
+}

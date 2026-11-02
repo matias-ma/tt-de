@@ -1,0 +1,40 @@
+{
+  "selected": "hessian",
+  "names": [
+    "baseline",
+    "hessian"
+  ],
+  "selection": {
+    "minimum_nll_index": 1,
+    "selected_index": 1,
+    "clusters": 2048,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 5.925169325961874,
+        "excess_nll": 0.03236196298289698,
+        "paired_cluster_se": 0.008809161824133127,
+        "roughness": 58.59846503099692,
+        "eligible": false
+      },
+      {
+        "validation_nll": 5.892807362978977,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 8.98437085085972,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired one-SE joint held-out NLL, then lowest full-Hessian amplitude energy",
+  "uses_clean_truth": false,
+  "uses_signal_pilot": false,
+  "files": {
+    "artifacts/noise_free_v2/gl6/baseline/fit.npz": "1bb9f00676656cada4d1ecb5b7f61a7e29953c253195ec279f365a030ce9e3cf",
+    "artifacts/noise_free_v2/gl6/hessian/fit.npz": "ca28935308b200ad0f41da3d19fb00e6c03b59658ed1b902082900f07442627f"
+  },
+  "result_files": {
+    "artifacts/noise_free_v2/gl6/baseline/result.json": "a9321939119389f7ab8c95d196f4ca2c13247967584656d3e3e7e7ab5bb5685d",
+    "artifacts/noise_free_v2/gl6/hessian/result.json": "ac65fc78731bee1ba8dd644a1618327a81df930c1cbb349bd49c573394489e45"
+  }
+}

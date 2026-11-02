@@ -1,0 +1,19 @@
+{
+  "weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "isotropic_std": 0.22,
+  "diagonal_stds": [
+    0.45,
+    0.25
+  ],
+  "correlated_std": 0.5,
+  "correlation": 0.6,
+  "kernel_ranks": [
+    30,
+    3,
+    30
+  ]
+}

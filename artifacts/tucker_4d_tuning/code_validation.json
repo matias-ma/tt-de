@@ -1,0 +1,13 @@
+{
+  "tests/test_tucker_direct.py": {
+    "passed": 13
+  },
+  "tests/test_noisy_selection.py": {
+    "passed": 3
+  },
+  "rank_expansion_orthogonality_followup": {
+    "passed": 1
+  },
+  "ruff": "passed",
+  "gpu_value_gradient_equivalence": "separable_benchmark.json"
+}

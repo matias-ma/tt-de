@@ -1,0 +1,35 @@
+{
+  "case": "gl6_paired",
+  "model": "artifacts/objective_v3/gl6_paired/nll_r10_n25_l0.001_w100/fit.npz",
+  "probe_indices": [
+    235,
+    340,
+    442,
+    557,
+    563,
+    1016,
+    1138,
+    1190,
+    1209,
+    1727,
+    1866,
+    1980
+  ],
+  "errors": {
+    "no_moment_truncation": 1.0658141036401503e-14,
+    "unprepared": 7.105427357601002e-15,
+    "double_polynomial_quadrature": 1.5631940186722204e-13,
+    "analytic_gaussian_q128": 3.874209426157904e-06,
+    "analytic_gaussian_q256": 3.874209419052477e-06,
+    "analytic_quadrature_refinement": 1.0658141036401503e-14,
+    "relative_gradient_error": 3.1418174517200416e-06,
+    "finite_difference_absolute_error": 6.880110023366193e-11,
+    "finite_difference_derivative": -0.015407605946649026
+  },
+  "production_log_density_range": [
+    -16.959722340772785,
+    -8.110022135163831
+  ],
+  "uses_truth": false,
+  "reference": "analytic Gaussian block quadrature, SVD tolerance 1e-14"
+}

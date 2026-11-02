@@ -1,0 +1,11 @@
+{
+  "cause": "Home-directory disk quota exhausted by persistent JAX compilation cache",
+  "interrupted_cases": [
+    "gl_mixture_dim10",
+    "gl_mixture_dim14"
+  ],
+  "action": "Removed 1469 compilation-cache files (1809 MiB) generated since allocation start; rerunner uses node-local cache and reuses completed model checkpoints",
+  "incomplete_file": "gl_mixture_dim10/fisher_spectra.npz.incomplete",
+  "incomplete_file_action": "Retained for audit; deterministic spectrum regenerated before fitting",
+  "all_saved_model_and_reference_checkpoints_valid": true
+}

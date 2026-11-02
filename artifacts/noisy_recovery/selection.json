@@ -1,0 +1,25 @@
+{
+  "minimum_nll": "h2_0.0001",
+  "selected": "h2_0.0001",
+  "rule": "paired cluster one-SE, then minimum integrated roughness",
+  "candidates": {
+    "h2_0.0001": {
+      "excess_nll": 0.0,
+      "paired_cluster_se": 0.0,
+      "eligible": true,
+      "roughness": 44.55602854146571
+    },
+    "h2_0.001": {
+      "excess_nll": 0.011826266487030243,
+      "paired_cluster_se": 0.0019944030636466913,
+      "eligible": false,
+      "roughness": 11.165082393479805
+    },
+    "h2_0.01": {
+      "excess_nll": 0.03938356642174102,
+      "paired_cluster_se": 0.004361673592130477,
+      "eligible": false,
+      "roughness": 2.1590542716249357
+    }
+  }
+}

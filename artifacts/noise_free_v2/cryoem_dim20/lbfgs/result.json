@@ -1,0 +1,164 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 24.791684618120527,
+      "roughness_h1": 4.343932682119167,
+      "roughness_axis_h2": 3.6797720177704054,
+      "roughness_hessian": 21.64031515830031,
+      "training_objective": 24.799069960936244,
+      "seconds": 86.31522760284133
+    },
+    {
+      "step": 10,
+      "validation_nll": 24.79061253429592,
+      "roughness_h1": 4.344525196624602,
+      "roughness_axis_h2": 3.6859780187641573,
+      "roughness_hessian": 21.65128136561848,
+      "training_objective": 24.797411029349657,
+      "seconds": 606.9013892128132
+    },
+    {
+      "step": 20,
+      "validation_nll": 24.790543479287173,
+      "roughness_h1": 4.342106073870878,
+      "roughness_axis_h2": 3.7112460407246406,
+      "roughness_hessian": 21.656981858037632,
+      "training_objective": 24.796993115081,
+      "seconds": 1084.5740106198937
+    },
+    {
+      "step": 30,
+      "validation_nll": 24.790436630349614,
+      "roughness_h1": 4.341811635879534,
+      "roughness_axis_h2": 3.665737212161228,
+      "roughness_hessian": 21.608884723203246,
+      "training_objective": 24.7967347924693,
+      "seconds": 1757.151765421033
+    },
+    {
+      "step": 40,
+      "validation_nll": 24.7900890451787,
+      "roughness_h1": 4.340755619355758,
+      "roughness_axis_h2": 3.6811588098814605,
+      "roughness_hessian": 21.615514848796682,
+      "training_objective": 24.796377830374183,
+      "seconds": 2187.418058373034
+    }
+  ],
+  "evaluations": [
+    {
+      "value": 24.796993115081,
+      "gradient_norm": 0.12043223284415158
+    },
+    {
+      "value": 29.38489531674009,
+      "gradient_norm": 2.5790475321124235
+    },
+    {
+      "value": 24.798860861872477,
+      "gradient_norm": 1.0336542393064572
+    },
+    {
+      "value": 24.79695608074432,
+      "gradient_norm": 0.06976485844811074
+    },
+    {
+      "value": 24.796939102379707,
+      "gradient_norm": 0.059187113370742554
+    },
+    {
+      "value": 24.796876689675162,
+      "gradient_norm": 0.0596700024090626
+    },
+    {
+      "value": 24.796863190992713,
+      "gradient_norm": 0.11229580364091613
+    },
+    {
+      "value": 24.796840643796834,
+      "gradient_norm": 0.052581307965640915
+    },
+    {
+      "value": 24.796821762104052,
+      "gradient_norm": 0.033320576281060214
+    },
+    {
+      "value": 24.796805683008685,
+      "gradient_norm": 0.044803913730961424
+    },
+    {
+      "value": 24.79677975134791,
+      "gradient_norm": 0.047617353919607176
+    },
+    {
+      "value": 24.796781613650765,
+      "gradient_norm": 0.15809299514122688
+    },
+    {
+      "value": 24.796762444004095,
+      "gradient_norm": 0.0840841068240458
+    },
+    {
+      "value": 24.7967347924693,
+      "gradient_norm": 0.03778785001222713
+    },
+    {
+      "value": 24.796720300910575,
+      "gradient_norm": 0.03183416515881858
+    },
+    {
+      "value": 24.796696379190372,
+      "gradient_norm": 0.05154232267899854
+    },
+    {
+      "value": 24.7966708131381,
+      "gradient_norm": 0.0717931427168101
+    },
+    {
+      "value": 24.796638427358527,
+      "gradient_norm": 0.05740135355406679
+    },
+    {
+      "value": 24.796603414956817,
+      "gradient_norm": 0.07106380906673883
+    },
+    {
+      "value": 24.796571975090714,
+      "gradient_norm": 0.06187457002603018
+    },
+    {
+      "value": 24.79653303684766,
+      "gradient_norm": 0.06922819701865837
+    },
+    {
+      "value": 24.796462049516123,
+      "gradient_norm": 0.11945093178462048
+    },
+    {
+      "value": 24.79641699827116,
+      "gradient_norm": 0.10954928046878533
+    },
+    {
+      "value": 24.796377830374183,
+      "gradient_norm": 0.04994700084243595
+    }
+  ],
+  "best_step": 40,
+  "best_nll": 24.7900890451787,
+  "iterations": 40,
+  "success": false,
+  "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "seconds": 2187.9040511390194,
+  "training_count": 94904,
+  "uses_signal_pilot": false,
+  "objective": "logpen",
+  "regularizer": "hessian",
+  "strength": 0.003,
+  "selection": "minimum held-out joint NLL checkpoint",
+  "restart_from_step": 20,
+  "restart_resets_lbfgs_history": true,
+  "interruption": "Allocation terminated; restored last saved best checkpoint",
+  "evaluation_trace_scope": "restart segment only",
+  "timing_scope": "completed prefix checkpoints plus restart; excludes lost work"
+}

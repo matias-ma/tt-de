@@ -1,0 +1,40 @@
+{
+  "filter_width_t": 0.012,
+  "selected": "rank32_h2_0.0003",
+  "candidates": {
+    "base": {
+      "01": {
+        "profile_relative_error": 0.13092152485789682,
+        "smooth_relative_error": 0.09343691505484154,
+        "ripple_relative_error": 0.0522452587856826
+      },
+      "23": {
+        "profile_relative_error": 0.27327848835718344,
+        "smooth_relative_error": 0.2381322831400446,
+        "ripple_relative_error": 0.10082652673506443
+      },
+      "09": {
+        "profile_relative_error": 0.22633445431279753,
+        "smooth_relative_error": 0.2138286540100397,
+        "ripple_relative_error": 0.03951446176739259
+      }
+    },
+    "rank32_h2_0.0003": {
+      "01": {
+        "profile_relative_error": 0.134556918800581,
+        "smooth_relative_error": 0.11318423037987009,
+        "ripple_relative_error": 0.042467858857090986
+      },
+      "23": {
+        "profile_relative_error": 0.20090074748811515,
+        "smooth_relative_error": 0.1566549316570486,
+        "ripple_relative_error": 0.10173585670386398
+      },
+      "09": {
+        "profile_relative_error": 0.1474637530083645,
+        "smooth_relative_error": 0.14124265851627607,
+        "ripple_relative_error": 0.022965668844944193
+      }
+    }
+  }
+}

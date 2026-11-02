@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "synthetic_conditions": 8,
+  "cryoem_conditions": 1,
+  "new_pngs": 27,
+  "tt_default_preserved": true,
+  "tucker_publication_audit": "publication.json",
+  "tt_publication_audit": "../dimension_gallery_v9/publication_audit.json",
+  "unit_and_regression_tests": "validation.json",
+  "convolution_benchmark": "convolution_benchmark.json",
+  "figures": "../../figs/TUCKER.md"
+}

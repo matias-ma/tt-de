@@ -1,0 +1,31 @@
+{
+  "selected": "hessian",
+  "minimum_nll": "hessian",
+  "names": [
+    "hessian"
+  ],
+  "details": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 9.575098923360123,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 4.138554629958774,
+        "eligible": true
+      }
+    ]
+  },
+  "files": {
+    "artifacts/dimension_gallery_v9/gl10_free/hessian/fit.npz": "1a13cb3e0b9d073649e19345a425c6ff25bd34b131a6b35792b7b346e09d7031",
+    "artifacts/dimension_gallery_v9/gl10_free/hessian/config.json": "d9e11dcf43959401d269711b66d987a23714850f96b8b6d5f6ce111f7801e98f",
+    "artifacts/dimension_gallery_v9/gl10_free/hessian/result.json": "1f004b6b9b89e13bd2dd65a15a07cb6960ce299da33ef918a259a4a7c481bb6e",
+    "artifacts/dimension_gallery_v9/gl10_free/hessian/validation.npy": "cc2ad8721f6ad6d989d207a924d4acf29e725f5b19ddddf99c8346f4048a0287",
+    "artifacts/figure_refresh/gl_free_dim10/data.npz": "6b023eb35c86abb5a76de7ed911f1b88e9e2648f37b498b5af54a1abb6cb624f",
+    "artifacts/dimension_gallery_v9/gl10_free/protocol.json": "bf819d89bba832ff0ecf8ea1bc1e915954bebe996eb7c908cc71e83713ae9195"
+  },
+  "truth_evaluated": false
+}

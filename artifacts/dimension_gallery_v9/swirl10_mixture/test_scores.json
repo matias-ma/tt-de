@@ -1,0 +1,30 @@
+{
+  "selection_sha256": "d697e4127333fa3e248c7009b2da25204180f0f67b23151cd2c3f43e6b18ac51",
+  "selected": "marginal_continuation",
+  "models": {
+    "curriculum": {
+      "test_nll": 6.334835243839088,
+      "test_nll_minus_selected": 0.004419702217645332,
+      "paired_se": 0.0011228735237237837
+    },
+    "strong": {
+      "test_nll": 6.34332519643635,
+      "test_nll_minus_selected": 0.012909654814908354,
+      "paired_se": 0.0014262062095863595
+    },
+    "weak_continuation": {
+      "test_nll": 6.332847518147422,
+      "test_nll_minus_selected": 0.00243197652598075,
+      "paired_se": 0.00039339648411982215
+    },
+    "marginal_continuation": {
+      "test_nll": 6.330415541621441,
+      "test_nll_minus_selected": 0.0,
+      "paired_se": 0.0
+    }
+  },
+  "test_count": 8192,
+  "signal_seed": 852731,
+  "noise_seed": 852732,
+  "used_for_selection": false
+}

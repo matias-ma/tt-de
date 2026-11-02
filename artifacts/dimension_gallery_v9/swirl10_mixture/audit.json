@@ -1,0 +1,13 @@
+{
+  "frozen_files_verified": 19,
+  "selection_sha256": "d697e4127333fa3e248c7009b2da25204180f0f67b23151cd2c3f43e6b18ac51",
+  "forward_max_log_density_difference": 1.042721464727947e-12,
+  "forward_check_points": 8,
+  "analytic_noise_max_log_difference": 5.3290705182007514e-14,
+  "analytic_noise_quadrature_refinement": 5.329070518200751e-15,
+  "analytic_noise_probe_indices": [
+    0,
+    1,
+    3725
+  ]
+}

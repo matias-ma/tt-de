@@ -1,0 +1,21 @@
+{
+  "samples": 150000,
+  "seed": 941,
+  "exact_p2": 28.83414100378301,
+  "importance_p2": 28.769294253571033,
+  "importance_p2_se": 0.14243880983279586,
+  "models": {
+    "artifacts/swirl/swirl_mixture_dim10/selected.npz": {
+      "relative_l2": 0.4870399690909756,
+      "monte_carlo_se": 0.001987963681077949
+    },
+    "artifacts/swirl_improvement/tt_tangent_dim10_r64/init.npz": {
+      "relative_l2": 0.22218804491738187,
+      "monte_carlo_se": 0.0008662730661711009
+    },
+    "artifacts/swirl_improvement/tt_pilot_bounded_dim10_r64/init.npz": {
+      "relative_l2": 0.37827705908429704,
+      "monte_carlo_se": 0.001580743178740299
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "fit_path": "artifacts/direct_optimization/swirl_free4/signed_n25_r16_l0.0001_s0/fit.npz",
+  "fit_sha256": "abd0b32aa88d6960b3ebce168914025debf05d7f8e5e39f013192c884bcc7655",
+  "kind": "signed",
+  "order": 129,
+  "positive_mass": 1.4520710870001243,
+  "negative_mass": 0.45207108700013054,
+  "norm_q_squared": 0.20459372843291118,
+  "raw_tt_negative_fraction_validation": 0.0244140625,
+  "raw_tt_minority_sign_fraction_validation": 0.0244140625,
+  "validation_risk": -0.4054717607968969,
+  "nll": null,
+  "nonpositive_predictions": 100,
+  "relative_l2": 0.4738002268943863,
+  "cross_integral": 0.30510716083691475,
+  "norm_p_squared": 0.5230349624010963,
+  "test": {
+    "nll": null,
+    "nonpositive_predictions": 213
+  },
+  "minimum_density_ratio_on_true_curve": 0.000242862694815849,
+  "fraction_true_curve_below_half_density": 0.9810094952523738,
+  "raw_tt_sign_changes_on_true_curve": 0,
+  "raw_tt_negative_fraction_on_true_curve": 0.0
+}

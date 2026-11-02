@@ -1,0 +1,24 @@
+{
+  "sigma": 0.3,
+  "domain": [
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -3.0,
+      3.0
+    ]
+  ],
+  "domain_source": "ceil(max(abs(previous noisy-only domain)))",
+  "matched_latent_draws_across_levels": true,
+  "clean_values_available_to_noisy_trainer": false
+}

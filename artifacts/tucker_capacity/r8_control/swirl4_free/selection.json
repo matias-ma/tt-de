@@ -1,0 +1,15 @@
+{
+  "selected": "strong",
+  "scores": {
+    "strong": 1.389945120168766
+  },
+  "files": {
+    "artifacts/tucker_capacity/r8_control/swirl4_free/strong/fit.npz": "8dcc5edff2603ebd12698f48ca494b18d173bc3668e75f704612376678b984eb",
+    "artifacts/tucker_capacity/r8_control/swirl4_free/strong/result.json": "54547fb2737b516a191f17d212843cf3a8f8f178ee7ed210d08d9606dbe31dde",
+    "artifacts/tucker_capacity/r8_control/swirl4_free/strong/config.json": "ad3f5d068ceee10d12c3a430024a3314ea4c5a1ccd39a1f8e537c495b4094f9a",
+    "artifacts/tucker_capacity/r8_control/swirl4_free/strong/validation.npy": "d9ba338bc22098e4ebec7def1e8faaf34bae9975e1525285a8cdc4ae247b1aa3",
+    "artifacts/swirl/swirl_free_dim4/data.npz": "36c11aca0bc9669f685248c9a24e2c0849680c1b26256fa08daecca2801205fc",
+    "artifacts/tucker_capacity/r8_control/swirl4_free/protocol.json": "a4e5548de43b1df44ef70837c5abca4ae6d3de3cfd4d6f88972b918ffabee9b0"
+  },
+  "truth_evaluated": false
+}

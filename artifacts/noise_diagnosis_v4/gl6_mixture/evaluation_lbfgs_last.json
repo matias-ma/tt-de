@@ -1,0 +1,13 @@
+{
+  "relative_l2": 0.49556001698760427,
+  "quadrature_relative_change": 5.011188418422775e-14,
+  "test_nll": 9.412341478151811,
+  "training_subset_nll": 9.451111491964845,
+  "training_subset_count": 20000,
+  "roughness_hessian": 11.171067880422193,
+  "estimated_observed_kl": 0.0007364824818008994,
+  "observed_kl_se": 0.0012131758331866598,
+  "true_observed_test_nll": 9.41160499567001,
+  "pair01_relative_l2": 0.19688103961743794,
+  "pair23_relative_l2": 0.19338724074862854
+}

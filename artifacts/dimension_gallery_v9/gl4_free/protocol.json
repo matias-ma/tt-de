@@ -1,0 +1,80 @@
+{
+  "family": "gl",
+  "dim": 4,
+  "noise": "free",
+  "data": "artifacts/dimension_gallery_v9/gl4_free/data.npz",
+  "data_sha256": "0d80e4dd004f70d9b5bf9a40c52bfe4eae12e7a20f24c1bdb77df36b9ae36e29",
+  "domain": [
+    [
+      -2.160884968972247,
+      2.1252012923756807
+    ],
+    [
+      -2.121229803967892,
+      2.159826638492155
+    ],
+    [
+      -2.1378173594285563,
+      2.133747947232843
+    ],
+    [
+      -2.1207091236006663,
+      2.1677312968350977
+    ]
+  ],
+  "kernel": null,
+  "noise_weights": [
+    1.0
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "training_count": 100000,
+  "validation_count": 4096,
+  "recipes": {
+    "hessian": {
+      "regularizer": "hessian",
+      "strength": 0.001,
+      "rank": 5,
+      "modes": 25,
+      "seed": 0,
+      "steps": 4000,
+      "learning_rate": 0.001,
+      "batch_size": 1024,
+      "marginal_strength": 0.0,
+      "parent": null,
+      "mode_schedule": null,
+      "selection_start": 0,
+      "optimizer": "adam"
+    }
+  },
+  "initialization": "near-uniform, perturbation 0.01, seed 0; no learned signal pilot",
+  "selection": "minimum held-out NLL checkpoint",
+  "validation_clusters": 200,
+  "truth_used_for_selection": false
+}

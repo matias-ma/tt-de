@@ -1,0 +1,13 @@
+{
+  "base": "artifacts/figure_refresh/cryoem_path_dim4",
+  "noise_metadata": "artifacts/cryoem_refinement/noise_path_dim4.npz",
+  "output": "artifacts/cryoem_refinement/path_dim4_rank20",
+  "steps": 4000,
+  "modes": 49,
+  "rank": 20,
+  "strengths": [
+    3e-05,
+    0.0003
+  ],
+  "correct_projection": true
+}

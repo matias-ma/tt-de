@@ -1,0 +1,26 @@
+{
+  "swirl4_free": {
+    "identical_train": true,
+    "identical_validation": true,
+    "identical_domain": true,
+    "identical_noise_covariances": true
+  },
+  "swirl6_free": {
+    "identical_train": true,
+    "identical_validation": true,
+    "identical_domain": true,
+    "identical_noise_covariances": true
+  },
+  "swirl4_mixture": {
+    "identical_train": true,
+    "identical_validation": true,
+    "identical_domain": true,
+    "identical_noise_covariances": true
+  },
+  "swirl6_mixture": {
+    "identical_train": true,
+    "identical_validation": true,
+    "identical_domain": true,
+    "identical_noise_covariances": true
+  }
+}

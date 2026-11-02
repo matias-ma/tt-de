@@ -1,0 +1,23 @@
+{
+  "base": "artifacts/cryoem_continuity/gallery_path_dim4",
+  "data_sha256": "c2326d31e97dcb34345b21728ba71d82f811601ad9a9c707923c8de6d52f5298",
+  "kernel_sha256": "d6ac72fefa29810c04a333d8cca50fb8c99c22c7357c12a5af5f667c8d5a6210",
+  "noise_sha256": "a115d604870021d350d01bf459bed7fb8306846d67eee5547718a717fca6bdf6",
+  "historical_sha256": "a794db057537167a73837402b49aba3f9f6279fb44b8eeb3a212e90a17a90e4c",
+  "rank": 32,
+  "modes": 49,
+  "seed": 0,
+  "steps": 4000,
+  "batch": 256,
+  "learning_rate": 0.001,
+  "strengths": [
+    0.0001,
+    0.001
+  ],
+  "lbfgs_iterations": 40,
+  "training_count": 94904,
+  "validation_count": 4096,
+  "initialization": "constant plus small random perturbation; box only",
+  "uses_signal_pilot_or_oracle_or_labels": false,
+  "selection": "paired one-SE noisy validation, then common physical amplitude H2"
+}

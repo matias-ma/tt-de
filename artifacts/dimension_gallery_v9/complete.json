@@ -1,0 +1,18 @@
+{
+  "cases": [
+    "gl4_free",
+    "gl4_mixture",
+    "swirl4_free",
+    "swirl4_mixture",
+    "gl10_free",
+    "gl10_mixture",
+    "swirl10_free",
+    "swirl10_mixture",
+    "gl20_free",
+    "gl20_mixture",
+    "swirl20_free",
+    "swirl20_mixture"
+  ],
+  "defaults": "ftde.benchmark_defaults",
+  "note": "Truth is evaluated only after observation-only case selection is frozen."
+}

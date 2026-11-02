@@ -1,0 +1,11 @@
+{
+  "score": {
+    "old_nll": 3.5392495918717715,
+    "new_nll": 3.539228398621482,
+    "improvement": 2.119325028902136e-05,
+    "paired_se": 0.0022165601759575756,
+    "replace": false
+  },
+  "selected": "full_16",
+  "pairs": {}
+}

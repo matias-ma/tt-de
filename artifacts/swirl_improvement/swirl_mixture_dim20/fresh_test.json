@@ -1,0 +1,9 @@
+{
+  "seed": 73129,
+  "observations": 8192,
+  "nll": 9.68760282653798,
+  "nll_gap": 0.00911962123152919,
+  "paired_se": 0.0014063028536790644,
+  "truth_quadrature_check": 1.2292389328649733e-12,
+  "used_for_selection": false
+}

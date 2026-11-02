@@ -1,0 +1,13 @@
+{
+  "base": "artifacts/cryoem_refinement/gallery_dim10",
+  "output": "artifacts/cryoem_continuity/dim10_h1_0.01",
+  "rank": 20,
+  "modes": 49,
+  "order": 1,
+  "strength": 0.01,
+  "steps": 2400,
+  "lr": 0.0002,
+  "seed": 0,
+  "source_sha256": "ab605d79e9f46cb86405871fbe0a777e52403d9010a15091581deb59d9d28940",
+  "kernel_sha256": "1efe30c076c619e4b133b949ea4a7ee06ab5ccb5999445887fa619b130b3454d"
+}

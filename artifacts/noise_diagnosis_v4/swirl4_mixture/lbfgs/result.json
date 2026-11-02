@@ -1,0 +1,209 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 3.8658235899523783,
+      "roughness_h1": 1.7184822892642984,
+      "roughness_axis_h2": 2.382383335062573,
+      "roughness_hessian": 4.780086948660475,
+      "training_objective": 3.8905579878161127,
+      "seconds": 79.0333626079373
+    },
+    {
+      "step": 5,
+      "validation_nll": 3.8652882402112243,
+      "roughness_h1": 1.718637302896883,
+      "roughness_axis_h2": 2.3782385617516244,
+      "roughness_hessian": 4.775293127649186,
+      "training_objective": 3.890288402972132,
+      "seconds": 303.94538508495316
+    },
+    {
+      "step": 10,
+      "validation_nll": 3.8653571746860305,
+      "roughness_h1": 1.7203963031818321,
+      "roughness_axis_h2": 2.384006486130996,
+      "roughness_hessian": 4.784564930143344,
+      "training_objective": 3.8901227962480363,
+      "seconds": 464.8098175789928
+    },
+    {
+      "step": 15,
+      "validation_nll": 3.865265538638658,
+      "roughness_h1": 1.7218670182888631,
+      "roughness_axis_h2": 2.3975456484138844,
+      "roughness_hessian": 4.801528605740316,
+      "training_objective": 3.890021358865157,
+      "seconds": 625.540986094973
+    },
+    {
+      "step": 20,
+      "validation_nll": 3.8652046270415097,
+      "roughness_h1": 1.7230711837712334,
+      "roughness_axis_h2": 2.3793317779673044,
+      "roughness_hessian": 4.785966444344462,
+      "training_objective": 3.889954348451943,
+      "seconds": 786.5654318999732
+    },
+    {
+      "step": 25,
+      "validation_nll": 3.8652273306067704,
+      "roughness_h1": 1.723854809271751,
+      "roughness_axis_h2": 2.3835628251721968,
+      "roughness_hessian": 4.7921128838239895,
+      "training_objective": 3.88988383477012,
+      "seconds": 947.3437505329493
+    },
+    {
+      "step": 30,
+      "validation_nll": 3.8652907815768724,
+      "roughness_h1": 1.724119348882282,
+      "roughness_axis_h2": 2.3804210551853844,
+      "roughness_hessian": 4.790017199923377,
+      "training_objective": 3.889825860062827,
+      "seconds": 1108.2587694108952
+    }
+  ],
+  "evaluations": [
+    {
+      "value": 3.8905579878161127,
+      "gradient_norm": 0.03397093809328245
+    },
+    {
+      "value": 5.2562699494081615,
+      "gradient_norm": 9.300176504023847
+    },
+    {
+      "value": 3.8904282125776275,
+      "gradient_norm": 0.061634329726974
+    },
+    {
+      "value": 3.8903773281617813,
+      "gradient_norm": 0.07929126163382709
+    },
+    {
+      "value": 3.8903220388755826,
+      "gradient_norm": 0.024806026601047852
+    },
+    {
+      "value": 3.8903077820968943,
+      "gradient_norm": 0.019920674342473292
+    },
+    {
+      "value": 3.890288402972132,
+      "gradient_norm": 0.022819446285605557
+    },
+    {
+      "value": 3.8902580319258475,
+      "gradient_norm": 0.029365638503702645
+    },
+    {
+      "value": 3.8902353323480816,
+      "gradient_norm": 0.07733792408484291
+    },
+    {
+      "value": 3.890176319618531,
+      "gradient_norm": 0.028975477466747165
+    },
+    {
+      "value": 3.8901492178637143,
+      "gradient_norm": 0.023855384888629854
+    },
+    {
+      "value": 3.8901227962480363,
+      "gradient_norm": 0.022439109396998468
+    },
+    {
+      "value": 3.8900975592301337,
+      "gradient_norm": 0.0331538678866738
+    },
+    {
+      "value": 3.890075847751431,
+      "gradient_norm": 0.024252983826975737
+    },
+    {
+      "value": 3.8900614175665473,
+      "gradient_norm": 0.017656820376089274
+    },
+    {
+      "value": 3.890038355253476,
+      "gradient_norm": 0.021998454118200297
+    },
+    {
+      "value": 3.890021358865157,
+      "gradient_norm": 0.042691746733257804
+    },
+    {
+      "value": 3.8899989535050206,
+      "gradient_norm": 0.023189368587733405
+    },
+    {
+      "value": 3.889980759242556,
+      "gradient_norm": 0.014336133253894014
+    },
+    {
+      "value": 3.8899729751095644,
+      "gradient_norm": 0.01657348220683978
+    },
+    {
+      "value": 3.8899630442986246,
+      "gradient_norm": 0.017844160650507816
+    },
+    {
+      "value": 3.889954348451943,
+      "gradient_norm": 0.014001440079375134
+    },
+    {
+      "value": 3.8899447737528976,
+      "gradient_norm": 0.01533055467601374
+    },
+    {
+      "value": 3.889934730066982,
+      "gradient_norm": 0.02007995565270974
+    },
+    {
+      "value": 3.8899190814129185,
+      "gradient_norm": 0.0191519291675116
+    },
+    {
+      "value": 3.8899017644554506,
+      "gradient_norm": 0.03300473939885193
+    },
+    {
+      "value": 3.88988383477012,
+      "gradient_norm": 0.017900504323100325
+    },
+    {
+      "value": 3.8898731238229276,
+      "gradient_norm": 0.015947496011873744
+    },
+    {
+      "value": 3.889860321809374,
+      "gradient_norm": 0.024271628166679778
+    },
+    {
+      "value": 3.8898476227510406,
+      "gradient_norm": 0.01931510425639957
+    },
+    {
+      "value": 3.889838287915206,
+      "gradient_norm": 0.015044783532412427
+    },
+    {
+      "value": 3.889825860062827,
+      "gradient_norm": 0.021951252507712467
+    }
+  ],
+  "best_step": 20,
+  "best_nll": 3.8652046270415097,
+  "iterations": 30,
+  "success": false,
+  "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "seconds": 1108.2939434188884,
+  "training_count": 100000,
+  "uses_signal_pilot": false,
+  "objective": "nll",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "selection": "minimum held-out joint NLL checkpoint"
+}

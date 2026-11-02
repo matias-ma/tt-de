@@ -1,0 +1,167 @@
+{
+  "selected_index": 2,
+  "records": [
+    {
+      "degree": 2,
+      "shared": true,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 5,
+      "binned_train_nll": 6.75736664826028,
+      "validation_marginal_nll": 1.6120842317508015,
+      "gradient_norm": 6.002233459845923e-10,
+      "quadrature_order": 160,
+      "bins": 1600
+    },
+    {
+      "degree": 2,
+      "shared": false,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 7,
+      "binned_train_nll": 6.7573271115784825,
+      "validation_marginal_nll": 1.612228131760169,
+      "gradient_norm": 1.3391487115482384e-09,
+      "quadrature_order": 160,
+      "bins": 1600
+    },
+    {
+      "degree": 4,
+      "shared": true,
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 37,
+      "binned_train_nll": 6.751395262055175,
+      "validation_marginal_nll": 1.6052740171870998,
+      "gradient_norm": 7.742259915615015e-08,
+      "quadrature_order": 160,
+      "bins": 1600
+    },
+    {
+      "degree": 4,
+      "shared": false,
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 647,
+      "binned_train_nll": 6.751345181986861,
+      "validation_marginal_nll": 1.6054629092484565,
+      "gradient_norm": 6.138524438787658e-08,
+      "quadrature_order": 160,
+      "bins": 1600
+    },
+    {
+      "degree": 6,
+      "shared": true,
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 46,
+      "binned_train_nll": 6.751394404854889,
+      "validation_marginal_nll": 1.6052797924915285,
+      "gradient_norm": 5.215987404699759e-08,
+      "quadrature_order": 160,
+      "bins": 1600
+    },
+    {
+      "degree": 6,
+      "shared": false,
+      "success": false,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "iterations": 1200,
+      "binned_train_nll": 6.751339355942848,
+      "validation_marginal_nll": 1.6054746331697083,
+      "gradient_norm": 2.9961731583815626e-06,
+      "quadrature_order": 160,
+      "bins": 1600
+    },
+    {
+      "degree": 8,
+      "shared": true,
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 70,
+      "binned_train_nll": 6.75139404889388,
+      "validation_marginal_nll": 1.6052820728309158,
+      "gradient_norm": 4.41847472049351e-08,
+      "quadrature_order": 160,
+      "bins": 1600
+    },
+    {
+      "degree": 8,
+      "shared": false,
+      "success": false,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "iterations": 1200,
+      "binned_train_nll": 6.751336200090778,
+      "validation_marginal_nll": 1.6054670447196038,
+      "gradient_norm": 5.966723305378338e-06,
+      "quadrature_order": 160,
+      "bins": 1600
+    }
+  ],
+  "selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 2,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 1.6120842317508015,
+        "excess_nll": 0.00681021456370175,
+        "paired_cluster_se": 0.000740883877285451,
+        "roughness": 2.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.612228131760169,
+        "excess_nll": 0.006954114573069232,
+        "paired_cluster_se": 0.0007487593555042873,
+        "roughness": 20.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.6052740171870998,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 4.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 1.6054629092484567,
+        "excess_nll": 0.00018889206135676143,
+        "paired_cluster_se": 0.00010510396946807675,
+        "roughness": 40.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.6052797924915285,
+        "excess_nll": 5.775304428651631e-06,
+        "paired_cluster_se": 4.875358524404561e-06,
+        "roughness": 6.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.6054746331697085,
+        "excess_nll": 0.0002006159826087045,
+        "paired_cluster_se": 0.00010725827727484228,
+        "roughness": 60.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 1.6052820728309156,
+        "excess_nll": 8.055643815804681e-06,
+        "paired_cluster_se": 8.716467518835937e-06,
+        "roughness": 8.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 1.605467044719604,
+        "excess_nll": 0.00019302753250412957,
+        "paired_cluster_se": 0.00010991247675147266,
+        "roughness": 80.0,
+        "eligible": false
+      }
+    ]
+  },
+  "quadrature_log_error": 5.773159728050814e-15,
+  "selection_metric": "mean univariate noisy log density; parameter count as complexity"
+}

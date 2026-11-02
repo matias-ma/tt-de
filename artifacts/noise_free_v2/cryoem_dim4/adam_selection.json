@@ -1,0 +1,25 @@
+{
+  "selected": "hessian_0.003_logpen",
+  "selection": {
+    "minimum_nll_index": 1,
+    "selected_index": 1,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 3.550095889861857,
+        "excess_nll": 0.00870831708724959,
+        "paired_cluster_se": 0.0010067334079176958,
+        "roughness": 2.4774844224296864,
+        "eligible": false
+      },
+      {
+        "validation_nll": 3.5413875727746076,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 4.252999426538408,
+        "eligible": true
+      }
+    ]
+  }
+}

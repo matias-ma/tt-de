@@ -1,0 +1,38 @@
+{
+  "01": {
+    "fft_relative_refinement_change": [
+      4.692625694628463e-05,
+      4.6951878377261434e-05
+    ],
+    "observed_marginal_relative_l2": 0.010446904214545867,
+    "kernel_approximation": {
+      "minimum_before_clipping": -4.239855378301249e-08,
+      "clipped_negative_mass": 4.359841683649229e-08
+    },
+    "latent_marginal_relative_l2": 0.04220057372103102
+  },
+  "23": {
+    "fft_relative_refinement_change": [
+      4.694286019892315e-05,
+      4.648656982639688e-05
+    ],
+    "observed_marginal_relative_l2": 0.01641243147280888,
+    "kernel_approximation": {
+      "minimum_before_clipping": -1.846323477736864e-07,
+      "clipped_negative_mass": 1.1942242122380039e-07
+    },
+    "latent_marginal_relative_l2": 0.05629259339932234
+  },
+  "09": {
+    "fft_relative_refinement_change": [
+      3.7361479040779284e-05,
+      3.739890120503702e-05
+    ],
+    "observed_marginal_relative_l2": 0.021749654037455424,
+    "kernel_approximation": {
+      "minimum_before_clipping": -2.177727891071504e-18,
+      "clipped_negative_mass": 4.292969278302581e-19
+    },
+    "latent_marginal_relative_l2": 0.052958756133530065
+  }
+}

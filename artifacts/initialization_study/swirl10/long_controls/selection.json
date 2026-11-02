@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "name": "long_controls/kde_s0",
+      "method": "kde",
+      "score": 6.341780885561313,
+      "nll": 6.336914234101053,
+      "best_step": 2200,
+      "extra_steps": 2400,
+      "source_run": "kde_s0"
+    },
+    {
+      "name": "long_controls/tangent_s0",
+      "method": "tangent",
+      "score": 6.2843396930551885,
+      "nll": 6.2787441706362825,
+      "best_step": 0,
+      "extra_steps": 2400,
+      "source_run": "tangent_s0"
+    }
+  ],
+  "selected": "long_controls/tangent_s0",
+  "frozen_sha256": {
+    "artifacts/initialization_study/swirl10/long_controls/kde_s0/fit.npz": "237e04226296175c8be4ba47974e16d9b3abf867ab5ef729645b1305c51583fc",
+    "artifacts/initialization_study/swirl10/long_controls/kde_s0/init.npz": "1f102150e8fe4a44e2d1a74da48d771de31552fb33ce9f4030103b8c1caca058",
+    "artifacts/initialization_study/swirl10/long_controls/kde_s0/fit.json": "3fdf04da85d3e4f868245bf6b47ca05021b9b7eef1160d48213f578066bf6464",
+    "artifacts/initialization_study/swirl10/long_controls/tangent_s0/fit.npz": "6d1f437cb06c859b6f707ec991c0606988b9e2d0a23816d95a87324b9f4aef8f",
+    "artifacts/initialization_study/swirl10/long_controls/tangent_s0/init.npz": "ff52afa01b2e2ed92740d9c4e8e5ca9b1eb816a1a878085fa78bb7c3ef9c83a0",
+    "artifacts/initialization_study/swirl10/long_controls/tangent_s0/fit.json": "787afbd355ae19f290c3d9a6902988682a919efb9450ef0500fac758307878f1"
+  },
+  "truth_used": false,
+  "independent_test_used": false
+}

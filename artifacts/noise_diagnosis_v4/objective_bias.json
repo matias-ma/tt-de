@@ -1,0 +1,45 @@
+{
+  "records": [
+    {
+      "sigma": 0.15,
+      "clean_fit_noisy_training_nll": 2.374224299087264,
+      "noisy_fit_training_nll": 2.373529643360155,
+      "clean_fit_penalty": 0.020753495534751212,
+      "noisy_fit_penalty": 0.016731707289103188,
+      "clean_minus_noisy_training_nll": 0.0006946557271097037,
+      "clean_minus_noisy_penalty": 0.004021788245648025,
+      "clean_minus_noisy_total_objective": 0.004716443972757729,
+      "clean_minus_noisy_test_nll": -0.0039989131620347465,
+      "paired_test_se": 0.0011040930402778507
+    },
+    {
+      "sigma": 0.3,
+      "clean_fit_noisy_training_nll": 3.75141001034705,
+      "noisy_fit_training_nll": 3.7559137697591667,
+      "clean_fit_penalty": 0.020753495534751212,
+      "noisy_fit_penalty": 0.010114383640997503,
+      "clean_minus_noisy_training_nll": -0.004503759412116578,
+      "clean_minus_noisy_penalty": 0.01063911189375371,
+      "clean_minus_noisy_total_objective": 0.00613535248163713,
+      "clean_minus_noisy_test_nll": -0.006314021432131153,
+      "paired_test_se": 0.0016693059102944818
+    },
+    {
+      "sigma": 0.6,
+      "clean_fit_noisy_training_nll": 5.3725197177465915,
+      "noisy_fit_training_nll": 5.377043591487857,
+      "clean_fit_penalty": 0.020753495534751212,
+      "noisy_fit_penalty": 0.003350790249425324,
+      "clean_minus_noisy_training_nll": -0.0045238737412652,
+      "clean_minus_noisy_penalty": 0.01740270528532589,
+      "clean_minus_noisy_total_objective": 0.01287883154406069,
+      "clean_minus_noisy_test_nll": -0.0035071829919322284,
+      "paired_test_se": 0.0015053142081296888
+    }
+  ],
+  "post_selection_oracle_diagnostic": true,
+  "clean_fit_used_in_noisy_training_or_selection": false,
+  "training_count": 100000,
+  "test_count": 4096,
+  "interpretation": "Positive total-objective difference means the trained noisy fit is preferred over this same-capacity clean-data comparator by the actual training objective."
+}

@@ -1,0 +1,102 @@
+{
+  "case": "gl6_free",
+  "source": "artifacts/figure_refresh/gl_free_dim6",
+  "data_sha256": "a9af75449a4c8cd8adcb403d85e09af6e0d89b3c5f8c3cd18e06f4173819ba2b",
+  "domain": [
+    [
+      -2.10833871355701,
+      2.1539717227196014
+    ],
+    [
+      -2.1639802403521387,
+      2.113215429611559
+    ],
+    [
+      -2.167109359651684,
+      2.2767483223683582
+    ],
+    [
+      -2.1414076095223384,
+      2.13729390100922
+    ],
+    [
+      -2.112717063233589,
+      2.254388045707122
+    ],
+    [
+      -2.1842252130727133,
+      2.1184257325287184
+    ]
+  ],
+  "noise_weights": [
+    1.0
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "training_count": 100000,
+  "validation_count": 2048,
+  "uses_clean_truth": false,
+  "uses_signal_pilot": false,
+  "initialization": "constant plus random coefficients, perturbation .01, seed 0",
+  "kernel": "Gaussian bandwidth mixture (.2,.5,1) times sqrt(d) in training-standardized coordinates",
+  "training_frequencies": 1024,
+  "validation_frequencies": 512,
+  "frequency_seeds": [
+    2701,
+    2702
+  ],
+  "regularizer": "full amplitude Hessian, scales .05 box width",
+  "selection": "separate paired-one-SE NLL and kernel choices; prefer fewer coefficients",
+  "truth_evaluation": "only after all candidate and checkpoint hashes are frozen",
+  "storage_budget_MiB": 512
+}

@@ -1,0 +1,17 @@
+{
+  "case": "swirl4_mixture",
+  "recipe": "baseline",
+  "seed": 1,
+  "strength": 1e-05,
+  "marginal_strength": 0.0,
+  "precondition_strength": 1e-05,
+  "mode_schedule": null,
+  "selection_start": 2000,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "uses_truth": false,
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "initialization": "constant plus small random coefficients; seed is independent of batch seed"
+}

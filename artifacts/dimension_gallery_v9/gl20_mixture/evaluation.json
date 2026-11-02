@@ -1,0 +1,24 @@
+{
+  "models": {
+    "curriculum": {
+      "relative_l2": 0.37505735948421687,
+      "integral_q_squared": 1.6996242961535352e-05,
+      "integral_pq": 1.71302189763167e-05,
+      "integral_p_squared": 2.00902508590749e-05,
+      "quadrature_relative_change": 1.7252441716520205e-13,
+      "model_sha256": "f21c2412a647e8bba692904748ff4a83f954c3ab34d0f83fb62e317deb2f7414"
+    },
+    "strong": {
+      "relative_l2": 0.6949634727483419,
+      "integral_q_squared": 3.4384172319269483e-06,
+      "integral_pq": 6.912797341442045e-06,
+      "integral_p_squared": 2.00902508590749e-05,
+      "quadrature_relative_change": 6.84701010450362e-14,
+      "model_sha256": "2261f5c0b85a492b280cf97af6fb86da9c358dfa431b266da2e4da42fc396839"
+    }
+  },
+  "selected": "curriculum",
+  "minimum_nll": "curriculum",
+  "selection_sha256": "b3f83a88977e4548ed2ba83cca23d48ef1b06dd8abdae901e04f9f81cc81a49c",
+  "metric": "unsquared full-dimensional relative Lebesgue L2"
+}

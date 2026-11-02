@@ -1,0 +1,11 @@
+{
+  "frozen_hashes_checked": 77,
+  "new_fit_runs": 15,
+  "evaluated_checkpoints": 19,
+  "gallery_pngs_verified": 41,
+  "targeted_tests_passed": 17,
+  "ruff": "passed",
+  "artifact_MiB": 40.239251136779785,
+  "truth_used_for_noisy_training_or_selection": false,
+  "postfit_clean_comparator_is_diagnostic_only": true
+}

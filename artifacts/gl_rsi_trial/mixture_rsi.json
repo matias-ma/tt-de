@@ -1,0 +1,262 @@
+{
+  "dim": 10,
+  "noise": "mixture",
+  "noise_scale": 1.5,
+  "n_train": 100000,
+  "n_test": 4000,
+  "rank": 6,
+  "n_coeffs": 19,
+  "steps": 10000,
+  "naive_steps": 0,
+  "deconv_steps": 8000,
+  "batch_size": 512,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 3,
+  "kernel_n_coeffs": 257,
+  "compare_spectral": false,
+  "convolution_backend": "rsi",
+  "rsi_max_rank": 64,
+  "output": "results/gl_rsi_trial/mixture_rsi.json",
+  "save_figures": false,
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.9982347439755452,
+      "relative_sample_l2": 0.999116982127491
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.9982198543213919,
+      "relative_sample_l2": 0.9991095306929025
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.20991833322680223,
+      "relative_sample_l2": 0.45816845507608034
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 3.872457909892546e-13,
+    "rsi_max_abs_log_error": 8.28415778642011e-07,
+    "rsi_relative_log_error": 3.7030186091048914e-09,
+    "exact_validation_nll_at_rsi_checkpoint": 15.443301078268995,
+    "analytic_mixture_max_abs_log_error": 9.592326932761353e-14
+  },
+  "histories": {
+    "naive": {
+      "best_step": 0,
+      "best_nll": 15.874964041209617,
+      "nonfinite_step": null,
+      "training_seconds": 0.21596084185875952,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 15.874964041209617
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 5000,
+      "best_nll": 15.44330107653999,
+      "nonfinite_step": null,
+      "training_seconds": 1693.364432486007,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 16.29233494563778
+        },
+        {
+          "step": 200,
+          "validation_nll": 15.509060523960855
+        },
+        {
+          "step": 400,
+          "validation_nll": 15.467304562948259
+        },
+        {
+          "step": 600,
+          "validation_nll": 15.45767140175424
+        },
+        {
+          "step": 800,
+          "validation_nll": 15.452539168473837
+        },
+        {
+          "step": 1000,
+          "validation_nll": 15.450571475930234
+        },
+        {
+          "step": 1200,
+          "validation_nll": 15.448142173951032
+        },
+        {
+          "step": 1400,
+          "validation_nll": 15.451391520534308
+        },
+        {
+          "step": 1600,
+          "validation_nll": 15.449567195976316
+        },
+        {
+          "step": 1800,
+          "validation_nll": 15.446797835615008
+        },
+        {
+          "step": 2000,
+          "validation_nll": 15.444946861637842
+        },
+        {
+          "step": 2200,
+          "validation_nll": 15.446808962316288
+        },
+        {
+          "step": 2400,
+          "validation_nll": 15.446921310600928
+        },
+        {
+          "step": 2600,
+          "validation_nll": 15.444627505660632
+        },
+        {
+          "step": 2800,
+          "validation_nll": 15.445049661892071
+        },
+        {
+          "step": 3000,
+          "validation_nll": 15.44475299425483
+        },
+        {
+          "step": 3200,
+          "validation_nll": 15.445792291164825
+        },
+        {
+          "step": 3400,
+          "validation_nll": 15.445281253897832
+        },
+        {
+          "step": 3600,
+          "validation_nll": 15.447176421451074
+        },
+        {
+          "step": 3800,
+          "validation_nll": 15.445633833336451
+        },
+        {
+          "step": 4000,
+          "validation_nll": 15.445894873602297
+        },
+        {
+          "step": 4200,
+          "validation_nll": 15.444332830002162
+        },
+        {
+          "step": 4400,
+          "validation_nll": 15.446376920029884
+        },
+        {
+          "step": 4600,
+          "validation_nll": 15.444088278651263
+        },
+        {
+          "step": 4800,
+          "validation_nll": 15.443365514861473
+        },
+        {
+          "step": 5000,
+          "validation_nll": 15.44330107653999
+        },
+        {
+          "step": 5200,
+          "validation_nll": 15.445645763581146
+        },
+        {
+          "step": 5400,
+          "validation_nll": 15.445320692309016
+        },
+        {
+          "step": 5600,
+          "validation_nll": 15.445035308320106
+        },
+        {
+          "step": 5800,
+          "validation_nll": 15.445602456899383
+        },
+        {
+          "step": 6000,
+          "validation_nll": 15.446428214885465
+        },
+        {
+          "step": 6200,
+          "validation_nll": 15.445666422888998
+        },
+        {
+          "step": 6400,
+          "validation_nll": 15.445399927845783
+        },
+        {
+          "step": 6600,
+          "validation_nll": 15.446066818088443
+        },
+        {
+          "step": 6800,
+          "validation_nll": 15.445915634979583
+        },
+        {
+          "step": 7000,
+          "validation_nll": 15.443583059301421
+        },
+        {
+          "step": 7200,
+          "validation_nll": 15.445724830512376
+        },
+        {
+          "step": 7400,
+          "validation_nll": 15.446092845251037
+        },
+        {
+          "step": 7600,
+          "validation_nll": 15.44542667199525
+        },
+        {
+          "step": 7800,
+          "validation_nll": 15.445167089810347
+        },
+        {
+          "step": 8000,
+          "validation_nll": 15.443945693275413
+        }
+      ]
+    }
+  },
+  "rsi_setup": {
+    "seconds": 30.67817875300534,
+    "ranks": [
+      29,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      29
+    ],
+    "validation_relative_rms_error": 2.08564838393321e-09,
+    "validation_max_error": 1.7454143023205772e-15
+  },
+  "orders": [
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147
+  ],
+  "fit_seconds": 1732.980261664139,
+  "seconds": 1819.945437347982
+}

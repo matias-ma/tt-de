@@ -1,0 +1,9 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim10",
+  "pilot": "artifacts/swirl_improvement/tangent_dim10/selected.npz",
+  "output": "artifacts/swirl_improvement/tt_tangent_dim10_r64",
+  "rank": 64,
+  "modes": 49,
+  "steps": 0,
+  "strength": 0.0001
+}

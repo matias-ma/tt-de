@@ -1,0 +1,8 @@
+{
+  "family": "gl",
+  "dim": 10,
+  "train_count": 30000,
+  "valid_count": 2048,
+  "source": "artifacts/figure_refresh/gl_mixture_dim10",
+  "data_sha256": "508cf9591343e07b5620219503327cf749ad9f859d72ae59e1af8ead98b8c996"
+}

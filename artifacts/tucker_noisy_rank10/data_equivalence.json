@@ -1,0 +1,7 @@
+{
+  "training": true,
+  "validation": true,
+  "domain": true,
+  "noise_covariance": true,
+  "same_kernel_checkpoint": true
+}

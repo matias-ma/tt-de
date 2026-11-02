@@ -1,0 +1,21 @@
+{
+  "selected": "curriculum",
+  "scores": {
+    "strong": 4.8459790565374705,
+    "curriculum": 4.832956554322604
+  },
+  "files": {
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/strong/fit.npz": "202de32a591743ebeb56c0714025e8fa844da4d605c2378f9091d7c5c86ddb5d",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/strong/result.json": "9f1bc05f2847e9876f1cd8f0cb445a1c7c5596f3576d07f70da91b2b4cb46747",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/strong/config.json": "9fd61337ffd8e49ba502b7348389241a5bbf9b1696fd58e3d5c873c42d0bf2c0",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/strong/validation.npy": "65a515ad4d1abbc87986ebb2e66a5fb93d82c6aefcb2ac37b979e0419f2d6751",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/curriculum/fit.npz": "429d659aaac8240dce0f7caa5db7b414c92a491d074241639767706a7cb461c9",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/curriculum/result.json": "98e49f9e95cd730b8fd760d0e77e29bb3e3fdf6c7a984b7f011fa0171fafd604",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/curriculum/config.json": "2026dd5f4be2d2fa9ffea858e1fcd4354dd637c4a653c26418ceaa5b6e7f53f0",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/curriculum/validation.npy": "2de360fd52c6f4cea33536eb6d6c303536ebccb135659298c96b82bf847291bf",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/data.npz": "50b1a5a3b2930bfadb46bd6f57ba41c02ba94f9ee30cc538cb66228b317917a8",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/protocol.json": "79bfa03518f06596ec94a6f889063e1e4aa19718e914f2b3248d862f1b3170a6",
+    "artifacts/tucker_capacity/r6_noisy/swirl6_mixture/kernel.npz": "363879d1ffb0957615ee5c8d76c7077c22cae643a999838d36925052548edbf6"
+  },
+  "truth_evaluated": false
+}

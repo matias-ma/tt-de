@@ -1,0 +1,12 @@
+{
+  "scope": "Postfit metadata audit only; no labels used to fit, tune, or select these models.",
+  "labeled_conformations": 50,
+  "observations": 99000,
+  "minimum_state_count": 20,
+  "maximum_state_count": 4907,
+  "interpretation": "Finite state labels alone do not establish whether an estimated peak is real or whether the physical target is discrete or continuous.",
+  "frozen_selections": {
+    "gallery_dim10": "fc83ea30356b5c6ca393a0f765107eac8770b1f3bd5845751c0f747b38b0a681",
+    "gallery_dim20": "44478accc218b98584d4206fa9b323c28cf29989564bec7adf9f0cb0e26ad3f1"
+  }
+}

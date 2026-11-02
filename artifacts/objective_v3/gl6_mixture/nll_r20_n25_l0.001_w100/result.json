@@ -1,0 +1,112 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "validation_nll": 12.190908720483279,
+      "validation_mmd": 0.08958252636398358,
+      "roughness_hessian": 2.566445557024576e-06,
+      "batch_objective": null,
+      "seconds": 7.630078688962385
+    },
+    {
+      "step": 400,
+      "validation_nll": 9.48072833308736,
+      "validation_mmd": 0.0010135575796265633,
+      "roughness_hessian": 5.850096465820827,
+      "batch_objective": 9.633482780723739,
+      "seconds": 31.40070696803741
+    },
+    {
+      "step": 800,
+      "validation_nll": 9.478854130249502,
+      "validation_mmd": 0.0009003292696956801,
+      "roughness_hessian": 5.0475418811336645,
+      "batch_objective": 9.57660593343086,
+      "seconds": 40.71625427901745
+    },
+    {
+      "step": 1200,
+      "validation_nll": 9.479731631981362,
+      "validation_mmd": 0.0008192519164477065,
+      "roughness_hessian": 4.349850928264431,
+      "batch_objective": 9.220282004385636,
+      "seconds": 50.01214950811118
+    },
+    {
+      "step": 1600,
+      "validation_nll": 9.483736848576115,
+      "validation_mmd": 0.0012055619101787685,
+      "roughness_hessian": 3.9302812481978573,
+      "batch_objective": 9.513689916294704,
+      "seconds": 59.23928144713864
+    },
+    {
+      "step": 2000,
+      "validation_nll": 9.475158815059348,
+      "validation_mmd": 0.0007177618797923461,
+      "roughness_hessian": 3.9739609008542276,
+      "batch_objective": 9.6936272193087,
+      "seconds": 68.42187875509262
+    },
+    {
+      "step": 2400,
+      "validation_nll": 9.48069718321355,
+      "validation_mmd": 0.001056024977384761,
+      "roughness_hessian": 3.7487991378849546,
+      "batch_objective": 9.426778669702461,
+      "seconds": 77.72478429507464
+    },
+    {
+      "step": 2800,
+      "validation_nll": 9.47948361158005,
+      "validation_mmd": 0.0009824254422368603,
+      "roughness_hessian": 3.634098860311706,
+      "batch_objective": 9.335945444966825,
+      "seconds": 86.79188788798638
+    },
+    {
+      "step": 3200,
+      "validation_nll": 9.477416196701597,
+      "validation_mmd": 0.0008859926372508747,
+      "roughness_hessian": 3.672759962716947,
+      "batch_objective": 9.464690531735888,
+      "seconds": 96.06837803008966
+    },
+    {
+      "step": 3600,
+      "validation_nll": 9.478661736671308,
+      "validation_mmd": 0.0009564089782412091,
+      "roughness_hessian": 3.395832565726624,
+      "batch_objective": 9.654719377798136,
+      "seconds": 105.34570636204444
+    },
+    {
+      "step": 4000,
+      "validation_nll": 9.480056508315865,
+      "validation_mmd": 0.0010794930619001755,
+      "roughness_hessian": 3.552830334191379,
+      "batch_objective": 9.524624717451264,
+      "seconds": 114.61921821604483
+    }
+  ],
+  "best_nll": 9.475158815059348,
+  "best_step": 2000,
+  "best_kernel": 0.0007177618797923461,
+  "kernel_step": 2000,
+  "objective": "nll",
+  "kernel_weight": 100.0,
+  "steps": 4000,
+  "strength": 0.001,
+  "regularizer": "hessian",
+  "seconds": 114.62034411006607,
+  "uses_signal_pilot": false,
+  "checkpoint_rules": "separate minimum held-out NLL and minimum held-out kernel score",
+  "validation_quadrature_orders": [
+    74,
+    72,
+    75,
+    76,
+    73,
+    80
+  ]
+}

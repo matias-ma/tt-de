@@ -1,0 +1,25 @@
+{
+  "fit_path": "artifacts/direct_optimization/swirl_free4/squared_n49_r32_l0.0001_b1024_s1/fit.npz",
+  "fit_sha256": "2a0866106be01fb313022c161b9a210eb432aef174b9fbb644394f5dc8444bb5",
+  "kind": "squared",
+  "order": 129,
+  "positive_mass": 319.4935293297837,
+  "negative_mass": 0.0,
+  "norm_q_squared": 0.5063672461269754,
+  "raw_tt_negative_fraction_validation": 0.001220703125,
+  "raw_tt_minority_sign_fraction_validation": 0.001220703125,
+  "validation_risk": -0.5226687826803597,
+  "nll": 1.243214120498545,
+  "nonpositive_predictions": 0,
+  "relative_l2": 0.09710136469577066,
+  "cross_integral": 0.512235340920235,
+  "norm_p_squared": 0.5230349624010963,
+  "test": {
+    "nll": 1.2489133784851516,
+    "nonpositive_predictions": 0
+  },
+  "minimum_density_ratio_on_true_curve": 0.7349098425652224,
+  "fraction_true_curve_below_half_density": 0.0,
+  "raw_tt_sign_changes_on_true_curve": 0,
+  "raw_tt_negative_fraction_on_true_curve": 0.0
+}

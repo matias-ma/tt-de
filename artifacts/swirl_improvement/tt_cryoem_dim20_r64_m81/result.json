@@ -1,0 +1,28 @@
+{
+  "best_nll": 24.654892613162154,
+  "best_step": 400,
+  "strength": 0.0003,
+  "steps": 400,
+  "lr": 0.0002,
+  "batch_size": 64,
+  "history": [
+    {
+      "step": 0,
+      "nll": 24.669351347874013,
+      "penalty": 775.5031851982055
+    },
+    {
+      "step": 400,
+      "nll": 24.654892613162154,
+      "penalty": 402.7471615279005
+    }
+  ],
+  "checkpoint_rule": "regularized",
+  "selection_score": 24.775716761620526,
+  "seed": 0,
+  "preconditioning": "sobolev",
+  "microbatches": 4,
+  "device": "NVIDIA A100-SXM4-80GB",
+  "quadrature_log_error": 7.318590178329032e-13,
+  "seconds": 837.8065088130534
+}

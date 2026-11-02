@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "8089154b0829230f9ddb9541953338374c2ef404f9183fd0834f09199c5c08f5",
+  "relative_l2": 0.069533446560085,
+  "quadrature_relative_change": 1.72452092121381e-13,
+  "orders": [
+    64,
+    128
+  ],
+  "integral_estimate_squared": 0.00024880296325800955,
+  "integral_truth_times_estimate": 0.0002468740184056532,
+  "integral_truth_squared": 0.0002461351122544305,
+  "metric": "Lebesgue L2 of the latent full-dimensional density"
+}

@@ -1,0 +1,12 @@
+{
+  "cases": [
+    "gl6_free",
+    "swirl4_free",
+    "gl6_paired",
+    "gl6_mixture",
+    "swirl4_mixture",
+    "swirl10_mixture"
+  ],
+  "fits": 61,
+  "all_figures_published": true
+}

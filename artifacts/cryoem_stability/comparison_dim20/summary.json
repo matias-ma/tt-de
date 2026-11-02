@@ -1,0 +1,122 @@
+{
+  "scores": {
+    "previous": {
+      "noisy_validation_nll": 24.68819147434823,
+      "nll_change_from_previous": 0.0,
+      "paired_se": 0.0
+    },
+    "dim20_rank48_h2_3e4": {
+      "noisy_validation_nll": 24.656632940100593,
+      "nll_change_from_previous": -0.03155853424763712,
+      "paired_se": 0.0035112064447194564
+    }
+  },
+  "records": {
+    "dim20_rank48_h2_3e4": {
+      "best_nll": 24.656632940100593,
+      "best_step": 2400,
+      "strength": 0.0003,
+      "steps": 2400,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 24.688191474132243,
+          "penalty": 229.75645231221867
+        },
+        {
+          "step": 400,
+          "nll": 24.691702518506396,
+          "penalty": 177.8966440858571
+        },
+        {
+          "step": 800,
+          "nll": 24.683027670912452,
+          "penalty": 162.3233465472561
+        },
+        {
+          "step": 1200,
+          "nll": 24.667627951960373,
+          "penalty": 157.03051980420048
+        },
+        {
+          "step": 1600,
+          "nll": 24.66538890772178,
+          "penalty": 153.1126699557376
+        },
+        {
+          "step": 2000,
+          "nll": 24.659290952886323,
+          "penalty": 152.86821686777367
+        },
+        {
+          "step": 2400,
+          "nll": 24.656632940100593,
+          "penalty": 152.6098985683249
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 24.70241590967109,
+      "seed": 0,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 2.0676793610618915e-12,
+      "seconds": 677.9293140270747,
+      "common_h2": 152.6098985683249
+    }
+  },
+  "best_single": "dim20_rank48_h2_3e4",
+  "ensemble_members": [],
+  "marginals": {
+    "01": {
+      "previous": {
+        "mass_on_grid": 1.0000050580619217,
+        "finite_difference_relative_density_hessian_energy": 66.00407680903356,
+        "differential_entropy": 1.0227053597499158,
+        "relative_density_hessian_energy": 68.51690294642172,
+        "l1_change_from_previous": 0.0
+      },
+      "dim20_rank48_h2_3e4": {
+        "mass_on_grid": 1.000003269219583,
+        "finite_difference_relative_density_hessian_energy": 37.54625223108483,
+        "differential_entropy": 1.1501721075012195,
+        "relative_density_hessian_energy": 38.59275636769112,
+        "l1_change_from_previous": 0.15172406175219547
+      }
+    },
+    "23": {
+      "previous": {
+        "mass_on_grid": 1.000020263641707,
+        "finite_difference_relative_density_hessian_energy": 65.05265013574157,
+        "differential_entropy": 1.9196881743506473,
+        "relative_density_hessian_energy": 67.03903701318505,
+        "l1_change_from_previous": 0.0
+      },
+      "dim20_rank48_h2_3e4": {
+        "mass_on_grid": 1.0000204815276268,
+        "finite_difference_relative_density_hessian_energy": 44.02049633577187,
+        "differential_entropy": 1.984438276536047,
+        "relative_density_hessian_energy": 45.157086793606815,
+        "l1_change_from_previous": 0.14991618796705308
+      }
+    },
+    "89": {
+      "previous": {
+        "mass_on_grid": 1.0000187440251613,
+        "finite_difference_relative_density_hessian_energy": 38.400688490716774,
+        "differential_entropy": 1.4720565382038275,
+        "relative_density_hessian_energy": 38.700886226768986,
+        "l1_change_from_previous": 0.0
+      },
+      "dim20_rank48_h2_3e4": {
+        "mass_on_grid": 1.0000169886694148,
+        "finite_difference_relative_density_hessian_energy": 21.403690756748695,
+        "differential_entropy": 1.5787789956428262,
+        "relative_density_hessian_energy": 21.51485341121961,
+        "l1_change_from_previous": 0.13729460354514475
+      }
+    }
+  },
+  "stability_scope": "Conditional resampled continuations from a fit trained on all original training observations. Not independent-data replication or calibrated confidence intervals."
+}

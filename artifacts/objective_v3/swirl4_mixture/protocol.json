@@ -1,0 +1,124 @@
+{
+  "case": "swirl4_mixture",
+  "source": "artifacts/swirl/swirl_mixture_dim4",
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "domain": [
+    [
+      -2.3977334329072773,
+      2.1960368639246535
+    ],
+    [
+      -2.132891069145988,
+      2.1717388479744097
+    ],
+    [
+      -2.3334871568543107,
+      2.6147759590767214
+    ],
+    [
+      -2.2980397369166243,
+      2.38189702851914
+    ]
+  ],
+  "noise_weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0484,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0484,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0484,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0484
+      ]
+    ],
+    [
+      [
+        0.2025,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0625,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2025,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0625
+      ]
+    ],
+    [
+      [
+        0.25,
+        0.15,
+        0.0,
+        0.0
+      ],
+      [
+        0.15,
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25,
+        -0.15
+      ],
+      [
+        0.0,
+        0.0,
+        -0.15,
+        0.25
+      ]
+    ]
+  ],
+  "training_count": 100000,
+  "validation_count": 4096,
+  "uses_clean_truth": false,
+  "uses_signal_pilot": false,
+  "initialization": "constant plus random coefficients, perturbation .01, seed 0",
+  "kernel": "Gaussian bandwidth mixture (.2,.5,1) times sqrt(d) in training-standardized coordinates",
+  "training_frequencies": 1024,
+  "validation_frequencies": 512,
+  "frequency_seeds": [
+    2701,
+    2702
+  ],
+  "regularizer": "full amplitude Hessian, scales .05 box width",
+  "selection": "separate paired-one-SE NLL and kernel choices; prefer fewer coefficients",
+  "truth_evaluation": "only after all candidate and checkpoint hashes are frozen",
+  "storage_budget_MiB": 512
+}

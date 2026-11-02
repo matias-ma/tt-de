@@ -1,0 +1,26 @@
+{
+  "01": {
+    "fft_relative_refinement_change": [
+      0.00012761479734708347,
+      0.00012299200401715745
+    ],
+    "observed_marginal_relative_l2": 0.03390778516754241,
+    "kernel_approximation": {
+      "minimum_before_clipping": 1.0844747707518668e-11,
+      "clipped_negative_mass": -0.0
+    },
+    "latent_marginal_relative_l2": 0.07512975894874115
+  },
+  "23": {
+    "fft_relative_refinement_change": [
+      0.00012774316293364204,
+      0.00012201592374008897
+    ],
+    "observed_marginal_relative_l2": 0.029800022808006477,
+    "kernel_approximation": {
+      "minimum_before_clipping": 1.2877628359907361e-11,
+      "clipped_negative_mass": -0.0
+    },
+    "latent_marginal_relative_l2": 0.0677121406547726
+  }
+}

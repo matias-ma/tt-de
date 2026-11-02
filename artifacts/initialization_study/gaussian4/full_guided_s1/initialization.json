@@ -1,0 +1,102 @@
+{
+  "method": "full_guided",
+  "seed": 1,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 80,
+    "validation_nll": 4.9862386809030514,
+    "history": [
+      {
+        "step": 10,
+        "nll": 5.004530590105679
+      },
+      {
+        "step": 20,
+        "nll": 4.991757572977164
+      },
+      {
+        "step": 30,
+        "nll": 4.988482893538013
+      },
+      {
+        "step": 40,
+        "nll": 4.987209035656388
+      },
+      {
+        "step": 50,
+        "nll": 4.986625997223468
+      },
+      {
+        "step": 60,
+        "nll": 4.986357610665895
+      },
+      {
+        "step": 70,
+        "nll": 4.9862521323684845
+      },
+      {
+        "step": 80,
+        "nll": 4.9862386809030514
+      },
+      {
+        "step": 90,
+        "nll": 4.986280677263347
+      },
+      {
+        "step": 100,
+        "nll": 4.986356506663212
+      },
+      {
+        "step": 110,
+        "nll": 4.9864528529432475
+      },
+      {
+        "step": 120,
+        "nll": 4.986561738852282
+      },
+      {
+        "step": 130,
+        "nll": 4.986679000983523
+      },
+      {
+        "step": 140,
+        "nll": 4.98680323160664
+      },
+      {
+        "step": 150,
+        "nll": 4.986934700679967
+      }
+    ],
+    "seconds": 0.2781902668066323
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.3812445088175656,
+        "sample_matrix_relative_tail": 6.902474481963315e-07
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 9.70715030331109,
+        "sample_matrix_relative_tail": 0.004190909815436732
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 9.97540381491268,
+        "sample_matrix_relative_tail": 4.32418195375743e-07
+      }
+    ]
+  },
+  "seconds": 3.9024326170329005,
+  "pilot_is_final_model": false
+}

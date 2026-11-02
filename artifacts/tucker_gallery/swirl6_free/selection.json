@@ -1,0 +1,15 @@
+{
+  "selected": "strong",
+  "scores": {
+    "strong": 2.095473695814931
+  },
+  "files": {
+    "artifacts/tucker_gallery/swirl6_free/strong/fit.npz": "ab605531408bd33d7f2a25443e2dccdf0b598861d75e432201e4e7daab9561d1",
+    "artifacts/tucker_gallery/swirl6_free/strong/result.json": "b3cda8c0e89a154e93e49ddf890e3150d87317f81bedd3bcd4c32142722408dd",
+    "artifacts/tucker_gallery/swirl6_free/strong/config.json": "99a0b12dbe19d6b448adc0b4d01240a9d266c2a14ae2d79f6868a8aad02d3fa7",
+    "artifacts/tucker_gallery/swirl6_free/strong/validation.npy": "8bf8fec1357f753ed3763635c6a2211373bcbefaceee3492a32db60bfc60b74c",
+    "artifacts/tucker_gallery/swirl6_free/data.npz": "1fe62daa9c0a1ecadb82b691d29e85fe017b7e0fed3e6ef9f35e8c15c13462a2",
+    "artifacts/tucker_gallery/swirl6_free/protocol.json": "1a8b337c181fba7d1b9eb5829e0ed9eaf8eeb7fec0728eae94c4511b67037ca1"
+  },
+  "truth_evaluated": false
+}

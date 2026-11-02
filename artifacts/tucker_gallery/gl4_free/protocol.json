@@ -1,0 +1,70 @@
+{
+  "family": "gl",
+  "dim": 4,
+  "noise": "free",
+  "rank": 5,
+  "steps": 4000,
+  "decomposition": "tucker",
+  "domain": [
+    [
+      -2.160884968972247,
+      2.1252012923756807
+    ],
+    [
+      -2.121229803967892,
+      2.159826638492155
+    ],
+    [
+      -2.1378173594285563,
+      2.133747947232843
+    ],
+    [
+      -2.1207091236006663,
+      2.1677312968350977
+    ]
+  ],
+  "data": "artifacts/dimension_gallery_v9/gl4_free/data.npz",
+  "data_sha256": "0d80e4dd004f70d9b5bf9a40c52bfe4eae12e7a20f24c1bdb77df36b9ae36e29",
+  "kernel": null,
+  "noise_weights": [
+    1.0
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "modes": 25,
+  "seed": 0,
+  "perturbation": 0.01,
+  "initialization": "near-uniform native Tucker; no fitted pilot",
+  "optimizer": "Adam (TT canonical core sweeps are decomposition-specific)",
+  "selection": "minimum held-out NLL checkpoint and recipe",
+  "truth_used_for_selection": false,
+  "recipes": [
+    "strong"
+  ]
+}

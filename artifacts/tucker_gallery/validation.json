@@ -1,0 +1,22 @@
+{
+  "precision": "float64",
+  "commands": [
+    "JAX_PLATFORMS=cpu JAX_ENABLE_X64=1 OPENBLAS_NUM_THREADS=1 /home/ma4473/.conda/envs/chebdGE/bin/python -m pytest tests/test_tucker_direct.py tests/test_direct_microbatches.py -q",
+    "JAX_PLATFORMS=cpu JAX_ENABLE_X64=1 OPENBLAS_NUM_THREADS=1 /home/ma4473/.conda/envs/chebdGE/bin/python -m pytest tests/test_tucker_direct.py tests/test_direct_training.py -q",
+    "JAX_PLATFORMS=cpu JAX_ENABLE_X64=1 OPENBLAS_NUM_THREADS=1 /home/ma4473/.conda/envs/chebdGE/bin/python -m pytest tests/test_tucker_direct.py tests/test_tt_convolution.py -q",
+    "JAX_PLATFORMS=cpu JAX_ENABLE_X64=1 OPENBLAS_NUM_THREADS=1 /home/ma4473/.conda/envs/chebdGE/bin/python -m pytest tests/test_tucker_direct.py::test_conversion_normalization_and_energies -q",
+    "JAX_PLATFORMS=cpu JAX_ENABLE_X64=1 OPENBLAS_NUM_THREADS=1 /home/ma4473/.conda/envs/chebdGE/bin/python -m pytest tests/test_tucker_direct.py -q"
+  ],
+  "checks": [
+    "independent tensor quadrature of correlated noise convolution",
+    "prepared/unprepared convolution value and coefficient gradients",
+    "explicit upstream Tucker convolution value and gradient equivalence",
+    "native Tucker and lossless TT values, normalization, Hessian and marginal penalty equivalence",
+    "independent exact marginal quadrature",
+    "mode curriculum and microbatch training",
+    "Tucker checkpoint round trip",
+    "TT optimizer and convolution regressions",
+    "Exact disconnected kernel block contraction, values and gradients"
+  ],
+  "status": "passed"
+}

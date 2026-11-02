@@ -1,0 +1,30 @@
+{
+  "case": "gl6_mixture",
+  "recipe": "curriculum",
+  "seed": 0,
+  "strength": 1e-05,
+  "marginal_strength": 0.0,
+  "precondition_strength": 1e-05,
+  "mode_schedule": [
+    [
+      0,
+      9
+    ],
+    [
+      1000,
+      17
+    ],
+    [
+      2000,
+      25
+    ]
+  ],
+  "selection_start": 2000,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "uses_truth": false,
+  "data_sha256": "3662b0177d644a0369229ba9f2491e40d98b3ac036fdc15cabc9f308186e898a",
+  "initialization": "constant plus small random coefficients; seed is independent of batch seed"
+}

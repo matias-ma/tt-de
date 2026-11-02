@@ -1,0 +1,143 @@
+{
+  "models": {
+    "original": {
+      "relative_l2": 0.2939445343674699,
+      "relative_squared_l2": 0.08640338928450869,
+      "integral_q_squared": 0.4510245479848597,
+      "integral_pq": 0.4644337584601411,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 1.18467842907376e-10,
+      "model": "original",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "test_nll": 3.920580025991145,
+      "training_subset_nll": 3.879356474947647,
+      "training_subset_count": 20000,
+      "roughness_hessian": 9.508971644003822,
+      "estimated_observed_kl": 0.003859005201369965,
+      "observed_kl_se": 0.001394730000630754,
+      "true_observed_test_nll": 3.9167210207897756,
+      "pair01_relative_l2": 0.12836371587080672,
+      "pair23_relative_l2": 0.17584475782141035,
+      "validation_nll_minus_original": 0.0,
+      "paired_validation_se": 0.0,
+      "marginal_curvature": 9.670111686308573,
+      "univariate_relative_l2": [
+        0.058861483900388055,
+        0.0597598460741445,
+        0.05950627231020498,
+        0.0964400429390548
+      ],
+      "mean_univariate_relative_l2": 0.06864191130594809
+    },
+    "control": {
+      "relative_l2": 0.2999776831385446,
+      "relative_squared_l2": 0.08998661038116906,
+      "integral_q_squared": 0.45926012035751473,
+      "integral_pq": 0.4676144696906852,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 1.2553649789237185e-10,
+      "model": "control",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "test_nll": 3.920233790946922,
+      "training_subset_nll": 3.879695056752776,
+      "training_subset_count": 20000,
+      "roughness_hessian": 10.173825021031952,
+      "estimated_observed_kl": 0.003512770157146508,
+      "observed_kl_se": 0.0013829179666195082,
+      "true_observed_test_nll": 3.9167210207897756,
+      "pair01_relative_l2": 0.12843825353923904,
+      "pair23_relative_l2": 0.18572463964066058,
+      "validation_nll_minus_original": -0.0003084103025659819,
+      "paired_validation_se": 0.000515504271226926,
+      "marginal_curvature": 11.639913789102259,
+      "univariate_relative_l2": [
+        0.05764839563937483,
+        0.05918884250969644,
+        0.06033459396596616,
+        0.11098527168739034
+      ],
+      "mean_univariate_relative_l2": 0.07203927595060694
+    },
+    "marginal_light": {
+      "relative_l2": 0.27697154355858217,
+      "relative_squared_l2": 0.07671323594122359,
+      "integral_q_squared": 0.4377671723515022,
+      "integral_pq": 0.46033921513824577,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 1.1968423062520784e-10,
+      "model": "marginal_light",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "test_nll": 3.920241309129273,
+      "training_subset_nll": 3.879724612760912,
+      "training_subset_count": 20000,
+      "roughness_hessian": 9.6507523672279,
+      "estimated_observed_kl": 0.0035202883394978395,
+      "observed_kl_se": 0.001381614002517826,
+      "true_observed_test_nll": 3.9167210207897756,
+      "pair01_relative_l2": 0.12549362646555637,
+      "pair23_relative_l2": 0.13914031213227593,
+      "validation_nll_minus_original": -0.000301460909159662,
+      "paired_validation_se": 0.0005257101754517932,
+      "marginal_curvature": 4.4761819050850615,
+      "univariate_relative_l2": [
+        0.05393051166101459,
+        0.05017839962078786,
+        0.04346840110733401,
+        0.03796026005574925
+      ],
+      "mean_univariate_relative_l2": 0.04638439311122143
+    },
+    "marginal_moderate": {
+      "relative_l2": 0.27985146045064185,
+      "relative_squared_l2": 0.07831683991635717,
+      "integral_q_squared": 0.4264650314720564,
+      "integral_pq": 0.4542687742261027,
+      "integral_p_squared": 0.5230349624011801,
+      "path_quadrature_relative_change": 1.1676366896223803e-10,
+      "model": "marginal_moderate",
+      "metric": "Lebesgue L2 of the latent full-dimensional density",
+      "test_nll": 3.9202753181473713,
+      "training_subset_nll": 3.879790835981333,
+      "training_subset_count": 20000,
+      "roughness_hessian": 9.742487843954128,
+      "estimated_observed_kl": 0.003554297357596036,
+      "observed_kl_se": 0.0013885370221575063,
+      "true_observed_test_nll": 3.9167210207897756,
+      "pair01_relative_l2": 0.13392074763260284,
+      "pair23_relative_l2": 0.13912609444654336,
+      "validation_nll_minus_original": -0.0002315433170950712,
+      "paired_validation_se": 0.0005597379122837879,
+      "marginal_curvature": 3.4099091387669036,
+      "univariate_relative_l2": [
+        0.05929494455911661,
+        0.05652814031892043,
+        0.05067112942957453,
+        0.03641394742623632
+      ],
+      "mean_univariate_relative_l2": 0.050727040433461976
+    }
+  },
+  "selected": "control",
+  "test_comparisons_reference": "original",
+  "test_comparisons": {
+    "original": {
+      "test_nll_minus_reference": 0.0,
+      "paired_se": 0.0
+    },
+    "control": {
+      "test_nll_minus_reference": -0.00034623504422345635,
+      "paired_se": 0.0005687666840910586
+    },
+    "marginal_light": {
+      "test_nll_minus_reference": -0.00033871686187212486,
+      "paired_se": 0.0005769714663347194
+    },
+    "marginal_moderate": {
+      "test_nll_minus_reference": -0.0003047078437739281,
+      "paired_se": 0.0006075586433607469
+    }
+  },
+  "test_count": 4096,
+  "truth_used_only_after_freeze": true,
+  "standard_errors": "IID paired observations"
+}

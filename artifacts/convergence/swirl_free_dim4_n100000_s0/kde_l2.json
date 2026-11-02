@@ -1,0 +1,16 @@
+{
+  "relative_l2": 0.18554506254434505,
+  "relative_squared_l2": 0.03442697023458492,
+  "integral_kde_squared": 0.4077066637771114,
+  "integral_p_kde": 0.4563675585480294,
+  "integral_p_kde_standard_error": 0.0,
+  "integral_p_squared": 0.5230349624011801,
+  "relative_l2_standard_error": 0.0,
+  "bandwidth": [
+    0.05717696064170466,
+    0.05393301667610136,
+    0.06429302480177103,
+    0.06741871071747708
+  ],
+  "n_train": 100000
+}

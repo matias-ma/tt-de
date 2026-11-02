@@ -1,0 +1,9 @@
+{
+  "base": "artifacts/swirl/swirl_mixture_dim10",
+  "pilot": null,
+  "output": "artifacts/swirl_improvement/tt_control_dim10_r64",
+  "rank": 64,
+  "modes": 49,
+  "steps": 800,
+  "strength": 0.0001
+}

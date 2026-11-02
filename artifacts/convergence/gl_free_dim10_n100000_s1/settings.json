@@ -1,0 +1,14 @@
+{
+  "family": "gl",
+  "dim": 10,
+  "noise": "free",
+  "path": false,
+  "output": "artifacts/convergence/gl_free_dim10_n100000_s1",
+  "steps": 8000,
+  "strengths": [
+    0.1,
+    0.3,
+    1.0
+  ],
+  "train_seed": 1
+}

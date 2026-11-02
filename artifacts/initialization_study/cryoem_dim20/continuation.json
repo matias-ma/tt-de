@@ -1,0 +1,8 @@
+{
+  "extra_steps": 2400,
+  "learning_rate": 0.0002,
+  "amplitude_H2_strength": 0.0003,
+  "adam_restarted": true,
+  "source_fit_sha256": "fa5f2983ac452d96fb228e50e1bf7d94405e88c3f26dbc8711473333dded1d5e",
+  "selection_data": "existing noisy development validation only"
+}

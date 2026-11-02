@@ -1,0 +1,16 @@
+{
+  "models": {
+    "hessian": {
+      "relative_l2": 0.10274318282388202,
+      "integral_q_squared": 1.9775726703412252e-05,
+      "integral_pq": 1.9826950813748535e-05,
+      "integral_p_squared": 2.00902508590749e-05,
+      "quadrature_relative_change": 1.823058601716358e-13,
+      "model_sha256": "7f366095b6ccc664296c6a03a228ec514c82dc83d0fde4089a2cbf4517ebb8df"
+    }
+  },
+  "selected": "hessian",
+  "minimum_nll": "hessian",
+  "selection_sha256": "6fd3142cb6bbcffeb3eb73accd079acefe850625d81cb6aa16f8a22dc2a9f463",
+  "metric": "unsquared full-dimensional relative Lebesgue L2"
+}

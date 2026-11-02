@@ -1,0 +1,61 @@
+{
+  "selected": "lbfgs",
+  "selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 2,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 9.993076784661596,
+        "excess_nll": 0.04173723289364499,
+        "paired_cluster_se": 0.0022664515585172915,
+        "roughness": 8.217875911269731,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.95434409683948,
+        "excess_nll": 0.0030045450715292217,
+        "paired_cluster_se": 0.0012253646648295513,
+        "roughness": 15.36611308620521,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.951339551767951,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 15.3615092415936,
+        "eligible": true
+      }
+    ]
+  },
+  "previous_direct_name": "lbfgs",
+  "previous_direct_nll": 9.907843261544386,
+  "paired_new_minus_previous": [
+    {
+      "delta_nll": 0.08523352311720818,
+      "paired_se": 0.004940206059388996
+    },
+    {
+      "delta_nll": 0.0465008352950924,
+      "paired_se": 0.003930432316317506
+    },
+    {
+      "delta_nll": 0.04349629022356318,
+      "paired_se": 0.003707342110756607
+    }
+  ],
+  "new_nll": [
+    9.993076784661596,
+    9.95434409683948,
+    9.951339551767951
+  ],
+  "uses_signal_pilot": false,
+  "uses_clean_truth": false,
+  "files": {
+    "artifacts/direct_optimization/cryoem_dim10/lbfgs/fit.npz": "4c96f19d3c8f71f507aade1ea0777dac88bdbf7f9941d7b02b8c30ff7e061785",
+    "artifacts/noise_free_v2/cryoem_dim10/hessian_0.01_logpen/fit.npz": "370c0de2cc576046ec0cee3a6a2d8fd3c88fef7b6afe3bb17f04755fef1e5996",
+    "artifacts/noise_free_v2/cryoem_dim10/hessian_0.003_logpen/fit.npz": "704f4cee995833d37da8eb52cfd148a9b59e897210a2ff511bd5ed2cd9af0118",
+    "artifacts/noise_free_v2/cryoem_dim10/lbfgs/fit.npz": "cacffc4bb5652e48e12ada85843d8561e37fd7d7e9ccb1d3bb71dec64b292dae"
+  }
+}

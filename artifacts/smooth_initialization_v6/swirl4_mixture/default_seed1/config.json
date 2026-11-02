@@ -1,0 +1,17 @@
+{
+  "case": "swirl4_mixture",
+  "recipe": "weaker",
+  "strength": 1e-05,
+  "marginal_strength": 0.0,
+  "initialization": {
+    "seed": 1
+  },
+  "initial_hessian": 1.3893189365110576e-05,
+  "initial_roughness_h1": 1.2986928888153553e-07,
+  "steps": 4000,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "uses_truth": false,
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92"
+}

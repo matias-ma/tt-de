@@ -1,0 +1,474 @@
+{
+  "dim": 8,
+  "noise": "paired",
+  "n_train": 100000,
+  "n_test": 4000,
+  "rank": 8,
+  "n_coeffs": 17,
+  "steps": 10000,
+  "naive_steps": 10000,
+  "deconv_steps": 10000,
+  "batch_size": 512,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 12,
+  "compare_spectral": false,
+  "output": "/home/ma4473/ft-de/results/gl_convolution_scaling/gl8_paired.json",
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.989748456158136,
+      "relative_sample_l2": 0.9948610235395374
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.9536221914585071,
+      "relative_sample_l2": 0.9765358116620747
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.0891566321042773,
+      "relative_sample_l2": 0.29859107840703697
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 1.829647544582258e-13,
+    "kernel_relative_sample_l2": 1.2923247011973513e-06,
+    "kernel_negative_fraction": 0.0
+  },
+  "histories": {
+    "naive": {
+      "best_step": 7600,
+      "best_nll": 11.163010072577274,
+      "training_seconds": 43.14088333910331,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 11.412270332870845
+        },
+        {
+          "step": 200,
+          "validation_nll": 11.190967814568058
+        },
+        {
+          "step": 400,
+          "validation_nll": 11.198244045629915
+        },
+        {
+          "step": 600,
+          "validation_nll": 11.181806803332867
+        },
+        {
+          "step": 800,
+          "validation_nll": 11.173547051735328
+        },
+        {
+          "step": 1000,
+          "validation_nll": 11.171840188496121
+        },
+        {
+          "step": 1200,
+          "validation_nll": 11.172390164689741
+        },
+        {
+          "step": 1400,
+          "validation_nll": 11.171671085004693
+        },
+        {
+          "step": 1600,
+          "validation_nll": 11.17533654035455
+        },
+        {
+          "step": 1800,
+          "validation_nll": 11.171377328581217
+        },
+        {
+          "step": 2000,
+          "validation_nll": 11.172386466388145
+        },
+        {
+          "step": 2200,
+          "validation_nll": 11.1744367494786
+        },
+        {
+          "step": 2400,
+          "validation_nll": 11.170469668922738
+        },
+        {
+          "step": 2600,
+          "validation_nll": 11.165167399655527
+        },
+        {
+          "step": 2800,
+          "validation_nll": 11.165992777918575
+        },
+        {
+          "step": 3000,
+          "validation_nll": 11.168447208887775
+        },
+        {
+          "step": 3200,
+          "validation_nll": 11.163049552262311
+        },
+        {
+          "step": 3400,
+          "validation_nll": 11.163219997980264
+        },
+        {
+          "step": 3600,
+          "validation_nll": 11.164922849937938
+        },
+        {
+          "step": 3800,
+          "validation_nll": 11.165250177935699
+        },
+        {
+          "step": 4000,
+          "validation_nll": 11.173605147893982
+        },
+        {
+          "step": 4200,
+          "validation_nll": 11.17174166985536
+        },
+        {
+          "step": 4400,
+          "validation_nll": 11.164443661594252
+        },
+        {
+          "step": 4600,
+          "validation_nll": 11.169478888335837
+        },
+        {
+          "step": 4800,
+          "validation_nll": 11.16544166041688
+        },
+        {
+          "step": 5000,
+          "validation_nll": 11.167452223115529
+        },
+        {
+          "step": 5200,
+          "validation_nll": 11.169081770102236
+        },
+        {
+          "step": 5400,
+          "validation_nll": 11.16929729187614
+        },
+        {
+          "step": 5600,
+          "validation_nll": 11.172108091038634
+        },
+        {
+          "step": 5800,
+          "validation_nll": 11.17391526866319
+        },
+        {
+          "step": 6000,
+          "validation_nll": 11.1671719106985
+        },
+        {
+          "step": 6200,
+          "validation_nll": 11.167951239333059
+        },
+        {
+          "step": 6400,
+          "validation_nll": 11.174253273870189
+        },
+        {
+          "step": 6600,
+          "validation_nll": 11.167921315457281
+        },
+        {
+          "step": 6800,
+          "validation_nll": 11.166669652090528
+        },
+        {
+          "step": 7000,
+          "validation_nll": 11.166900586270597
+        },
+        {
+          "step": 7200,
+          "validation_nll": 11.168178732927503
+        },
+        {
+          "step": 7400,
+          "validation_nll": 11.166299222165618
+        },
+        {
+          "step": 7600,
+          "validation_nll": 11.163010072577274
+        },
+        {
+          "step": 7800,
+          "validation_nll": 11.163393553577663
+        },
+        {
+          "step": 8000,
+          "validation_nll": 11.163857277956355
+        },
+        {
+          "step": 8200,
+          "validation_nll": 11.164475733861902
+        },
+        {
+          "step": 8400,
+          "validation_nll": 11.16451200090771
+        },
+        {
+          "step": 8600,
+          "validation_nll": 11.164343965674366
+        },
+        {
+          "step": 8800,
+          "validation_nll": 11.16603874080178
+        },
+        {
+          "step": 9000,
+          "validation_nll": 11.167175493565136
+        },
+        {
+          "step": 9200,
+          "validation_nll": 11.166981712191554
+        },
+        {
+          "step": 9400,
+          "validation_nll": 11.163885390223454
+        },
+        {
+          "step": 9600,
+          "validation_nll": 11.164304868242265
+        },
+        {
+          "step": 9800,
+          "validation_nll": 11.165569899942009
+        },
+        {
+          "step": 10000,
+          "validation_nll": 11.164390421074028
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 7800,
+      "best_nll": 11.260050402674619,
+      "training_seconds": 116.02428382379003,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 11.793510755679453
+        },
+        {
+          "step": 200,
+          "validation_nll": 11.310453677935374
+        },
+        {
+          "step": 400,
+          "validation_nll": 11.27958616793596
+        },
+        {
+          "step": 600,
+          "validation_nll": 11.271505043676964
+        },
+        {
+          "step": 800,
+          "validation_nll": 11.265721037875679
+        },
+        {
+          "step": 1000,
+          "validation_nll": 11.26470810230567
+        },
+        {
+          "step": 1200,
+          "validation_nll": 11.263795936236988
+        },
+        {
+          "step": 1400,
+          "validation_nll": 11.265435399494635
+        },
+        {
+          "step": 1600,
+          "validation_nll": 11.266094065496997
+        },
+        {
+          "step": 1800,
+          "validation_nll": 11.26377319638311
+        },
+        {
+          "step": 2000,
+          "validation_nll": 11.263347865906553
+        },
+        {
+          "step": 2200,
+          "validation_nll": 11.263228643452038
+        },
+        {
+          "step": 2400,
+          "validation_nll": 11.26863315002777
+        },
+        {
+          "step": 2600,
+          "validation_nll": 11.263220629288632
+        },
+        {
+          "step": 2800,
+          "validation_nll": 11.262090861926769
+        },
+        {
+          "step": 3000,
+          "validation_nll": 11.263655169470091
+        },
+        {
+          "step": 3200,
+          "validation_nll": 11.261814663371538
+        },
+        {
+          "step": 3400,
+          "validation_nll": 11.263024946808272
+        },
+        {
+          "step": 3600,
+          "validation_nll": 11.26389614919294
+        },
+        {
+          "step": 3800,
+          "validation_nll": 11.260342727604613
+        },
+        {
+          "step": 4000,
+          "validation_nll": 11.260148376057078
+        },
+        {
+          "step": 4200,
+          "validation_nll": 11.262621072717213
+        },
+        {
+          "step": 4400,
+          "validation_nll": 11.26013612503117
+        },
+        {
+          "step": 4600,
+          "validation_nll": 11.26232190912281
+        },
+        {
+          "step": 4800,
+          "validation_nll": 11.26148449185313
+        },
+        {
+          "step": 5000,
+          "validation_nll": 11.262229423053396
+        },
+        {
+          "step": 5200,
+          "validation_nll": 11.261503351394792
+        },
+        {
+          "step": 5400,
+          "validation_nll": 11.26258284239458
+        },
+        {
+          "step": 5600,
+          "validation_nll": 11.261326882338263
+        },
+        {
+          "step": 5800,
+          "validation_nll": 11.26024129894105
+        },
+        {
+          "step": 6000,
+          "validation_nll": 11.26319216358269
+        },
+        {
+          "step": 6200,
+          "validation_nll": 11.26183568860663
+        },
+        {
+          "step": 6400,
+          "validation_nll": 11.261777488851024
+        },
+        {
+          "step": 6600,
+          "validation_nll": 11.261477300138282
+        },
+        {
+          "step": 6800,
+          "validation_nll": 11.261476797955371
+        },
+        {
+          "step": 7000,
+          "validation_nll": 11.261379454913303
+        },
+        {
+          "step": 7200,
+          "validation_nll": 11.260322376959287
+        },
+        {
+          "step": 7400,
+          "validation_nll": 11.261832435343404
+        },
+        {
+          "step": 7600,
+          "validation_nll": 11.26205960623816
+        },
+        {
+          "step": 7800,
+          "validation_nll": 11.260050402674619
+        },
+        {
+          "step": 8000,
+          "validation_nll": 11.263112347213765
+        },
+        {
+          "step": 8200,
+          "validation_nll": 11.261949485174597
+        },
+        {
+          "step": 8400,
+          "validation_nll": 11.261053661553897
+        },
+        {
+          "step": 8600,
+          "validation_nll": 11.261472149308169
+        },
+        {
+          "step": 8800,
+          "validation_nll": 11.260988854117809
+        },
+        {
+          "step": 9000,
+          "validation_nll": 11.26130314847003
+        },
+        {
+          "step": 9200,
+          "validation_nll": 11.26197956771177
+        },
+        {
+          "step": 9400,
+          "validation_nll": 11.261303873232134
+        },
+        {
+          "step": 9600,
+          "validation_nll": 11.26159317319982
+        },
+        {
+          "step": 9800,
+          "validation_nll": 11.26120514257996
+        },
+        {
+          "step": 10000,
+          "validation_nll": 11.261094654571139
+        }
+      ]
+    }
+  },
+  "orders": [
+    145,
+    145,
+    145,
+    145,
+    145,
+    145,
+    145,
+    145
+  ],
+  "seconds": 238.19856904796325
+}

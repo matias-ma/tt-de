@@ -1,0 +1,15 @@
+{
+  "case": "swirl4_mixture",
+  "recipe": "marginal_medium",
+  "strength": 0.0001,
+  "marginal_strength": 0.01,
+  "steps": 2000,
+  "learning_rate": 0.0003,
+  "batch_size": 256,
+  "source": "artifacts/swirl/swirl_mixture_dim4",
+  "data_sha256": "63819d44e97a945b429c5f91458feee525fc816bf56249bc8114c8243fc9dd92",
+  "initialization": "artifacts/objective_v3/swirl4_mixture/nll_r32_n49_l0.001_w100/fit.npz",
+  "uses_truth": false,
+  "uses_signal_pilot": false,
+  "batch_seed": 0
+}

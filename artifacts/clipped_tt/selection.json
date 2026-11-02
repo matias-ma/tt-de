@@ -1,0 +1,37 @@
+{
+  "selected": "swirl4_r32_positive_s1e5",
+  "warm_selected": "swirl4_warm_r64_s1e4",
+  "candidates": [
+    {
+      "name": "swirl4_r32_positive_s1e5",
+      "nll": 3.860234540614371,
+      "best_step": 2800
+    },
+    {
+      "name": "swirl4_r32_s1e5",
+      "nll": 3.861183851104415,
+      "best_step": 1200
+    },
+    {
+      "name": "swirl4_r64_positive_s1e4_neg001",
+      "nll": 3.8629677110419576,
+      "best_step": 2000
+    },
+    {
+      "name": "swirl4_r64_positive_s1e5_neg001",
+      "nll": 3.8624033425292623,
+      "best_step": 2000
+    },
+    {
+      "name": "swirl4_warm_r64_s1e4",
+      "nll": 3.862014105327715,
+      "best_step": 0
+    },
+    {
+      "name": "swirl4_warm_r64_s1e5",
+      "nll": 3.862014105327715,
+      "best_step": 0
+    }
+  ],
+  "rule": "minimum noisy validation NLL; no target evaluation"
+}

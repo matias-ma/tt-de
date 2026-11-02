@@ -1,0 +1,93 @@
+{
+  "selected": "heat_0",
+  "models": {
+    "heat_0": {
+      "fraction": 0.0,
+      "fit_sha256": "ef94298164ed5271f763500f8b734da6083b52c9d3db2bf023c17821573a8c10",
+      "positive_mass": 1.1460469397975739,
+      "negative_mass": 0.14604693979758077,
+      "norm_q_squared": 0.3930525400434655,
+      "validation_risk": -0.5093923335490211,
+      "nll": null,
+      "nonpositive_predictions": 36
+    },
+    "heat_0.0025": {
+      "fraction": 0.0025,
+      "fit_sha256": "40814dee937cc0a270c4bec4a78f59c12ad3927014df63095b5124599114c519",
+      "positive_mass": 1.140667499013315,
+      "negative_mass": 0.1406674990133223,
+      "norm_q_squared": 0.3922384810485986,
+      "validation_risk": -0.5093880136834408,
+      "nll": null,
+      "nonpositive_predictions": 36
+    },
+    "heat_0.005": {
+      "fraction": 0.005,
+      "fit_sha256": "08068c89f4f584590e8d56681f8136038772fa2d02a8f8aeef2c8c78eaed9096",
+      "positive_mass": 1.1277738342193524,
+      "negative_mass": 0.12777383421935945,
+      "norm_q_squared": 0.387906438545242,
+      "validation_risk": -0.5089174950599964,
+      "nll": null,
+      "nonpositive_predictions": 31
+    },
+    "heat_0.01": {
+      "fraction": 0.01,
+      "fit_sha256": "cb514fa8af9db563074c0cb99b92e855b2de541cc096ddc32edbc9c0a3fb5559",
+      "positive_mass": 1.0940529812720479,
+      "negative_mass": 0.09405298127205475,
+      "norm_q_squared": 0.3628901819432113,
+      "validation_risk": -0.5034110422374942,
+      "nll": null,
+      "nonpositive_predictions": 16
+    },
+    "heat_0.02": {
+      "fraction": 0.02,
+      "fit_sha256": "9a007d6a41f509b724fe5ab7b0cb1228ba0970cb12a5de4e579e1a18e9ae095d",
+      "positive_mass": 1.0439674433195196,
+      "negative_mass": 0.04396744331952662,
+      "norm_q_squared": 0.2618458518841296,
+      "validation_risk": -0.4556310261324345,
+      "nll": null,
+      "nonpositive_predictions": 2
+    },
+    "heat_0.04": {
+      "fraction": 0.04,
+      "fit_sha256": "8e8f2b7327e66f0e906241c7a7347766171ad8a06990300f47b1b621c4d456f2",
+      "positive_mass": 1.006717358645432,
+      "negative_mass": 0.006717358645438985,
+      "norm_q_squared": 0.10140189341459406,
+      "validation_risk": -0.27171659785869795,
+      "nll": 1.8644860875250493,
+      "nonpositive_predictions": 0
+    },
+    "heat_0.08": {
+      "fraction": 0.08,
+      "fit_sha256": "6248e2ad5422f4eeb69a251189e12d38a78c4d33723d9f4abfb700f4e43fb756",
+      "positive_mass": 1.000074457674688,
+      "negative_mass": 7.445767469362501e-05,
+      "norm_q_squared": 0.0214927865672738,
+      "validation_risk": -0.07609804154800981,
+      "nll": 3.1410736629610594,
+      "nonpositive_predictions": 0
+    },
+    "heat_0.16": {
+      "fraction": 0.16,
+      "fit_sha256": "0cda68456e0588a249ea0dcab310d565dcbc68ef61105227f01ce7e7826ab368",
+      "positive_mass": 0.9999999999999962,
+      "negative_mass": -0.0,
+      "norm_q_squared": 0.004796213404622376,
+      "validation_risk": -0.014662791098860583,
+      "nll": 4.723559058598692,
+      "nonpositive_predictions": 0
+    }
+  },
+  "quadrature_checks": {
+    "heat_0": {
+      "order": 145,
+      "mass_change": -2.0479179552168603e-06,
+      "risk_change": -1.6093243981885053e-07
+    }
+  },
+  "truth_used_for_selection": false
+}

@@ -1,0 +1,102 @@
+{
+  "method": "full_guided",
+  "seed": 1,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 120,
+    "validation_nll": 4.142132806209937,
+    "history": [
+      {
+        "step": 10,
+        "nll": 4.173641734457438
+      },
+      {
+        "step": 20,
+        "nll": 4.156803973647545
+      },
+      {
+        "step": 30,
+        "nll": 4.150183458540317
+      },
+      {
+        "step": 40,
+        "nll": 4.146845885471748
+      },
+      {
+        "step": 50,
+        "nll": 4.144966459926984
+      },
+      {
+        "step": 60,
+        "nll": 4.143837091875724
+      },
+      {
+        "step": 70,
+        "nll": 4.143136077929279
+      },
+      {
+        "step": 80,
+        "nll": 4.14269662554883
+      },
+      {
+        "step": 90,
+        "nll": 4.142423524892738
+      },
+      {
+        "step": 100,
+        "nll": 4.142259673004524
+      },
+      {
+        "step": 110,
+        "nll": 4.14217006395176
+      },
+      {
+        "step": 120,
+        "nll": 4.142132806209937
+      },
+      {
+        "step": 130,
+        "nll": 4.142133760055043
+      },
+      {
+        "step": 140,
+        "nll": 4.142163320795575
+      },
+      {
+        "step": 150,
+        "nll": 4.14221453280371
+      }
+    ],
+    "seconds": 0.4149319271091372
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.4141011622351476,
+        "sample_matrix_relative_tail": 1.1163806601372619e-06
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 6.534953759129554,
+        "sample_matrix_relative_tail": 0.020514969296469197
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 8.004036779581886,
+        "sample_matrix_relative_tail": 3.843624033435004e-06
+      }
+    ]
+  },
+  "seconds": 3.992794497869909,
+  "pilot_is_final_model": false
+}

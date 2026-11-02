@@ -1,0 +1,13 @@
+{
+  "source_name": "fresh_amplitude",
+  "source_model": "artifacts/marginal_regularization_v5/gl6_mixture/fresh_amplitude/fit.npz",
+  "source_marginal_curvature": 131.6164129380872,
+  "strength": 1e-05,
+  "marginal_strength": 2.2793509814092943e-05,
+  "initial_marginal_penalty_budget": 0.003,
+  "steps": 2000,
+  "learning_rate": 0.0001,
+  "batch_size": 256,
+  "batch_seed": 0,
+  "uses_truth": false
+}

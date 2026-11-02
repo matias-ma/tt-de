@@ -1,0 +1,102 @@
+{
+  "method": "full_guided",
+  "seed": 2,
+  "rank": 32,
+  "modes": 49,
+  "pilot": {
+    "kind": "full",
+    "components": 32,
+    "iterations": 150,
+    "selected_step": 100,
+    "validation_nll": 4.985419139318946,
+    "history": [
+      {
+        "step": 10,
+        "nll": 5.008899272547529
+      },
+      {
+        "step": 20,
+        "nll": 4.993793529503172
+      },
+      {
+        "step": 30,
+        "nll": 4.989635833976086
+      },
+      {
+        "step": 40,
+        "nll": 4.987776303396942
+      },
+      {
+        "step": 50,
+        "nll": 4.9867515711973045
+      },
+      {
+        "step": 60,
+        "nll": 4.986137717809833
+      },
+      {
+        "step": 70,
+        "nll": 4.985764998050807
+      },
+      {
+        "step": 80,
+        "nll": 4.985550421490851
+      },
+      {
+        "step": 90,
+        "nll": 4.985446227006571
+      },
+      {
+        "step": 100,
+        "nll": 4.985419139318946
+      },
+      {
+        "step": 110,
+        "nll": 4.985442425009378
+      },
+      {
+        "step": 120,
+        "nll": 4.9854945571741975
+      },
+      {
+        "step": 130,
+        "nll": 4.985560093353274
+      },
+      {
+        "step": 140,
+        "nll": 4.9856298739599865
+      },
+      {
+        "step": 150,
+        "nll": 4.985699866011923
+      }
+    ],
+    "seconds": 0.3988106360193342
+  },
+  "projection": {
+    "method": "sample-guided one-pass TT cross",
+    "suffix_samples": 160,
+    "stages": [
+      {
+        "axis": 0,
+        "rank": 32,
+        "interpolation_condition": 2.3441356601601564,
+        "sample_matrix_relative_tail": 8.118511956276039e-07
+      },
+      {
+        "axis": 1,
+        "rank": 32,
+        "interpolation_condition": 8.841437539256516,
+        "sample_matrix_relative_tail": 0.006888061499815582
+      },
+      {
+        "axis": 2,
+        "rank": 32,
+        "interpolation_condition": 11.908296730863016,
+        "sample_matrix_relative_tail": 1.4177510264326145e-06
+      }
+    ]
+  },
+  "seconds": 3.897960860049352,
+  "pilot_is_final_model": false
+}

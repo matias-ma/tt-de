@@ -1,0 +1,115 @@
+{
+  "selected": "dim10_rank48_modes49_sobolev_seed19",
+  "names": [
+    "previous",
+    "dim10_h1_0.01",
+    "dim10_rank20_modes49",
+    "dim10_rank20_modes81",
+    "dim10_rank32_h1_0.003",
+    "dim10_rank32_modes49",
+    "dim10_rank32_modes65_sobolev",
+    "dim10_rank40_modes65",
+    "dim10_rank48_modes49_sobolev",
+    "dim10_rank48_modes49_sobolev_seed19",
+    "dim10_repeat_seed19"
+  ],
+  "roughness": [
+    110.54337790391988,
+    36.57710324009647,
+    111.70709858879306,
+    110.5433779039192,
+    106.44476903022596,
+    126.57506946391182,
+    133.15589701924316,
+    84.68184738140359,
+    151.87022584003768,
+    151.64401736526855,
+    115.41112867148647
+  ],
+  "selection": {
+    "minimum_nll_index": 8,
+    "selected_index": 9,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 9.97832018095152,
+        "excess_nll": 0.11279937612186515,
+        "paired_cluster_se": 0.005925025579202683,
+        "roughness": 110.54337790391988,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.999512379285552,
+        "excess_nll": 0.13399157445589846,
+        "paired_cluster_se": 0.006223736070844243,
+        "roughness": 36.57710324009647,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.972207083256293,
+        "excess_nll": 0.10668627842663914,
+        "paired_cluster_se": 0.005887789018829858,
+        "roughness": 111.70709858879306,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.978320180951407,
+        "excess_nll": 0.11279937612175187,
+        "paired_cluster_se": 0.0059250255792028415,
+        "roughness": 110.5433779039192,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.901963506953207,
+        "excess_nll": 0.03644270212355216,
+        "paired_cluster_se": 0.0025727054572237205,
+        "roughness": 106.44476903022596,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.896137065745544,
+        "excess_nll": 0.030616260915890443,
+        "paired_cluster_se": 0.002474765575196541,
+        "roughness": 126.57506946391182,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.895201508207318,
+        "excess_nll": 0.029680703377663566,
+        "paired_cluster_se": 0.0025490119166871284,
+        "roughness": 133.15589701924316,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.975580551440267,
+        "excess_nll": 0.11005974661061205,
+        "paired_cluster_se": 0.005738316633916348,
+        "roughness": 84.68184738140359,
+        "eligible": false
+      },
+      {
+        "validation_nll": 9.865520804829654,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 151.87022584003768,
+        "eligible": true
+      },
+      {
+        "validation_nll": 9.866187806928895,
+        "excess_nll": 0.0006670020992423976,
+        "paired_cluster_se": 0.0015714061936791196,
+        "roughness": 151.64401736526855,
+        "eligible": true
+      },
+      {
+        "validation_nll": 9.942672359616708,
+        "excess_nll": 0.07715155478705396,
+        "paired_cluster_se": 0.004439737087736909,
+        "roughness": 115.41112867148647,
+        "eligible": false
+      }
+    ]
+  },
+  "rule": "paired noisy one-SE, then minimum common physical amplitude H2"
+}

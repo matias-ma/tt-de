@@ -1,0 +1,56 @@
+{
+  "selected_index": 0,
+  "records": [
+    {
+      "degree": 4,
+      "shared": true,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 37,
+      "binned_train_nll": 6.751395246677276,
+      "validation_marginal_nll": 1.6052740375515888,
+      "gradient_norm": 5.153492923537388e-10,
+      "quadrature_order": 160,
+      "bins": 1600,
+      "noise_source": "TT marginals"
+    },
+    {
+      "degree": 4,
+      "shared": false,
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 644,
+      "binned_train_nll": 6.751345169651119,
+      "validation_marginal_nll": 1.6054627324549209,
+      "gradient_norm": 7.574710115597177e-08,
+      "quadrature_order": 160,
+      "bins": 1600,
+      "noise_source": "TT marginals"
+    }
+  ],
+  "selection": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 200,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 1.605274037551589,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 4.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 1.605462732454921,
+        "excess_nll": 0.00018869490333220309,
+        "paired_cluster_se": 0.00010510680621645368,
+        "roughness": 40.0,
+        "eligible": false
+      }
+    ]
+  },
+  "quadrature_log_error": 6.8833827526759706e-15,
+  "kernel_marginals": true,
+  "selection_metric": "mean univariate noisy log density; parameter count as complexity"
+}

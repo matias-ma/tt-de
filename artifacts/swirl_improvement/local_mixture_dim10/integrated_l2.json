@@ -1,0 +1,30 @@
+{
+  "tied_diagonal_64": {
+    "relative_l2": 0.4921556035812998,
+    "integral_q_squared": 34.88207580778837,
+    "integral_pq": 28.366046848505757,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.4477416102123197e-13
+  },
+  "tied_diagonal_128": {
+    "relative_l2": 0.5648105113608137,
+    "integral_q_squared": 34.457992367961296,
+    "integral_pq": 27.04686385155692,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.0522309235075072e-13
+  },
+  "full_32": {
+    "relative_l2": 0.4775888817313157,
+    "integral_q_squared": 35.6415559390329,
+    "integral_pq": 28.949442425843436,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 2.1167830522083108e-13
+  },
+  "full_64": {
+    "relative_l2": 0.6803462435844287,
+    "integral_q_squared": 38.61082335152091,
+    "integral_pq": 27.04923817648446,
+    "integral_p_squared": 28.83414100378301,
+    "path_quadrature_relative_change": 1.7582359810833875e-13
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "family": "swirl",
+  "dim": 4,
+  "noise": "free",
+  "rank": 24,
+  "steps": 5000,
+  "decomposition": "tucker",
+  "domain": [
+    [
+      -2.5299708031053525,
+      2.0581086173266234
+    ],
+    [
+      -2.4665843294980165,
+      2.4223246909564837
+    ],
+    [
+      -2.5652912317890255,
+      2.5904844784546963
+    ],
+    [
+      -2.504788704411301,
+      2.5004928785642013
+    ]
+  ],
+  "data": "artifacts/swirl/swirl_free_dim4/data.npz",
+  "data_sha256": "36c11aca0bc9669f685248c9a24e2c0849680c1b26256fa08daecca2801205fc",
+  "kernel": null,
+  "noise_weights": [
+    1.0
+  ],
+  "noise_covariances": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "modes": 49,
+  "seed": 0,
+  "perturbation": 0.01,
+  "initialization": "observation-selected native Tucker checkpoint",
+  "optimizer": "Adam with cosine decay",
+  "selection": "minimum held-out NLL checkpoint and recipe",
+  "truth_used_for_selection": false,
+  "recipes": [
+    "fit"
+  ],
+  "tuning_protocol": "artifacts/tucker_4d_tuning/protocol_v3.json",
+  "tuning_protocol_sha256": "fe03bb6f3ca999d902cf9bf504751498575c673c781006d22fcfd4d6f1d8538b",
+  "parent": "artifacts/tucker_capacity/r24/swirl4_free/strong/fit.npz",
+  "parent_sha256": "94956b963ebf3b6c03797c1285aa59860c1848d2a8116929b5e3f824d5ae0141"
+}

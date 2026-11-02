@@ -1,0 +1,47 @@
+{
+  "pairs": {
+    "(0, 1)": {
+      "lbfgs": {
+        "latent_pair_relative_change": 3.850567913685207e-16,
+        "observed_pair_relative_change": 1.7490535565711242e-16,
+        "parseval_refinement": 1.8507549124712441e-13,
+        "validation_nll_minus_previous": 1.0785643211885798e-15
+      },
+      "longer_adam": {
+        "latent_pair_relative_change": 3.850567913685207e-16,
+        "observed_pair_relative_change": 1.7490535565711242e-16,
+        "parseval_refinement": 1.8507549124712441e-13,
+        "validation_nll_minus_previous": 1.0785643211885798e-15
+      },
+      "seed1": {
+        "latent_pair_relative_change": 0.06333609845335528,
+        "observed_pair_relative_change": 0.025500121339019303,
+        "parseval_refinement": 1.8507549124712441e-13,
+        "validation_nll_minus_previous": 0.0024153633644151827
+      }
+    },
+    "(2, 3)": {
+      "lbfgs": {
+        "latent_pair_relative_change": 2.7906479910384604e-16,
+        "observed_pair_relative_change": 7.719191647191318e-17,
+        "parseval_refinement": 1.8570789915460008e-13,
+        "validation_nll_minus_previous": 1.0785643211885798e-15
+      },
+      "longer_adam": {
+        "latent_pair_relative_change": 2.7906479910384604e-16,
+        "observed_pair_relative_change": 7.719191647191318e-17,
+        "parseval_refinement": 1.8570789915460008e-13,
+        "validation_nll_minus_previous": 1.0785643211885798e-15
+      },
+      "seed1": {
+        "latent_pair_relative_change": 0.0997597497106933,
+        "observed_pair_relative_change": 0.04107202236547138,
+        "parseval_refinement": 1.8570789915460008e-13,
+        "validation_nll_minus_previous": 0.0024153633644151827
+      }
+    }
+  },
+  "uses_truth": false,
+  "latent_metric": "exact full-plane pair L2 relative to previous fitted pair",
+  "observed_metric": "full-plane pair L2 via Parseval under analytic known noise; refined in frequency spacing and polynomial quadrature"
+}

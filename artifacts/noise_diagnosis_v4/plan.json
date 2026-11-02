@@ -1,0 +1,31 @@
+{
+  "objective": "nll",
+  "regularizer": "hessian",
+  "strength": 0.001,
+  "new_seed_restarts": {
+    "swirl4_mixture": [
+      0,
+      1,
+      2
+    ],
+    "gl6_mixture": [
+      1
+    ]
+  },
+  "continuations": "4000 lower-step Adam updates from old NLL fit, same data and penalty",
+  "gaussian_noise_sigmas": [
+    0.0,
+    0.15,
+    0.3,
+    0.6
+  ],
+  "gaussian_common_box_source": "existing noisy-only box rounded outwards",
+  "gaussian_capacity": [
+    32,
+    49
+  ],
+  "steps": 4000,
+  "batch": 256,
+  "selection": "minimum observed validation NLL; all fits frozen before latent evaluation",
+  "storage_budget_MiB": 256
+}

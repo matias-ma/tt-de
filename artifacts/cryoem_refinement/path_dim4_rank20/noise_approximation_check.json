@@ -1,0 +1,18 @@
+{
+  "method": "L2 errors of marginal characteristic functions on 129 frequencies, 0 to 8 noise-standardized units",
+  "rows": "held-out noise metadata only; no signal values or labels",
+  "gaussian_errors": [
+    0.18254254613446516,
+    0.14100740970488762,
+    0.18868680155849127,
+    0.29465351005651197
+  ],
+  "mixture_errors": [
+    0.052955456961368955,
+    0.03230455976096738,
+    0.03751339983501602,
+    0.0654906723614503
+  ],
+  "mixture_mass": 1.0,
+  "aggregate_error_ratio": 0.2331156216293434
+}

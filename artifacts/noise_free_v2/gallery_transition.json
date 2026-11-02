@@ -1,0 +1,24 @@
+{
+  "archive": "artifacts/gallery_archive/before_noise_free_v2",
+  "current_baseline_figures": [
+    "figs/cryoem/direct_optimization_dim10.png",
+    "figs/cryoem/direct_optimization_dim20.png",
+    "figs/cryoem/direct_optimization_dim4.png",
+    "figs/cryoem/direct_optimization_path_dim4.png",
+    "figs/cryoem/direct_optimization_training.png",
+    "figs/swirl/direct_optimization_dim10_marg_01.png",
+    "figs/swirl/direct_optimization_dim10_marg_23.png",
+    "figs/swirl/direct_optimization_dim4_marg_01.png",
+    "figs/swirl/direct_optimization_dim4_marg_23.png",
+    "figs/swirl/direct_optimization_dim4_training.png",
+    "figs/swirl/direct_optimization_free_dim10_marg_01.png",
+    "figs/swirl/direct_optimization_free_dim10_marg_23.png",
+    "figs/swirl/direct_optimization_free_dim10_training.png",
+    "figs/swirl/direct_optimization_free_dim4_clipping.png",
+    "figs/swirl/direct_optimization_free_dim4_controls.png",
+    "figs/swirl/direct_optimization_free_dim4_marg_01.png",
+    "figs/swirl/direct_optimization_free_dim4_marg_23.png",
+    "figs/swirl/direct_optimization_free_dim4_smoothing.png",
+    "figs/swirl/direct_optimization_free_dim4_training.png"
+  ]
+}

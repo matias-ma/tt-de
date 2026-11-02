@@ -1,0 +1,59 @@
+{
+  "selected": "tied_isotropic_rank1_32",
+  "names": [
+    "full_16",
+    "tied_isotropic_rank1_16",
+    "tied_isotropic_rank1_32",
+    "tied_isotropic_rank1_64"
+  ],
+  "validation_nll": [
+    6.275535485441172,
+    6.273479293221797,
+    6.270072536631231,
+    6.270740434844049
+  ],
+  "complexity": [
+    1056,
+    337,
+    673,
+    1345
+  ],
+  "selection": {
+    "minimum_nll_index": 2,
+    "selected_index": 2,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 6.275535485441172,
+        "excess_nll": 0.005462948809940973,
+        "paired_cluster_se": 0.001999384459831321,
+        "roughness": 1056.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 6.273479293221797,
+        "excess_nll": 0.0034067565905656918,
+        "paired_cluster_se": 0.0018008210722376395,
+        "roughness": 337.0,
+        "eligible": false
+      },
+      {
+        "validation_nll": 6.270072536631231,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 673.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 6.270740434844049,
+        "excess_nll": 0.0006678982128170884,
+        "paired_cluster_se": 0.0014049520824870815,
+        "roughness": 1345.0,
+        "eligible": true
+      }
+    ]
+  },
+  "rule": "paired one-SE, then fewest parameters",
+  "seconds": 11.781210669782013
+}

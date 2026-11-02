@@ -1,0 +1,95 @@
+{
+  "cases": {
+    "swirl4_mixture": {
+      "selected": "default_seed1",
+      "names": [
+        "original",
+        "default_seed1",
+        "power4_seed0",
+        "lowpass_seed1",
+        "lowpass_seed0"
+      ],
+      "detail": {
+        "minimum_nll_index": 0,
+        "selected_index": 1,
+        "clusters": 4096,
+        "se_factor": 1.0,
+        "candidates": [
+          {
+            "validation_nll": 3.865198134198514,
+            "excess_nll": 0.0,
+            "paired_cluster_se": 0.0,
+            "roughness": 341.3151585790848,
+            "eligible": true
+          },
+          {
+            "validation_nll": 3.8657863098972305,
+            "excess_nll": 0.0005881756987161236,
+            "paired_cluster_se": 0.000810395342314175,
+            "roughness": 284.48741344361076,
+            "eligible": true
+          },
+          {
+            "validation_nll": 3.866041087927732,
+            "excess_nll": 0.0008429537292176921,
+            "paired_cluster_se": 0.000786095786042797,
+            "roughness": 436.879478615012,
+            "eligible": false
+          },
+          {
+            "validation_nll": 3.8661616222994617,
+            "excess_nll": 0.0009634881009475678,
+            "paired_cluster_se": 0.0008119471626061954,
+            "roughness": 353.21760677606665,
+            "eligible": false
+          },
+          {
+            "validation_nll": 3.866584097411043,
+            "excess_nll": 0.0013859632125287822,
+            "paired_cluster_se": 0.0010683293000819704,
+            "roughness": 433.83802655395516,
+            "eligible": false
+          }
+        ]
+      }
+    },
+    "gl6_mixture": {
+      "selected": "original",
+      "names": [
+        "original",
+        "power4_seed0",
+        "lowpass_seed0"
+      ],
+      "detail": {
+        "minimum_nll_index": 0,
+        "selected_index": 0,
+        "clusters": 200,
+        "se_factor": 1.0,
+        "candidates": [
+          {
+            "validation_nll": 9.474186373520627,
+            "excess_nll": 0.0,
+            "paired_cluster_se": 0.0,
+            "roughness": 131.6164129380872,
+            "eligible": true
+          },
+          {
+            "validation_nll": 9.474209470273689,
+            "excess_nll": 2.3096753060558584e-05,
+            "paired_cluster_se": 0.0011247664171316174,
+            "roughness": 183.58093515473638,
+            "eligible": true
+          },
+          {
+            "validation_nll": 9.474446849200444,
+            "excess_nll": 0.0002604756798183167,
+            "paired_cluster_se": 0.001095983622773067,
+            "roughness": 142.83165750623326,
+            "eligible": true
+          }
+        ]
+      }
+    }
+  },
+  "truth_evaluation_not_yet_run": true
+}

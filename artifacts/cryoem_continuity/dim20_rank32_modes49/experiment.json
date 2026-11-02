@@ -1,0 +1,14 @@
+{
+  "base": "artifacts/cryoem_refinement/gallery_dim20",
+  "output": "artifacts/cryoem_continuity/dim20_rank32_modes49",
+  "rank": 32,
+  "modes": 49,
+  "order": 2,
+  "strength": 0.0001,
+  "steps": 2400,
+  "lr": 0.0002,
+  "seed": 0,
+  "preconditioning": "l2",
+  "source_sha256": "879fee8e1bb156643733b4ad2bff86b4d1f1ad58076fb0b7ce3297d4436b79ae",
+  "kernel_sha256": "2522a4d0e9c1fef793b78afff875de946c7a83cac53a79589985830ee308c78b"
+}

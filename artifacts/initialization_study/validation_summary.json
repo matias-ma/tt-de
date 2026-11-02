@@ -1,0 +1,82 @@
+{
+  "leave_one_case_out_choice": {
+    "gaussian4": "gaussian",
+    "multimodal4": "gaussian",
+    "banana4": "gaussian",
+    "ring4": "gaussian_guided",
+    "gl6": "gaussian",
+    "swirl4": "gaussian_guided",
+    "gl10": "gaussian_guided",
+    "swirl10": "gaussian_guided"
+  },
+  "equal_family_mean_ranks": {
+    "random": 6.5,
+    "gaussian": 2.9166666666666665,
+    "gaussian_guided": 2.5,
+    "kde": 4.666666666666667,
+    "diagonal": 5.666666666666667,
+    "tangent": 5.083333333333333,
+    "full": 4.5,
+    "full_guided": 4.166666666666667
+  },
+  "equal_family_choice": "gaussian_guided",
+  "initial_vs_postfit": {
+    "gaussian4": {
+      "initial_selector": "gaussian_guided_s2",
+      "postfit_selector": "gaussian_guided_s2",
+      "seed_zero_initial_selector": "gaussian_guided_s0",
+      "seed_zero_warmup_selector": "gaussian_guided_s0",
+      "seed_zero_full_selector": "gaussian_guided_s0"
+    },
+    "multimodal4": {
+      "initial_selector": "tangent_s1",
+      "postfit_selector": "tangent_s1",
+      "seed_zero_initial_selector": "tangent_s0",
+      "seed_zero_warmup_selector": "tangent_s0",
+      "seed_zero_full_selector": "gaussian_guided_s0"
+    },
+    "banana4": {
+      "initial_selector": "full_s0",
+      "postfit_selector": "gaussian_guided_s0",
+      "seed_zero_initial_selector": "full_s0",
+      "seed_zero_warmup_selector": "full_s0",
+      "seed_zero_full_selector": "gaussian_guided_s0"
+    },
+    "ring4": {
+      "initial_selector": "full_guided_s0",
+      "postfit_selector": "gaussian_s2",
+      "seed_zero_initial_selector": "full_guided_s0",
+      "seed_zero_warmup_selector": "full_guided_s0",
+      "seed_zero_full_selector": "gaussian_guided_s0"
+    },
+    "gl6": {
+      "initial_selector": "diagonal_s2",
+      "postfit_selector": "gaussian_guided_s2",
+      "seed_zero_initial_selector": "diagonal_s0",
+      "seed_zero_warmup_selector": "gaussian_guided_s0",
+      "seed_zero_full_selector": "gaussian_guided_s0"
+    },
+    "swirl4": {
+      "initial_selector": "tangent_s0",
+      "postfit_selector": "tangent_s0",
+      "seed_zero_initial_selector": "tangent_s0",
+      "seed_zero_warmup_selector": "tangent_s0",
+      "seed_zero_full_selector": "tangent_s0"
+    },
+    "gl10": {
+      "initial_selector": "diagonal_s0",
+      "postfit_selector": "full_s0",
+      "seed_zero_initial_selector": "diagonal_s0",
+      "seed_zero_warmup_selector": "full_s0",
+      "seed_zero_full_selector": "full_s0"
+    },
+    "swirl10": {
+      "initial_selector": "tangent_s0",
+      "postfit_selector": "tangent_s0",
+      "seed_zero_initial_selector": "tangent_s0",
+      "seed_zero_warmup_selector": "tangent_s0",
+      "seed_zero_full_selector": "tangent_s0"
+    }
+  },
+  "truth_used": false
+}

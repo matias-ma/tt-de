@@ -1,0 +1,12 @@
+{
+  "max_abs_log_density_error": 7.105427357601002e-15,
+  "quadrature_orders": [
+    281,
+    281,
+    281,
+    281
+  ],
+  "probe_count": 3,
+  "includes_tail_observation": true,
+  "selection_sha256": "1a7cc47e58997157f7275ab737d74ab532f4df511769151df48b27479df5d817"
+}

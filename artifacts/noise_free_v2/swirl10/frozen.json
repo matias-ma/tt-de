@@ -1,0 +1,220 @@
+{
+  "selected": "sweep_hessian_medium_flat_long",
+  "names": [
+    "adam_h1_long_continue",
+    "adam_hessian_long_continue",
+    "baseline",
+    "conditional_1",
+    "h1_0.01",
+    "h1_0.1",
+    "hessian_0.0001",
+    "hessian_0.001",
+    "hessian_0.01",
+    "lbfgs_hessian_continue",
+    "long_adam",
+    "perturbation_0.001",
+    "perturbation_0.1",
+    "seed_1",
+    "seed_2",
+    "sweep_flat",
+    "sweep_hessian_continue",
+    "sweep_hessian_flat_long",
+    "sweep_hessian_medium_flat_long",
+    "sweep_hessian_strong_flat_long"
+  ],
+  "selection": {
+    "minimum_nll_index": 18,
+    "selected_index": 18,
+    "clusters": 4096,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": -1.7842691964416548,
+        "excess_nll": 0.05021607923572312,
+        "paired_cluster_se": 0.004221693295771238,
+        "roughness": 47.202590242163836,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7956679762425998,
+        "excess_nll": 0.03881729943477827,
+        "paired_cluster_se": 0.0035811540449002385,
+        "roughness": 58.3941475925196,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7244460812786189,
+        "excess_nll": 0.11003919439875903,
+        "paired_cluster_se": 0.0055853599719039105,
+        "roughness": 79.8855190002006,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.675097533633025,
+        "excess_nll": 0.15938774204435302,
+        "paired_cluster_se": 0.006659710097048782,
+        "roughness": 84.441788379035,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7309615106901497,
+        "excess_nll": 0.10352376498722846,
+        "paired_cluster_se": 0.006116530735462392,
+        "roughness": 165.5625300285574,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.74733311753634,
+        "excess_nll": 0.08715215814103805,
+        "paired_cluster_se": 0.005049568180478123,
+        "roughness": 50.22007899522799,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.720587119439824,
+        "excess_nll": 0.11389815623755414,
+        "paired_cluster_se": 0.0058798467277088465,
+        "roughness": 78.46010963709577,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7287067678871955,
+        "excess_nll": 0.10577850779018272,
+        "paired_cluster_se": 0.0056963211468538145,
+        "roughness": 57.157775843583124,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7168413894267993,
+        "excess_nll": 0.11764388625057885,
+        "paired_cluster_se": 0.005976205657732555,
+        "roughness": 37.62028509935723,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7669846802728681,
+        "excess_nll": 0.06750059540450976,
+        "paired_cluster_se": 0.004360823999622567,
+        "roughness": 58.550392909587956,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7482828720746735,
+        "excess_nll": 0.0862024036027045,
+        "paired_cluster_se": 0.0058666246842942645,
+        "roughness": 83.44836830116868,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.712757743306046,
+        "excess_nll": 0.12172753237133205,
+        "paired_cluster_se": 0.006676852890336885,
+        "roughness": 78.44981320015985,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7278987260024312,
+        "excess_nll": 0.10658654967494703,
+        "paired_cluster_se": 0.006745412845655824,
+        "roughness": 81.68803407645845,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.6549816470952048,
+        "excess_nll": 0.17950362858217317,
+        "paired_cluster_se": 0.010048295834250676,
+        "roughness": 95.1413551858735,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7100358701702447,
+        "excess_nll": 0.12444940550713333,
+        "paired_cluster_se": 0.006054682692760235,
+        "roughness": 76.89731800513212,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.7938817235573379,
+        "excess_nll": 0.040603552120040354,
+        "paired_cluster_se": 0.004436264351267323,
+        "roughness": 87.56858359715395,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.8137566295541443,
+        "excess_nll": 0.020728646123233784,
+        "paired_cluster_se": 0.0038564950661301896,
+        "roughness": 61.441588379205875,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.8274923754151355,
+        "excess_nll": 0.006992900262242428,
+        "paired_cluster_se": 0.00295294482527701,
+        "roughness": 60.25142583035343,
+        "eligible": false
+      },
+      {
+        "validation_nll": -1.834485275677378,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 52.14080706867287,
+        "eligible": true
+      },
+      {
+        "validation_nll": -1.8105763169617426,
+        "excess_nll": 0.023908958715635375,
+        "paired_cluster_se": 0.0034782621294414417,
+        "roughness": 42.587828166950395,
+        "eligible": false
+      }
+    ]
+  },
+  "rule": "paired one-SE joint held-out NLL, then lowest full-Hessian amplitude energy",
+  "uses_clean_truth": false,
+  "uses_signal_pilot": false,
+  "files": {
+    "artifacts/noise_free_v2/swirl10/adam_h1_long_continue/fit.npz": "5af3675419a442d59724189788fa282c38e2a0aa8b52569a8f744e45ecf46f13",
+    "artifacts/noise_free_v2/swirl10/adam_hessian_long_continue/fit.npz": "5ba5f6cc352f3410fed4088c824a5c7a749224e8acd08399650fc2f5d7b261ab",
+    "artifacts/noise_free_v2/swirl10/baseline/fit.npz": "704fc153129763c83936b521d5975141468771d27d16de308802fa0e70abc0d5",
+    "artifacts/noise_free_v2/swirl10/conditional_1/fit.npz": "1c4efe947ad1ca17a2ba74d23839b8c7e18913727fdd14aa34330ef929930e93",
+    "artifacts/noise_free_v2/swirl10/h1_0.01/fit.npz": "a225987bcd8c47db61fa1ffa451958a3b1b886edc6b07928b7495207e6a56c3b",
+    "artifacts/noise_free_v2/swirl10/h1_0.1/fit.npz": "7a821ed4dd4172400f90e083b541b28def27c875512cf17142a00f2f31fae060",
+    "artifacts/noise_free_v2/swirl10/hessian_0.0001/fit.npz": "c4cab3f87c540a17786489a8c14f74a38bf6a1da2d241893a26056e207c43839",
+    "artifacts/noise_free_v2/swirl10/hessian_0.001/fit.npz": "aaade0a1d18593a6ff383589947e03cba83fbed080dc1155dea343bbe4317da9",
+    "artifacts/noise_free_v2/swirl10/hessian_0.01/fit.npz": "d21313864382ce5ef95b7fd36f361c45452e4029ec35584002a2838e36eb8036",
+    "artifacts/noise_free_v2/swirl10/lbfgs_hessian_continue/fit.npz": "c3016d766ccbfc750b1ea9544eb9d3f3fc62b7278344570ba2e233ab788b48df",
+    "artifacts/noise_free_v2/swirl10/long_adam/fit.npz": "6836a8e69d86109765a50cfa089056d9416d3e9d54555478dfa985deb34bd2c5",
+    "artifacts/noise_free_v2/swirl10/perturbation_0.001/fit.npz": "542d7d642930fd12466147a5879c7e0e88c1baef249a64a1601e56cc4bb82813",
+    "artifacts/noise_free_v2/swirl10/perturbation_0.1/fit.npz": "3b06061ffb53bea0b4907646c84745da37cff0e66704d4b575343de132ba49d6",
+    "artifacts/noise_free_v2/swirl10/seed_1/fit.npz": "1b8cd7b758955bbcb152d639ac7d4435b2fe6186505c912921154a360f447d19",
+    "artifacts/noise_free_v2/swirl10/seed_2/fit.npz": "11e0a17b3e5e75f105a445f9f05f7cdac85bdbbb4f2ab61aef9486bbc913f55b",
+    "artifacts/noise_free_v2/swirl10/sweep_flat/fit.npz": "169c23522c56322b3acb41b7ae7392001d2ea9a99a7b6f8270772edeb25665ad",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_continue/fit.npz": "35e96fe249a111e34c9ea72ef76d2befcc8a90e06fe6551d3f0bba5573d60143",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_flat_long/fit.npz": "93ffcc1eb55d04a03be4088e74827e886189b43b18d15d78dbb29e58fbdc1ac4",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_medium_flat_long/fit.npz": "1083c6c04c789d2957d8c0d67667fb10038555dbd3e5a936a75225ae1915ead2",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_strong_flat_long/fit.npz": "f95eabda80af40b7011976e0ee82f799880b46f6a5c6705d36362da05b19ec0d"
+  },
+  "result_files": {
+    "artifacts/noise_free_v2/swirl10/adam_h1_long_continue/result.json": "8b8e19a431edf0f701ac4c65b1a750fff7014ca5acb5798c381ad26c3093f9f1",
+    "artifacts/noise_free_v2/swirl10/adam_hessian_long_continue/result.json": "7648d26c20758c1f132ee2cabdd71281f67c654c661e12d33d211d866fac7d9d",
+    "artifacts/noise_free_v2/swirl10/baseline/result.json": "9e120955dd50a605ad9707ac48dbfcb9e954cc34b43e18c812755ee97389a641",
+    "artifacts/noise_free_v2/swirl10/conditional_1/result.json": "74d95c6fb48bbe7f8f767ee71ba3965d57432b39fafdaef6e14a3ee62c9ad2a5",
+    "artifacts/noise_free_v2/swirl10/h1_0.01/result.json": "9caf84629bbe52228cc17a35645be5fdc87ccd6f9f435b0a536ec7680491276d",
+    "artifacts/noise_free_v2/swirl10/h1_0.1/result.json": "620355e9309c8b922c28917de40b9eedcb4880c88253c1b53e7dc0b255c5a859",
+    "artifacts/noise_free_v2/swirl10/hessian_0.0001/result.json": "1806ec022129c3882b570ed6453b657be73d13af2c7ae67ed5d4cdfaba82a36a",
+    "artifacts/noise_free_v2/swirl10/hessian_0.001/result.json": "9334e3ca433d6f90be0377ac77d56688ed97b5ff3979c29b7b096de04664ec2a",
+    "artifacts/noise_free_v2/swirl10/hessian_0.01/result.json": "41496932f7baa9e63ce17f9bee08daaaf3ac2ce6a101aab0b5b0f59c07490e19",
+    "artifacts/noise_free_v2/swirl10/lbfgs_hessian_continue/result.json": "658d4f107dcdfe3593f72f9caa8d403d06b9c2b7b46dafb09cd547b624b9f2c8",
+    "artifacts/noise_free_v2/swirl10/long_adam/result.json": "133be519b25b19eb59fe57472e3f791edc8f7dc994b5e540700615c1185054d6",
+    "artifacts/noise_free_v2/swirl10/perturbation_0.001/result.json": "e7f63f5cf608b33c6ec24ebbb845bfa3c50bfb66288058cf6b1461ee60a46946",
+    "artifacts/noise_free_v2/swirl10/perturbation_0.1/result.json": "b2cbcea32da5abfea26cc06d62cee8a5af6e3fecf280a7063cfc4a48916c03f0",
+    "artifacts/noise_free_v2/swirl10/seed_1/result.json": "aa47b562c00fdc4f915bd3f33ab1cba83950cfe487804acf0f67d26430ddabab",
+    "artifacts/noise_free_v2/swirl10/seed_2/result.json": "72b26a1c80e7b7073346b096ffc234f69518eb9d8aae94db04c53e7930f0c072",
+    "artifacts/noise_free_v2/swirl10/sweep_flat/result.json": "2cec975272e55734237c83ae9b12e49fc622987130488939724458b10c7848d2",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_continue/result.json": "4718f6e447c199ce6ad61883bf8adfc1c7ab1ab70c4ab53b32d723afe149ba84",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_flat_long/result.json": "47fac5d40d6d5e9ef19b51c79436dc974c5e2d12faaec071e6556c5e9db03dd8",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_medium_flat_long/result.json": "d7d9da0b426ecbfc1dfc8cdde665adbd8905285f7ea0303f01d27c8d91381b66",
+    "artifacts/noise_free_v2/swirl10/sweep_hessian_strong_flat_long/result.json": "8aae2c37d9cd6f7336fc0cebd99083357d5c4a9f2ab87ce788a9f7906890e860"
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "scores": {
+    "previous": {
+      "noisy_validation_nll": 9.866187806928895,
+      "nll_change_from_previous": 0.0,
+      "paired_se": 0.0,
+      "nll_change_from_best_single": 0.008869976480442791,
+      "paired_se_to_best_single": 0.002615266722831943
+    },
+    "dim10_rank48_h2_3e4_control": {
+      "noisy_validation_nll": 9.862305641993078,
+      "nll_change_from_previous": -0.0038821649358172774,
+      "paired_se": 0.001988941360698897,
+      "nll_change_from_best_single": 0.004987811544625515,
+      "paired_se_to_best_single": 0.0011816951269466769
+    },
+    "dim10_rank64_h2_3e4": {
+      "noisy_validation_nll": 9.857317830448455,
+      "nll_change_from_previous": -0.008869976480442791,
+      "paired_se": 0.002615266722831943,
+      "nll_change_from_best_single": 0.0,
+      "paired_se_to_best_single": 0.0
+    },
+    "dim10_bootstrap_11": {
+      "noisy_validation_nll": 9.869043654780413,
+      "nll_change_from_previous": 0.002855847851515951,
+      "paired_se": 0.002492604087759259,
+      "nll_change_from_best_single": 0.011725824331958743,
+      "paired_se_to_best_single": 0.002272262211294802
+    },
+    "dim10_bootstrap_23": {
+      "noisy_validation_nll": 9.869639636917995,
+      "nll_change_from_previous": 0.0034518299890994504,
+      "paired_se": 0.0023561684894877247,
+      "nll_change_from_best_single": 0.012321806469542243,
+      "paired_se_to_best_single": 0.002174657062866354
+    },
+    "dim10_bootstrap_37": {
+      "noisy_validation_nll": 9.871300631716277,
+      "nll_change_from_previous": 0.005112824787380646,
+      "paired_se": 0.0022365682355743022,
+      "nll_change_from_best_single": 0.013982801267823438,
+      "paired_se_to_best_single": 0.0021435239201388397
+    },
+    "density_average": {
+      "noisy_validation_nll": 9.866220075482364,
+      "nll_change_from_previous": 3.226855346802836e-05,
+      "paired_se": 0.0020177764281994214,
+      "nll_change_from_best_single": 0.00890224503391082,
+      "paired_se_to_best_single": 0.0016601077522706582
+    }
+  },
+  "records": {
+    "dim10_rank48_h2_3e4_control": {
+      "best_nll": 9.862305641993078,
+      "best_step": 3200,
+      "strength": 0.0003,
+      "steps": 3200,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 9.866187806928897,
+          "penalty": 151.64401736526813
+        },
+        {
+          "step": 400,
+          "nll": 9.87318803524279,
+          "penalty": 109.8472476031709
+        },
+        {
+          "step": 800,
+          "nll": 9.876498229731535,
+          "penalty": 103.85924495958275
+        },
+        {
+          "step": 1200,
+          "nll": 9.866476484781472,
+          "penalty": 98.81334531049534
+        },
+        {
+          "step": 1600,
+          "nll": 9.868315241934315,
+          "penalty": 97.34701438498917
+        },
+        {
+          "step": 2000,
+          "nll": 9.866919174967641,
+          "penalty": 96.93211374352384
+        },
+        {
+          "step": 2400,
+          "nll": 9.864086999011946,
+          "penalty": 95.95968204613473
+        },
+        {
+          "step": 2800,
+          "nll": 9.86336313323392,
+          "penalty": 95.39136140771397
+        },
+        {
+          "step": 3200,
+          "nll": 9.862305641993078,
+          "penalty": 95.32553511437442
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 9.890903302527391,
+      "seed": 0,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 1.0480505352461478e-12,
+      "seconds": 450.66703933896497,
+      "common_h2": 95.32553511437442
+    },
+    "dim10_rank64_h2_3e4": {
+      "best_nll": 9.857317830448455,
+      "best_step": 3200,
+      "strength": 0.0003,
+      "steps": 3200,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 9.866187806419516,
+          "penalty": 151.64404101796816
+        },
+        {
+          "step": 400,
+          "nll": 9.871870465480104,
+          "penalty": 109.92096315374575
+        },
+        {
+          "step": 800,
+          "nll": 9.87404965699369,
+          "penalty": 104.40629520928248
+        },
+        {
+          "step": 1200,
+          "nll": 9.862170880130464,
+          "penalty": 99.31571426473273
+        },
+        {
+          "step": 1600,
+          "nll": 9.86283935463155,
+          "penalty": 97.89898051909363
+        },
+        {
+          "step": 2000,
+          "nll": 9.861996885208614,
+          "penalty": 97.56324933557946
+        },
+        {
+          "step": 2400,
+          "nll": 9.859009270899108,
+          "penalty": 96.76041023569503
+        },
+        {
+          "step": 2800,
+          "nll": 9.858407205937075,
+          "penalty": 96.33729385014456
+        },
+        {
+          "step": 3200,
+          "nll": 9.857317830448455,
+          "penalty": 96.26315587489488
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 9.886196777210923,
+      "seed": 0,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 1.0516032489249483e-12,
+      "seconds": 723.0805357231293,
+      "common_h2": 96.26315587489566
+    },
+    "dim10_bootstrap_11": {
+      "best_nll": 9.869043654780413,
+      "best_step": 2400,
+      "strength": 0.0003,
+      "steps": 3200,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 9.866187806928897,
+          "penalty": 151.64401736526813
+        },
+        {
+          "step": 400,
+          "nll": 9.88111920546093,
+          "penalty": 110.75460438543874
+        },
+        {
+          "step": 800,
+          "nll": 9.877919828589588,
+          "penalty": 106.02967517375086
+        },
+        {
+          "step": 1200,
+          "nll": 9.877209522947044,
+          "penalty": 101.99813326089868
+        },
+        {
+          "step": 1600,
+          "nll": 9.872106901762137,
+          "penalty": 100.2370181258558
+        },
+        {
+          "step": 2000,
+          "nll": 9.869776174591422,
+          "penalty": 99.31398005631178
+        },
+        {
+          "step": 2400,
+          "nll": 9.869043654780413,
+          "penalty": 99.1226583465466
+        },
+        {
+          "step": 2800,
+          "nll": 9.869468987405725,
+          "penalty": 98.23840316409078
+        },
+        {
+          "step": 3200,
+          "nll": 9.869384766766423,
+          "penalty": 98.26520207255226
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 9.898780452284377,
+      "seed": 11,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 1.0480505352461478e-12,
+      "seconds": 408.6537285060622,
+      "common_h2": 99.1226583465466,
+      "bootstrap_draws": 94904,
+      "bootstrap_unique_training_rows": 59980
+    },
+    "dim10_bootstrap_23": {
+      "best_nll": 9.869639636917995,
+      "best_step": 3200,
+      "strength": 0.0003,
+      "steps": 3200,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 9.866187806928899,
+          "penalty": 151.64401736526813
+        },
+        {
+          "step": 400,
+          "nll": 9.878808900909984,
+          "penalty": 110.98939245207096
+        },
+        {
+          "step": 800,
+          "nll": 9.878607875418977,
+          "penalty": 104.54937907338851
+        },
+        {
+          "step": 1200,
+          "nll": 9.87515148153561,
+          "penalty": 101.76187969167964
+        },
+        {
+          "step": 1600,
+          "nll": 9.872930230219414,
+          "penalty": 100.04628332409327
+        },
+        {
+          "step": 2000,
+          "nll": 9.874766307175493,
+          "penalty": 98.63034935837368
+        },
+        {
+          "step": 2400,
+          "nll": 9.87162731683565,
+          "penalty": 97.85679675230298
+        },
+        {
+          "step": 2800,
+          "nll": 9.870416386589763,
+          "penalty": 97.31129679368762
+        },
+        {
+          "step": 3200,
+          "nll": 9.869639636917995,
+          "penalty": 97.29866311594445
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 9.898829235852778,
+      "seed": 23,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 1.0551559626037488e-12,
+      "seconds": 407.60742100910284,
+      "common_h2": 97.29866311594444,
+      "bootstrap_draws": 94904,
+      "bootstrap_unique_training_rows": 59884
+    },
+    "dim10_bootstrap_37": {
+      "best_nll": 9.871300631716277,
+      "best_step": 3200,
+      "strength": 0.0003,
+      "steps": 3200,
+      "lr": 0.0002,
+      "batch_size": 256,
+      "history": [
+        {
+          "step": 0,
+          "nll": 9.866187806928897,
+          "penalty": 151.64401736526813
+        },
+        {
+          "step": 400,
+          "nll": 9.880814208189296,
+          "penalty": 112.15756641864222
+        },
+        {
+          "step": 800,
+          "nll": 9.876637254422121,
+          "penalty": 104.60278960114897
+        },
+        {
+          "step": 1200,
+          "nll": 9.879479754072406,
+          "penalty": 101.19162384596241
+        },
+        {
+          "step": 1600,
+          "nll": 9.876536140557,
+          "penalty": 98.56289890021806
+        },
+        {
+          "step": 2000,
+          "nll": 9.87397424613296,
+          "penalty": 98.84785176909328
+        },
+        {
+          "step": 2400,
+          "nll": 9.87316549850292,
+          "penalty": 97.91372926790912
+        },
+        {
+          "step": 2800,
+          "nll": 9.871648631817763,
+          "penalty": 97.28236540788218
+        },
+        {
+          "step": 3200,
+          "nll": 9.871300631716277,
+          "penalty": 97.56846960881022
+        }
+      ],
+      "checkpoint_rule": "regularized",
+      "selection_score": 9.900571172598921,
+      "seed": 37,
+      "preconditioning": "sobolev",
+      "device": "NVIDIA A100-SXM4-80GB",
+      "quadrature_log_error": 1.0480505352461478e-12,
+      "seconds": 408.7773029920645,
+      "common_h2": 97.56846960881022,
+      "bootstrap_draws": 94904,
+      "bootstrap_unique_training_rows": 59853
+    }
+  },
+  "best_single": "dim10_rank64_h2_3e4",
+  "ensemble_members": [
+    "dim10_bootstrap_11",
+    "dim10_bootstrap_23",
+    "dim10_bootstrap_37"
+  ],
+  "marginals": {
+    "01": {
+      "previous": {
+        "mass_on_grid": 1.0000144741626178,
+        "finite_difference_relative_density_hessian_energy": 67.49998276246647,
+        "differential_entropy": 0.8230374448058809,
+        "relative_density_hessian_energy": 71.3614062592633,
+        "l1_change_from_previous": 0.0
+      },
+      "dim10_rank48_h2_3e4_control": {
+        "mass_on_grid": 1.0000129902449348,
+        "finite_difference_relative_density_hessian_energy": 39.87844096460517,
+        "differential_entropy": 0.9266325624679369,
+        "relative_density_hessian_energy": 41.567904765152704,
+        "l1_change_from_previous": 0.13374422236378902
+      },
+      "dim10_rank64_h2_3e4": {
+        "mass_on_grid": 1.000013676137454,
+        "finite_difference_relative_density_hessian_energy": 39.59217150848396,
+        "differential_entropy": 0.9289228360965773,
+        "relative_density_hessian_energy": 41.26370330443668,
+        "l1_change_from_previous": 0.13575402649207913
+      },
+      "dim10_bootstrap_11": {
+        "mass_on_grid": 1.0000154105723733,
+        "finite_difference_relative_density_hessian_energy": 39.81689435138338,
+        "differential_entropy": 0.9313422657646869,
+        "relative_density_hessian_energy": 41.47655397320737,
+        "l1_change_from_previous": 0.14675495860966406
+      },
+      "dim10_bootstrap_23": {
+        "mass_on_grid": 1.000012468184147,
+        "finite_difference_relative_density_hessian_energy": 41.26749708574144,
+        "differential_entropy": 0.9326097633966391,
+        "relative_density_hessian_energy": 43.046895735055614,
+        "l1_change_from_previous": 0.15107592862257144
+      },
+      "dim10_bootstrap_37": {
+        "mass_on_grid": 1.0000170760258462,
+        "finite_difference_relative_density_hessian_energy": 41.12653893641348,
+        "differential_entropy": 0.936040278664182,
+        "relative_density_hessian_energy": 42.930590818409556,
+        "l1_change_from_previous": 0.13878579565697322
+      },
+      "density_average": {
+        "mass_on_grid": 1.0000149849274556,
+        "finite_difference_relative_density_hessian_energy": 40.16709954382287,
+        "differential_entropy": 0.936964104674064,
+        "relative_density_hessian_energy": 41.87915243641594,
+        "l1_change_from_previous": 0.13497512379257867
+      },
+      "conditional_spread": {
+        "integrated_pointwise_sd": 0.07169871112215533,
+        "mean_member_l1_from_average": 0.052599849454550325
+      }
+    },
+    "23": {
+      "previous": {
+        "mass_on_grid": 1.0000259143204997,
+        "finite_difference_relative_density_hessian_energy": 81.99410441193167,
+        "differential_entropy": 1.8548092168997379,
+        "relative_density_hessian_energy": 85.0808375029734,
+        "l1_change_from_previous": 0.0
+      },
+      "dim10_rank48_h2_3e4_control": {
+        "mass_on_grid": 1.0000257026592654,
+        "finite_difference_relative_density_hessian_energy": 49.17538719576581,
+        "differential_entropy": 1.9334333241706254,
+        "relative_density_hessian_energy": 50.63164148167737,
+        "l1_change_from_previous": 0.12068046382526776
+      },
+      "dim10_rank64_h2_3e4": {
+        "mass_on_grid": 1.0000286391648372,
+        "finite_difference_relative_density_hessian_energy": 48.67472828410044,
+        "differential_entropy": 1.935426212637439,
+        "relative_density_hessian_energy": 50.10772283578443,
+        "l1_change_from_previous": 0.12864056261219506
+      },
+      "dim10_bootstrap_11": {
+        "mass_on_grid": 1.0000301466373283,
+        "finite_difference_relative_density_hessian_energy": 51.18162816838482,
+        "differential_entropy": 1.9289836355294996,
+        "relative_density_hessian_energy": 52.72156532590934,
+        "l1_change_from_previous": 0.12945065644575682
+      },
+      "dim10_bootstrap_23": {
+        "mass_on_grid": 1.0000292478190238,
+        "finite_difference_relative_density_hessian_energy": 49.36698258421972,
+        "differential_entropy": 1.9429633701982214,
+        "relative_density_hessian_energy": 50.847174870555165,
+        "l1_change_from_previous": 0.12980460136534078
+      },
+      "dim10_bootstrap_37": {
+        "mass_on_grid": 1.000026252590715,
+        "finite_difference_relative_density_hessian_energy": 48.11531780952662,
+        "differential_entropy": 1.9337960619763939,
+        "relative_density_hessian_energy": 49.527977365297886,
+        "l1_change_from_previous": 0.14270269728353954
+      },
+      "density_average": {
+        "mass_on_grid": 1.000028549015689,
+        "finite_difference_relative_density_hessian_energy": 48.92132593753764,
+        "differential_entropy": 1.9382715856569517,
+        "relative_density_hessian_energy": 50.37298316281927,
+        "l1_change_from_previous": 0.12320385213567381
+      },
+      "conditional_spread": {
+        "integrated_pointwise_sd": 0.07480945062060758,
+        "mean_member_l1_from_average": 0.054853442494563386
+      }
+    },
+    "89": {
+      "previous": {
+        "mass_on_grid": 1.0000092474513202,
+        "finite_difference_relative_density_hessian_energy": 36.5380611101627,
+        "differential_entropy": 1.4693698617690583,
+        "relative_density_hessian_energy": 36.81310292666283,
+        "l1_change_from_previous": 0.0
+      },
+      "dim10_rank48_h2_3e4_control": {
+        "mass_on_grid": 1.0000044227167244,
+        "finite_difference_relative_density_hessian_energy": 23.71073688866036,
+        "differential_entropy": 1.5626337596508042,
+        "relative_density_hessian_energy": 23.846750862946276,
+        "l1_change_from_previous": 0.10739252059582437
+      },
+      "dim10_rank64_h2_3e4": {
+        "mass_on_grid": 1.0000041422312878,
+        "finite_difference_relative_density_hessian_energy": 23.529145481093746,
+        "differential_entropy": 1.566033411519562,
+        "relative_density_hessian_energy": 23.663229263565075,
+        "l1_change_from_previous": 0.11058831305366185
+      },
+      "dim10_bootstrap_11": {
+        "mass_on_grid": 1.0000050505067297,
+        "finite_difference_relative_density_hessian_energy": 23.491129720179625,
+        "differential_entropy": 1.559190273371727,
+        "relative_density_hessian_energy": 23.625999072422253,
+        "l1_change_from_previous": 0.11608734323076225
+      },
+      "dim10_bootstrap_23": {
+        "mass_on_grid": 1.0000022526635723,
+        "finite_difference_relative_density_hessian_energy": 23.591761173440027,
+        "differential_entropy": 1.5711156043887833,
+        "relative_density_hessian_energy": 23.73015473347498,
+        "l1_change_from_previous": 0.12251122828717965
+      },
+      "dim10_bootstrap_37": {
+        "mass_on_grid": 1.0000039458551107,
+        "finite_difference_relative_density_hessian_energy": 23.066413294781693,
+        "differential_entropy": 1.5775776453612886,
+        "relative_density_hessian_energy": 23.197320590599308,
+        "l1_change_from_previous": 0.11762826511906344
+      },
+      "density_average": {
+        "mass_on_grid": 1.0000037496751375,
+        "finite_difference_relative_density_hessian_energy": 23.290955999173747,
+        "differential_entropy": 1.5708582626484078,
+        "relative_density_hessian_energy": 23.424405457600823,
+        "l1_change_from_previous": 0.1157749538903941
+      },
+      "conditional_spread": {
+        "integrated_pointwise_sd": 0.036465145067613614,
+        "mean_member_l1_from_average": 0.026751507562787408
+      }
+    }
+  },
+  "stability_scope": "Conditional resampled continuations from a fit trained on all original training observations. Not independent-data replication or calibrated confidence intervals."
+}

@@ -1,0 +1,39 @@
+{
+  "selected": "nll_r10_n25_l0.001_w100",
+  "rank": 10,
+  "modes": 25,
+  "names": [
+    "nll_r10_n25_l0.001_w100",
+    "nll_r10_n49_l0.001_w100",
+    "nll_r20_n25_l0.001_w100"
+  ],
+  "details": {
+    "minimum_nll_index": 0,
+    "selected_index": 0,
+    "clusters": 2048,
+    "se_factor": 1.0,
+    "candidates": [
+      {
+        "validation_nll": 9.520669698207398,
+        "excess_nll": 0.0,
+        "paired_cluster_se": 0.0,
+        "roughness": 10500.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 9.521368328055825,
+        "excess_nll": 0.0006986298484272266,
+        "paired_cluster_se": 0.0013692376684686523,
+        "roughness": 20580.0,
+        "eligible": true
+      },
+      {
+        "validation_nll": 9.522896873815661,
+        "excess_nll": 0.002227175608263008,
+        "paired_cluster_se": 0.0015206793130847723,
+        "roughness": 41000.0,
+        "eligible": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "n": 8192,
+  "previous_nll": 6.275877657095199,
+  "new_nll": 6.26336938763946,
+  "paired_improvement": 0.012508269455738399,
+  "paired_se": 0.001915397816692376,
+  "previous_gap_to_truth": 0.01549284640130007,
+  "new_gap_to_truth": 0.0029845769455616716,
+  "used_for_selection": false
+}

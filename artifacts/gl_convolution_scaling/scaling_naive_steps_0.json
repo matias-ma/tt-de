@@ -1,0 +1,193 @@
+{
+  "dim": 8,
+  "noise": "mixture",
+  "n_train": 20000,
+  "n_test": 4000,
+  "rank": 8,
+  "n_coeffs": 17,
+  "steps": 6000,
+  "naive_steps": 0,
+  "deconv_steps": 6000,
+  "batch_size": 512,
+  "lr": 0.0005,
+  "naive_lr": 0.001,
+  "no_lr_schedule": false,
+  "raw_coordinates": false,
+  "reg_lambda": 1.0,
+  "kernel_rank": 3,
+  "compare_spectral": false,
+  "output": "/home/ma4473/ft-de/results/gl_convolution_scaling/scaling_naive_steps_0.json",
+  "metrics": {
+    "kde": {
+      "relative_squared_sample_error": 0.9776704228749901,
+      "relative_sample_l2": 0.988772179460461
+    },
+    "naive": {
+      "relative_squared_sample_error": 0.975581764533597,
+      "relative_sample_l2": 0.9877154268986574
+    },
+    "deconvolved": {
+      "relative_squared_sample_error": 0.06508128810753448,
+      "relative_sample_l2": 0.2551103449637715
+    }
+  },
+  "checks": {
+    "quadrature_max_abs_log_error": 1.8829382497642655e-13,
+    "analytic_mixture_max_abs_log_error": 8.688161301506625e-12
+  },
+  "histories": {
+    "naive": {
+      "best_step": 0,
+      "best_nll": 11.19669158896827,
+      "training_seconds": 0.10856561316177249,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 11.19669158896827
+        }
+      ]
+    },
+    "deconvolved": {
+      "best_step": 1200,
+      "best_nll": 11.131989816531222,
+      "training_seconds": 59.99217232083902,
+      "history": [
+        {
+          "step": 0,
+          "validation_nll": 11.693030096720793
+        },
+        {
+          "step": 200,
+          "validation_nll": 11.154748717758588
+        },
+        {
+          "step": 400,
+          "validation_nll": 11.134470156035025
+        },
+        {
+          "step": 600,
+          "validation_nll": 11.132377391490039
+        },
+        {
+          "step": 800,
+          "validation_nll": 11.133205874917206
+        },
+        {
+          "step": 1000,
+          "validation_nll": 11.134034087877687
+        },
+        {
+          "step": 1200,
+          "validation_nll": 11.131989816531222
+        },
+        {
+          "step": 1400,
+          "validation_nll": 11.132051031339895
+        },
+        {
+          "step": 1600,
+          "validation_nll": 11.136026731321726
+        },
+        {
+          "step": 1800,
+          "validation_nll": 11.13632769218285
+        },
+        {
+          "step": 2000,
+          "validation_nll": 11.135935502093563
+        },
+        {
+          "step": 2200,
+          "validation_nll": 11.13630819163572
+        },
+        {
+          "step": 2400,
+          "validation_nll": 11.136890070557893
+        },
+        {
+          "step": 2600,
+          "validation_nll": 11.136456595865546
+        },
+        {
+          "step": 2800,
+          "validation_nll": 11.134627072936995
+        },
+        {
+          "step": 3000,
+          "validation_nll": 11.135265564556097
+        },
+        {
+          "step": 3200,
+          "validation_nll": 11.133455250844744
+        },
+        {
+          "step": 3400,
+          "validation_nll": 11.135221218530702
+        },
+        {
+          "step": 3600,
+          "validation_nll": 11.137095388840486
+        },
+        {
+          "step": 3800,
+          "validation_nll": 11.133927985717852
+        },
+        {
+          "step": 4000,
+          "validation_nll": 11.136881024838761
+        },
+        {
+          "step": 4200,
+          "validation_nll": 11.136542045389486
+        },
+        {
+          "step": 4400,
+          "validation_nll": 11.13595889540552
+        },
+        {
+          "step": 4600,
+          "validation_nll": 11.13593341425414
+        },
+        {
+          "step": 4800,
+          "validation_nll": 11.136727479852638
+        },
+        {
+          "step": 5000,
+          "validation_nll": 11.135077036100919
+        },
+        {
+          "step": 5200,
+          "validation_nll": 11.135537276487332
+        },
+        {
+          "step": 5400,
+          "validation_nll": 11.136748253880407
+        },
+        {
+          "step": 5600,
+          "validation_nll": 11.136073893142534
+        },
+        {
+          "step": 5800,
+          "validation_nll": 11.135987284629707
+        },
+        {
+          "step": 6000,
+          "validation_nll": 11.136031931388803
+        }
+      ]
+    }
+  },
+  "orders": [
+    145,
+    145,
+    145,
+    145,
+    145,
+    145,
+    145,
+    145
+  ],
+  "seconds": 84.09369594301097
+}
